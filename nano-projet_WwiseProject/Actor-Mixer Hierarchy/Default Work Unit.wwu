@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7E94B5C2-E284-49A5-AB3A-343E9F218CAA}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{7E94B5C2-E284-49A5-AB3A-343E9F218CAA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Son_Temoin" ID="{0F05F282-93BA-481C-B359-8E20146B7058}" ShortID="222684379">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23CE4B8B-5509-4A28-BD62-2B3D3C9AA2EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{58D0DC10-F910-46C0-8E22-82CBC4A19AEA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Lord_Of_Ring" ID="{1F4C67A1-FE9D-4DC8-8150-D9C4FC5DE568}" ShortID="607958301">
+							<Language>SFX</Language>
+							<AudioFile>Lord_Of_Ring.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Lord_Of_Ring" ID="{1F4C67A1-FE9D-4DC8-8150-D9C4FC5DE568}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

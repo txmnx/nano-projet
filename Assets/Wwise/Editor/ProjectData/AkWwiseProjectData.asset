@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149eb4b5bdd42584ca71fa00085f4f2c, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6f59ae2603fd524c83e0e880814a4d92
+    GuidInternal: 
+    m_lastTime: -8586283050496536102
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 10dcd05810f9c0468e2282cbc4a19aea
+    GuidInternal: 
+    m_lastTime: -8586283050497184347
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ecf03042b7b91a439d21c630e3e238d4
+    GuidInternal: 
+    m_lastTime: -8586283049111680529
+    List:
+    - name: Wwise_SNB
+      guid: 5a38715bda597948abec28b707c2d621
+      id: 1286985910
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Wwise_SNB
+        ObjectType: 7
+      Path: Default Work Unit\Wwise_SNB
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 86922fae59db6f4c8494842b7abdce54
+    GuidInternal: 
+    m_lastTime: -8586283037983307876
+    List:
+    - name: Son_Temoin
+      guid: 114690534b416341b41e1f8f0664b094
+      id: 1502450958
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Son_Temoin
+        ObjectType: 3
+      Path: Default Work Unit\Son_Temoin
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 99bf92aa40e6ff40899e4dba44f66b8a
+    GuidInternal: 
+    m_lastTime: -8586283050497234239
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2998adf915598c4782afc7f2fa59a7d9
+    GuidInternal: 
+    m_lastTime: -8586283050496575851
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bcefb86a0c078f4eb53a0dc795b4a9c1
+    GuidInternal: 
+    m_lastTime: -8586283050496924784
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 650da5fbe5676d4284afdd0cf3823b06
+    GuidInternal: 
+    m_lastTime: -8586283050496974910
+    List: []
+  ExpandedItems:
+  - /nano-projet_WwiseProject
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
