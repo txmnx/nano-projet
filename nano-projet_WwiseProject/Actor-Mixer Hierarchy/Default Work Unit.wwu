@@ -30,6 +30,16 @@
 						<ActiveSource Name="Lord_Of_Ring" ID="{1F4C67A1-FE9D-4DC8-8150-D9C4FC5DE568}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Random_Sound" ID="{9652F27F-4815-4402-B691-4542EAA04847}" ShortID="68006722">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{23CE4B8B-5509-4A28-BD62-2B3D3C9AA2EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{58D0DC10-F910-46C0-8E22-82CBC4A19AEA}"/>
+						</Reference>
+					</ReferenceList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
