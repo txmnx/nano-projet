@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BA6E5862-D596-4954-A255-411EF7936546}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="SFX_Event" ID="{BA6E5862-D596-4954-A255-411EF7936546}" PersistMode="Standalone"/>
+	</Events>
+</WwiseDocument>
