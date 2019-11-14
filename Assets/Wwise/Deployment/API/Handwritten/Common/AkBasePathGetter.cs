@@ -90,6 +90,7 @@ public partial class AkBasePathGetter
 		return platformBasePath;
 	}
 
+
 	/// <summary>
 	///     Returns the absolute path to the folder above the platform specific sound banks sub-folders.
 	/// </summary>
@@ -133,8 +134,8 @@ public partial class AkBasePathGetter
 
 		try
 		{
-			if (System.IO.Path.GetPathRoot(SoundBankDest) == "")
-			{
+            if (SoundBankDest != "" && System.IO.Path.GetPathRoot(SoundBankDest) == "")
+            {
 				// Path is relative, make it full
 				SoundBankDest = AkUtilities.GetFullPath(System.IO.Path.GetDirectoryName(WwiseProjectFullPath), SoundBankDest);
 			}
@@ -144,7 +145,14 @@ public partial class AkBasePathGetter
 			SoundBankDest = string.Empty;
 		}
 
-		if (string.IsNullOrEmpty(SoundBankDest))
+        if (string.IsNullOrEmpty(SoundBankDest))
+        {
+            const string hardcodedNonstandardPath = "../WwiseGeneratedSoundbanks/";
+            var sourceSoundBankPath = hardcodedNonstandardPath + platformName;
+            SoundBankDest = AkUtilities.GetFullPath(UnityEngine.Application.dataPath, sourceSoundBankPath);
+        }
+
+        if (string.IsNullOrEmpty(SoundBankDest))
 		{
 			UnityEngine.Debug.LogWarning("WwiseUnity: The platform SoundBank subfolder within the Wwise project could not be found.");
 		}

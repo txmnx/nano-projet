@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1502450958	Son_Temoin			\Default Work Unit\Son_Temoin	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	607958301	Son_Temoin	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Projet\Nano_Projet_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Lord_Of_Ring_C42B8C3C.wem	607958301.wem	\Actor-Mixer Hierarchy\Default Work Unit\Son_Temoin	
+
