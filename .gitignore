@@ -70,6 +70,6 @@ crashlytics-build.properties
 .cache/
 *.akd
 *.validationcache
-WwiseSettings.xml
+Assets/WwiseSettings.xml
 
 # End of https://www.gitignore.io/api/unity
