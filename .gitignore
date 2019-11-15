@@ -73,3 +73,4 @@ crashlytics-build.properties
 [Aa]ssets/WwiseSettings.xml
 
 # End of https://www.gitignore.io/api/unity
+Assets/WwiseSettings.xml.meta
