@@ -10,10 +10,10 @@ using UnityEngine;
  */
 public class BeatManager
 {
-    public static int bpm = 60;
+    public static int bpm = 120;
 
-    public static int period {
-        get { return 60 / bpm; }
+    public static float period {
+        get { return 60 / (float)bpm; }
     }
     
     public static float songPosition {
