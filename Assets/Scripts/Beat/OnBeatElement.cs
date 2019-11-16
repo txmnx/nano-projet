@@ -1,11 +1,8 @@
-﻿using UnityEngine;
-
-public abstract class OnBeatElement : MonoBehaviour
+﻿/**
+ * Implement this interface if you want to make something on every beat.
+ * In order to be detected your class must be stored with BeatManager.RegisterOnBeatElement()
+ */
+public interface OnBeatElement
 {
-    public abstract void OnBeat();
-
-    protected virtual void Start()
-    {
-        BeatManager.RegisterOnBeatElement(this);
-    }
+    void OnBeat();
 }

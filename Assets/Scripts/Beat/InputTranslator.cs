@@ -12,12 +12,17 @@ public enum Sequence
 }
 
 /**
- * The InputTranslator class translates the stored inputs and translate them as animations and actions.
+ * The InputTranslator class translates the stored inputs as animations and actions.
+ * TODO:
+ *      It probably should be a singleton.
  */
 public class InputTranslator : MonoBehaviour
 {
-    private float lastBeat = 0.0f;
-    private readonly int step = 2; // How much beats to await inputs
+    private static List<OnInputBeatElement> onInputBeatElements;
+    private static List<OnActionBeatElement> onActionBeatElements;
+
+    private float lastBeat;
+    private int step; // How much beats for a sequence
 
     // TODO : here we should have a buffer of two inputs as a private member
 
@@ -25,17 +30,51 @@ public class InputTranslator : MonoBehaviour
 
     void Awake()
     {
-        sequence = Sequence.INPUT;
+        onInputBeatElements = new List<OnInputBeatElement>();
+        onActionBeatElements = new List<OnActionBeatElement>();
+
+        lastBeat = 0.0f;
+        step = 2;
+
+        sequence = Sequence.ACTION;
     }
+
+    /**
+     * TODO : should have an Init method to first call OnInputBeat and OnActionBeat when the music starts
+     */
 
     void Update()
     {
+        // On each kind of beat we call the corresponding method for the stored beat elements
         if (BeatManager.songPosition > lastBeat + BeatManager.period * step) {
-            sequence = (sequence == Sequence.INPUT) ? Sequence.ACTION : Sequence.INPUT;
-            Debug.Log("BOUM");
-            // TODO : here we have to read the input buffer or use the inputs depending on sequence
+            if (sequence == Sequence.INPUT) {
+                foreach(OnActionBeatElement element in onActionBeatElements) {
+                    element.OnActionBeat();
+                }
+                sequence = Sequence.ACTION;
+            }
+            else {
+                foreach (OnInputBeatElement element in onInputBeatElements) {
+                    element.OnInputBeat();
+                }
+                sequence = Sequence.INPUT;
+            }
 
             lastBeat += BeatManager.period * step;
         }
+    }
+
+
+    /**
+     * Register Input and Action BeatElements
+     */
+    public static void RegisterOnInputBeatElement(OnInputBeatElement element)
+    {
+        onInputBeatElements.Add(element);
+    }
+
+    public static void RegisterOnActionBeatElement(OnActionBeatElement element)
+    {
+        onActionBeatElements.Add(element);
     }
 }
