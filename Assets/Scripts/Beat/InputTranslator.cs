@@ -3,26 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- * The InputTranslator class translate the stored inputs and translate them as animations and actions.
+ * Determines on which sequence the game is.
+ */
+public enum Sequence
+{
+    INPUT,
+    ACTION
+}
+
+/**
+ * The InputTranslator class translates the stored inputs and translate them as animations and actions.
  */
 public class InputTranslator : MonoBehaviour
 {
     private float lastBeat = 0.0f;
-    private float step; // We translate the inputs on every step
+    private readonly int step = 2; // How much beats to await inputs
+
     // TODO : here we should have a buffer of two inputs as a private member
 
+    public static Sequence sequence;
 
-    void Start()
+    void Awake()
     {
-        step = BeatManager.period * 4;
+        sequence = Sequence.INPUT;
     }
 
     void Update()
     {
-        if (BeatManager.songPosition > lastBeat + step) {
-            // TODO : here we have to read the input buffer and use the inputs
-            Debug.Log("Translate inputs");
-            lastBeat += step;
+        if (BeatManager.songPosition > lastBeat + BeatManager.period * step) {
+            sequence = (sequence == Sequence.INPUT) ? Sequence.ACTION : Sequence.INPUT;
+            Debug.Log("BOUM");
+            // TODO : here we have to read the input buffer or use the inputs depending on sequence
+
+            lastBeat += BeatManager.period * step;
         }
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine;
  *      Since there is no music to be synced to at the moment we use Time.time as a timer
  *      but we'll have to change it to AudioSettings.dspTime to be more precise.
  */
-public class BeatManager
+public class BeatManager : MonoBehaviour
 {
     public static int bpm = 120;
 
@@ -18,5 +18,28 @@ public class BeatManager
     
     public static float songPosition {
         get { return Time.time; }
+    }
+
+    private static List<OnBeatElement> onBeatElements;
+    private float lastBeat;
+
+    void Start()
+    {
+        onBeatElements = new List<OnBeatElement>();
+        lastBeat = 0.0f;
+    }
+
+    void Update()
+    {
+        if (BeatManager.songPosition > lastBeat + BeatManager.period) {
+            foreach (OnBeatElement element in onBeatElements) {
+                element.OnBeat();
+            }
+        }
+    }
+
+    public static void RegisterOnBeatElement(OnBeatElement element)
+    {
+        onBeatElements.Add(element);
     }
 }

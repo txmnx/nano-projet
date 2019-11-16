@@ -3,25 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- * BeatPulser is an exemple class to show the use of BeatManager.
+ * BeatPulser is a debug class to show the use of BeatManager.
  */
 [RequireComponent(typeof(Animator))]
-public class BeatPulser : MonoBehaviour
+[RequireComponent(typeof(MeshRenderer))]
+public class BeatPulser : OnBeatElement
 {
     private float lastBeat = 0.0f;
 
     private Animator animator;
+    private Material material;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         animator = GetComponent<Animator>();
+        material = GetComponent<MeshRenderer>().material;
     }
 
-    void Update()
+    public override void OnBeat()
     {
-        if (BeatManager.songPosition > lastBeat + BeatManager.period) {
-            animator.Play("pulse_clip");
-            lastBeat += BeatManager.period;
-        }
+        material.color = (InputTranslator.sequence == Sequence.INPUT) ? Color.green : Color.red;
+        animator.Play("pulse_clip");
     }
 }
