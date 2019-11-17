@@ -9,8 +9,6 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnInputBeatElement
 {
-    private float lastBeat = 0.0f;
-
     private Animator animator;
     private Material material;
 

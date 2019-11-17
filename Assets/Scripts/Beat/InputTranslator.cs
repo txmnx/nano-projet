@@ -48,7 +48,7 @@ public class InputTranslator : MonoBehaviour
         // On each kind of beat we call the corresponding method for the stored beat elements
         if (BeatManager.songPosition > lastBeat + BeatManager.period * step) {
             if (sequence == Sequence.INPUT) {
-                foreach(OnActionBeatElement element in onActionBeatElements) {
+                foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnActionBeat();
                 }
                 sequence = Sequence.ACTION;
