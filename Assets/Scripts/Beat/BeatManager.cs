@@ -12,14 +12,16 @@ using UnityEngine;
  */
 public class BeatManager : MonoBehaviour
 {
-    public static int bpm = 80;
+    private static float internalTimer;
+    public static int bpm = 120;
 
     public static float period {
         get { return 60 / (float)bpm; }
     }
     
     public static float songPosition {
-        get { return Time.time; }
+        // TODO : use https://www.reddit.com/r/gamedev/comments/13y26t/how_do_rhythm_games_stay_in_sync_with_the_music/
+        get { return internalTimer; }
     }
 
     private static List<OnBeatElement> onBeatElements;
@@ -27,6 +29,11 @@ public class BeatManager : MonoBehaviour
 
     void Awake()
     {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 30;
+
+        internalTimer = 0.0f;
+
         onBeatElements = new List<OnBeatElement>();
         lastBeat = 0.0f;
     }
@@ -45,6 +52,8 @@ public class BeatManager : MonoBehaviour
 
             lastBeat += BeatManager.period;
         }
+
+        internalTimer += Time.deltaTime;
     }
 
     public static void RegisterOnBeatElement(OnBeatElement element)
