@@ -21,8 +21,8 @@ public class InputTranslator : MonoBehaviour
     private static List<OnInputBeatElement> onInputBeatElements;
     private static List<OnActionBeatElement> onActionBeatElements;
 
-    private float lastBeat;
-    private int step; // How much beats for a sequence
+    private static float lastBeat;
+    public static int step; // How much beats for a sequence
 
     // TODO : here we should have a buffer of two inputs as a private member
 
@@ -76,5 +76,13 @@ public class InputTranslator : MonoBehaviour
     public static void RegisterOnActionBeatElement(OnActionBeatElement element)
     {
         onActionBeatElements.Add(element);
+    }
+
+    /**
+     * Reset the beat.
+     */
+    public static void Reset()
+    {
+        lastBeat = 0.0f;
     }
 }

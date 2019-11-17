@@ -13,7 +13,7 @@ using UnityEngine;
 public class BeatManager : MonoBehaviour
 {
     private static float internalTimer;
-    public static int bpm = 120;
+    public static int bpm = 80;
 
     public static float period {
         get { return 60 / (float)bpm; }
@@ -25,13 +25,10 @@ public class BeatManager : MonoBehaviour
     }
 
     private static List<OnBeatElement> onBeatElements;
-    private float lastBeat;
+    private static float lastBeat;
 
     void Awake()
     {
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 30;
-
         internalTimer = 0.0f;
 
         onBeatElements = new List<OnBeatElement>();
@@ -59,5 +56,14 @@ public class BeatManager : MonoBehaviour
     public static void RegisterOnBeatElement(OnBeatElement element)
     {
         onBeatElements.Add(element);
+    }
+
+    /**
+     * Reset the beat.
+     */
+    public static void Reset()
+    {
+        internalTimer = 0.0f;
+        lastBeat = 0.0f;
     }
 }
