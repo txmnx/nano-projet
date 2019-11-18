@@ -24,6 +24,8 @@ public class InputTranslator : MonoBehaviour
     private static float lastBeat;
     public static int step; // How much beats for a sequence
 
+    public FightManager fightManager;
+
     // TODO : here we should have a buffer of two inputs as a private member
 
     public static Sequence sequence;
@@ -48,6 +50,7 @@ public class InputTranslator : MonoBehaviour
         // On each kind of beat we call the corresponding method for the stored beat elements
         if (BeatManager.songPosition > lastBeat + BeatManager.period * step) {
             if (sequence == Sequence.INPUT) {
+                fightManager.Flush();
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnActionBeat();
                 }

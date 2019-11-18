@@ -28,6 +28,7 @@ public class FightManager : MonoBehaviour
 
     void Update()
     {
+        /*
         timeCounter += Time.deltaTime;
         phaseTimeCounter += Time.deltaTime;
         managePhase();
@@ -36,10 +37,8 @@ public class FightManager : MonoBehaviour
         {
             actionPhase();
         }
-        else
-        {
-            
-        }
+        */
+
     }
 
     public void managePhase()   //Timer switching phases
@@ -65,6 +64,13 @@ public class FightManager : MonoBehaviour
         }
     }
 
+    public void Flush()
+    {
+        compareInputs();
+        player1.Reset();
+        player2.Reset();
+    }
+
     public void actionPhase()   //action phase managing
     {
         if(!actionIsDone)
@@ -81,12 +87,21 @@ public class FightManager : MonoBehaviour
 
     public void compareInputs()     //Actual comparison of the players inputs
     {
-        for(int i = 0; i < Player.bufferSize; i++)
-        {
+        /*
+        for (int i = 0; i < Player.bufferSize; i++) {
             player1.currentLife -= compareMove(player1.buffer[i], player2.buffer[i]);
-            Debug.Log("Player 1 : " + -compareMove(player1.buffer[i], player2.buffer[i]));
+            Debug.Log("Move " + i + " ; Player 1 : " + -compareMove(player1.buffer[i], player2.buffer[i]));
             player2.currentLife -= compareMove(player2.buffer[i], player1.buffer[i]);
-            Debug.Log("Player 2 : " + -compareMove(player2.buffer[i], player1.buffer[i]));
+            Debug.Log("Move " + i + " ; Player 2 : " + -compareMove(player2.buffer[i], player1.buffer[i]));
+        }
+        */
+        Debug.Log("Moves Player 1 : ");
+        for (int i = 0; i < Player.bufferSize; i++) {
+            Debug.Log(player1.buffer[i]);
+        }
+        Debug.Log("Moves Player 2 : ");
+        for (int i = 0; i < Player.bufferSize; i++) {
+            Debug.Log(player2.buffer[i]);
         }
     }
 

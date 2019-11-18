@@ -24,16 +24,19 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentLife = maxLife;
-        for (int i = 0; i < bufferSize; i++)        //initialising the buffer
-        {
+        Reset();
+    }
+
+    public void Reset()
+    {
+        for (int i = 0; i < bufferSize; i++) {     //initialising the buffer
             buffer[i] = Player.Move.NEUTRAL;
         }
-
     }
 
     void Update()
     {
-        if (fightManager.isInputPhase)      
+        if (InputTranslator.sequence == Sequence.INPUT)      
         {
             if (!(buffer[0] == Move.NEUTRAL))       //all of this because of flexibility, I hate you GDs
             {

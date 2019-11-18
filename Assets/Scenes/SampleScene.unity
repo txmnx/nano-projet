@@ -802,6 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39c8d19e1e979646855e3bf96607b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fightManager: {fileID: 1226417291}
 --- !u!4 &1226417288
 Transform:
   m_ObjectHideFlags: 0
@@ -841,7 +842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameRate: 60
-  bpm: 80
+  bpm: 30
   step: 2
 --- !u!114 &1226417291
 MonoBehaviour:
