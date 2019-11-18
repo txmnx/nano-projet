@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
-
-public class FightManager : MonoBehaviour
+public class FightManager : MonoBehaviour, OnBeatElement, OnInputBeatElement
 {
     public Player player1;
     public Player player2;
@@ -18,12 +18,16 @@ public class FightManager : MonoBehaviour
     public float timeCounter;
     public float phaseTimeCounter;
 
+    public Text action1Text;
+    public Text action2Text;
+
     private void Start()
     {
         timeCounter = 0.0f;
         phaseTimeCounter = 0.0f;
         isInputPhase = true;
-
+        BeatManager.RegisterOnBeatElement(this);
+        InputTranslator.RegisterOnInputBeatElement(this);
     }
 
     void Update()
@@ -64,11 +68,32 @@ public class FightManager : MonoBehaviour
         }
     }
 
+    public void OnBeat()
+    {
+        if (InputTranslator.sequence == Sequence.ACTION) {
+            if (action1Text.text == "") {
+                action1Text.text = player1.buffer[0].ToString();
+                action2Text.text = player2.buffer[0].ToString();
+            }
+            else {
+                action1Text.text = player1.buffer[1].ToString();
+                action2Text.text = player2.buffer[1].ToString();
+            }
+        }
+    }
+
+    public void OnInputBeat()
+    {
+        action1Text.text = "";
+        action2Text.text = "";
+
+        player1.Reset();
+        player2.Reset();
+    }
+
     public void Flush()
     {
         compareInputs();
-        player1.Reset();
-        player2.Reset();
     }
 
     public void actionPhase()   //action phase managing
