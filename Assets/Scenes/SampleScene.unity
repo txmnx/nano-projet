@@ -842,8 +842,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frameRate: 60
-  bpm: 30
-  step: 2
+  bpm: 60
+  step: 3
 --- !u!114 &1226417291
 MonoBehaviour:
   m_ObjectHideFlags: 0

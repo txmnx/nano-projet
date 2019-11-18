@@ -54,7 +54,7 @@ public class FightManager : MonoBehaviour
             else
             {
                 isInputPhase = true;
-                for(int i = 0; i < Player.bufferSize; i++)
+                for(int i = 0; i < InputTranslator.step; i++)
                 {
                     player1.buffer[i] = Player.Move.NEUTRAL;
                     player2.buffer[i] = Player.Move.NEUTRAL;
@@ -96,11 +96,11 @@ public class FightManager : MonoBehaviour
         }
         */
         Debug.Log("Moves Player 1 : ");
-        for (int i = 0; i < Player.bufferSize; i++) {
+        for (int i = 0; i < InputTranslator.step; i++) {
             Debug.Log(player1.buffer[i]);
         }
         Debug.Log("Moves Player 2 : ");
-        for (int i = 0; i < Player.bufferSize; i++) {
+        for (int i = 0; i < InputTranslator.step; i++) {
             Debug.Log(player2.buffer[i]);
         }
     }

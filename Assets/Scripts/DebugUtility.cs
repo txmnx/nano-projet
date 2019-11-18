@@ -24,6 +24,9 @@ public class DebugUtility : MonoBehaviour
         BeatManager.bpm = bpm;
         InputTranslator.step = step;
 
+        GetComponent<FightManager>().player1.BufferReset();
+        GetComponent<FightManager>().player2.BufferReset();
+
         oldFrameRate = frameRate;
         oldBpm = bpm;
         oldStep = step;
@@ -41,13 +44,6 @@ public class DebugUtility : MonoBehaviour
         if (bpm != oldBpm) {
             BeatManager.bpm = bpm;
             oldBpm = bpm;
-            BeatManager.Reset();
-            InputTranslator.Reset();
-        }
-
-        if (step != oldStep) {
-            InputTranslator.step = step;
-            oldStep = step;
             BeatManager.Reset();
             InputTranslator.Reset();
         }

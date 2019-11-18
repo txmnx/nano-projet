@@ -13,12 +13,11 @@ public class Player : MonoBehaviour
 
     public float maxLife = 100;
     public float currentLife;
-    public static int bufferSize = 2;
     public FightManager fightManager;               //Script managing fights, on the GameManager
 
     public enum Move { HIT, GUARD, GRAB , NEUTRAL }     //List of moves, will be changed to a class
 
-    public Move[] buffer = new Move[bufferSize];
+    public Move[] buffer = new Move[InputTranslator.step];
 
 
     private void Start()
@@ -29,7 +28,15 @@ public class Player : MonoBehaviour
 
     public void Reset()
     {
-        for (int i = 0; i < bufferSize; i++) {     //initialising the buffer
+        for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
+            buffer[i] = Player.Move.NEUTRAL;
+        }
+    }
+
+    public void BufferReset()
+    {
+        buffer = new Move[InputTranslator.step];
+        for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
             buffer[i] = Player.Move.NEUTRAL;
         }
     }
@@ -40,7 +47,7 @@ public class Player : MonoBehaviour
         {
             if (!(buffer[0] == Move.NEUTRAL))       //all of this because of flexibility, I hate you GDs
             {
-                for (int i = 1; i < bufferSize; i++)        
+                for (int i = 1; i < InputTranslator.step; i++)        
                 {
                     if (buffer[i] == Move.NEUTRAL)
                     {
@@ -94,12 +101,12 @@ public class Player : MonoBehaviour
                 }
             }
 
-            if(!(buffer[bufferSize - 1] == Move.NEUTRAL))   //case "erasing the last key of the buffer"
+            if(!(buffer[InputTranslator.step - 1] == Move.NEUTRAL))   //case "erasing the last key of the buffer"
             {
                 if (Input.GetKeyUp(eraseKey))
                 {
-                    buffer[bufferSize-1] = Move.NEUTRAL;
-                    Debug.Log("NEUTRAL " + (bufferSize-1));
+                    buffer[InputTranslator.step - 1] = Move.NEUTRAL;
+                    Debug.Log("NEUTRAL " + (InputTranslator.step - 1));
                 }
             }
         }
