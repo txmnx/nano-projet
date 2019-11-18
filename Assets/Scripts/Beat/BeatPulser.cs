@@ -9,6 +9,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnInputBeatElement
 {
+    public Camera camera;
     private Animator animator;
     private Material material;
 
@@ -31,10 +32,12 @@ public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnI
     public void OnInputBeat()
     {
         material.color = Color.green;
+        camera.backgroundColor = new Color(0.747597f, 0.9056604f, 0.8131712f);
     }
 
     public void OnActionBeat()
     {
         material.color = Color.red;
+        camera.backgroundColor = new Color(0.9433962f, 0.7331346f, 0.6630473f);
     }
 }
