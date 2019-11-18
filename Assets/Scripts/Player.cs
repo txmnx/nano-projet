@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
-
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, OnBeatElement
 {
     public KeyCode hitKey = KeyCode.Z;
     public KeyCode guardKey = KeyCode.Q;
@@ -19,11 +19,30 @@ public class Player : MonoBehaviour
 
     public Move[] buffer = new Move[InputTranslator.step];
 
+    public Text input1Text;
+    public Text input2Text;
 
     private void Start()
     {
         currentLife = maxLife;
         Reset();
+
+        input1Text.text = "";
+        input2Text.text = "";
+
+        BeatManager.RegisterOnBeatElement(this);
+    }
+
+    public void OnBeat()
+    {
+        if (InputTranslator.sequence == Sequence.ACTION) {
+            if (input1Text.text != "") {
+                input1Text.text = "";
+            }
+            else {
+                input2Text.text = "";
+            }
+        }
     }
 
     public void Reset()
@@ -36,9 +55,7 @@ public class Player : MonoBehaviour
     public void BufferReset()
     {
         buffer = new Move[InputTranslator.step];
-        for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
-            buffer[i] = Player.Move.NEUTRAL;
-        }
+        Reset();
     }
 
     void Update()
@@ -57,24 +74,28 @@ public class Player : MonoBehaviour
                                 {
                                     buffer[i] = Move.HIT;
                                     Debug.Log("HIT " + i);
+                                    input2Text.text = "HIT";
                                 }
 
                                 if (Input.GetKeyUp(guardKey))
                                 {
                                     buffer[i] = Move.GUARD;
                                     Debug.Log("GUARD " + i);
+                                    input2Text.text = "GUARD";
                                 }
 
                                 if (Input.GetKeyUp(grabKey))
                                 {
                                     buffer[i] = Move.GRAB;
                                     Debug.Log("GRAB " + i);
+                                    input2Text.text = "GRAB";
                                 }
 
                                 if (Input.GetKeyUp(eraseKey))
                                 {
                                     buffer[i - 1] = Move.NEUTRAL;
                                     Debug.Log("NEUTRAL " + (i - 1));
+                                    input1Text.text = "";
                                 }
                             }
                     }              
@@ -86,18 +107,21 @@ public class Player : MonoBehaviour
                 {
                     buffer[0] = Move.HIT;
                     Debug.Log("HIT " + 0);
+                    input1Text.text = "HIT";
                 }
 
                 if (Input.GetKeyUp(guardKey))
                 {
                     buffer[0] = Move.GUARD;
                     Debug.Log("GUARD " + 0);
+                    input1Text.text = "GUARD";
                 }
 
                 if (Input.GetKeyUp(grabKey))
                 {
                     buffer[0] = Move.GRAB;
                     Debug.Log("GRAB " + 0);
+                    input1Text.text = "GRAB";
                 }
             }
 
@@ -107,6 +131,7 @@ public class Player : MonoBehaviour
                 {
                     buffer[InputTranslator.step - 1] = Move.NEUTRAL;
                     Debug.Log("NEUTRAL " + (InputTranslator.step - 1));
+                    input2Text.text = "";
                 }
             }
         }
