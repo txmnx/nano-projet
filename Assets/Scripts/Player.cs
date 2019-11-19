@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour, OnBeatElement
+public class Player : MonoBehaviour, OnActionBeatElement
 {
     public KeyCode hitKey = KeyCode.Z;
     public KeyCode guardKey = KeyCode.Q;
@@ -30,18 +30,16 @@ public class Player : MonoBehaviour, OnBeatElement
         input1Text.text = "";
         input2Text.text = "";
 
-        BeatManager.RegisterOnBeatElement(this);
+        InputTranslator.RegisterOnActionBeatElement(this);
     }
 
-    public void OnBeat()
+    public void OnActionBeat()
     {
-        if (InputTranslator.sequence == Sequence.ACTION) {
-            if (input1Text.text != "") {
-                input1Text.text = "";
-            }
-            else {
-                input2Text.text = "";
-            }
+        if (input1Text.text != "") {
+            input1Text.text = "";
+        }
+        else {
+            input2Text.text = "";
         }
     }
 
@@ -136,4 +134,6 @@ public class Player : MonoBehaviour, OnBeatElement
             }
         }
     }
+
+    public void OnEnterActionBeat() { }
 }

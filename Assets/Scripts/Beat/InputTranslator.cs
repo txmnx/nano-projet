@@ -16,13 +16,13 @@ public enum Sequence
  * TODO:
  *      It probably should be a singleton.
  */
-public class InputTranslator : MonoBehaviour
+public class InputTranslator : MonoBehaviour, OnBeatElement
 {
     private static List<OnInputBeatElement> onInputBeatElements;
     private static List<OnActionBeatElement> onActionBeatElements;
-
-    private static float lastBeat;
+    
     public static int step; // How much beats for a sequence
+    private static int currentStep;
 
     public FightManager fightManager;
 
@@ -34,39 +34,58 @@ public class InputTranslator : MonoBehaviour
     {
         onInputBeatElements = new List<OnInputBeatElement>();
         onActionBeatElements = new List<OnActionBeatElement>();
-
-        lastBeat = 0.0f;
+        
         step = 2;
+        currentStep = 1;
 
         sequence = Sequence.ACTION;
+    }
+
+    void Start()
+    {
+        BeatManager.RegisterOnBeatElement(this);
     }
 
     /**
      * TODO : should have an Init method to first call OnInputBeat and OnActionBeat when the music starts
      */
 
-    void Update()
+    public void OnBeat()
     {
-        // On each kind of beat we call the corresponding method for the stored beat elements
-        if (BeatManager.songPosition > lastBeat + BeatManager.period * step) {
+        if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
                 fightManager.Flush();
                 foreach (OnActionBeatElement element in onActionBeatElements) {
+                    element.OnEnterActionBeat();
                     element.OnActionBeat();
                 }
                 sequence = Sequence.ACTION;
             }
             else {
                 foreach (OnInputBeatElement element in onInputBeatElements) {
+                    element.OnEnterInputBeat();
                     element.OnInputBeat();
                 }
                 sequence = Sequence.INPUT;
             }
 
-            lastBeat += BeatManager.period * step;
+            currentStep = 1;
+        }
+        else {
+            if (sequence == Sequence.INPUT) {
+                foreach (OnInputBeatElement element in onInputBeatElements) {
+                    element.OnInputBeat();
+                }
+            }
+            else {
+                foreach (OnActionBeatElement element in onActionBeatElements) {
+                    element.OnActionBeat();
+                }
+            }
+
+            currentStep++;
         }
     }
-
 
     /**
      * Register Input and Action BeatElements
@@ -86,6 +105,6 @@ public class InputTranslator : MonoBehaviour
      */
     public static void Reset()
     {
-        lastBeat = 0.0f;
+        currentStep = 1;
     }
 }

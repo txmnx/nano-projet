@@ -4,5 +4,6 @@
  */
 public interface OnActionBeatElement
 {
+    void OnEnterActionBeat();
     void OnActionBeat();
 }

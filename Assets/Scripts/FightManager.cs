@@ -4,85 +4,23 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class FightManager : MonoBehaviour, OnBeatElement, OnInputBeatElement
+public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement
 {
     public Player player1;
     public Player player2;
     public float hitDamage = 20.0f;
     public float grabDamage = 30.0f;
-    public bool isInputPhase;
-    public bool actionIsDone = false;
-    
-
-    public float phaseTime = 4.0f;
-    public float timeCounter;
-    public float phaseTimeCounter;
 
     public Text action1Text;
     public Text action2Text;
 
     private void Start()
     {
-        timeCounter = 0.0f;
-        phaseTimeCounter = 0.0f;
-        isInputPhase = true;
-        BeatManager.RegisterOnBeatElement(this);
         InputTranslator.RegisterOnInputBeatElement(this);
+        InputTranslator.RegisterOnActionBeatElement(this);
     }
 
-    void Update()
-    {
-        /*
-        timeCounter += Time.deltaTime;
-        phaseTimeCounter += Time.deltaTime;
-        managePhase();
-
-        if (!isInputPhase)      
-        {
-            actionPhase();
-        }
-        */
-
-    }
-
-    public void managePhase()   //Timer switching phases
-    {
-        if(phaseTimeCounter > phaseTime)
-        {
-            phaseTimeCounter = 0.0f;
-            if(isInputPhase)
-            {
-                isInputPhase = false;
-                actionIsDone = false;
-            }
-            else
-            {
-                isInputPhase = true;
-                for(int i = 0; i < InputTranslator.step; i++)
-                {
-                    player1.buffer[i] = Player.Move.NEUTRAL;
-                    player2.buffer[i] = Player.Move.NEUTRAL;
-                }
-               
-            }
-        }
-    }
-
-    public void OnBeat()
-    {
-        if (InputTranslator.sequence == Sequence.ACTION) {
-            if (action1Text.text == "") {
-                action1Text.text = player1.buffer[0].ToString();
-                action2Text.text = player2.buffer[0].ToString();
-            }
-            else {
-                action1Text.text = player1.buffer[1].ToString();
-                action2Text.text = player2.buffer[1].ToString();
-            }
-        }
-    }
-
-    public void OnInputBeat()
+    public void OnEnterInputBeat()
     {
         action1Text.text = "";
         action2Text.text = "";
@@ -91,23 +29,22 @@ public class FightManager : MonoBehaviour, OnBeatElement, OnInputBeatElement
         player2.Reset();
     }
 
+    public void OnActionBeat()
+    {
+        Debug.Log("ACTION");
+        if (action1Text.text == "") {
+            action1Text.text = player1.buffer[0].ToString();
+            action2Text.text = player2.buffer[0].ToString();
+        }
+        else {
+            action1Text.text = player1.buffer[1].ToString();
+            action2Text.text = player2.buffer[1].ToString();
+        }
+    }
+
     public void Flush()
     {
         compareInputs();
-    }
-
-    public void actionPhase()   //action phase managing
-    {
-        if(!actionIsDone)
-        {
-            compareInputs();
-            actionIsDone = true;        
-        }                              
-    }
-
-    public void inputPhase()     //input phase managing
-    {
-                     
     }
 
     public void compareInputs()     //Actual comparison of the players inputs
@@ -145,4 +82,7 @@ public class FightManager : MonoBehaviour, OnBeatElement, OnInputBeatElement
             return 0.0f;
         }
     }
+
+    public void OnInputBeat() { }
+    public void OnEnterActionBeat() { }
 }

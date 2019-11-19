@@ -9,7 +9,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnInputBeatElement
 {
-    public Camera camera;
+    public Camera gameCamera;
     private Animator animator;
     private Material material;
 
@@ -23,21 +23,23 @@ public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnI
         InputTranslator.RegisterOnActionBeatElement(this);
     }
 
-
     public void OnBeat()
     {
         animator.Play("pulse_clip");
     }
 
-    public void OnInputBeat()
+    public void OnEnterInputBeat()
     {
         material.color = Color.green;
-        camera.backgroundColor = new Color(0.747597f, 0.9056604f, 0.8131712f);
+        gameCamera.backgroundColor = new Color(0.747597f, 0.9056604f, 0.8131712f);
     }
 
-    public void OnActionBeat()
+    public void OnEnterActionBeat()
     {
         material.color = Color.red;
-        camera.backgroundColor = new Color(0.9433962f, 0.7331346f, 0.6630473f);
+        gameCamera.backgroundColor = new Color(0.9433962f, 0.7331346f, 0.6630473f);
     }
+
+    public void OnInputBeat() { }
+    public void OnActionBeat() { }
 }
