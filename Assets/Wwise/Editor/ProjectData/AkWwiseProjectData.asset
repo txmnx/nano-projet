@@ -24,49 +24,120 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586277868722857441
-    List: []
+    m_lastTime: -8586266552085707543
+    List:
+    - name: Reverb_Environment
+      guid: e75504b6b32e344fada0c027ecb4f84e
+      id: 2846107099
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb_Environment
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Reverb_Environment
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: ecf03042b7b91a439d21c630e3e238d4
     GuidInternal: 
-    m_lastTime: -8586277868656457439
-    List:
-    - name: Wwise_SNB
-      guid: 5a38715bda597948abec28b707c2d621
-      id: 1286985910
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Wwise_SNB
-        ObjectType: 7
-      Path: Default Work Unit\Wwise_SNB
-  EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+    m_lastTime: -8586277749165085305
+    List: []
+  - PhysicalPath: SoundBanks\SNB_Main.wwu
     ParentPhysicalPath: 
-    guid: 86922fae59db6f4c8494842b7abdce54
+    guid: b6386809e450f84a89d7618320656b7b
     GuidInternal: 
-    m_lastTime: -8586277868846057828
+    m_lastTime: -8586277742523273528
+    List:
+    - name: SNB_Main
+      guid: 5a38715bda597948abec28b707c2d621
+      id: 845961116
+      PathAndIcons:
+      - ElementName: SNB_Main
+        ObjectType: 12
+      - ElementName: SNB_Main
+        ObjectType: 7
+      Path: SNB_Main\SNB_Main
+  EventWwu:
+  - PhysicalPath: Events\Ambience_Event.wwu
+    ParentPhysicalPath: 
+    guid: 86770a334b68ee4aace1537791113e2f
+    GuidInternal: 
+    m_lastTime: -8586266552084770278
     List:
     - name: Son_Temoin
       guid: 114690534b416341b41e1f8f0664b094
       id: 1502450958
       PathAndIcons:
-      - ElementName: Default Work Unit
+      - ElementName: Ambience_Event
         ObjectType: 12
       - ElementName: Son_Temoin
         ObjectType: 3
-      Path: Default Work Unit\Son_Temoin
+      Path: Ambience_Event\Son_Temoin
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 86922fae59db6f4c8494842b7abdce54
+    GuidInternal: 
+    m_lastTime: -8586264910893453850
+    List: []
+  - PhysicalPath: Events\Music_Event.wwu
+    ParentPhysicalPath: 
+    guid: 3f9039c29cb98940a6441c571d186c66
+    GuidInternal: 
+    m_lastTime: -8586264908293806449
+    List:
+    - name: Music_R0_Init
+      guid: 8c59682d33566943b084a0642d65d713
+      id: 2178242372
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Music_R0_Init
+        ObjectType: 3
+      Path: Music_Event\Music_R0_Init
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\SFX_Event.wwu
+    ParentPhysicalPath: 
+    guid: 5cebe567ef60f14e9759ffa10f3c2c5f
+    GuidInternal: 
+    m_lastTime: -8586277742718771233
+    List: []
+  - PhysicalPath: Events\UI_Event.wwu
+    ParentPhysicalPath: 
+    guid: fc06b71d5a783f42a84198eef90d64a3
+    GuidInternal: 
+    m_lastTime: -8586274393954548555
+    List: []
+  - PhysicalPath: Events\VO_Event.wwu
+    ParentPhysicalPath: 
+    guid: 1150215756f2b94c933b581d375a472e
+    GuidInternal: 
+    m_lastTime: -8586277742523370475
+    List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 99bf92aa40e6ff40899e4dba44f66b8a
     GuidInternal: 
     m_lastTime: -8586277868845960550
+    List: []
+  - PhysicalPath: Game Parameters\Music_GameParameters.wwu
+    ParentPhysicalPath: 
+    guid: 00f8bec34e6cc147a114597dd7e19d49
+    GuidInternal: 
+    m_lastTime: -8586266552084926487
+    List: []
+  - PhysicalPath: Game Parameters\SFX_GameParameters.wwu
+    ParentPhysicalPath: 
+    guid: 27c794134e2fbb49b93a32208e411fd2
+    GuidInternal: 
+    m_lastTime: -8586274199511690565
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -80,7 +151,19 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bcefb86a0c078f4eb53a0dc795b4a9c1
     GuidInternal: 
-    m_lastTime: -8586277868656160016
+    m_lastTime: -8586266552085238916
+    List: []
+  - PhysicalPath: Switches\Music_Switch.wwu
+    ParentPhysicalPath: 
+    guid: 443a80c3c9f6c94fbd0facfa8f0143ab
+    GuidInternal: 
+    m_lastTime: -8586274393612650035
+    List: []
+  - PhysicalPath: Switches\SFX_Switch.wwu
+    ParentPhysicalPath: 
+    guid: ceccf3f5cfadcd4389f0188ef4ead3fd
+    GuidInternal: 
+    m_lastTime: -8586274393283546095
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -89,6 +172,10 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586277868656057904
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /nano-projet_WwiseProject
+  - /nano-projet_WwiseProject/Events
+  - /nano-projet_WwiseProject/Events/Ambience_Event
+  - /nano-projet_WwiseProject/Events/Music_Event
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
