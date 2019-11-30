@@ -25,11 +25,12 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public struct Move
     {
         public MoveType move;
+        public Sprite sprite;
         public bool isCharged;
     }
     public Move[] buffer = new Move[InputTranslator.step];
 
-    public Text[] inputsText = new Text[InputTranslator.step];
+    public Image[] inputsImage = new Image[InputTranslator.step];
 
     private int bufferLength;
     private int currentAction;
@@ -39,8 +40,8 @@ public class Player : MonoBehaviour, OnActionBeatElement
         currentLife = maxLife;
         Reset();
 
-        foreach (Text text in inputsText) {
-            text.text = "";
+        foreach (Image image in inputsImage) {
+            image.enabled = false;
         }
 
         InputTranslator.RegisterOnActionBeatElement(this);
@@ -49,7 +50,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public void OnActionBeat()
     {
         Debug.Log("PLAYER");
-        inputsText[currentAction++].text = "";
+        inputsImage[currentAction++].enabled = false;
     }
 
     public void Reset()
@@ -57,9 +58,10 @@ public class Player : MonoBehaviour, OnActionBeatElement
         for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
             buffer[i].move = MoveType.NEUTRAL;
             buffer[i].isCharged = false;
+            buffer[i].sprite = fightManager.neutralSprite;
         }
-        foreach (Text text in inputsText) {
-            text.text = "";
+        foreach (Image image in inputsImage) {
+            image.enabled = false;
         }
 
         bufferLength = 0;
@@ -76,60 +78,47 @@ public class Player : MonoBehaviour, OnActionBeatElement
     {
         if (InputTranslator.sequence == Sequence.INPUT)      
         {
-            if (bufferLength < InputTranslator.step)
-            {
-                if (Input.GetKey(hitKey))
-                {
-                    chargeCounter += Time.deltaTime;
-                    if(Input.GetKeyUp(hitKey))
-                    {
-                        buffer[bufferLength].move = MoveType.HIT;
-                        inputsText[bufferLength].text = "HIT";
-                        if (chargeCounter > chargeTime)
-                        {
-                            buffer[bufferLength].isCharged = true;
-                        }
-                        bufferLength++; 
-                    }
+            if (bufferLength < InputTranslator.step) {
+                if (Input.GetKeyUp(hitKey)) {
+                    buffer[bufferLength].move = MoveType.HIT;
+                    buffer[bufferLength].sprite = fightManager.hitSprite;
+                    Debug.Log("HIT " + bufferLength);
+                    inputsImage[bufferLength].sprite = fightManager.hitSprite;
+                    inputsImage[bufferLength].enabled = true;
+                    bufferLength++;
                 }
-                else if (Input.GetKey(reflectKey)) {
-                    chargeCounter += Time.deltaTime;
-                    if (Input.GetKeyUp(reflectKey))
-                    {
-                        buffer[bufferLength].move = MoveType.REFLECT;
-                        inputsText[bufferLength].text = "REFLECT";
-                        if (chargeCounter > chargeTime)
-                        {
-                            buffer[bufferLength].isCharged = true;
-                        }
-                        bufferLength++;
-                    }
+                else if (Input.GetKeyUp(reflectKey)) {
+                    buffer[bufferLength].move = MoveType.REFLECT;
+                    buffer[bufferLength].sprite = fightManager.reflectSprite;
+                    Debug.Log("REFLECT " + bufferLength);
+                    inputsImage[bufferLength].sprite = fightManager.reflectSprite;
+                    inputsImage[bufferLength].enabled = true;
+                    bufferLength++;
                 }
-                else if (Input.GetKey(laserKey)) {
-                    chargeCounter += Time.deltaTime;
-                    if (Input.GetKeyUp(laserKey))
-                    {
-                        buffer[bufferLength].move = MoveType.LASER;
-                        inputsText[bufferLength].text = "LASER";
-                        if (chargeCounter > chargeTime)
-                        {
-                            buffer[bufferLength].isCharged = true;
-                        }
-                        bufferLength++;
-                    }
+                else if (Input.GetKeyUp(laserKey)) {
+                    buffer[bufferLength].move = MoveType.LASER;
+                    buffer[bufferLength].sprite = fightManager.laserSprite;
+                    Debug.Log("LASER " + bufferLength);
+                    inputsImage[bufferLength].sprite = fightManager.laserSprite;
+                    inputsImage[bufferLength].enabled = true;
+                    bufferLength++;
                 }
                 else if (Input.GetKeyUp(guardKey))
                 {
                     buffer[bufferLength].move = MoveType.GUARD;
+                    buffer[bufferLength].sprite = fightManager.guardSprite;
                     Debug.Log("GUARD " + bufferLength);
-                    inputsText[bufferLength].text = "GUARD";
+                    inputsImage[bufferLength].sprite = fightManager.guardSprite;
+                    inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
                 else if (Input.GetKeyUp(specialKey))
                 {
                     buffer[bufferLength].move = MoveType.SPECIAL;
+                    buffer[bufferLength].sprite = fightManager.specialSprite;
                     Debug.Log("SPECIAL " + bufferLength);
-                    inputsText[bufferLength].text = "SPECIAL";
+                    inputsImage[bufferLength].sprite = fightManager.specialSprite;
+                    inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
             }
@@ -137,8 +126,9 @@ public class Player : MonoBehaviour, OnActionBeatElement
             if (Input.GetKeyUp(eraseKey)) {
                 if (bufferLength > 0) {
                     buffer[bufferLength - 1].move = MoveType.NEUTRAL;
+                    buffer[bufferLength - 1].sprite = fightManager.neutralSprite;
                     Debug.Log("NEUTRAL " + (bufferLength - 1));
-                    inputsText[bufferLength - 1].text = "";
+                    inputsImage[bufferLength - 1].enabled = false;
                     bufferLength--;
                 }
             }

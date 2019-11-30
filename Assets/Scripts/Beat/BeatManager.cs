@@ -43,14 +43,18 @@ public class BeatManager : MonoBehaviour
     {
         // On each beat we call OnBeat of all of the beat elements
         if (BeatManager.songPosition > lastBeat + BeatManager.period) {
-            foreach (OnBeatElement element in onBeatElements) {
-                element.OnBeat();
-            }
-
+            //PlayBeat();
             lastBeat += BeatManager.period;
         }
 
         internalTimer += Time.deltaTime;
+    }
+
+    void PlayBeat()
+    {
+        foreach (OnBeatElement element in onBeatElements) {
+            element.OnBeat();
+        }
     }
 
     public static void RegisterOnBeatElement(OnBeatElement element)

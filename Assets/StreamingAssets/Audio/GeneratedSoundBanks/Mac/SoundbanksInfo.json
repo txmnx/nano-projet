@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Mac\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Unity\\trunk\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\trunk\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Mac"
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Mac"
   },
   "DialogueEvents": [],
   "StreamedFiles": [
@@ -23,22 +23,36 @@
   "MediaFilesNotInAnyBank": [],
   "SoundBanks": [
    {
-    "Id": "1286985910",
+    "Id": "845961116",
     "Language": "SFX",
-    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Wwise_SNB",
-    "ShortName": "Wwise_SNB",
-    "Path": "Wwise_SNB.bnk",
+    "ObjectPath": "\\SoundBanks\\SNB_Main\\SNB_Main",
+    "ShortName": "SNB_Main",
+    "Path": "SNB_Main.bnk",
     "IncludedEvents": [
+     {
+      "Id": "2178242372",
+      "Name": "Music_R0_Init",
+      "ObjectPath": "\\Events\\Music_Event\\Music_R0_Init",
+      "DurationType": "Infinite"
+     },
      {
       "Id": "1502450958",
       "Name": "Son_Temoin",
-      "ObjectPath": "\\Events\\Default Work Unit\\Son_Temoin",
+      "ObjectPath": "\\Events\\Ambience_Event\\Son_Temoin",
       "DurationType": "Infinite"
      }
     ],
     "ReferencedStreamedFiles": [
      {
       "Id": "607958301"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "469132256",
+      "Language": "SFX",
+      "ShortName": "R0_Init_04.wav",
+      "Path": "SFX\\R0_Init_04_C42B8C3C.wem"
      }
     ]
    },

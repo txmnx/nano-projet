@@ -12,8 +12,15 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public float specialDamage = 500.0f;
     private int counter;
 
-    public Text action1Text;
-    public Text action2Text;
+    public Image action1Image;
+    public Image action2Image;
+
+    public Sprite hitSprite;
+    public Sprite reflectSprite;
+    public Sprite laserSprite;
+    public Sprite guardSprite;
+    public Sprite specialSprite;
+    public Sprite neutralSprite;
 
     private void Start()
     {
@@ -24,9 +31,11 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     public void OnEnterInputBeat()
     {
+
         counter = 0;
-        action1Text.text = "";
-        action2Text.text = "";
+        action1Image.enabled = false;
+        action2Image.enabled = false;
+
 
         player1.Reset();
         player2.Reset();
@@ -43,13 +52,21 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = counter + 1;
 
         Debug.Log("ACTION");
-        if (action1Text.text == "") {
-            action1Text.text = player1.buffer[0].ToString();
-            action2Text.text = player2.buffer[0].ToString();
+        if (!action1Image.enabled) {
+            action1Image.enabled = true;
+            action2Image.enabled = true;
+            //action1Text.text = player1.buffer[0].ToString();
+            //action2Text.text = player2.buffer[0].ToString();
+
+            action1Image.sprite = player1.buffer[0].sprite;
+            action2Image.sprite = player2.buffer[0].sprite;
         }
         else {
-            action1Text.text = player1.buffer[1].ToString();
-            action2Text.text = player2.buffer[1].ToString();
+            //action1Text.text = player1.buffer[1].ToString();
+            //action2Text.text = player2.buffer[1].ToString();
+
+            action1Image.sprite = player1.buffer[1].sprite;
+            action2Image.sprite = player2.buffer[1].sprite;
         }
         
     }
