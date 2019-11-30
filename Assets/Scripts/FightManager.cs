@@ -10,20 +10,21 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Player player2;
     public float basicDamage = 100.0f;
     public float specialDamage = 500.0f;
-    private float counter;
+    private int counter;
 
     public Text action1Text;
     public Text action2Text;
 
     private void Start()
     {
-        counter = 1;
+        counter = 0;
         InputTranslator.RegisterOnInputBeatElement(this);
         InputTranslator.RegisterOnActionBeatElement(this);
     }
 
     public void OnEnterInputBeat()
     {
+        counter = 0;
         action1Text.text = "";
         action2Text.text = "";
 
@@ -34,6 +35,13 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     public void OnActionBeat()
     {
+        player1.currentLife -= compareMove(player1.buffer[counter], player2.buffer[counter]);
+        player2.currentLife -= compareMove(player2.buffer[counter], player1.buffer[counter]);
+        player1.health.value = player1.currentLife;
+        player2.health.value = player2.currentLife;
+
+        counter = counter + 1;
+
         Debug.Log("ACTION");
         if (action1Text.text == "") {
             action1Text.text = player1.buffer[0].ToString();
@@ -43,16 +51,15 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
             action1Text.text = player1.buffer[1].ToString();
             action2Text.text = player2.buffer[1].ToString();
         }
-        player1.health.value = player1.currentLife;
-        player2.health.value = player2.currentLife;
+        
     }
 
     public void Flush()
     {
-        compareInputs();
+        //compareInputs();
     }
 
-    public void compareInputs()     //Actual comparison of the players inputs
+    /*public void compareInputs()     //Actual comparison of the players inputs
     {
        
         for (int i = 0; i < InputTranslator.step; i++) {
@@ -61,9 +68,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
             player2.currentLife -= compareMove(player2.buffer[i], player1.buffer[i]);
             Debug.Log("Move " + i + " ; Player 2 : " + -compareMove(player2.buffer[i], player1.buffer[i]));
         }
-     
-        
-    }
+    }*/
 
     public float compareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's
     {

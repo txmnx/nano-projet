@@ -13,6 +13,8 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public KeyCode specialKey = KeyCode.W;
     public KeyCode eraseKey = KeyCode.X;
 
+    public float chargeTime = 0.20f;
+    public float chargeCounter = 0;
     public Slider health;
     public float maxLife = 1200;
     public float currentLife;
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
     {
         for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
             buffer[i].move = MoveType.NEUTRAL;
+            buffer[i].isCharged = false;
         }
         foreach (Text text in inputsText) {
             text.text = "";
@@ -73,24 +76,47 @@ public class Player : MonoBehaviour, OnActionBeatElement
     {
         if (InputTranslator.sequence == Sequence.INPUT)      
         {
-            if (bufferLength < InputTranslator.step) {
-                if (Input.GetKeyUp(hitKey)) {
-                    buffer[bufferLength].move = MoveType.HIT;
-                    Debug.Log("HIT " + bufferLength);
-                    inputsText[bufferLength].text = "HIT";
-                    bufferLength++;
+            if (bufferLength < InputTranslator.step)
+            {
+                if (Input.GetKey(hitKey))
+                {
+                    chargeCounter += Time.deltaTime;
+                    if(Input.GetKeyUp(hitKey))
+                    {
+                        buffer[bufferLength].move = MoveType.HIT;
+                        inputsText[bufferLength].text = "HIT";
+                        if (chargeCounter > chargeTime)
+                        {
+                            buffer[bufferLength].isCharged = true;
+                        }
+                        bufferLength++; 
+                    }
                 }
-                else if (Input.GetKeyUp(reflectKey)) {
-                    buffer[bufferLength].move = MoveType.REFLECT;
-                    Debug.Log("REFLECT " + bufferLength);
-                    inputsText[bufferLength].text = "REFLECT";
-                    bufferLength++;
+                else if (Input.GetKey(reflectKey)) {
+                    chargeCounter += Time.deltaTime;
+                    if (Input.GetKeyUp(reflectKey))
+                    {
+                        buffer[bufferLength].move = MoveType.REFLECT;
+                        inputsText[bufferLength].text = "REFLECT";
+                        if (chargeCounter > chargeTime)
+                        {
+                            buffer[bufferLength].isCharged = true;
+                        }
+                        bufferLength++;
+                    }
                 }
-                else if (Input.GetKeyUp(laserKey)) {
-                    buffer[bufferLength].move = MoveType.LASER;
-                    Debug.Log("LASER " + bufferLength);
-                    inputsText[bufferLength].text = "LASER";
-                    bufferLength++;
+                else if (Input.GetKey(laserKey)) {
+                    chargeCounter += Time.deltaTime;
+                    if (Input.GetKeyUp(laserKey))
+                    {
+                        buffer[bufferLength].move = MoveType.LASER;
+                        inputsText[bufferLength].text = "LASER";
+                        if (chargeCounter > chargeTime)
+                        {
+                            buffer[bufferLength].isCharged = true;
+                        }
+                        bufferLength++;
+                    }
                 }
                 else if (Input.GetKeyUp(guardKey))
                 {
