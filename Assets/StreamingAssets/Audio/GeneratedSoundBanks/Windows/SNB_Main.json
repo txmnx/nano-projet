@@ -11,16 +11,6 @@
    "ExternalSourcesInputFile": "",
    "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
-  "DialogueEvents": [],
-  "StreamedFiles": [
-   {
-    "Id": "607958301",
-    "Language": "SFX",
-    "ShortName": "Lord_Of_Ring.wav",
-    "Path": "SFX\\Lord_Of_Ring_C42B8C3C.wem"
-   }
-  ],
-  "MediaFilesNotInAnyBank": [],
   "SoundBanks": [
    {
     "Id": "845961116",
@@ -44,7 +34,10 @@
     ],
     "ReferencedStreamedFiles": [
      {
-      "Id": "607958301"
+      "Id": "607958301",
+      "Language": "SFX",
+      "ShortName": "Lord_Of_Ring.wav",
+      "Path": "SFX\\Lord_Of_Ring_C42B8C3C.wem"
      }
     ],
     "IncludedMemoryFiles": [
@@ -55,13 +48,6 @@
       "Path": "SFX\\R0_Init_04_C42B8C3C.wem"
      }
     ]
-   },
-   {
-    "Id": "1355168291",
-    "Language": "SFX",
-    "ObjectPath": "Init",
-    "ShortName": "Init",
-    "Path": "Init.bnk"
    }
   ]
  }

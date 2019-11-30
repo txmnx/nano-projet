@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1502450958	Son_Temoin			\Ambience_Event\Son_Temoin	
+	2178242372	Music_R0_Init			\Music_Event\Music_R0_Init	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	469132256	R0_Init_04	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\R0_Init_04_C42B8C3C.wem		\Interactive Music Hierarchy\Music\Music_Init\R0_Init_04\R0_Init_04		880294
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	607958301	Son_Temoin	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Lord_Of_Ring_C42B8C3C.wem	607958301.wem	\Actor-Mixer Hierarchy\Ambience\Son_Temoin	
+

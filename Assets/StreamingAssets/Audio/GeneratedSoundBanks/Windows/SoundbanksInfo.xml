@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Unity\trunk\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\trunk\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -16,16 +16,23 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1286985910" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Wwise_SNB</ObjectPath>
-			<ShortName>Wwise_SNB</ShortName>
-			<Path>Wwise_SNB.bnk</Path>
+		<SoundBank Id="845961116" Language="SFX">
+			<ObjectPath>\SoundBanks\SNB_Main\SNB_Main</ObjectPath>
+			<ShortName>SNB_Main</ShortName>
+			<Path>SNB_Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1502450958" Name="Son_Temoin" ObjectPath="\Events\Default Work Unit\Son_Temoin" DurationType="Infinite"/>
+				<Event Id="2178242372" Name="Music_R0_Init" ObjectPath="\Events\Music_Event\Music_R0_Init" DurationType="Infinite"/>
+				<Event Id="1502450958" Name="Son_Temoin" ObjectPath="\Events\Ambience_Event\Son_Temoin" DurationType="Infinite"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="607958301"/>
 			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="469132256" Language="SFX">
+					<ShortName>R0_Init_04.wav</ShortName>
+					<Path>SFX\R0_Init_04_C42B8C3C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>

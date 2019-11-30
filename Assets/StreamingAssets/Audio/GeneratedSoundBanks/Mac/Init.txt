@@ -1,5 +1,24 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	436743010	Character			\Default Work Unit\Master Audio Bus\SFX\Character	
+	1031316333	Reverb_Menu			\Default Work Unit\Master Audio Bus\UI\Reverb_Menu	
+	1204435049	Character_2			\Default Work Unit\Master Audio Bus\SFX\Character\Character_2	
+	1204435050	Character_1			\Default Work Unit\Master Audio Bus\SFX\Character\Character_1	
+	1409504247	Static			\Default Work Unit\Master Audio Bus\Ambience\Static	
+	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	2223635772	Dynamic			\Default Work Unit\Master Audio Bus\Ambience\Dynamic	
+	2395677314	Common			\Default Work Unit\Master Audio Bus\SFX\Common	
+	2607556080	Menu			\Default Work Unit\Master Audio Bus\UI\Menu	
+	2967546505	In_Game			\Default Work Unit\Master Audio Bus\UI\In_Game	
+	3257506471	Impact			\Default Work Unit\Master Audio Bus\SFX\Common\Impact	
+	3705726509	Title			\Default Work Unit\Master Audio Bus\SFX\Common\Title	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 317b14789e066f74d889a4e357aa1bf4, type: 3}
-  m_Name: 5B71385A-59DA-4879-ABEC-28B707C2D621
+  m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
+  m_Name: 2D68598C-5633-4369-B084-A0642D65D713
   m_EditorClassIdentifier: 
-  objectName: SNB_Main
-  id: 845961116
-  guid: 5B71385A-59DA-4879-ABEC-28B707C2D621
+  objectName: Music_R0_Init
+  id: 2178242372
+  guid: 2D68598C-5633-4369-B084-A0642D65D713

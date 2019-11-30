@@ -1,26 +1,16 @@
 {
  "SoundBanksInfo": {
-  "Platform": "Windows",
-  "BasePlatform": "Windows",
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
    "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\trunk\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\trunk\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Mac"
   },
-  "DialogueEvents": [],
-  "StreamedFiles": [
-   {
-    "Id": "607958301",
-    "Language": "SFX",
-    "ShortName": "Lord_Of_Ring.wav",
-    "Path": "SFX\\Lord_Of_Ring_C42B8C3C.wem"
-   }
-  ],
-  "MediaFilesNotInAnyBank": [],
   "SoundBanks": [
    {
     "Id": "845961116",
@@ -44,7 +34,10 @@
     ],
     "ReferencedStreamedFiles": [
      {
-      "Id": "607958301"
+      "Id": "607958301",
+      "Language": "SFX",
+      "ShortName": "Lord_Of_Ring.wav",
+      "Path": "SFX\\Lord_Of_Ring_C42B8C3C.wem"
      }
     ],
     "IncludedMemoryFiles": [
@@ -55,13 +48,6 @@
       "Path": "SFX\\R0_Init_04_C42B8C3C.wem"
      }
     ]
-   },
-   {
-    "Id": "1355168291",
-    "Language": "SFX",
-    "ObjectPath": "Init",
-    "ShortName": "Init",
-    "Path": "Init.bnk"
    }
   ]
  }

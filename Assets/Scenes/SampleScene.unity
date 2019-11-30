@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 184791164}
   - component: {fileID: 184791163}
   m_Layer: 0
-  m_Name: Son_Temoin
+  m_Name: Start_Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,10 +158,14 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4e1f862672bf13c489a8a4e8c46defbb,
+    WwiseObjectReference: {fileID: 11400000, guid: 9958bac94fe73a848b9f712d44ec8636,
       type: 2}
-  useCallbacks: 0
-  Callbacks: []
+  useCallbacks: 1
+  Callbacks:
+  - Flags:
+      value: 256
+    FunctionName: 
+    GameObject: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
