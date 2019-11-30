@@ -11,8 +11,8 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public float hitDamage = 20.0f;
     public float grabDamage = 30.0f;
 
-    public Text action1Text;
-    public Text action2Text;
+    public Image action1Image;
+    public Image action2Image;
 
     public Sprite hitSprite;
     public Sprite guardSprite;
@@ -26,8 +26,8 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     public void OnEnterInputBeat()
     {
-        action1Text.text = "";
-        action2Text.text = "";
+        action1Image.enabled = false;
+        action2Image.enabled = false;
 
         player1.Reset();
         player2.Reset();
@@ -36,13 +36,21 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public void OnActionBeat()
     {
         Debug.Log("ACTION");
-        if (action1Text.text == "") {
-            action1Text.text = player1.buffer[0].ToString();
-            action2Text.text = player2.buffer[0].ToString();
+        if (!action1Image.enabled) {
+            action1Image.enabled = true;
+            action2Image.enabled = true;
+            //action1Text.text = player1.buffer[0].ToString();
+            //action2Text.text = player2.buffer[0].ToString();
+
+            action1Image.sprite = hitSprite;
+            action2Image.sprite = hitSprite;
         }
         else {
-            action1Text.text = player1.buffer[1].ToString();
-            action2Text.text = player2.buffer[1].ToString();
+            //action1Text.text = player1.buffer[1].ToString();
+            //action2Text.text = player2.buffer[1].ToString();
+
+            action1Image.sprite = hitSprite;
+            action2Image.sprite = hitSprite;
         }
     }
 
