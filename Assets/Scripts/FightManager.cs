@@ -14,6 +14,10 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Text action1Text;
     public Text action2Text;
 
+    public Sprite hitSprite;
+    public Sprite guardSprite;
+    public Sprite specialSprite;
+
     private void Start()
     {
         InputTranslator.RegisterOnInputBeatElement(this);

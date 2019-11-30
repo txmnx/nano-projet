@@ -19,7 +19,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
 
     public Move[] buffer = new Move[InputTranslator.step];
 
-    public Text[] inputsText = new Text[InputTranslator.step];
+    public Image[] inputsImage = new Image[InputTranslator.step];
 
     private int bufferLength;
     private int currentAction;
@@ -29,8 +29,8 @@ public class Player : MonoBehaviour, OnActionBeatElement
         currentLife = maxLife;
         Reset();
 
-        foreach (Text text in inputsText) {
-            text.text = "";
+        foreach (Image image in inputsImage) {
+            image.enabled = false;
         }
 
         InputTranslator.RegisterOnActionBeatElement(this);
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public void OnActionBeat()
     {
         Debug.Log("PLAYER");
-        inputsText[currentAction++].text = "";
+        inputsImage[currentAction++].enabled = false;
     }
 
     public void Reset()
@@ -47,8 +47,8 @@ public class Player : MonoBehaviour, OnActionBeatElement
         for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
             buffer[i] = Player.Move.NEUTRAL;
         }
-        foreach (Text text in inputsText) {
-            text.text = "";
+        foreach (Image image in inputsImage) {
+            image.enabled = false;
         }
 
         bufferLength = 0;
@@ -69,19 +69,22 @@ public class Player : MonoBehaviour, OnActionBeatElement
                 if (Input.GetKeyUp(hitKey)) {
                     buffer[bufferLength] = Move.HIT;
                     Debug.Log("HIT " + bufferLength);
-                    inputsText[bufferLength].text = "HIT";
+                    inputsImage[bufferLength].sprite = fightManager.hitSprite;
+                    inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
                 else if (Input.GetKeyUp(guardKey)) {
                     buffer[bufferLength] = Move.GUARD;
                     Debug.Log("GUARD " + bufferLength);
-                    inputsText[bufferLength].text = "GUARD";
+                    inputsImage[bufferLength].sprite = fightManager.guardSprite;
+                    inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
                 else if (Input.GetKeyUp(grabKey)) {
                     buffer[bufferLength] = Move.GRAB;
                     Debug.Log("GRAB " + bufferLength);
-                    inputsText[bufferLength].text = "GRAB";
+                    inputsImage[bufferLength].sprite = fightManager.specialSprite;
+                    inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
             }
@@ -90,7 +93,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
                 if (bufferLength > 0) {
                     buffer[bufferLength - 1] = Move.NEUTRAL;
                     Debug.Log("NEUTRAL " + (bufferLength - 1));
-                    inputsText[bufferLength - 1].text = "";
+                    inputsImage[bufferLength - 1].enabled = false;
                     bufferLength--;
                 }
             }
