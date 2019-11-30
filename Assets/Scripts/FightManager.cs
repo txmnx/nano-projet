@@ -8,8 +8,8 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 {
     public Player player1;
     public Player player2;
-    public float hitDamage = 20.0f;
-    public float grabDamage = 30.0f;
+    public float basicDamage = 100.0f;
+    public float specialDamage = 500.0f;
 
     public Text action1Text;
     public Text action2Text;
@@ -27,6 +27,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
         player1.Reset();
         player2.Reset();
+
     }
 
     public void OnActionBeat()
@@ -49,33 +50,30 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     public void compareInputs()     //Actual comparison of the players inputs
     {
-        /*
-        for (int i = 0; i < Player.bufferSize; i++) {
-            player1.currentLife -= compareMove(player1.buffer[i], player2.buffer[i]);
-            Debug.Log("Move " + i + " ; Player 1 : " + -compareMove(player1.buffer[i], player2.buffer[i]));
-            player2.currentLife -= compareMove(player2.buffer[i], player1.buffer[i]);
-            Debug.Log("Move " + i + " ; Player 2 : " + -compareMove(player2.buffer[i], player1.buffer[i]));
-        }
-        */
-        Debug.Log("Moves Player 1 : ");
+       
         for (int i = 0; i < InputTranslator.step; i++) {
-            Debug.Log(player1.buffer[i]);
+            player1.currentLife -= compareMove(player1.buffer[i].move, player2.buffer[i].move);
+            Debug.Log("Move " + i + " ; Player 1 : " + -compareMove(player1.buffer[i].move, player2.buffer[i].move));
+            player2.currentLife -= compareMove(player2.buffer[i].move, player1.buffer[i].move);
+            Debug.Log("Move " + i + " ; Player 2 : " + -compareMove(player2.buffer[i].move, player1.buffer[i].move));
         }
-        Debug.Log("Moves Player 2 : ");
-        for (int i = 0; i < InputTranslator.step; i++) {
-            Debug.Log(player2.buffer[i]);
-        }
+     
+        
     }
 
-    public float compareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's
+    public float compareMove(Player.MoveType move1, Player.MoveType move2) //return HP lost for the player for his move and his opponent's
     {
-        if((move1 == Player.Move.GUARD && move2 == Player.Move.GRAB) || (move1 == Player.Move.NEUTRAL && move2 == Player.Move.GRAB))
+        if((move1 == Player.MoveType.REFLECT && move2 == Player.MoveType.HIT) || 
+           (move1 == Player.MoveType.LASER && move2 == Player.MoveType.REFLECT) || 
+           (move1 == Player.MoveType.HIT && move2 == Player.MoveType.LASER) || 
+           (move1 == Player.MoveType.SPECIAL && (move2 == Player.MoveType.HIT || move2 == Player.MoveType.LASER || move2 == Player.MoveType.REFLECT)) || 
+           (move1 == Player.MoveType.NEUTRAL && (move2 == Player.MoveType.HIT || move2 == Player.MoveType.LASER || move2 == Player.MoveType.REFLECT)))
         {
-            return grabDamage;
+            return basicDamage;
         }
-        else if ((move1 == Player.Move.GRAB && move2 == Player.Move.HIT) || (move1 == Player.Move.NEUTRAL && move2 == Player.Move.HIT))
+        else if ((move1 == Player.MoveType.GUARD && move2 == Player.MoveType.SPECIAL) || (move1 == Player.MoveType.NEUTRAL && move2 == Player.MoveType.SPECIAL))
         {
-            return hitDamage;
+            return specialDamage;
         }
         else
         {
