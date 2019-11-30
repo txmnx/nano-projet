@@ -13,6 +13,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public KeyCode specialKey = KeyCode.W;
     public KeyCode eraseKey = KeyCode.X;
 
+    public Slider health;
     public float maxLife = 1200;
     public float currentLife;
     public FightManager fightManager;               //Script managing fights, on the GameManager
@@ -22,7 +23,7 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public struct Move
     {
         public MoveType move;
-        public float power;
+        public bool isCharged;
     }
     public Move[] buffer = new Move[InputTranslator.step];
 
