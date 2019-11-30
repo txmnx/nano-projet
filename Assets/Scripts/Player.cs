@@ -7,16 +7,25 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour, OnActionBeatElement
 {
     public KeyCode hitKey = KeyCode.Z;
-    public KeyCode guardKey = KeyCode.Q;
-    public KeyCode grabKey = KeyCode.D;
-    public KeyCode eraseKey = KeyCode.S;
+    public KeyCode reflectKey = KeyCode.Q;
+    public KeyCode laserKey = KeyCode.D;
+    public KeyCode guardKey = KeyCode.S;
+    public KeyCode specialKey = KeyCode.W;
+    public KeyCode eraseKey = KeyCode.X;
 
-    public float maxLife = 100;
+    public Slider health;
+    public float maxLife = 1200;
     public float currentLife;
     public FightManager fightManager;               //Script managing fights, on the GameManager
 
-    public enum Move { HIT, GUARD, GRAB, NEUTRAL }     //List of moves, will be changed to a class
+    public enum MoveType { HIT, REFLECT, LASER, GUARD, SPECIAL, NEUTRAL }     //List of moves
 
+    public struct Move
+    {
+        public MoveType move;
+        public Sprite sprite;
+        public bool isCharged;
+    }
     public Move[] buffer = new Move[InputTranslator.step];
 
     public Image[] inputsImage = new Image[InputTranslator.step];
@@ -45,7 +54,8 @@ public class Player : MonoBehaviour, OnActionBeatElement
     public void Reset()
     {
         for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
-            buffer[i] = Player.Move.NEUTRAL;
+            buffer[i].move = MoveType.NEUTRAL;
+            buffer[i].sprite = fightManager.neutralSprite;
         }
         foreach (Image image in inputsImage) {
             image.enabled = false;
@@ -67,22 +77,43 @@ public class Player : MonoBehaviour, OnActionBeatElement
         {
             if (bufferLength < InputTranslator.step) {
                 if (Input.GetKeyUp(hitKey)) {
-                    buffer[bufferLength] = Move.HIT;
+                    buffer[bufferLength].move = MoveType.HIT;
+                    buffer[bufferLength].sprite = fightManager.hitSprite;
                     Debug.Log("HIT " + bufferLength);
                     inputsImage[bufferLength].sprite = fightManager.hitSprite;
                     inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
-                else if (Input.GetKeyUp(guardKey)) {
-                    buffer[bufferLength] = Move.GUARD;
+                else if (Input.GetKeyUp(reflectKey)) {
+                    buffer[bufferLength].move = MoveType.REFLECT;
+                    buffer[bufferLength].sprite = fightManager.reflectSprite;
+                    Debug.Log("REFLECT " + bufferLength);
+                    inputsImage[bufferLength].sprite = fightManager.reflectSprite;
+                    inputsImage[bufferLength].enabled = true;
+                    bufferLength++;
+                }
+                else if (Input.GetKeyUp(laserKey)) {
+                    buffer[bufferLength].move = MoveType.LASER;
+                    buffer[bufferLength].sprite = fightManager.laserSprite;
+                    Debug.Log("LASER " + bufferLength);
+                    inputsImage[bufferLength].sprite = fightManager.laserSprite;
+                    inputsImage[bufferLength].enabled = true;
+                    bufferLength++;
+                }
+                else if (Input.GetKeyUp(guardKey))
+                {
+                    buffer[bufferLength].move = MoveType.GUARD;
+                    buffer[bufferLength].sprite = fightManager.guardSprite;
                     Debug.Log("GUARD " + bufferLength);
                     inputsImage[bufferLength].sprite = fightManager.guardSprite;
                     inputsImage[bufferLength].enabled = true;
                     bufferLength++;
                 }
-                else if (Input.GetKeyUp(grabKey)) {
-                    buffer[bufferLength] = Move.GRAB;
-                    Debug.Log("GRAB " + bufferLength);
+                else if (Input.GetKeyUp(specialKey))
+                {
+                    buffer[bufferLength].move = MoveType.SPECIAL;
+                    buffer[bufferLength].sprite = fightManager.specialSprite;
+                    Debug.Log("SPECIAL " + bufferLength);
                     inputsImage[bufferLength].sprite = fightManager.specialSprite;
                     inputsImage[bufferLength].enabled = true;
                     bufferLength++;
@@ -91,7 +122,8 @@ public class Player : MonoBehaviour, OnActionBeatElement
 
             if (Input.GetKeyUp(eraseKey)) {
                 if (bufferLength > 0) {
-                    buffer[bufferLength - 1] = Move.NEUTRAL;
+                    buffer[bufferLength - 1].move = MoveType.NEUTRAL;
+                    buffer[bufferLength - 1].sprite = fightManager.neutralSprite;
                     Debug.Log("NEUTRAL " + (bufferLength - 1));
                     inputsImage[bufferLength - 1].enabled = false;
                     bufferLength--;
