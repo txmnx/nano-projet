@@ -9,7 +9,6 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Player player1;
     public Player player2;
     public float basicDamage = 100.0f;
-    public float specialDamage = 500.0f;
     private int counter;
 
     public Image action1Image;
@@ -133,7 +132,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         }
         else if ((move1.move == Player.MoveType.GUARD && move2.move == Player.MoveType.SPECIAL) || (move1.move == Player.MoveType.NEUTRAL && move2.move == Player.MoveType.SPECIAL))
         {
-            return specialDamage;
+            return basicDamage*3;
         }
         else
         {
