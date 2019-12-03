@@ -5,47 +5,63 @@ using System;
 using UnityEngine.UI;
 
 
-public class MatchManager : MonoBehaviour
+public class MatchManager : MonoBehaviour, OnBeatElement
 {
     public Player[] players;
-    public int roundToWin;
+    public int roundToWin = 2;
 
     public Slider[] winSliders;
 
-    private int winner;
+    public Player winner;
+    private int winnerID;
+    public bool isWon = false;
 
 
     void Start()
     {
-        winner = -1;
+        BeatManager.RegisterOnBeatElement(this);
 
-        //for(int i = 0; i<)
+        for (int i = 0; i<winSliders.Length; i++)
+        {
+            winSliders[i].maxValue = roundToWin;
+        }
+    }
+
+    public void OnBeat()
+    {
+        if (isWon)
+        {
+            winner.wins += 1;
+            winSliders[winnerID].value = winner.wins;
+            onRoundEnd();
+            resetRound();
+
+            if (winner != null && winner.wins == roundToWin)
+            {
+                // onMatchEnd(players[winner]);
+            }
+
+        }
     }
 
     void Update()
     {
-        if(players[0].currentLife <= 0)
+
+        if (players[0].currentLife <= 0)
         {
-            winner = 0;
+            winner = players[1];
+            winnerID = 1;
+            isWon = true;
         }
 
-        if(players[1].currentLife <= 0)
+        else if(players[1].currentLife <= 0)
         {
-            winner = 1;
+            winner = players[0];
+            winnerID = 0;
+            isWon = true;
         }
 
-        if(winner>=0)
-        {
-            players[winner].wins += 1;
-            onRoundEnd();
-            resetRound();
-
-            if(players[winner].wins == roundToWin)
-            {
-                onMatchEnd(players[winner]);
-            }
-            
-        }
+        
     }
 
     public void onRoundEnd()
@@ -60,7 +76,8 @@ public class MatchManager : MonoBehaviour
         {
             players[i].currentLife = players[i].maxLife;
         }
-        winner = -1;
+        winner = null;
+        isWon = false;
     }
 
     public void onMatchEnd(Player winner)

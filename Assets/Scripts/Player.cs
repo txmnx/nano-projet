@@ -41,6 +41,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     private void Start()
     {
+        wins = 0;
         currentLife = maxLife;
         Reset();
 
