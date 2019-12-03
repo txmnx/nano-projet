@@ -17,6 +17,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public float chargeCounter = 0;
     private bool isCharging = false;
     private KeyCode chargingMove;
+
     public Slider health;
     public float maxLife = 1200;
     public float currentLife;

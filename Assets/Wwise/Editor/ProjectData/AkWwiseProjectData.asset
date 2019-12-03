@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586266552085707543
+    m_lastTime: -8586264702407587261
     List:
     - name: Reverb_Environment
       guid: e75504b6b32e344fada0c027ecb4f84e
@@ -174,8 +174,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /nano-projet_WwiseProject
-  - /nano-projet_WwiseProject/Events
-  - /nano-projet_WwiseProject/Events/Ambience_Event
-  - /nano-projet_WwiseProject/Events/Music_Event
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
