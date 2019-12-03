@@ -74,6 +74,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
         player1.Reset();
         player2.Reset();
+
     }
 
     public void OnActionBeat()
@@ -102,7 +103,6 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
             action1Image.sprite = player1.buffer[1].sprite;
             action2Image.sprite = player2.buffer[1].sprite;
         }
-        
     }
     
     public float CompareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's

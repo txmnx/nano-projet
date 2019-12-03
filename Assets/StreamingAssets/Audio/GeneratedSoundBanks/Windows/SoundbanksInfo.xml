@@ -3,12 +3,20 @@
 	<RootPaths>
 		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
 		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\trunk\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\branches\integration-son\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="224896543" Language="SFX">
+			<ShortName>Amb_Menu_Start.wav</ShortName>
+			<Path>SFX\Amb_Menu_Start_C42B8C3C.wem</Path>
+		</File>
+		<File Id="559559911" Language="SFX">
+			<ShortName>Amb_Main_Start.wav</ShortName>
+			<Path>SFX\Amb_Main_Start_C42B8C3C.wem</Path>
+		</File>
 		<File Id="607958301" Language="SFX">
 			<ShortName>Lord_Of_Ring.wav</ShortName>
 			<Path>SFX\Lord_Of_Ring_C42B8C3C.wem</Path>
@@ -21,16 +29,275 @@
 			<ShortName>SNB_Main</ShortName>
 			<Path>SNB_Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1418672556" Name="Amb_Main_Start" ObjectPath="\Events\Ambience_Event\Amb_Main_Start" DurationType="Infinite"/>
+				<Event Id="3958906054" Name="Amb_Menu_Start" ObjectPath="\Events\Ambience_Event\Amb_Menu_Start" DurationType="Infinite"/>
 				<Event Id="2178242372" Name="Music_R0_Init" ObjectPath="\Events\Music_Event\Music_R0_Init" DurationType="Infinite"/>
+				<Event Id="414863633" Name="Play_Main_Music" ObjectPath="\Events\Music_Event\Play_Main_Music" DurationType="Infinite"/>
+				<Event Id="2506831292" Name="SFX_American_Death" ObjectPath="\Events\SFX_Event\American\SFX_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3508642320" Name="SFX_American_Fente" ObjectPath="\Events\SFX_Event\American\SFX_American_Fente" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="119557261" Name="SFX_American_Laser_Impact_Succes" ObjectPath="\Events\SFX_Event\American\SFX_American_Laser_Impact_Succes" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4275657479" Name="SFX_American_Laser_Shoot" ObjectPath="\Events\SFX_Event\American\SFX_American_Laser_Shoot" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3421765259" Name="SFX_American_Particles" ObjectPath="\Events\SFX_Event\American\SFX_American_Particles" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1159243881" Name="SFX_American_Shield" ObjectPath="\Events\SFX_Event\American\SFX_American_Shield" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3672859679" Name="SFX_American_SpecialAttack" ObjectPath="\Events\SFX_Event\American\SFX_American_SpecialAttack" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2927774105" Name="SFX_Common_Electric_Sparks" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Electric_Sparks" DurationType="Infinite"/>
+				<Event Id="2534836963" Name="SFX_Common_Oil" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Oil" DurationType="Infinite"/>
+				<Event Id="1636459093" Name="SFX_Common_Projectile_Woosh" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Projectile_Woosh" DurationType="OneShot" DurationMin="0.401111" DurationMax="0.401111"/>
+				<Event Id="427260706" Name="SFX_InputPhase_In" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_In" DurationType="OneShot" DurationMin="0.581565" DurationMax="0.581565"/>
+				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="0.764558" DurationMax="0.764558"/>
+				<Event Id="2398750736" Name="SFX_Japan_Death" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Death" DurationType="OneShot" DurationMin="1.830862" DurationMax="1.830862"/>
+				<Event Id="217610004" Name="SFX_Japan_Fente" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Fente" DurationType="OneShot" DurationMin="1.513810" DurationMax="1.513810"/>
+				<Event Id="1314745705" Name="SFX_Japan_Laser_Impact_Succes" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Laser_Impact_Succes" DurationType="OneShot" DurationMin="1.802721" DurationMax="1.802721"/>
+				<Event Id="394728051" Name="SFX_Japan_Laser_Shoot" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Laser_Shoot" DurationType="OneShot" DurationMin="1.420181" DurationMax="1.420181"/>
+				<Event Id="2168208239" Name="SFX_Japan_Particles" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Particles" DurationType="OneShot" DurationMin="0.525374" DurationMax="0.525374"/>
+				<Event Id="3056811045" Name="SFX_Japan_Shield" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Shield" DurationType="OneShot" DurationMin="1.316485" DurationMax="1.316485"/>
+				<Event Id="1941465131" Name="SFX_Japan_SpecialAttack" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_SpecialAttack" DurationType="OneShot" DurationMin="2.672494" DurationMax="2.672494"/>
+				<Event Id="2335777874" Name="SFX_Title_Fight" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Fight" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3290104963" Name="SFX_Title_Timer" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Timer" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1985058514" Name="SFX_Title_Win" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1502450958" Name="Son_Temoin" ObjectPath="\Events\Ambience_Event\Son_Temoin" DurationType="Infinite"/>
+				<Event Id="390301034" Name="VO_American_Death" ObjectPath="\Events\VO_Event\American\VO_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="957164294" Name="VO_American_Win" ObjectPath="\Events\VO_Event\American\VO_American_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="978479414" Name="VO_Japan_Death" ObjectPath="\Events\VO_Event\Japan\VO_Japan_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2169528442" Name="VO_Japan_Win" ObjectPath="\Events\VO_Event\Japan\VO_Japan_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2188929916" Name="VO_Speaker_American_Win" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_American_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1547089927" Name="VO_Speaker_American_Win_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_American_Win_Fight" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3061101440" Name="VO_Speaker_Japan_Win" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Japan_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1444082811" Name="VO_Speaker_Japan_Win_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Japan_Win_Fight" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3174962419" Name="VO_Speaker_Round_1" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_1" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3174962416" Name="VO_Speaker_Round_2" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_2" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3797693660" Name="VO_Speaker_Start_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Start_Fight" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3097949019" Name="VO_Speaker_UltimeRound" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_UltimeRound" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
+				<File Id="224896543"/>
+				<File Id="559559911"/>
 				<File Id="607958301"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="1745706" Language="SFX">
+					<ShortName>R2_Common_01_Base.wav</ShortName>
+					<Path>SFX\R2_Common_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="38141193" Language="SFX">
+					<ShortName>R0_Init_03_Top.wav</ShortName>
+					<Path>SFX\R0_Init_03_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="55459180" Language="SFX">
+					<ShortName>R1_LeadJ2_01_Base.wav</ShortName>
+					<Path>SFX\R1_LeadJ2_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="75896289" Language="SFX">
+					<ShortName>R2_LeadJ1_01_Base.wav</ShortName>
+					<Path>SFX\R2_LeadJ1_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="79838510" Language="SFX">
+					<ShortName>SFX_Japan_SpecialAttack.wav</ShortName>
+					<Path>SFX\SFX_Japan_SpecialAttack_66C02B12.wem</Path>
+				</File>
+				<File Id="96150274" Language="SFX">
+					<ShortName>R1_LeadJ2_02_Top.wav</ShortName>
+					<Path>SFX\R1_LeadJ2_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="101685095" Language="SFX">
+					<ShortName>R2_LeadJ2_01_Top.wav</ShortName>
+					<Path>SFX\R2_LeadJ2_01_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="134645060" Language="SFX">
+					<ShortName>SFX_Japan_Fente.wav</ShortName>
+					<Path>SFX\SFX_Japan_Fente_66C02B12.wem</Path>
+				</File>
+				<File Id="175973606" Language="SFX">
+					<ShortName>R1_LeadJ2_01_Top.wav</ShortName>
+					<Path>SFX\R1_LeadJ2_01_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="181883819" Language="SFX">
+					<ShortName>R1_LeadJ1_01_Base.wav</ShortName>
+					<Path>SFX\R1_LeadJ1_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="188598521" Language="SFX">
+					<ShortName>R2_Common_03_Top.wav</ShortName>
+					<Path>SFX\R2_Common_03_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="206228323" Language="SFX">
+					<ShortName>SFX_Japan_Particles.wav</ShortName>
+					<Path>SFX\SFX_Japan_Particles_66C02B12.wem</Path>
+				</File>
+				<File Id="215930261" Language="SFX">
+					<ShortName>R1_Common_03_Top.wav</ShortName>
+					<Path>SFX\R1_Common_03_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="221761045" Language="SFX">
+					<ShortName>Cyberpunk 2077 - E3 2018 Trailer Music Hyper - SPOILER 4K.wav</ShortName>
+					<Path>SFX\Cyberpunk 2077 - E3 2018 Trailer Music Hyper - SPOILER 4K_C42B8C3C.wem</Path>
+				</File>
+				<File Id="236126871" Language="SFX">
+					<ShortName>RoundEnd_WinJ2.wav</ShortName>
+					<Path>SFX\RoundEnd_WinJ2_C42B8C3C.wem</Path>
+				</File>
+				<File Id="257449727" Language="SFX">
+					<ShortName>R1_LeadJ1_02_Top.wav</ShortName>
+					<Path>SFX\R1_LeadJ1_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="274746922" Language="SFX">
+					<ShortName>R2_Common_01_Top.wav</ShortName>
+					<Path>SFX\R2_Common_01_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="279887480" Language="SFX">
+					<ShortName>R2_LeadJ2_02_Top.wav</ShortName>
+					<Path>SFX\R2_LeadJ2_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="301162270" Language="SFX">
+					<ShortName>SFX_Common_Projectile_Woosh.wav</ShortName>
+					<Path>SFX\SFX_Common_Projectile_Woosh_66C02B12.wem</Path>
+				</File>
+				<File Id="312442134" Language="SFX">
+					<ShortName>R2_Common_03_Base.wav</ShortName>
+					<Path>SFX\R2_Common_03_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="324577924" Language="SFX">
+					<ShortName>R1_Common_03_Base.wav</ShortName>
+					<Path>SFX\R1_Common_03_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="348214620" Language="SFX">
+					<ShortName>R2_LeadJ2_02_Base.wav</ShortName>
+					<Path>SFX\R2_LeadJ2_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="356147938" Language="SFX">
+					<ShortName>Music2.wav</ShortName>
+					<Path>SFX\Music2_C42B8C3C.wem</Path>
+				</File>
+				<File Id="427183628" Language="SFX">
+					<ShortName>R1_Common_01_Top.wav</ShortName>
+					<Path>SFX\R1_Common_01_Top_C42B8C3C.wem</Path>
+				</File>
 				<File Id="469132256" Language="SFX">
 					<ShortName>R0_Init_04.wav</ShortName>
 					<Path>SFX\R0_Init_04_C42B8C3C.wem</Path>
+				</File>
+				<File Id="477850786" Language="SFX">
+					<ShortName>R2_LeadJ1_01_Top.wav</ShortName>
+					<Path>SFX\R2_LeadJ1_01_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="497591261" Language="SFX">
+					<ShortName>R0_Init_05_Top.wav</ShortName>
+					<Path>SFX\R0_Init_05_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="544209955" Language="SFX">
+					<ShortName>SFX_InputPhase_Out.wav</ShortName>
+					<Path>SFX\SFX_InputPhase_Out_66C02B12.wem</Path>
+				</File>
+				<File Id="544635784" Language="SFX">
+					<ShortName>SFX_Common_Electric_Sparkles.wav</ShortName>
+					<Path>SFX\SFX_Common_Electric_Sparkles_C42B8C3C.wem</Path>
+				</File>
+				<File Id="571138565" Language="SFX">
+					<ShortName>R0_Init_01_Base.wav</ShortName>
+					<Path>SFX\R0_Init_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="579694641" Language="SFX">
+					<ShortName>R1_LeadJ1_02_Base.wav</ShortName>
+					<Path>SFX\R1_LeadJ1_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="586668224" Language="SFX">
+					<ShortName>R1_LeadJ2_02_Base.wav</ShortName>
+					<Path>SFX\R1_LeadJ2_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="598669846" Language="SFX">
+					<ShortName>SFX_InputPhase_In.wav</ShortName>
+					<Path>SFX\SFX_InputPhase_In_66C02B12.wem</Path>
+				</File>
+				<File Id="616052374" Language="SFX">
+					<ShortName>R0_Init_04_Top.wav</ShortName>
+					<Path>SFX\R0_Init_04_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="631840085" Language="SFX">
+					<ShortName>R0_Init_03_Base.wav</ShortName>
+					<Path>SFX\R0_Init_03_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="663860118" Language="SFX">
+					<ShortName>SFX_Japan_Shield.wav</ShortName>
+					<Path>SFX\SFX_Japan_Shield_66C02B12.wem</Path>
+				</File>
+				<File Id="683846320" Language="SFX">
+					<ShortName>R0_Init_02_Base.wav</ShortName>
+					<Path>SFX\R0_Init_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="697105512" Language="SFX">
+					<ShortName>SFX_Japan_Laser_Impact_Succes.wav</ShortName>
+					<Path>SFX\SFX_Japan_Laser_Impact_Succes_66C02B12.wem</Path>
+				</File>
+				<File Id="697733924" Language="SFX">
+					<ShortName>SFX_Japan_Death.wav</ShortName>
+					<Path>SFX\SFX_Japan_Death_66C02B12.wem</Path>
+				</File>
+				<File Id="802587850" Language="SFX">
+					<ShortName>R1_Common_02_Top.wav</ShortName>
+					<Path>SFX\R1_Common_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="818927288" Language="SFX">
+					<ShortName>R0_Init_01_Top.wav</ShortName>
+					<Path>SFX\R0_Init_01_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="826199412" Language="SFX">
+					<ShortName>R0_Init_02_Top.wav</ShortName>
+					<Path>SFX\R0_Init_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="856307285" Language="SFX">
+					<ShortName>R1_Common_01_Base.wav</ShortName>
+					<Path>SFX\R1_Common_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="876141935" Language="SFX">
+					<ShortName>R1_Common_02_Base.wav</ShortName>
+					<Path>SFX\R1_Common_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="891256267" Language="SFX">
+					<ShortName>R2_Common_02_Base.wav</ShortName>
+					<Path>SFX\R2_Common_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="895209398" Language="SFX">
+					<ShortName>R0_Init_05_Base.wav</ShortName>
+					<Path>SFX\R0_Init_05_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="930799708" Language="SFX">
+					<ShortName>RoundEnd_WinJ1.wav</ShortName>
+					<Path>SFX\RoundEnd_WinJ1_C42B8C3C.wem</Path>
+				</File>
+				<File Id="932292879" Language="SFX">
+					<ShortName>Music5.wav</ShortName>
+					<Path>SFX\Music5_C42B8C3C.wem</Path>
+				</File>
+				<File Id="958688997" Language="SFX">
+					<ShortName>R2_LeadJ1_02_Top.wav</ShortName>
+					<Path>SFX\R2_LeadJ1_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="966950230" Language="SFX">
+					<ShortName>R0_Init_04_Base.wav</ShortName>
+					<Path>SFX\R0_Init_04_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="999735148" Language="SFX">
+					<ShortName>R2_Common_02_Top.wav</ShortName>
+					<Path>SFX\R2_Common_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="1005380045" Language="SFX">
+					<ShortName>R2_LeadJ2_01_Base.wav</ShortName>
+					<Path>SFX\R2_LeadJ2_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="1031812766" Language="SFX">
+					<ShortName>SFX_Common_Oil.wav</ShortName>
+					<Path>SFX\SFX_Common_Oil_C42B8C3C.wem</Path>
+				</File>
+				<File Id="1039686835" Language="SFX">
+					<ShortName>SFX_Japan_Laser_Shoot.wav</ShortName>
+					<Path>SFX\SFX_Japan_Laser_Shoot_66C02B12.wem</Path>
+				</File>
+				<File Id="1052554666" Language="SFX">
+					<ShortName>R2_LeadJ1_02_Base.wav</ShortName>
+					<Path>SFX\R2_LeadJ1_02_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="1055527686" Language="SFX">
+					<ShortName>R1_LeadJ1_01_Top.wav</ShortName>
+					<Path>SFX\R1_LeadJ1_01_Top_C42B8C3C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
