@@ -22,6 +22,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public float currentLife;
     public FightManager fightManager;               //Script managing fights, on the GameManager
     public InputTranslator inputTranslator;
+    public int wins;
 
     public enum MoveType { HIT, REFLECT, LASER, GUARD, SPECIAL, NEUTRAL }     //List of moves
 
