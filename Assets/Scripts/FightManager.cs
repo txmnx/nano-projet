@@ -9,8 +9,9 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Player player1;
     public Player player2;
     public float basicDamage = 100.0f;
-    public float specialDamage = 500.0f;
-    private float counter;
+    public float chargedCoeff = 2f;
+    public float specialCoeff = 5f;
+    private int counter;
 
     public Image action1Image;
     public Image action2Image;
@@ -22,15 +23,52 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Sprite specialSprite;
     public Sprite neutralSprite;
 
+    private float[,] coefficients;
+
+
+    /**
+     * Coefficients :
+     * Damage received by player 1
+     * Player 1     Player 2
+     * 
+     *              HIT   REFLECT   LASER   GUARD   SPECIAL   NEUTRAL
+     * HIT          0     0         1       0       0         0
+     * REFLECT      1     0         0       0       0         0
+     * LASER        0     1         0       0       0         0
+     * GUARD        0     0         0       0       spe       0
+     * SPECIAL      1     1         1       0       0         0
+     * NEUTRAL      1     1         1       0       spe       0
+     *
+     */
+
+    private void Awake()
+    {
+        int movesLength = Enum.GetNames(typeof(Player.MoveType)).Length;
+        coefficients = new float[movesLength, movesLength];
+        
+        coefficients[(int)Player.MoveType.HIT, (int)Player.MoveType.LASER] = 1f;
+        coefficients[(int)Player.MoveType.REFLECT, (int)Player.MoveType.HIT] = 1f;
+        coefficients[(int)Player.MoveType.LASER, (int)Player.MoveType.REFLECT] = 1f;
+        coefficients[(int)Player.MoveType.GUARD, (int)Player.MoveType.SPECIAL] = specialCoeff;
+        coefficients[(int)Player.MoveType.SPECIAL, (int)Player.MoveType.HIT] = 1f;
+        coefficients[(int)Player.MoveType.SPECIAL, (int)Player.MoveType.REFLECT] = 1f;
+        coefficients[(int)Player.MoveType.SPECIAL, (int)Player.MoveType.LASER] = 1f;
+        coefficients[(int)Player.MoveType.NEUTRAL, (int)Player.MoveType.HIT] = 1f;
+        coefficients[(int)Player.MoveType.NEUTRAL, (int)Player.MoveType.REFLECT] = 1f;
+        coefficients[(int)Player.MoveType.NEUTRAL, (int)Player.MoveType.LASER] = 1f;
+        coefficients[(int)Player.MoveType.NEUTRAL, (int)Player.MoveType.SPECIAL] = specialCoeff;
+    }
+
     private void Start()
     {
-        counter = 1;
+        counter = 0;
         InputTranslator.RegisterOnInputBeatElement(this);
         InputTranslator.RegisterOnActionBeatElement(this);
     }
 
     public void OnEnterInputBeat()
     {
+        counter = 0;
         action1Image.enabled = false;
         action2Image.enabled = false;
 
@@ -41,6 +79,13 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     public void OnActionBeat()
     {
+        player1.currentLife -= CompareMove(player1.buffer[counter], player2.buffer[counter]);
+        player2.currentLife -= CompareMove(player2.buffer[counter], player1.buffer[counter]);
+        player1.health.value = player1.currentLife;
+        player2.health.value = player2.currentLife;
+
+        counter = counter + 1;
+
         Debug.Log("ACTION");
         if (!action1Image.enabled) {
             action1Image.enabled = true;
@@ -58,79 +103,20 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
             action1Image.sprite = player1.buffer[1].sprite;
             action2Image.sprite = player2.buffer[1].sprite;
         }
-        player1.health.value = player1.currentLife;
-        player2.health.value = player2.currentLife;
     }
-
-    public void Flush()
+    
+    public float CompareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's
     {
-        compareInputs();
-    }
-
-    public void compareInputs()     //Actual comparison of the players inputs
-    {
-       
-        for (int i = 0; i < InputTranslator.step; i++) {
-            player1.currentLife -= compareMove(player1.buffer[i], player2.buffer[i]);
-            Debug.Log("Move " + i + " ; Player 1 : " + -compareMove(player1.buffer[i], player2.buffer[i]));
-            player2.currentLife -= compareMove(player2.buffer[i], player1.buffer[i]);
-            Debug.Log("Move " + i + " ; Player 2 : " + -compareMove(player2.buffer[i], player1.buffer[i]));
-        }
-     
-        
-    }
-
-    public float compareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's
-    {
-        if(move2.isCharged)
-        {
-            if(move2.move == Player.MoveType.HIT)
-            {
-                if (move1.move == Player.MoveType.HIT && !move1.isCharged)
-                    return basicDamage;
-                else if (move1.move == Player.MoveType.REFLECT || move1.move == Player.MoveType.NEUTRAL || move1.move == Player.MoveType.SPECIAL)
-                    return basicDamage * 2;
-                else
-                    return 0;
+        if (move2.isCharged) {
+            if (move1.move == move2.move && move1.isCharged) {
+                return basicDamage * coefficients[(int)move1.move, (int)move2.move];
             }
-            else if (move2.move == Player.MoveType.REFLECT)
-            {
-                if (move1.move == Player.MoveType.REFLECT && !move1.isCharged)
-                    return basicDamage;
-                else if (move1.move == Player.MoveType.LASER || move1.move == Player.MoveType.NEUTRAL || move1.move == Player.MoveType.SPECIAL)
-                    return basicDamage * 2;
-                else
-                    return 0;
-            }
-            else if (move2.move == Player.MoveType.LASER)
-            {
-                if (move1.move == Player.MoveType.LASER && !move1.isCharged)
-                    return basicDamage;
-                else if (move1.move == Player.MoveType.HIT || move1.move == Player.MoveType.NEUTRAL || move1.move == Player.MoveType.SPECIAL)
-                    return basicDamage * 2;
-                else
-                    return 0;
-            }
-            else
-            {
-                return 0;
+            else {
+                return basicDamage * chargedCoeff;
             }
         }
-        else if ((move1.move == Player.MoveType.REFLECT && move2.move == Player.MoveType.HIT) ||
-           (move1.move == Player.MoveType.LASER && move2.move == Player.MoveType.REFLECT) ||
-           (move1.move == Player.MoveType.HIT && move2.move == Player.MoveType.LASER) ||
-           (move1.move == Player.MoveType.SPECIAL && (move2.move == Player.MoveType.HIT || move2.move == Player.MoveType.LASER || move2.move == Player.MoveType.REFLECT)) ||
-           (move1.move == Player.MoveType.NEUTRAL && (move2.move == Player.MoveType.HIT || move2.move == Player.MoveType.LASER || move2.move == Player.MoveType.REFLECT)))
-        {
-            return basicDamage;
-        }
-        else if ((move1.move == Player.MoveType.GUARD && move2.move == Player.MoveType.SPECIAL) || (move1.move == Player.MoveType.NEUTRAL && move2.move == Player.MoveType.SPECIAL))
-        {
-            return specialDamage;
-        }
-        else
-        {
-            return 0.0f;
+        else {
+            return basicDamage * coefficients[(int)move1.move, (int)move2.move];
         }
     }
 

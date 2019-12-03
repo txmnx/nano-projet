@@ -54,7 +54,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     {
         if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
-                fightManager.Flush();
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnEnterActionBeat();
                     element.OnActionBeat();
