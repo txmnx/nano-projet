@@ -29,6 +29,23 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void OnBeat()
     {
+        /*if (isWon)
+        {
+            winner.wins += 1;
+            winSliders[winnerID].value = winner.wins;
+            onRoundEnd();
+            resetRound();
+
+            if (winner != null && winner.wins == roundToWin)
+            {
+                // onMatchEnd(players[winner]);
+            }
+
+        }*/
+    }
+
+    void Update()
+    {
         if (isWon)
         {
             winner.wins += 1;
@@ -42,12 +59,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             }
 
         }
-    }
-
-    void Update()
-    {
-
-        if (players[0].currentLife <= 0)
+        else if (players[0].currentLife <= 0)
         {
             winner = players[1];
             winnerID = 1;
@@ -60,8 +72,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             winnerID = 0;
             isWon = true;
         }
-
-        
     }
 
     public void onRoundEnd()
@@ -75,6 +85,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         for(int i = 0; i<players.Length; i++)
         {
             players[i].currentLife = players[i].maxLife;
+            players[i].health.value = players[i].currentLife;
         }
         winner = null;
         isWon = false;

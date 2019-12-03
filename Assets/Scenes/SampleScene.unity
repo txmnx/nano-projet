@@ -1457,7 +1457,7 @@ MonoBehaviour:
   player1: {fileID: 734479241}
   player2: {fileID: 1915892328}
   basicDamage: 100
-  chargedCoeff: 2
+  chargedCoeff: 6
   specialCoeff: 5
   action1Image: {fileID: 1247210512}
   action2Image: {fileID: 942747258}
@@ -1484,8 +1484,8 @@ MonoBehaviour:
   - {fileID: 1915892328}
   roundToWin: 2
   winSliders:
-  - {fileID: 1285079184}
-  - {fileID: 1516163365}
+  - {fileID: 2136094363}
+  - {fileID: 2011355447}
   winner: {fileID: 0}
   isWon: 0
 --- !u!1 &1247210510

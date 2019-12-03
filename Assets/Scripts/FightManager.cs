@@ -9,7 +9,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Player player1;
     public Player player2;
     public float basicDamage = 300.0f;
-    public float chargedCoeff = 6f;
+    public float chargedCoeff = 120f;
     public float specialCoeff = 5f;
     private int counter;
 
