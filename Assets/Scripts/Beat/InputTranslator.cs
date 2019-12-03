@@ -21,7 +21,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     private static List<OnInputBeatElement> onInputBeatElements;
     private static List<OnActionBeatElement> onActionBeatElements;
     
-    public static int step; // How much beats for a sequence
+    public static int step = 2; // How much beats for a sequence
     private static int currentStep;
 
     public FightManager fightManager;
@@ -54,7 +54,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     {
         if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
-                fightManager.Flush();
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnEnterActionBeat();
                     element.OnActionBeat();
