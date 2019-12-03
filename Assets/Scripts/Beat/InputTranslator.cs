@@ -49,7 +49,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     /**
      * TODO : should have an Init method to first call OnInputBeat and OnActionBeat when the music starts
      */
-
+    
     public void OnBeat()
     {
         if (currentStep == step) {
