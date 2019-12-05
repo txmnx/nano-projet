@@ -117,12 +117,12 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         gameIsPaused = false;
     }
 
-    public void pause()
+    /*public void pause()
     {
         AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
         Time.timeScale = 0f;
         gameIsPaused = true;
         Debug.Log("PAUSE");
-    }
+    }*/
 
 }

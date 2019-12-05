@@ -8,7 +8,8 @@ using UnityEngine;
 public enum Sequence
 {
     INPUT,
-    ACTION
+    ACTION,
+    IDLE
 }
 
 /**
