@@ -12,9 +12,17 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public Slider[] winSliders;
 
+    private Sequence currentSequence;
     public Player winner;
     private int winnerID;
     public bool isWon = false;
+
+    private bool gameIsPaused = false;
+    private bool roundIsEnd = false;
+    private bool matchIsEnd = false;
+
+    public Color victoryJapColor;
+    public Color victoryUsColor;
 
 
     void Start()
@@ -25,6 +33,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         {
             winSliders[i].maxValue = roundToWin;
         }
+
+        
     }
 
     public void OnBeat()
@@ -46,16 +56,29 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     void Update()
     {
+        if (!gameIsPaused && Input.GetKeyDown(KeyCode.Space))
+        {
+            pause();
+        }
+        else if(gameIsPaused && Input.GetKeyDown(KeyCode.Space))
+        {
+            resume();
+        }
+
         if (isWon)
         {
             winner.wins += 1;
             winSliders[winnerID].value = winner.wins;
             onRoundEnd();
-            resetRound();
 
             if (winner != null && winner.wins == roundToWin)
             {
-                // onMatchEnd(players[winner]);
+               
+                onMatchEnd(winner);
+            }
+            else
+            {
+                resetRound();
             }
 
         }
@@ -93,9 +116,27 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void onMatchEnd(Player winner)
     {
+        if (winner == players[0])
+            Camera.main.backgroundColor = victoryUsColor;
+        else if (winner == players[1])
+            Camera.main.backgroundColor = victoryJapColor;
         //anim/son de fin de partie
     }
 
-   
+    public void resume()
+    {
+        AkSoundEngine.PostEvent("UI_Menu_UnPauseGame", gameObject);
+        gameIsPaused = false;
+        InputTranslator.sequence = currentSequence;
+    }
+
+    public void pause()
+    {
+        AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
+        gameIsPaused = true;
+        Debug.Log("PAUSE");
+        currentSequence = InputTranslator.sequence;
+        InputTranslator.sequence = Sequence.IDLE;
+    }
 
 }

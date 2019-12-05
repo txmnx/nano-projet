@@ -8,7 +8,8 @@ using UnityEngine;
 public enum Sequence
 {
     INPUT,
-    ACTION
+    ACTION,
+    IDLE
 }
 
 /**
@@ -52,6 +53,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     
     public void OnBeat()
     {
+        Debug.Log("test");
         if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
                 foreach (OnActionBeatElement element in onActionBeatElements) {

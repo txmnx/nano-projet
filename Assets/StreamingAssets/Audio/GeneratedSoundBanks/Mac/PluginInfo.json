@@ -5,6 +5,11 @@
   "BasePlatform": "Mac",
   "Plugins": {
    "Plugin": {
+    "Name": "Wwise Sine",
+    "ID": "6553602",
+    "DLL": "AkSineTone"
+   },
+   "Plugin": {
     "Name": "System",
     "ID": "11403271",
     "DLL": "DefaultSink"
