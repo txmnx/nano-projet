@@ -16,6 +16,10 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     private int winnerID;
     public bool isWon = false;
 
+    private bool gameIsPaused = false;
+    private bool roundIsEnd = false;
+    private bool matchIsEnd = false;
+
 
     void Start()
     {
@@ -25,6 +29,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         {
             winSliders[i].maxValue = roundToWin;
         }
+
+        
     }
 
     public void OnBeat()
@@ -46,6 +52,14 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     void Update()
     {
+        if (!gameIsPaused && Input.GetKeyDown(KeyCode.Space))
+        {
+            pause();
+        }
+        if(gameIsPaused && Input.GetKeyDown(KeyCode.Space))
+        {
+            resume();
+        }
         if (isWon)
         {
             winner.wins += 1;
@@ -96,6 +110,19 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         //anim/son de fin de partie
     }
 
-   
+    public void resume()
+    {
+        AkSoundEngine.PostEvent("UI_Menu_UnPauseGame", gameObject);
+        Time.timeScale = 1f;
+        gameIsPaused = false;
+    }
+
+    public void pause()
+    {
+        AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
+        Time.timeScale = 0f;
+        gameIsPaused = true;
+        Debug.Log("PAUSE");
+    }
 
 }
