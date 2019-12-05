@@ -15,6 +15,26 @@ namespace AK
     {
         static const AkUniqueID AMB_MAIN_START = 1418672556U;
         static const AkUniqueID AMB_MENU_START = 3958906054U;
+        static const AkUniqueID FOLEY_AMERICAN_DEATH = 4288989348U;
+        static const AkUniqueID FOLEY_AMERICAN_FENTE = 1110922584U;
+        static const AkUniqueID FOLEY_AMERICAN_GUARD = 1032420381U;
+        static const AkUniqueID FOLEY_AMERICAN_IDDLE = 3496178862U;
+        static const AkUniqueID FOLEY_AMERICAN_LASER_IMPACT_SUCCES = 1349299605U;
+        static const AkUniqueID FOLEY_AMERICAN_LASER_SHOOT = 4161925103U;
+        static const AkUniqueID FOLEY_AMERICAN_SHIELD = 3565974273U;
+        static const AkUniqueID FOLEY_AMERICAN_SPECIALATTACK = 4166644487U;
+        static const AkUniqueID FOLEY_AMERICAN_WHOOSH = 304721924U;
+        static const AkUniqueID FOLEY_AMERICAN_WIN = 3982623016U;
+        static const AkUniqueID FOLEY_JAPAN_DEATH = 3352986648U;
+        static const AkUniqueID FOLEY_JAPAN_FENTE = 749948348U;
+        static const AkUniqueID FOLEY_JAPAN_GUARD = 2736421857U;
+        static const AkUniqueID FOLEY_JAPAN_IDDLE = 3372103450U;
+        static const AkUniqueID FOLEY_JAPAN_LASER_IMPACT_SUCCES = 979677841U;
+        static const AkUniqueID FOLEY_JAPAN_LASER_SHOOT = 4143784539U;
+        static const AkUniqueID FOLEY_JAPAN_SHIELD = 4207739101U;
+        static const AkUniqueID FOLEY_JAPAN_SPECIALATTACK = 803184659U;
+        static const AkUniqueID FOLEY_JAPAN_WHOOSH = 3507717920U;
+        static const AkUniqueID FOLEY_JAPAN_WIN = 2771932084U;
         static const AkUniqueID MUSIC_R0_INIT = 2178242372U;
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
         static const AkUniqueID SFX_AMERICAN_DEATH = 2506831292U;
@@ -22,11 +42,11 @@ namespace AK
         static const AkUniqueID SFX_AMERICAN_LASER_IMPACT_SUCCES = 119557261U;
         static const AkUniqueID SFX_AMERICAN_LASER_SHOOT = 4275657479U;
         static const AkUniqueID SFX_AMERICAN_PARTICLES = 3421765259U;
+        static const AkUniqueID SFX_AMERICAN_PROJECTILE_WOOSH = 1902165926U;
         static const AkUniqueID SFX_AMERICAN_SHIELD = 1159243881U;
         static const AkUniqueID SFX_AMERICAN_SPECIALATTACK = 3672859679U;
         static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS = 2927774105U;
         static const AkUniqueID SFX_COMMON_OIL = 2534836963U;
-        static const AkUniqueID SFX_COMMON_PROJECTILE_WOOSH = 1636459093U;
         static const AkUniqueID SFX_INPUTPHASE_IN = 427260706U;
         static const AkUniqueID SFX_INPUTPHASE_OUT = 1142057693U;
         static const AkUniqueID SFX_JAPAN_DEATH = 2398750736U;
@@ -34,12 +54,17 @@ namespace AK
         static const AkUniqueID SFX_JAPAN_LASER_IMPACT_SUCCES = 1314745705U;
         static const AkUniqueID SFX_JAPAN_LASER_SHOOT = 394728051U;
         static const AkUniqueID SFX_JAPAN_PARTICLES = 2168208239U;
+        static const AkUniqueID SFX_JAPAN_PROJECTILE_WOOSH = 872414754U;
         static const AkUniqueID SFX_JAPAN_SHIELD = 3056811045U;
         static const AkUniqueID SFX_JAPAN_SPECIALATTACK = 1941465131U;
         static const AkUniqueID SFX_TITLE_FIGHT = 2335777874U;
         static const AkUniqueID SFX_TITLE_TIMER = 3290104963U;
         static const AkUniqueID SFX_TITLE_WIN = 1985058514U;
         static const AkUniqueID SON_TEMOIN = 1502450958U;
+        static const AkUniqueID UI_MENU_HOVERED_MAIN = 2697976037U;
+        static const AkUniqueID UI_MENU_PAUSEGAME = 2559298002U;
+        static const AkUniqueID UI_MENU_START_GAME = 1529249135U;
+        static const AkUniqueID UI_MENU_UNPAUSEGAME = 455738561U;
         static const AkUniqueID VO_AMERICAN_DEATH = 390301034U;
         static const AkUniqueID VO_AMERICAN_WIN = 957164294U;
         static const AkUniqueID VO_JAPAN_DEATH = 978479414U;
@@ -82,6 +107,7 @@ namespace AK
     {
         static const AkUniqueID RTPC_AMERICAN_HEALTH = 1818309602U;
         static const AkUniqueID RTPC_JAPAN_HEALTH = 3984115470U;
+        static const AkUniqueID RTPC_LOWEST_HEALTH = 1386449390U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

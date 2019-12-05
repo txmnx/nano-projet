@@ -15,6 +15,26 @@
 			<IncludedEvents>
 				<Event Id="1418672556" Name="Amb_Main_Start" ObjectPath="\Events\Ambience_Event\Amb_Main_Start" DurationType="Infinite"/>
 				<Event Id="3958906054" Name="Amb_Menu_Start" ObjectPath="\Events\Ambience_Event\Amb_Menu_Start" DurationType="Infinite"/>
+				<Event Id="4288989348" Name="Foley_American_Death" ObjectPath="\Events\Foley_Event\American\Foley_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1110922584" Name="Foley_American_Fente" ObjectPath="\Events\Foley_Event\American\Foley_American_Fente" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1032420381" Name="Foley_American_Guard" ObjectPath="\Events\Foley_Event\American\Foley_American_Guard" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3496178862" Name="Foley_American_Iddle" ObjectPath="\Events\Foley_Event\American\Foley_American_Iddle" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1349299605" Name="Foley_American_Laser_Impact_Succes" ObjectPath="\Events\Foley_Event\American\Foley_American_Laser_Impact_Succes" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4161925103" Name="Foley_American_Laser_Shoot" ObjectPath="\Events\Foley_Event\American\Foley_American_Laser_Shoot" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3565974273" Name="Foley_American_Shield" ObjectPath="\Events\Foley_Event\American\Foley_American_Shield" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4166644487" Name="Foley_American_SpecialAttack" ObjectPath="\Events\Foley_Event\American\Foley_American_SpecialAttack" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="304721924" Name="Foley_American_Whoosh" ObjectPath="\Events\Foley_Event\American\Foley_American_Whoosh" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3982623016" Name="Foley_American_Win" ObjectPath="\Events\Foley_Event\American\Foley_American_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3352986648" Name="Foley_Japan_Death" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Death" DurationType="OneShot" DurationMin="3.766576" DurationMax="3.766576"/>
+				<Event Id="749948348" Name="Foley_Japan_Fente" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Fente" DurationType="OneShot" DurationMin="0.597664" DurationMax="0.597664"/>
+				<Event Id="2736421857" Name="Foley_Japan_Guard" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Guard" DurationType="OneShot" DurationMin="1.579388" DurationMax="1.579388"/>
+				<Event Id="3372103450" Name="Foley_Japan_Iddle" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Iddle" DurationType="OneShot" DurationMin="0.983197" DurationMax="0.983197"/>
+				<Event Id="979677841" Name="Foley_Japan_Laser_Impact_Succes" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Laser_Impact_Succes" DurationType="OneShot" DurationMin="1.544014" DurationMax="1.544014"/>
+				<Event Id="4143784539" Name="Foley_Japan_Laser_Shoot" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Laser_Shoot" DurationType="OneShot" DurationMin="1.247551" DurationMax="1.247551"/>
+				<Event Id="4207739101" Name="Foley_Japan_Shield" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Shield" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
+				<Event Id="803184659" Name="Foley_Japan_SpecialAttack" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_SpecialAttack" DurationType="OneShot" DurationMin="0.671361" DurationMax="0.671361"/>
+				<Event Id="3507717920" Name="Foley_Japan_Whoosh" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Whoosh" DurationType="OneShot" DurationMin="0.461412" DurationMax="0.461412"/>
+				<Event Id="2771932084" Name="Foley_Japan_Win" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Win" DurationType="OneShot" DurationMin="0.410726" DurationMax="0.410726"/>
 				<Event Id="2178242372" Name="Music_R0_Init" ObjectPath="\Events\Music_Event\Music_R0_Init" DurationType="Infinite"/>
 				<Event Id="414863633" Name="Play_Main_Music" ObjectPath="\Events\Music_Event\Play_Main_Music" DurationType="Infinite"/>
 				<Event Id="2506831292" Name="SFX_American_Death" ObjectPath="\Events\SFX_Event\American\SFX_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -22,24 +42,29 @@
 				<Event Id="119557261" Name="SFX_American_Laser_Impact_Succes" ObjectPath="\Events\SFX_Event\American\SFX_American_Laser_Impact_Succes" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4275657479" Name="SFX_American_Laser_Shoot" ObjectPath="\Events\SFX_Event\American\SFX_American_Laser_Shoot" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3421765259" Name="SFX_American_Particles" ObjectPath="\Events\SFX_Event\American\SFX_American_Particles" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1902165926" Name="SFX_American_Projectile_Woosh" ObjectPath="\Events\SFX_Event\American\SFX_American_Projectile_Woosh" DurationType="OneShot" DurationMin="0.401111" DurationMax="0.401111"/>
 				<Event Id="1159243881" Name="SFX_American_Shield" ObjectPath="\Events\SFX_Event\American\SFX_American_Shield" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3672859679" Name="SFX_American_SpecialAttack" ObjectPath="\Events\SFX_Event\American\SFX_American_SpecialAttack" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2927774105" Name="SFX_Common_Electric_Sparks" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Electric_Sparks" DurationType="Infinite"/>
 				<Event Id="2534836963" Name="SFX_Common_Oil" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Oil" DurationType="Infinite"/>
-				<Event Id="1636459093" Name="SFX_Common_Projectile_Woosh" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Projectile_Woosh" DurationType="OneShot" DurationMin="0.401111" DurationMax="0.401111"/>
 				<Event Id="427260706" Name="SFX_InputPhase_In" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_In" DurationType="OneShot" DurationMin="0.581565" DurationMax="0.581565"/>
-				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="0.764558" DurationMax="0.764558"/>
+				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="1.948951" DurationMax="1.948951"/>
 				<Event Id="2398750736" Name="SFX_Japan_Death" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Death" DurationType="OneShot" DurationMin="1.830862" DurationMax="1.830862"/>
 				<Event Id="217610004" Name="SFX_Japan_Fente" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Fente" DurationType="OneShot" DurationMin="1.513810" DurationMax="1.513810"/>
 				<Event Id="1314745705" Name="SFX_Japan_Laser_Impact_Succes" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Laser_Impact_Succes" DurationType="OneShot" DurationMin="1.802721" DurationMax="1.802721"/>
 				<Event Id="394728051" Name="SFX_Japan_Laser_Shoot" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Laser_Shoot" DurationType="OneShot" DurationMin="1.420181" DurationMax="1.420181"/>
 				<Event Id="2168208239" Name="SFX_Japan_Particles" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Particles" DurationType="OneShot" DurationMin="0.525374" DurationMax="0.525374"/>
+				<Event Id="872414754" Name="SFX_Japan_Projectile_Woosh" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Projectile_Woosh" DurationType="OneShot" DurationMin="0.401111" DurationMax="0.401111"/>
 				<Event Id="3056811045" Name="SFX_Japan_Shield" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_Shield" DurationType="OneShot" DurationMin="1.316485" DurationMax="1.316485"/>
 				<Event Id="1941465131" Name="SFX_Japan_SpecialAttack" ObjectPath="\Events\SFX_Event\Japan\SFX_Japan_SpecialAttack" DurationType="OneShot" DurationMin="2.672494" DurationMax="2.672494"/>
-				<Event Id="2335777874" Name="SFX_Title_Fight" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Fight" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2335777874" Name="SFX_Title_Fight" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Fight" DurationType="OneShot" DurationMin="4.350476" DurationMax="4.350476"/>
 				<Event Id="3290104963" Name="SFX_Title_Timer" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Timer" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1985058514" Name="SFX_Title_Win" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1985058514" Name="SFX_Title_Win" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Win" DurationType="OneShot" DurationMin="1.904898" DurationMax="1.904898"/>
 				<Event Id="1502450958" Name="Son_Temoin" ObjectPath="\Events\Ambience_Event\Son_Temoin" DurationType="Infinite"/>
+				<Event Id="2697976037" Name="UI_Menu_Hovered_Main" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Hovered_Main" DurationType="OneShot" DurationMin="0.020000" DurationMax="0.020000"/>
+				<Event Id="2559298002" Name="UI_Menu_PauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_PauseGame" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1529249135" Name="UI_Menu_Start_Game" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Start_Game" DurationType="OneShot" DurationMin="1.033401" DurationMax="1.033401"/>
+				<Event Id="455738561" Name="UI_Menu_UnPauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_UnPauseGame" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="390301034" Name="VO_American_Death" ObjectPath="\Events\VO_Event\American\VO_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="957164294" Name="VO_American_Win" ObjectPath="\Events\VO_Event\American\VO_American_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="978479414" Name="VO_Japan_Death" ObjectPath="\Events\VO_Event\Japan\VO_Japan_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -100,6 +125,10 @@
 					<ShortName>SFX_Japan_Fente.wav</ShortName>
 					<Path>SFX\SFX_Japan_Fente_66C02B12.wem</Path>
 				</File>
+				<File Id="171061125" Language="SFX">
+					<ShortName>Foley_Japan_Guard.wav</ShortName>
+					<Path>SFX\Foley_Japan_Guard_66C02B12.wem</Path>
+				</File>
 				<File Id="175973606" Language="SFX">
 					<ShortName>R1_LeadJ2_01_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ2_01_Top_C42B8C3C.wem</Path>
@@ -124,6 +153,10 @@
 					<ShortName>Cyberpunk 2077 - E3 2018 Trailer Music Hyper - SPOILER 4K.wav</ShortName>
 					<Path>SFX\Cyberpunk 2077 - E3 2018 Trailer Music Hyper - SPOILER 4K_C42B8C3C.wem</Path>
 				</File>
+				<File Id="232999411" Language="SFX">
+					<ShortName>Foley_Japan_SpecialAttack.wav</ShortName>
+					<Path>SFX\Foley_Japan_SpecialAttack_66C02B12.wem</Path>
+				</File>
 				<File Id="236126871" Language="SFX">
 					<ShortName>RoundEnd_WinJ2.wav</ShortName>
 					<Path>SFX\RoundEnd_WinJ2_C42B8C3C.wem</Path>
@@ -131,6 +164,10 @@
 				<File Id="257449727" Language="SFX">
 					<ShortName>R1_LeadJ1_02_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_02_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="268798519" Language="SFX">
+					<ShortName>SFX_Title_Fight.wav</ShortName>
+					<Path>SFX\SFX_Title_Fight_66C02B12.wem</Path>
 				</File>
 				<File Id="274746922" Language="SFX">
 					<ShortName>R2_Common_01_Top.wav</ShortName>
@@ -156,6 +193,10 @@
 					<ShortName>R2_LeadJ2_02_Base.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_02_Base_C42B8C3C.wem</Path>
 				</File>
+				<File Id="355947709" Language="SFX">
+					<ShortName>Foley_Japan_Iddle.wav</ShortName>
+					<Path>SFX\Foley_Japan_Iddle_66C02B12.wem</Path>
+				</File>
 				<File Id="356147938" Language="SFX">
 					<ShortName>Music2.wav</ShortName>
 					<Path>SFX\Music2_C42B8C3C.wem</Path>
@@ -175,6 +216,10 @@
 				<File Id="497591261" Language="SFX">
 					<ShortName>R0_Init_05_Top.wav</ShortName>
 					<Path>SFX\R0_Init_05_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="518984511" Language="SFX">
+					<ShortName>SFX_Title_Win.wav</ShortName>
+					<Path>SFX\SFX_Title_Win_66C02B12.wem</Path>
 				</File>
 				<File Id="544209955" Language="SFX">
 					<ShortName>SFX_InputPhase_Out.wav</ShortName>
@@ -224,6 +269,18 @@
 					<ShortName>SFX_Japan_Death.wav</ShortName>
 					<Path>SFX\SFX_Japan_Death_66C02B12.wem</Path>
 				</File>
+				<File Id="752495976" Language="SFX">
+					<ShortName>Foley_Japan_Death.wav</ShortName>
+					<Path>SFX\Foley_Japan_Death_66C02B12.wem</Path>
+				</File>
+				<File Id="767202740" Language="SFX">
+					<ShortName>Foley_Japan_Win.wav</ShortName>
+					<Path>SFX\Foley_Japan_Win_66C02B12.wem</Path>
+				</File>
+				<File Id="792830249" Language="SFX">
+					<ShortName>Foley_Japan_Laser_Shoot.wav</ShortName>
+					<Path>SFX\Foley_Japan_Laser_Shoot_66C02B12.wem</Path>
+				</File>
 				<File Id="802587850" Language="SFX">
 					<ShortName>R1_Common_02_Top.wav</ShortName>
 					<Path>SFX\R1_Common_02_Top_C42B8C3C.wem</Path>
@@ -240,6 +297,14 @@
 					<ShortName>R1_Common_01_Base.wav</ShortName>
 					<Path>SFX\R1_Common_01_Base_C42B8C3C.wem</Path>
 				</File>
+				<File Id="856418193" Language="SFX">
+					<ShortName>Foley_Japan_Whoosh.wav</ShortName>
+					<Path>SFX\Foley_Japan_Whoosh_66C02B12.wem</Path>
+				</File>
+				<File Id="856744972" Language="SFX">
+					<ShortName>Foley_Japan_Laser_Impact_Succes.wav</ShortName>
+					<Path>SFX\Foley_Japan_Laser_Impact_Succes_66C02B12.wem</Path>
+				</File>
 				<File Id="876141935" Language="SFX">
 					<ShortName>R1_Common_02_Base.wav</ShortName>
 					<Path>SFX\R1_Common_02_Base_C42B8C3C.wem</Path>
@@ -251,6 +316,10 @@
 				<File Id="895209398" Language="SFX">
 					<ShortName>R0_Init_05_Base.wav</ShortName>
 					<Path>SFX\R0_Init_05_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="908771931" Language="SFX">
+					<ShortName>Foley_Japan_Shield.wav</ShortName>
+					<Path>SFX\Foley_Japan_Shield_66C02B12.wem</Path>
 				</File>
 				<File Id="930799708" Language="SFX">
 					<ShortName>RoundEnd_WinJ1.wav</ShortName>
@@ -272,9 +341,17 @@
 					<ShortName>R2_Common_02_Top.wav</ShortName>
 					<Path>SFX\R2_Common_02_Top_C42B8C3C.wem</Path>
 				</File>
+				<File Id="1002432838" Language="SFX">
+					<ShortName>Foley_Japan_Fente.wav</ShortName>
+					<Path>SFX\Foley_Japan_Fente_66C02B12.wem</Path>
+				</File>
 				<File Id="1005380045" Language="SFX">
 					<ShortName>R2_LeadJ2_01_Base.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_01_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="1023978928" Language="SFX">
+					<ShortName>UI_Menu_Start_Game.wav</ShortName>
+					<Path>SFX\UI_Menu_Start_Game_66C02B12.wem</Path>
 				</File>
 				<File Id="1031812766" Language="SFX">
 					<ShortName>SFX_Common_Oil.wav</ShortName>
