@@ -24,7 +24,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public float maxLife = 1200;
     public float currentLife;
     public FightManager fightManager;               //Script managing fights, on the GameManager
-    public InputTranslator inputTranslator;
     public int wins;
 
     public enum MoveType { HIT, REFLECT, LASER, GUARD, SPECIAL, NEUTRAL }     //List of moves
@@ -63,6 +62,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         {
             inputsImage[i].transform.localScale = new Vector3(1, 1, 1);
         }
+
+        Reset();
     }
     public void OnActionBeat()
     {
@@ -194,5 +195,5 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         chargeCounter = 0;
     }
 
-    public void OnInputBeat() {}
+    public virtual void OnInputBeat() {}
 }

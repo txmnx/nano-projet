@@ -71,10 +71,6 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         action1Image.enabled = false;
         action2Image.enabled = false;
-
-        player1.Reset();
-        player2.Reset();
-
     }
 
     public void OnActionBeat()
