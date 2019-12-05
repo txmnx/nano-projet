@@ -1483,6 +1483,8 @@ MonoBehaviour:
   - {fileID: 2011355447}
   winner: {fileID: 0}
   isWon: 0
+  victoryJapColor: {r: 0, g: 0, b: 0, a: 0}
+  victoryUsColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1247210510
 GameObject:
   m_ObjectHideFlags: 0
