@@ -756,7 +756,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586260566561962894
+    m_lastTime: -8586259753437070908
     List:
     - name: UI_Menu_Hovered_Main
       guid: 2fe81cc189869d49a14a41089043f113
@@ -818,8 +818,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586262374185771539
+    m_lastTime: -8586259760373180493
     List:
+    - name: VO_American_Attack
+      guid: 86aad0fb208c894d815705dd0061feb6
+      id: 2414228328
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: American
+        ObjectType: 4
+      - ElementName: VO_American_Attack
+        ObjectType: 3
+      Path: VO_Event\American\VO_American_Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: VO_American_Death
       guid: a8942fe017176843a4fd1ea02e9dda9e
       id: 390301034
@@ -845,6 +859,20 @@ MonoBehaviour:
       - ElementName: VO_American_Win
         ObjectType: 3
       Path: VO_Event\American\VO_American_Win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Japan_Attack
+      guid: 6c2b93723ed8bc4a929b28374f9b4f85
+      id: 437585428
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: Japan
+        ObjectType: 4
+      - ElementName: VO_Japan_Attack
+        ObjectType: 3
+      Path: VO_Event\Japan\VO_Japan_Attack
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -876,20 +904,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: VO_Speaker_American_Win
-      guid: b538b98707df75469711a887b0ce90b2
-      id: 2188929916
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_American_Win
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_American_Win
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: VO_Speaker_American_Win_Fight
       guid: 17ee56011fa42e48b71d9689687db4fb
       id: 1547089927
@@ -904,20 +918,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: VO_Speaker_Japan_Win
-      guid: 602fcad4dbede546a67269b2854f7ccf
-      id: 3061101440
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Japan_Win
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Japan_Win
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: VO_Speaker_Japan_Win_Fight
       guid: 26d7e06c427fc847ae4518c963411c07
       id: 1444082811
@@ -929,6 +929,20 @@ MonoBehaviour:
       - ElementName: VO_Speaker_Japan_Win_Fight
         ObjectType: 3
       Path: VO_Event\Speaker\VO_Speaker_Japan_Win_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Ready
+      guid: ca681e7a35d8bd45830614d1569141c1
+      id: 551141550
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: Speaker
+        ObjectType: 4
+      - ElementName: VO_Speaker_Ready
+        ObjectType: 3
+      Path: VO_Event\Speaker\VO_Speaker_Ready
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -957,6 +971,48 @@ MonoBehaviour:
       - ElementName: VO_Speaker_Round_2
         ObjectType: 3
       Path: VO_Event\Speaker\VO_Speaker_Round_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Round_3
+      guid: 1856324150ae11479279a68c1d6e24b2
+      id: 3174962417
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: Speaker
+        ObjectType: 4
+      - ElementName: VO_Speaker_Round_3
+        ObjectType: 3
+      Path: VO_Event\Speaker\VO_Speaker_Round_3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Round_4
+      guid: 70f64211e174e4469fb79901f9652d99
+      id: 3174962422
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: Speaker
+        ObjectType: 4
+      - ElementName: VO_Speaker_Round_4
+        ObjectType: 3
+      Path: VO_Event\Speaker\VO_Speaker_Round_4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Round_Win
+      guid: ef5e480dec5b9741b731253966160a3e
+      id: 3535674012
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: Speaker
+        ObjectType: 4
+      - ElementName: VO_Speaker_Round_Win
+        ObjectType: 3
+      Path: VO_Event\Speaker\VO_Speaker_Round_Win
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

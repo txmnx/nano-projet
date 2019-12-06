@@ -15,6 +15,9 @@ State	ID	Name	State Group			Notes
 	3955955234	ST_R2_LeadJP	MusicToPlay			
 	4274730056	ST_R2_LeadUS	MusicToPlay			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	81210309	Sidechain_All_By_VO			\Sidechain\Sidechain_All_By_VO	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
@@ -36,6 +39,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
+
+Effect plug-ins	ID	Name	Type				Notes
+	289702920	Wwise_Meter_(Custom)	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

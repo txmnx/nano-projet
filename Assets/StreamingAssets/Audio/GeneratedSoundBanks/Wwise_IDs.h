@@ -36,6 +36,7 @@ namespace AK
         static const AkUniqueID FOLEY_JAPAN_WHOOSH = 3507717920U;
         static const AkUniqueID FOLEY_JAPAN_WIN = 2771932084U;
         static const AkUniqueID MUSIC_R0_INIT = 2178242372U;
+        static const AkUniqueID MUSIC_ROUNDENDPART2_US = 4093640312U;
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
         static const AkUniqueID SFX_AMERICAN_DEATH = 2506831292U;
         static const AkUniqueID SFX_AMERICAN_FENTE = 3508642320U;
@@ -65,16 +66,20 @@ namespace AK
         static const AkUniqueID UI_MENU_PAUSEGAME = 2559298002U;
         static const AkUniqueID UI_MENU_START_GAME = 1529249135U;
         static const AkUniqueID UI_MENU_UNPAUSEGAME = 455738561U;
+        static const AkUniqueID VO_AMERICAN_ATTACK = 2414228328U;
         static const AkUniqueID VO_AMERICAN_DEATH = 390301034U;
         static const AkUniqueID VO_AMERICAN_WIN = 957164294U;
+        static const AkUniqueID VO_JAPAN_ATTACK = 437585428U;
         static const AkUniqueID VO_JAPAN_DEATH = 978479414U;
         static const AkUniqueID VO_JAPAN_WIN = 2169528442U;
-        static const AkUniqueID VO_SPEAKER_AMERICAN_WIN = 2188929916U;
         static const AkUniqueID VO_SPEAKER_AMERICAN_WIN_FIGHT = 1547089927U;
-        static const AkUniqueID VO_SPEAKER_JAPAN_WIN = 3061101440U;
         static const AkUniqueID VO_SPEAKER_JAPAN_WIN_FIGHT = 1444082811U;
+        static const AkUniqueID VO_SPEAKER_READY = 551141550U;
         static const AkUniqueID VO_SPEAKER_ROUND_1 = 3174962419U;
         static const AkUniqueID VO_SPEAKER_ROUND_2 = 3174962416U;
+        static const AkUniqueID VO_SPEAKER_ROUND_3 = 3174962417U;
+        static const AkUniqueID VO_SPEAKER_ROUND_4 = 3174962422U;
+        static const AkUniqueID VO_SPEAKER_ROUND_WIN = 3535674012U;
         static const AkUniqueID VO_SPEAKER_START_FIGHT = 3797693660U;
         static const AkUniqueID VO_SPEAKER_ULTIMEROUND = 3097949019U;
     } // namespace EVENTS
@@ -108,6 +113,7 @@ namespace AK
         static const AkUniqueID RTPC_AMERICAN_HEALTH = 1818309602U;
         static const AkUniqueID RTPC_JAPAN_HEALTH = 3984115470U;
         static const AkUniqueID RTPC_LOWEST_HEALTH = 1386449390U;
+        static const AkUniqueID SIDECHAIN_ALL_BY_VO = 81210309U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
