@@ -37,9 +37,9 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
         onActionBeatElements = new List<OnActionBeatElement>();
         
         step = 2;
-        currentStep = 1;
+        currentStep = 0;
 
-        sequence = Sequence.ACTION;
+        sequence = Sequence.IDLE;
     }
 
     void Start()
@@ -53,7 +53,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     
     public void OnBeat()
     {
-        Debug.Log("test");
         if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
                 foreach (OnActionBeatElement element in onActionBeatElements) {
@@ -62,6 +61,10 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                 }
                 sequence = Sequence.ACTION;
             }
+            else if (sequence == Sequence.IDLE)
+            {
+
+            }
             else {
                 foreach (OnInputBeatElement element in onInputBeatElements) {
                     element.OnEnterInputBeat();
@@ -69,10 +72,9 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                 }
                 sequence = Sequence.INPUT;
             }
-
             currentStep = 1;
         }
-        else {
+        else{
             if (sequence == Sequence.INPUT) {
                 foreach (OnInputBeatElement element in onInputBeatElements) {
                     element.OnInputBeat();
@@ -83,7 +85,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnActionBeat();
                 }
             }
-
             currentStep++;
         }
     }
