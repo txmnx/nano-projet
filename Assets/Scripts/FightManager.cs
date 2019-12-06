@@ -78,6 +78,18 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     }
 
+    public void OnEnterIdleBeat()
+    {
+        counter = 0;
+        action1Image.enabled = false;
+        action2Image.enabled = false;
+
+        Debug.Log("INCROYABLE");
+
+        player1.Reset();
+        player2.Reset();
+    }
+
     public void OnActionBeat()
     {
         player1.currentLife -= CompareMove(player1.buffer[counter], player2.buffer[counter]);
@@ -87,7 +99,6 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
         counter = counter + 1;
 
-        Debug.Log("ACTION");
         if (!action1Image.enabled) {
             action1Image.enabled = true;
             action2Image.enabled = true;
@@ -124,5 +135,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public void OnInputBeat() { }
     public void OnIdleBeat() { }
     public void OnEnterActionBeat() { }
-    public void OnEnterIdleBeat() { }
+
+
+    
 }

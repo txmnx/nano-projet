@@ -39,8 +39,9 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
         onIdleBeatElements = new List<OnIdleBeatElement>();
 
         step = 2;
-        currentStep = 0;
-
+       
+        currentStep = 1;
+        fightManager.OnEnterIdleBeat();
         sequence = Sequence.IDLE;
     }
 
@@ -55,6 +56,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     
     public void OnBeat()
     {
+        
         if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
                 foreach (OnActionBeatElement element in onActionBeatElements) {
@@ -65,8 +67,10 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
             } 
             else if(sequence == Sequence.IDLE)
             {
+               
                 foreach (OnIdleBeatElement element in onIdleBeatElements)
                 {
+                    
                     element.OnEnterIdleBeat();
                     element.OnIdleBeat();
                 }
@@ -104,11 +108,12 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
                 if (currentStep == 0)
                 {
-                    step = 4; //modify parameters for accelerated phase
+                    //step = 4; //modify parameters for accelerated phase
                 }
             }
             currentStep++;
         }
+        Debug.Log(sequence);
     }
 
     /**

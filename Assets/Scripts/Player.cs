@@ -42,11 +42,17 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     private void Start()
     {
+        prepareFight();
+    }
+
+    public void prepareFight()
+    {
         wins = 0;
         currentLife = maxLife;
         Reset();
 
-        foreach (Image image in inputsImage) {
+        foreach (Image image in inputsImage)
+        {
             image.enabled = false;
         }
 
@@ -68,7 +74,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     }
     public void OnActionBeat()
     {
-        Debug.Log("PLAYER");
         inputsImage[currentAction++].enabled = false;
     }
 
@@ -107,7 +112,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                             isCharging = true;
                             chargingMove = hitKey;
                             buffer[bufferLength].sprite = fightManager.hitSprite;
-                            Debug.Log("HIT " + bufferLength);
                             inputsImage[bufferLength].sprite = fightManager.hitSprite;
                             inputsImage[bufferLength].enabled = true;
                             bufferLength++;
@@ -118,7 +122,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                             isCharging = true;
                             chargingMove = reflectKey;
                             buffer[bufferLength].sprite = fightManager.reflectSprite;
-                            Debug.Log("REFLECT " + bufferLength);
                             inputsImage[bufferLength].sprite = fightManager.reflectSprite;
                             inputsImage[bufferLength].enabled = true;
                             bufferLength++;
@@ -129,7 +132,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                             isCharging = true;
                             chargingMove = laserKey;
                             buffer[bufferLength].sprite = fightManager.laserSprite;
-                            Debug.Log("LASER " + bufferLength);
                             inputsImage[bufferLength].sprite = fightManager.laserSprite;
                             inputsImage[bufferLength].enabled = true;
                             bufferLength++;
@@ -138,7 +140,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                         {
                             buffer[bufferLength].move = MoveType.GUARD;
                             buffer[bufferLength].sprite = fightManager.guardSprite;
-                            Debug.Log("GUARD " + bufferLength);
                             inputsImage[bufferLength].sprite = fightManager.guardSprite;
                             inputsImage[bufferLength].enabled = true;
                             bufferLength++;
@@ -147,7 +148,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                         {
                             buffer[bufferLength].move = MoveType.SPECIAL;
                             buffer[bufferLength].sprite = fightManager.specialSprite;
-                            Debug.Log("SPECIAL " + bufferLength);
                             inputsImage[bufferLength].sprite = fightManager.specialSprite;
                             inputsImage[bufferLength].enabled = true;
                             bufferLength++;
@@ -159,7 +159,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                         {
                             buffer[bufferLength - 1].move = MoveType.NEUTRAL;
                             buffer[bufferLength - 1].sprite = fightManager.neutralSprite;
-                            Debug.Log("NEUTRAL " + (bufferLength - 1));
                             inputsImage[bufferLength - 1].enabled = false;
                             bufferLength--;
                         }
