@@ -16,8 +16,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     private string idString;
 
     public float chargeTime = 0.80f;
-    public float chargeCounter = 0;
-    private bool isCharging = false;
+    public float chargeTimer = 0;
+    protected bool isCharging = false;
     private string chargingMove;
 
     public Slider health;
@@ -34,6 +34,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         public Sprite sprite;
         public bool isCharged;
     }
+
     public Move[] buffer = new Move[InputTranslator.step];
 
     public Image[] inputsImage = new Image[InputTranslator.step];
@@ -41,7 +42,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public int bufferLength;
     private int currentAction;
 
-    private void Start()
+    protected virtual void Start()
     {
         wins = 0;
         currentLife = maxLife;
@@ -152,8 +153,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
             }
             if (isCharging)
             {
-                chargeCounter += Time.deltaTime;
-                if(chargeCounter>chargeTime)
+                chargeTimer += Time.deltaTime;
+                if(chargeTimer>chargeTime)
                 {
                     if (bufferLength > 0)
                     {
@@ -167,12 +168,12 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                 if(Input.GetButtonUp(chargingMove))
                 {
                     isCharging = false;
-                    chargeCounter = 0;
+                    chargeTimer = 0;
                 }
                 if(InputTranslator.sequence == Sequence.ACTION)
                 {
                     isCharging = false;
-                    chargeCounter = 0;
+                    chargeTimer = 0;
                 }
             }
             else {
@@ -192,7 +193,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public void OnEnterActionBeat()
     {
         isCharging = false;
-        chargeCounter = 0;
+        chargeTimer = 0;
     }
 
     public virtual void OnInputBeat() {}

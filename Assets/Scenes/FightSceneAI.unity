@@ -806,7 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   chargeTime: 0.8
-  chargeCounter: 0
+  chargeTimer: 0
   health: {fileID: 1285079184}
   maxLife: 1200
   currentLife: 0
@@ -2682,7 +2682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   chargeTime: 0.8
-  chargeCounter: 0
+  chargeTimer: 0
   health: {fileID: 1516163365}
   maxLife: 1200
   currentLife: 0
@@ -2692,6 +2692,7 @@ MonoBehaviour:
   - {fileID: 1065347225}
   - {fileID: 1813833882}
   bufferLength: 0
+  opponent: {fileID: 734479241}
 --- !u!1 &1990032581
 GameObject:
   m_ObjectHideFlags: 0
