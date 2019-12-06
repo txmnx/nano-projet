@@ -34,21 +34,30 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
     void Awake()
     {
+        Init();
+    }
+
+    public void Init()
+    {
         onInputBeatElements = new List<OnInputBeatElement>();
         onActionBeatElements = new List<OnActionBeatElement>();
         onIdleBeatElements = new List<OnIdleBeatElement>();
 
         step = 2;
-       
+
         currentStep = 1;
         fightManager.OnEnterIdleBeat();
         sequence = Sequence.IDLE;
+
+        
     }
 
     void Start()
     {
         BeatManager.RegisterOnBeatElement(this);
     }
+
+
 
     /**
      * TODO : should have an Init method to first call OnInputBeat and OnActionBeat when the music starts

@@ -28,16 +28,21 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     void Start()
     {
+
+        Init();
+        
+    }
+
+    public void Init()
+    {
         Camera.main.backgroundColor = baseColor;
 
         BeatManager.RegisterOnBeatElement(this);
 
-        for (int i = 0; i<winSliders.Length; i++)
+        for (int i = 0; i < winSliders.Length; i++)
         {
             winSliders[i].maxValue = roundToWin;
         }
-
-        
     }
 
     public void OnBeat()

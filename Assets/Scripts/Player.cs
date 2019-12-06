@@ -42,10 +42,10 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     private void Start()
     {
-        prepareFight();
+        Init();
     }
 
-    public void prepareFight()
+    public void Init()
     {
         wins = 0;
         currentLife = maxLife;
