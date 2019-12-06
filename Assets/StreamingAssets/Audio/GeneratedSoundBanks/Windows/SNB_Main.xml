@@ -36,7 +36,7 @@
 				<Event Id="3507717920" Name="Foley_Japan_Whoosh" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Whoosh" DurationType="OneShot" DurationMin="0.461412" DurationMax="0.461412"/>
 				<Event Id="2771932084" Name="Foley_Japan_Win" ObjectPath="\Events\Foley_Event\Japan\Foley_Japan_Win" DurationType="OneShot" DurationMin="0.410726" DurationMax="0.410726"/>
 				<Event Id="2178242372" Name="Music_R0_Init" ObjectPath="\Events\Music_Event\Music_R0_Init" DurationType="Infinite"/>
-				<Event Id="4093640312" Name="Music_RoundEndPart2_US" ObjectPath="\Events\Music_Event\Music_RoundEndPart2_US" DurationType="Infinite"/>
+				<Event Id="4093640312" Name="Music_RoundEndPart2_US" ObjectPath="\Events\Music_Event\Music_RoundEndPart2_US" DurationType="OneShot" DurationMin="9.230764" DurationMax="9.230764"/>
 				<Event Id="414863633" Name="Play_Main_Music" ObjectPath="\Events\Music_Event\Play_Main_Music" DurationType="Infinite"/>
 				<Event Id="2506831292" Name="SFX_American_Death" ObjectPath="\Events\SFX_Event\American\SFX_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3508642320" Name="SFX_American_Fente" ObjectPath="\Events\SFX_Event\American\SFX_American_Fente" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -75,13 +75,13 @@
 				<Event Id="1547089927" Name="VO_Speaker_American_Win_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_American_Win_Fight" DurationType="OneShot" DurationMin="4.677891" DurationMax="4.677891"/>
 				<Event Id="1444082811" Name="VO_Speaker_Japan_Win_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Japan_Win_Fight" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="551141550" Name="VO_Speaker_Ready" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Ready" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3174962419" Name="VO_Speaker_Round_1" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_1" DurationType="OneShot" DurationMin="4.197301" DurationMax="4.197301"/>
-				<Event Id="3174962416" Name="VO_Speaker_Round_2" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_2" DurationType="OneShot" DurationMin="4.011542" DurationMax="4.011542"/>
-				<Event Id="3174962417" Name="VO_Speaker_Round_3" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_3" DurationType="OneShot" DurationMin="3.918662" DurationMax="3.918662"/>
-				<Event Id="3174962422" Name="VO_Speaker_Round_4" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_4" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3174962419" Name="VO_Speaker_Round_1" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_1" DurationType="OneShot" DurationMin="4.445692" DurationMax="4.445692"/>
+				<Event Id="3174962416" Name="VO_Speaker_Round_2" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_2" DurationType="OneShot" DurationMin="4.677891" DurationMax="4.677891"/>
+				<Event Id="3174962417" Name="VO_Speaker_Round_3" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_3" DurationType="OneShot" DurationMin="4.399252" DurationMax="4.399252"/>
+				<Event Id="3174962422" Name="VO_Speaker_Round_4" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_4" DurationType="OneShot" DurationMin="4.445692" DurationMax="4.445692"/>
 				<Event Id="3535674012" Name="VO_Speaker_Round_Win" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_Win" DurationType="OneShot" DurationMin="3.609773" DurationMax="6.163968"/>
-				<Event Id="3797693660" Name="VO_Speaker_Start_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Start_Fight" DurationType="OneShot" DurationMin="2.601973" DurationMax="2.601973"/>
-				<Event Id="3097949019" Name="VO_Speaker_UltimeRound" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_UltimeRound" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3797693660" Name="VO_Speaker_Start_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Start_Fight" DurationType="OneShot" DurationMin="3.145374" DurationMax="3.145374"/>
+				<Event Id="3097949019" Name="VO_Speaker_UltimeRound" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_UltimeRound" DurationType="OneShot" DurationMin="4.631451" DurationMax="4.631451"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="224896543" Language="SFX">
@@ -134,13 +134,13 @@
 					<ShortName>R2_LeadJ2_01_Top.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_01_Top_C42B8C3C.wem</Path>
 				</File>
+				<File Id="103114941" Language="SFX">
+					<ShortName>Round 2.wav</ShortName>
+					<Path>SFX\Round 2_66C02B12.wem</Path>
+				</File>
 				<File Id="134645060" Language="SFX">
 					<ShortName>SFX_Japan_Fente.wav</ShortName>
 					<Path>SFX\SFX_Japan_Fente_66C02B12.wem</Path>
-				</File>
-				<File Id="136824353" Language="SFX">
-					<ShortName>round1.wav</ShortName>
-					<Path>SFX\round1_40BAE6BC.wem</Path>
 				</File>
 				<File Id="171061125" Language="SFX">
 					<ShortName>Foley_Japan_Guard.wav</ShortName>
@@ -157,6 +157,10 @@
 				<File Id="188598521" Language="SFX">
 					<ShortName>R2_Common_03_Top.wav</ShortName>
 					<Path>SFX\R2_Common_03_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="196882520" Language="SFX">
+					<ShortName>Final Round.wav</ShortName>
+					<Path>SFX\Final Round_66C02B12.wem</Path>
 				</File>
 				<File Id="206228323" Language="SFX">
 					<ShortName>SFX_Japan_Particles.wav</ShortName>
@@ -182,10 +186,6 @@
 					<ShortName>RoundEnd_WinJ2.wav</ShortName>
 					<Path>SFX\RoundEnd_WinJ2_C42B8C3C.wem</Path>
 				</File>
-				<File Id="250986313" Language="SFX">
-					<ShortName>Round3.wav</ShortName>
-					<Path>SFX\Round3_66C02B12.wem</Path>
-				</File>
 				<File Id="257449727" Language="SFX">
 					<ShortName>R1_LeadJ1_02_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_02_Top_C42B8C3C.wem</Path>
@@ -205,6 +205,10 @@
 				<File Id="287528181" Language="SFX">
 					<ShortName>PM_LFT_9 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, Cl.wav</ShortName>
 					<Path>SFX\PM_LFT_9 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, Cl_61B31907.wem</Path>
+				</File>
+				<File Id="291437915" Language="SFX">
+					<ShortName>Round 3.wav</ShortName>
+					<Path>SFX\Round 3_66C02B12.wem</Path>
 				</File>
 				<File Id="293958255" Language="SFX">
 					<ShortName>Fight.wav</ShortName>
@@ -249,6 +253,10 @@
 				<File Id="409176566" Language="SFX">
 					<ShortName>KO.wav</ShortName>
 					<Path>SFX\KO_C42B8C3C.wem</Path>
+				</File>
+				<File Id="425021210" Language="SFX">
+					<ShortName>Round 4.wav</ShortName>
+					<Path>SFX\Round 4_66C02B12.wem</Path>
 				</File>
 				<File Id="427183628" Language="SFX">
 					<ShortName>R1_Common_01_Top.wav</ShortName>
@@ -307,13 +315,13 @@
 					<ShortName>R0_Init_03_Base.wav</ShortName>
 					<Path>SFX\R0_Init_03_Base_C42B8C3C.wem</Path>
 				</File>
-				<File Id="656420443" Language="SFX">
-					<ShortName>Round2.wav</ShortName>
-					<Path>SFX\Round2_66C02B12.wem</Path>
-				</File>
 				<File Id="663860118" Language="SFX">
 					<ShortName>SFX_Japan_Shield.wav</ShortName>
 					<Path>SFX\SFX_Japan_Shield_66C02B12.wem</Path>
+				</File>
+				<File Id="678721966" Language="SFX">
+					<ShortName>Wrecked.wav</ShortName>
+					<Path>SFX\Wrecked_C42B8C3C.wem</Path>
 				</File>
 				<File Id="683846320" Language="SFX">
 					<ShortName>R0_Init_02_Base.wav</ShortName>
@@ -330,6 +338,10 @@
 				<File Id="709282913" Language="SFX">
 					<ShortName>fantastish.wav</ShortName>
 					<Path>SFX\fantastish_C42B8C3C.wem</Path>
+				</File>
+				<File Id="728740889" Language="SFX">
+					<ShortName>Round 1.wav</ShortName>
+					<Path>SFX\Round 1_66C02B12.wem</Path>
 				</File>
 				<File Id="752495976" Language="SFX">
 					<ShortName>Foley_Japan_Death.wav</ShortName>
@@ -446,6 +458,10 @@
 				<File Id="1055527686" Language="SFX">
 					<ShortName>R1_LeadJ1_01_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_01_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="1062715868" Language="SFX">
+					<ShortName>Kaboum.wav</ShortName>
+					<Path>SFX\Kaboum_C42B8C3C.wem</Path>
 				</File>
 				<File Id="1070899634" Language="SFX">
 					<ShortName>Hasta la vista.wav</ShortName>
