@@ -11,10 +11,7 @@ public class ProActiveStrategy : IAIStrategy
 
     public void Iteration(PlayerAI ai, Player opponent)
     {
-        Player.Move newMove;
-        newMove.isCharged = false;
-        newMove.move = Player.MoveType.HIT;
-        newMove.sprite = ai.fightManager.hitSprite;
+        Player.Move newMove = AIMovePicker.RandomSimpleMove(ai.fightManager);
 
         ai.RegisterMove(newMove, true);
     }

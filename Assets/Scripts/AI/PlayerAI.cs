@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAI : Player
 {
     private IAIStrategy currentStrategy;
-    private float decisionPeriod = 0.5f;
+    private float decisionPeriod = 0.4f;
     private float lastDecision = 0.0f;
     private float timer = 0.0f;
 
@@ -58,7 +58,25 @@ public class PlayerAI : Player
             bufferLength++;
 
             chargeTimer = 0.0f;
-            isCharging = charge;
+            if (move.move == MoveType.HIT || move.move == MoveType.LASER || move.move == MoveType.REFLECT) {
+                isCharging = charge;
+            }
+        }
+    }
+
+    public void EraseMove()
+    {
+        if (bufferLength != 0) {
+            bufferLength--;
+            buffer[bufferLength].move = MoveType.NEUTRAL;
+            buffer[bufferLength].isCharged = false;
+            buffer[bufferLength].sprite = fightManager.neutralSprite;
+
+            inputsImage[bufferLength].sprite = fightManager.neutralSprite;
+            inputsImage[bufferLength].enabled = false;
+
+            chargeTimer = 0.0f;
+            isCharging = false;
         }
     }
 }

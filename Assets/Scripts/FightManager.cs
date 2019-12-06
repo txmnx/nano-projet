@@ -116,6 +116,24 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         }
     }
 
+    public Sprite GetMoveSprite(Player.MoveType move)
+    {
+        switch (move) {
+            case Player.MoveType.HIT:
+                return hitSprite;
+            case Player.MoveType.REFLECT:
+                return reflectSprite;
+            case Player.MoveType.LASER:
+                return laserSprite;
+            case Player.MoveType.GUARD:
+                return guardSprite;
+            case Player.MoveType.SPECIAL:
+                return specialSprite;
+            default:
+                return neutralSprite;
+        }
+    }
+
     public void OnInputBeat() { }
     public void OnEnterActionBeat() { }
 }
