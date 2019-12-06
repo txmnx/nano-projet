@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement
+public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement, OnIdleBeatElement
 {
     public Player player1;
     public Player player2;
@@ -64,6 +64,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         InputTranslator.RegisterOnInputBeatElement(this);
         InputTranslator.RegisterOnActionBeatElement(this);
+        InputTranslator.RegisterOnIdleBeatElement(this);
     }
 
     public void OnEnterInputBeat()
@@ -121,5 +122,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     }
 
     public void OnInputBeat() { }
+    public void OnIdleBeat() { }
     public void OnEnterActionBeat() { }
+    public void OnEnterIdleBeat() { }
 }

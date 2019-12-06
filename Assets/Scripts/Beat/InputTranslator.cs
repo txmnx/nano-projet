@@ -21,7 +21,8 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 {
     private static List<OnInputBeatElement> onInputBeatElements;
     private static List<OnActionBeatElement> onActionBeatElements;
-    
+    private static List<OnIdleBeatElement> onIdleBeatElements;
+
     public static int step = 2; // How much beats for a sequence
     private static int currentStep;
 
@@ -35,7 +36,8 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     {
         onInputBeatElements = new List<OnInputBeatElement>();
         onActionBeatElements = new List<OnActionBeatElement>();
-        
+        onIdleBeatElements = new List<OnIdleBeatElement>();
+
         step = 2;
         currentStep = 0;
 
@@ -60,9 +62,16 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnActionBeat();
                 }
                 sequence = Sequence.ACTION;
-            }
-            else if (sequence == Sequence.IDLE)
+            } 
+            else if(sequence == Sequence.IDLE)
             {
+                foreach (OnIdleBeatElement element in onIdleBeatElements)
+                {
+                    element.OnEnterIdleBeat();
+                    element.OnIdleBeat();
+                }
+                sequence = Sequence.ACTION;
+                step = 2;
 
             }
             else {
@@ -80,9 +89,22 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnInputBeat();
                 }
             }
-            else {
+            else if(sequence == Sequence.ACTION)
+            {
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnActionBeat();
+                }
+            }
+            else
+            {
+                foreach (OnIdleBeatElement element in onIdleBeatElements)
+                {
+                    element.OnIdleBeat();
+                }
+
+                if (currentStep == 0)
+                {
+                    step = 4; //modify parameters for accelerated phase
                 }
             }
             currentStep++;
@@ -100,6 +122,11 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     public static void RegisterOnActionBeatElement(OnActionBeatElement element)
     {
         onActionBeatElements.Add(element);
+    }
+
+    public static void RegisterOnIdleBeatElement(OnIdleBeatElement element)
+    {
+        onIdleBeatElements.Add(element);
     }
 
     /**
