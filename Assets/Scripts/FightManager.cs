@@ -139,15 +139,9 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         }
     }
 
-    public bool CanCounter(Player.MoveType type)
+    public bool IsCounterMove(Player.MoveType type1, Player.MoveType type2)
     {
-        return (
-            type == Player.MoveType.HIT ||
-            type == Player.MoveType.LASER ||
-            type == Player.MoveType.REFLECT ||
-            type == Player.MoveType.SPECIAL ||
-            type == Player.MoveType.GUARD
-        );
+        return (coefficients[(int)type1, (int)type2] != 0);
     }
 
     public Player.MoveType GetCounterMoveType(Player.MoveType type)

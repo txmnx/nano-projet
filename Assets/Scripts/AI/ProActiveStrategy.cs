@@ -22,32 +22,22 @@ public class ProActiveStrategy : IAIStrategy
         }
         else if (!secondHit) {
             if (elapsedTime >= (2 / 3)) {
-                Player.MoveType counterLastMove;
-                if (ai.fightManager.CanCounter(opponent.GetMove(0).move)) {
-                    counterLastMove = ai.fightManager.GetCounterMoveType(ai.lastMove.move);
-                    if (counterLastMove == opponent.GetMove(0).move) {
-                        ai.EraseMove(0f);
-                        ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(0).move), ai.fightManager), 0.2f);
-
-                        secondHit = true;
-                        return;
-                    }
+                if (ai.fightManager.IsCounterMove(ai.lastMove.move, opponent.GetMove(0).move)) {
+                    ai.EraseMove(0f);
+                    ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(0).move), ai.fightManager), 0.2f);
+                    return;
                 }
 
                 ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(1).move), ai.fightManager), 0f);
-
                 secondHit = true;
             }
         }
         else if (!lastHit) {
-            if (ai.fightManager.CanCounter(opponent.GetMove(1).move)) {
-                Player.MoveType counterLastMove = ai.fightManager.GetCounterMoveType(opponent.lastMove.move);
-                if (counterLastMove != ai.lastMove.move) {
-                    ai.EraseMove(0f);
-                    ai.RegisterMove(AIMovePicker.SimpleMove(counterLastMove, ai.fightManager), 0.2f);
+            if (!(ai.fightManager.IsCounterMove(opponent.GetMove(1).move, ai.lastMove.move))) {
+                ai.EraseMove(0f);
+                ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.lastMove.move), ai.fightManager), 0.2f);
 
-                    lastHit = true;
-                }
+                lastHit = true;
             }
         }
     }

@@ -205,7 +205,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     public Move GetMove(int index)
     {
-        index = Mathf.Clamp(index, 0, (bufferLength - 1 >= 0) ? bufferLength - 1 : 0);
         return buffer[index];
     }
 }
