@@ -25,6 +25,8 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     private float[,] coefficients;
 
+    public System.Random random = new System.Random();
+
 
     /**
      * Coefficients :

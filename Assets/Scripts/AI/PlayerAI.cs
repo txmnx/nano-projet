@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerAI : Player
 {
     private IAIStrategy currentStrategy;
-    private float decisionPeriod = 0.8f;
-    private float decisionPeriodMin = 0.6f;
+    private float decisionPeriod = 0.5f;
+    private float decisionPeriodMin = 0.7f;
     private float decisionPeriodMax = 1f;
 
     private float lastDecision = 0.0f;
@@ -31,7 +31,7 @@ public class PlayerAI : Player
 
         decisionPeriod = Random.Range(decisionPeriodMin, decisionPeriodMax);
 
-        currentStrategy = AIStrategyPicker.RandomStrategy();
+        currentStrategy = AIStrategyPicker.RandomStrategy(fightManager.random);
     }
 
     private void Update()
@@ -57,6 +57,8 @@ public class PlayerAI : Player
             }
         }
 
+        Debug.Log(inputSequenceProgression);
+
         inputSequenceTimer += Time.deltaTime;
     }
 
@@ -65,11 +67,11 @@ public class PlayerAI : Player
         StartCoroutine(RegisterMoveCoroutine(move, timeToWait, charge));
     }
 
-    public IEnumerator RegisterMoveCoroutine(Move move, float timeToWait, bool charge)
+    private IEnumerator RegisterMoveCoroutine(Move move, float timeToWait, bool charge)
     {
         if (bufferLength < buffer.Length && InputTranslator.sequence == Sequence.INPUT) {
-            yield return new WaitForSeconds(timeToWait);
             isWaiting = true;
+            yield return new WaitForSeconds(timeToWait);
 
             if (bufferLength < buffer.Length && InputTranslator.sequence == Sequence.INPUT) {
                 chargingMove = move;
@@ -80,44 +82,41 @@ public class PlayerAI : Player
                 inputsImage[bufferLength].sprite = move.sprite;
                 inputsImage[bufferLength].enabled = true;
 
-                bufferLength++;
-
                 chargeTimer = 0.0f;
                 if (move.move == MoveType.HIT || move.move == MoveType.LASER || move.move == MoveType.REFLECT) {
                     isCharging = charge;
                 }
 
                 isWaiting = false;
+                bufferLength++;
             }
         }
     }
 
     public void EraseMove(float timeToWait)
     {
-        isWaiting = true;
         StartCoroutine(EraseMoveCoroutine(timeToWait));
     }
 
-    public IEnumerator EraseMoveCoroutine(float timeToWait)
+    private IEnumerator EraseMoveCoroutine(float timeToWait)
     {
         if (bufferLength != 0 && InputTranslator.sequence == Sequence.INPUT) {
-            yield return new WaitForSeconds(timeToWait);
             isWaiting = true;
+            yield return new WaitForSeconds(timeToWait);
 
             if (bufferLength != 0 && InputTranslator.sequence == Sequence.INPUT) {
+                buffer[bufferLength - 1].move = MoveType.NEUTRAL;
+                buffer[bufferLength - 1].isCharged = false;
+                buffer[bufferLength - 1].sprite = fightManager.neutralSprite;
 
-                bufferLength--;
-                buffer[bufferLength].move = MoveType.NEUTRAL;
-                buffer[bufferLength].isCharged = false;
-                buffer[bufferLength].sprite = fightManager.neutralSprite;
-
-                inputsImage[bufferLength].sprite = fightManager.neutralSprite;
-                inputsImage[bufferLength].enabled = false;
+                inputsImage[bufferLength - 1].sprite = fightManager.neutralSprite;
+                inputsImage[bufferLength - 1].enabled = false;
 
                 chargeTimer = 0.0f;
                 isCharging = false;
 
                 isWaiting = false;
+                bufferLength--;
             }
         }
     }
@@ -130,7 +129,7 @@ public class PlayerAI : Player
         decisionTimer = 0.0f;
         inputSequenceTimer = 0.0f;
         isWaiting = false;
-        currentStrategy = AIStrategyPicker.RandomStrategy();
+        currentStrategy = AIStrategyPicker.RandomStrategy(fightManager.random);
 
         decisionPeriod = Random.Range(decisionPeriodMin, decisionPeriodMax);
     }

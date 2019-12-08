@@ -24,18 +24,18 @@ public class ProActiveStrategy : IAIStrategy
             if (elapsedTime >= (2 / 3)) {
                 if (ai.fightManager.IsCounterMove(ai.lastMove.move, opponent.GetMove(0).move)) {
                     ai.EraseMove(0f);
-                    ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(0).move), ai.fightManager), 0.2f);
+                    ai.RegisterMove(AIMovePicker.CreateMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(0).move), ai.fightManager), 0.1f);
                     return;
                 }
 
-                ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(1).move), ai.fightManager), 0f);
+                ai.RegisterMove(AIMovePicker.CreateMove(ai.fightManager.GetCounterMoveType(opponent.GetMove(1).move), ai.fightManager), 0f);
                 secondHit = true;
             }
         }
         else if (!lastHit) {
             if (!(ai.fightManager.IsCounterMove(opponent.GetMove(1).move, ai.lastMove.move))) {
                 ai.EraseMove(0f);
-                ai.RegisterMove(AIMovePicker.SimpleMove(ai.fightManager.GetCounterMoveType(opponent.lastMove.move), ai.fightManager), 0.2f);
+                ai.RegisterMove(AIMovePicker.CreateMove(ai.fightManager.GetCounterMoveType(opponent.lastMove.move), ai.fightManager), 0.1f);
 
                 lastHit = true;
             }

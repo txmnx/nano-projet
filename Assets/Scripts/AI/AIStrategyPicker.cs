@@ -15,8 +15,8 @@ public class AIStrategyPicker
         { AIStrategyType.REACTIVE, new ReActiveStrategy() }
     };
 
-    public static IAIStrategy RandomStrategy()
+    public static IAIStrategy RandomStrategy(System.Random random)
     {
-        return strategies[AIStrategyType.PROACTIVE].NewInstance();
+        return strategies[(AIStrategyType)random.Next(0, strategies.Count)].NewInstance();
     }
 }

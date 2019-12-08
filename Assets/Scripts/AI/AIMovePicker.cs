@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AIMovePicker
 {
-    public static Player.Move SimpleMove(Player.MoveType moveType, FightManager fightManager)
+    public static Player.Move CreateMove(Player.MoveType moveType, FightManager fightManager)
     {
         Player.Move newMove = new Player.Move();
         newMove.move = moveType;
@@ -31,7 +31,7 @@ public class AIMovePicker
         return randomMove;
     }
 
-    public static Player.Move RandomSimpleMove(FightManager fightManager)
+    public static Player.Move RandomSimpleMove(System.Random random, FightManager fightManager)
     {
         Player.MoveType[] moveTypes = new Player.MoveType[]
         {
@@ -41,9 +41,15 @@ public class AIMovePicker
         };
 
         Player.Move randomMove = new Player.Move();
-        randomMove.move = (Player.MoveType)moveTypes.GetValue((new System.Random()).Next(moveTypes.Length));
+        randomMove.move = (Player.MoveType)moveTypes.GetValue(random.Next(moveTypes.Length));
         randomMove.isCharged = false;
         randomMove.sprite = fightManager.GetMoveSprite(randomMove.move);
         return randomMove;
+    }
+
+    public static Player.Move RandomSimpleMove(FightManager fightManager)
+    {
+        System.Random random = new System.Random();
+        return RandomSimpleMove(random, fightManager);
     }
 }
