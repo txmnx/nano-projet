@@ -57,7 +57,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         idString = (id == PlayerID.Player1) ? "1" : "2";
     }
 
-    public void OnEnterInputBeat()
+    public virtual void OnEnterInputBeat()
     {
         for(int i = 0; i<inputsImage.Length; i++)
         {
@@ -72,7 +72,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         inputsImage[currentAction++].enabled = false;
     }
 
-    public void Reset()
+    public virtual void Reset()
     {
         for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
             buffer[i].move = MoveType.NEUTRAL;
@@ -195,6 +195,17 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         isCharging = false;
         chargeTimer = 0;
     }
-
     public virtual void OnInputBeat() {}
+
+
+    // Return the last move made by this player
+    public Move lastMove {
+        get { return buffer[(bufferLength - 1 >= 0) ? bufferLength - 1 : 0]; }
+    }
+
+    public Move GetMove(int index)
+    {
+        index = Mathf.Clamp(index, 0, (bufferLength - 1 >= 0) ? bufferLength - 1 : 0);
+        return buffer[index];
+    }
 }

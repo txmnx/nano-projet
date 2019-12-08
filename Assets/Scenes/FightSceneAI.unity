@@ -801,7 +801,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 734479239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be91dc8504979c640a65711c9ffdcd52, type: 3}
+  m_Script: {fileID: 11500000, guid: 030d2d6c12ab1b5448127af4ca1b6dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
@@ -816,6 +816,7 @@ MonoBehaviour:
   - {fileID: 1393901136}
   - {fileID: 868422014}
   bufferLength: 0
+  opponent: {fileID: 1915892328}
 --- !u!1 &868422012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,7 +1373,6 @@ GameObject:
   - component: {fileID: 1226417288}
   - component: {fileID: 1226417289}
   - component: {fileID: 1226417287}
-  - component: {fileID: 1226417290}
   - component: {fileID: 1226417291}
   - component: {fileID: 1226417292}
   m_Layer: 0
@@ -1421,21 +1421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53341baa09ecd464f92fa410bbcc4d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1226417290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226417286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8babb94c68ab3ea4587bff6b538b4186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frameRate: 60
-  bpm: 78
-  step: 2
 --- !u!114 &1226417291
 MonoBehaviour:
   m_ObjectHideFlags: 0

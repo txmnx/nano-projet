@@ -12,42 +12,11 @@ using UnityEngine;
  */
 public class BeatManager : MonoBehaviour
 {
-    private static float internalTimer;
-    public static int bpm = 80;
-
-    public static float period {
-        get { return 60 / (float)bpm; }
-    }
-    
-    public static float songPosition {
-        // TODO : use https://www.reddit.com/r/gamedev/comments/13y26t/how_do_rhythm_games_stay_in_sync_with_the_music/
-        get { return internalTimer; }
-    }
-
     private static List<OnBeatElement> onBeatElements;
-    private static float lastBeat;
 
     void Awake()
     {
-        internalTimer = 0.0f;
-
         onBeatElements = new List<OnBeatElement>();
-        lastBeat = 0.0f;
-    }
-
-    /**
-     * TODO : should have an Init method to first call OnBeat when the music starts
-     */
-
-    void Update()
-    {
-        // On each beat we call OnBeat of all of the beat elements
-        if (BeatManager.songPosition > lastBeat + BeatManager.period) {
-            //PlayBeat();
-            lastBeat += BeatManager.period;
-        }
-
-        internalTimer += Time.deltaTime;
     }
 
     void PlayBeat()
@@ -60,14 +29,5 @@ public class BeatManager : MonoBehaviour
     public static void RegisterOnBeatElement(OnBeatElement element)
     {
         onBeatElements.Add(element);
-    }
-
-    /**
-     * Reset the beat.
-     */
-    public static void Reset()
-    {
-        internalTimer = 0.0f;
-        lastBeat = 0.0f;
     }
 }

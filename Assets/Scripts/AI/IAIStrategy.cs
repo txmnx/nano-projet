@@ -6,5 +6,5 @@ public interface IAIStrategy
 {
     IAIStrategy NewInstance();
 
-    void Iteration(PlayerAI ai, Player opponent);
+    void Iteration(PlayerAI ai, Player opponent, float elapsedTime);
 }

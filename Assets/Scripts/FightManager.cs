@@ -104,11 +104,16 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public float CompareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's
     {
         if (move2.isCharged) {
-            if (move1.move == move2.move && move1.isCharged) {
-                return basicDamage * coefficients[(int)move1.move, (int)move2.move];
+            if (move1.move == move2.move) {
+                if (move1.isCharged) {
+                    return basicDamage * coefficients[(int)move1.move, (int)move2.move];
+                }
+                else {
+                    return basicDamage * chargedCoeff;
+                }
             }
             else {
-                return basicDamage * chargedCoeff;
+                return basicDamage * coefficients[(int)move1.move, (int)move2.move] * chargedCoeff;
             }
         }
         else {
@@ -131,6 +136,35 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
                 return specialSprite;
             default:
                 return neutralSprite;
+        }
+    }
+
+    public bool CanCounter(Player.MoveType type)
+    {
+        return (
+            type == Player.MoveType.HIT ||
+            type == Player.MoveType.LASER ||
+            type == Player.MoveType.REFLECT ||
+            type == Player.MoveType.SPECIAL ||
+            type == Player.MoveType.GUARD
+        );
+    }
+
+    public Player.MoveType GetCounterMoveType(Player.MoveType type)
+    {
+        switch(type) {
+            case Player.MoveType.HIT:
+                return Player.MoveType.LASER;
+            case Player.MoveType.LASER:
+                return Player.MoveType.REFLECT;
+            case Player.MoveType.REFLECT:
+                return Player.MoveType.HIT;
+            case Player.MoveType.SPECIAL:
+                return AIMovePicker.RandomSimpleMove(this).move;
+            case Player.MoveType.GUARD:
+                return Player.MoveType.SPECIAL;
+            default:
+                return AIMovePicker.RandomSimpleMove(this).move;
         }
     }
 

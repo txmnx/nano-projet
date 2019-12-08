@@ -9,7 +9,7 @@ public class ReActiveStrategy : IAIStrategy
         return new ReActiveStrategy();
     }
 
-    public void Iteration(PlayerAI ai, Player opponent)
+    public void Iteration(PlayerAI ai, Player opponent, float elapsedTime)
     {
 
     }

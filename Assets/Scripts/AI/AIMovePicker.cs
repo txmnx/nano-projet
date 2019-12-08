@@ -5,6 +5,15 @@ using UnityEngine;
 
 public class AIMovePicker
 {
+    public static Player.Move SimpleMove(Player.MoveType moveType, FightManager fightManager)
+    {
+        Player.Move newMove = new Player.Move();
+        newMove.move = moveType;
+        newMove.isCharged = false;
+        newMove.sprite = fightManager.GetMoveSprite(moveType);
+        return newMove;
+    }
+
     public static Player.Move RandomMove(FightManager fightManager)
     {
         Player.MoveType [] moveTypes = new Player.MoveType[]
@@ -17,6 +26,7 @@ public class AIMovePicker
 
         Player.Move randomMove = new Player.Move();
         randomMove.move = (Player.MoveType)moveTypes.GetValue((new System.Random()).Next(moveTypes.Length));
+        randomMove.isCharged = false;
         randomMove.sprite = fightManager.GetMoveSprite(randomMove.move);
         return randomMove;
     }
@@ -32,6 +42,7 @@ public class AIMovePicker
 
         Player.Move randomMove = new Player.Move();
         randomMove.move = (Player.MoveType)moveTypes.GetValue((new System.Random()).Next(moveTypes.Length));
+        randomMove.isCharged = false;
         randomMove.sprite = fightManager.GetMoveSprite(randomMove.move);
         return randomMove;
     }
