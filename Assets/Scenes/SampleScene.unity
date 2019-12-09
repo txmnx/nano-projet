@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -804,19 +804,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be91dc8504979c640a65711c9ffdcd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitKey: 97
-  reflectKey: 122
-  laserKey: 101
-  guardKey: 113
-  specialKey: 115
-  eraseKey: 100
+  id: 0
   chargeTime: 0.8
-  chargeCounter: 0
+  chargeTimer: 0
   health: {fileID: 1285079184}
   maxLife: 1200
   currentLife: 0
   fightManager: {fileID: 1226417291}
-  inputTranslator: {fileID: 0}
   wins: 0
   inputsImage:
   - {fileID: 1393901136}
@@ -1439,9 +1433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8babb94c68ab3ea4587bff6b538b4186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frameRate: 60
-  bpm: 78
-  step: 2
 --- !u!114 &1226417291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2687,19 +2678,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be91dc8504979c640a65711c9ffdcd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitKey: 105
-  reflectKey: 111
-  laserKey: 112
-  guardKey: 107
-  specialKey: 108
-  eraseKey: 109
+  id: 1
   chargeTime: 0.8
-  chargeCounter: 0
+  chargeTimer: 0
   health: {fileID: 1516163365}
   maxLife: 1200
   currentLife: 0
   fightManager: {fileID: 1226417291}
-  inputTranslator: {fileID: 0}
   wins: 0
   inputsImage:
   - {fileID: 1065347225}
