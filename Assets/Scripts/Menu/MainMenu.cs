@@ -4,29 +4,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class MainMenu : MonoBehaviour
 {
 
-    public Text theText;
-    public GameObject controlMenuUI;
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        theText.color = Color.red; //Or however you do your color
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        theText.color = Color.white; //Or however you do your color
-    }
-
+    /*
     public void LoadVersus()
     {
         SceneManager.LoadScene("SampleScene");
-    }
-
-    public void OptionMenu()
-    { 
     }
 
     public void ControlMenu()
@@ -41,6 +25,7 @@ public class MainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         //Application.Quit;
     }
+    */
 }
 //Isfocus
 //IShighlight
