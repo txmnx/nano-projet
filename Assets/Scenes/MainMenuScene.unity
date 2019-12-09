@@ -355,7 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 549670241}
-  - component: {fileID: 549670242}
+  - component: {fileID: 549670243}
   m_Layer: 5
   m_Name: Choices
   m_TagString: Untagged
@@ -370,7 +370,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549670240}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -386,25 +386,43 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &549670242
-Animator:
-  serializedVersion: 3
+--- !u!114 &549670243
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549670240}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 742771f45ffa78b4bac89ebc1e6e383b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8410769d733f944a554e9e4ae74e05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  distanceBetweenChoices: 60
 --- !u!1 &600101779
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,9 +565,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices: {fileID: 0}
-  theText: {fileID: 2137741110}
-  controlMenuUI: {fileID: 0}
 --- !u!1 &775669586
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,9 +706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices: {fileID: 0}
-  theText: {fileID: 0}
-  controlMenuUI: {fileID: 1229310251}
 --- !u!1 &819906852
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,9 +871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices: {fileID: 0}
-  theText: {fileID: 0}
-  controlMenuUI: {fileID: 0}
 --- !u!1 &963120340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,9 +1940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices: {fileID: 0}
-  theText: {fileID: 1972822944}
-  controlMenuUI: {fileID: 0}
 --- !u!1 &1307181035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +1951,7 @@ GameObject:
   - component: {fileID: 1307181036}
   - component: {fileID: 1307181038}
   - component: {fileID: 1307181037}
+  - component: {fileID: 1307181039}
   m_Layer: 5
   m_Name: MenuPanel
   m_TagString: Untagged
@@ -2009,6 +2016,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307181035}
   m_CullTransparentMesh: 0
+--- !u!114 &1307181039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307181035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326747044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,9 +2184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices: {fileID: 0}
-  theText: {fileID: 0}
-  controlMenuUI: {fileID: 1229310251}
 --- !u!1 &1593360901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,9 +2326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498ddff342c1af443a0c086a48b06a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choices: {fileID: 0}
-  theText: {fileID: 861318842}
-  controlMenuUI: {fileID: 0}
 --- !u!1 &1685371150
 GameObject:
   m_ObjectHideFlags: 0

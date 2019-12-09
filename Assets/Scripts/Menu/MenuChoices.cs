@@ -14,6 +14,7 @@ public class MenuChoices : MonoBehaviour
    
 
     Choice selection = Choice.VERSUS;
+    int choicesLength = 4;
 
     private RectTransform rectTransform;
 
@@ -33,29 +34,55 @@ public class MenuChoices : MonoBehaviour
         if (!isMoving) {
             if (Input.GetAxisRaw("SelectionVerticalButton") > 0f || Input.GetAxisRaw("SelectionVerticalJoystick") > 0f) {
                 Debug.Log("UP");
-                MoveDown();
+                if (selection - 1 < 0) {
+                    selection = (Choice)choicesLength - 1;
+                    MoveBottom();
+                }
+                else {
+                    selection--;
+                    MoveUp();
+                }
             }
             else if (Input.GetAxisRaw("SelectionVerticalButton") < 0f || Input.GetAxisRaw("SelectionVerticalJoystick") < 0f) {
-                Debug.Log("DOWN");
-                MoveUp();
+                if (selection + 1 >= (Choice)choicesLength) {
+                    selection = 0;
+                    MoveTop();
+                }
+                else {
+                    selection++;
+                    MoveDown();
+                }
             }
         }
 
         if (Input.GetButtonDown("Validate")) {
             //valider
+            Debug.Log(selection);
         }
     }
 
     private void MoveUp()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.1f, distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.1f, -distanceBetweenChoices));
     }
 
     private void MoveDown()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.1f, -distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.1f, distanceBetweenChoices));
+    }
+
+    private void MoveTop()
+    {
+        isMoving = true;
+        StartCoroutine(MoveAnimation(0.1f, -distanceBetweenChoices * 3));
+    }
+
+    private void MoveBottom()
+    {
+        isMoving = true;
+        StartCoroutine(MoveAnimation(0.1f, distanceBetweenChoices * 3));
     }
 
     private IEnumerator MoveAnimation(float duration, float offset)
@@ -71,8 +98,6 @@ public class MenuChoices : MonoBehaviour
             progress = Mathf.Clamp(timer / duration, 0f, 1f);
 
             y = Mathf.Lerp(0, offset, progress);
-
-            Debug.Log(y);
 
             rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initY + y);
 
