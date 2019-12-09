@@ -172,7 +172,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
             case Player.MoveType.GUARD:
                 return Player.MoveType.SPECIAL;
             default:
-                return AIMovePicker.RandomSimpleMove(this).move;
+                return AIMovePicker.RandomMove(this).move;
         }
     }
 

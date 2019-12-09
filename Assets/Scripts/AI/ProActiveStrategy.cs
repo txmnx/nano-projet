@@ -16,7 +16,7 @@ public class ProActiveStrategy : IAIStrategy
     public void Iteration(PlayerAI ai, Player opponent, float elapsedTime)
     {
         if (!firstHit) {
-            Player.Move newMove = AIMovePicker.RandomSimpleMove(ai.fightManager);
+            Player.Move newMove = AIMovePicker.RandomMove(ai.fightManager);
             ai.RegisterMove(newMove, 0f, true);
             firstHit = true;
         }

@@ -6,8 +6,8 @@ public class PlayerAI : Player
 {
     private IAIStrategy currentStrategy;
     private float decisionPeriod = 0.5f;
-    private float decisionPeriodMin = 0.7f;
-    private float decisionPeriodMax = 1f;
+    private float decisionPeriodMin = 0.4f;
+    private float decisionPeriodMax = 0.7f;
 
     private float lastDecision = 0.0f;
     private float decisionTimer = 0.0f;
@@ -56,8 +56,6 @@ public class PlayerAI : Player
                 decisionTimer += Time.deltaTime;
             }
         }
-
-        Debug.Log(inputSequenceProgression);
 
         inputSequenceTimer += Time.deltaTime;
     }
