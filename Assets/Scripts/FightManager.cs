@@ -4,12 +4,12 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement
+public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement, OnIdleBeatElement
 {
     public Player player1;
     public Player player2;
     public float basicDamage = 300.0f;
-    public float chargedCoeff = 120f;
+    public float chargedCoeff = 3f;
     public float specialCoeff = 5f;
     private int counter;
 
@@ -66,6 +66,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         InputTranslator.RegisterOnInputBeatElement(this);
         InputTranslator.RegisterOnActionBeatElement(this);
+        InputTranslator.RegisterOnIdleBeatElement(this);
     }
 
     public void OnEnterInputBeat()
@@ -73,6 +74,18 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         action1Image.enabled = false;
         action2Image.enabled = false;
+    }
+
+    public void OnEnterIdleBeat()
+    {
+        counter = 0;
+        action1Image.enabled = false;
+        action2Image.enabled = false;
+
+        Debug.Log("INCROYABLE");
+
+        player1.Reset();
+        player2.Reset();
     }
 
     public void OnActionBeat()
@@ -84,7 +97,6 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
         counter = counter + 1;
 
-        Debug.Log("ACTION");
         if (!action1Image.enabled) {
             action1Image.enabled = true;
             action2Image.enabled = true;
@@ -165,5 +177,9 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     }
 
     public void OnInputBeat() { }
+    public void OnIdleBeat() { }
     public void OnEnterActionBeat() { }
+
+
+    
 }

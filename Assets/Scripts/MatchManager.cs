@@ -20,21 +20,29 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     private bool gameIsPaused = false;
     private bool roundIsEnd = false;
     private bool matchIsEnd = false;
-
+    
     public Color victoryJapColor;
     public Color victoryUsColor;
+    public Color baseColor;
 
 
     void Start()
     {
+
+        Init();
+        
+    }
+
+    public void Init()
+    {
+        Camera.main.backgroundColor = baseColor;
+
         BeatManager.RegisterOnBeatElement(this);
 
-        for (int i = 0; i<winSliders.Length; i++)
+        for (int i = 0; i < winSliders.Length; i++)
         {
             winSliders[i].maxValue = roundToWin;
         }
-
-        
     }
 
     public void OnBeat()
@@ -73,7 +81,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
             if (winner != null && winner.wins == roundToWin)
             {
-               
                 onMatchEnd(winner);
             }
             else
@@ -95,6 +102,12 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             winnerID = 0;
             isWon = true;
         }
+
+        if (matchIsEnd)
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                resetGame();
+            }
     }
 
     public void onRoundEnd()
@@ -109,6 +122,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
+            players[i].BufferReset();
         }
         winner = null;
         isWon = false;
@@ -116,10 +130,15 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void onMatchEnd(Player winner)
     {
+        matchIsEnd = true;
+        
         if (winner == players[0])
             Camera.main.backgroundColor = victoryUsColor;
         else if (winner == players[1])
             Camera.main.backgroundColor = victoryJapColor;
+        pause();
+        gameIsPaused = false;
+        matchIsEnd = true;
         //anim/son de fin de partie
     }
 
@@ -139,4 +158,15 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         InputTranslator.sequence = Sequence.IDLE;
     }
 
+    public void resetGame()
+    {
+        Camera.main.backgroundColor = baseColor;
+        for (int i = 0; i < players.Length; i++)
+        {
+            players[i].wins = 0;
+            winSliders[i].value = players[i].wins;
+        }
+        resetRound();
+        resume();
+    }
 }

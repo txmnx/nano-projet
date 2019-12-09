@@ -44,11 +44,17 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     protected virtual void Start()
     {
+        Init();
+    }
+
+    public void Init()
+    {
         wins = 0;
         currentLife = maxLife;
         Reset();
 
-        foreach (Image image in inputsImage) {
+        foreach (Image image in inputsImage)
+        {
             image.enabled = false;
         }
 
@@ -68,7 +74,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     }
     public void OnActionBeat()
     {
-        Debug.Log("PLAYER");
         inputsImage[currentAction++].enabled = false;
     }
 
