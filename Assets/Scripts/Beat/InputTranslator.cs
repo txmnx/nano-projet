@@ -21,7 +21,8 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 {
     private static List<OnInputBeatElement> onInputBeatElements;
     private static List<OnActionBeatElement> onActionBeatElements;
-    
+    private static List<OnIdleBeatElement> onIdleBeatElements;
+
     public static int step = 2; // How much beats for a sequence
     private static int currentStep;
 
@@ -33,13 +34,22 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
     void Awake()
     {
+        Init();
+    }
+
+    public void Init()
+    {
         onInputBeatElements = new List<OnInputBeatElement>();
         onActionBeatElements = new List<OnActionBeatElement>();
-        
-        step = 2;
-        currentStep = 1;
+        onIdleBeatElements = new List<OnIdleBeatElement>();
 
-        sequence = Sequence.ACTION;
+        step = 2;
+
+        currentStep = 1;
+        fightManager.OnEnterIdleBeat();
+        sequence = Sequence.IDLE;
+
+        
     }
 
     void Start()
@@ -47,13 +57,15 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
         BeatManager.RegisterOnBeatElement(this);
     }
 
+
+
     /**
      * TODO : should have an Init method to first call OnInputBeat and OnActionBeat when the music starts
      */
     
     public void OnBeat()
     {
-        Debug.Log("test");
+        
         if (currentStep == step) {
             if (sequence == Sequence.INPUT) {
                 foreach (OnActionBeatElement element in onActionBeatElements) {
@@ -61,6 +73,19 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnActionBeat();
                 }
                 sequence = Sequence.ACTION;
+            } 
+            else if(sequence == Sequence.IDLE)
+            {
+               
+                foreach (OnIdleBeatElement element in onIdleBeatElements)
+                {
+                    
+                    element.OnEnterIdleBeat();
+                    element.OnIdleBeat();
+                }
+                sequence = Sequence.ACTION;
+                step = 2;
+
             }
             else {
                 foreach (OnInputBeatElement element in onInputBeatElements) {
@@ -69,23 +94,35 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                 }
                 sequence = Sequence.INPUT;
             }
-
             currentStep = 1;
         }
-        else {
+        else{
             if (sequence == Sequence.INPUT) {
                 foreach (OnInputBeatElement element in onInputBeatElements) {
                     element.OnInputBeat();
                 }
             }
-            else {
+            else if(sequence == Sequence.ACTION)
+            {
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnActionBeat();
                 }
             }
+            else
+            {
+                foreach (OnIdleBeatElement element in onIdleBeatElements)
+                {
+                    element.OnIdleBeat();
+                }
 
+                if (currentStep == 0)
+                {
+                    //step = 4; //modify parameters for accelerated phase
+                }
+            }
             currentStep++;
         }
+        Debug.Log(sequence);
     }
 
     /**
@@ -99,6 +136,11 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     public static void RegisterOnActionBeatElement(OnActionBeatElement element)
     {
         onActionBeatElements.Add(element);
+    }
+
+    public static void RegisterOnIdleBeatElement(OnIdleBeatElement element)
+    {
+        onIdleBeatElements.Add(element);
     }
 
     /**
