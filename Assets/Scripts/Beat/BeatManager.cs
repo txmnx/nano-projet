@@ -29,12 +29,15 @@ public class BeatManager : MonoBehaviour
 
     void Awake()
     {
+    }
+
+    public void customAwake()
+    {
         internalTimer = 0.0f;
 
         onBeatElements = new List<OnBeatElement>();
         lastBeat = 0.0f;
     }
-
     /**
      * TODO : should have an Init method to first call OnBeat when the music starts
      */

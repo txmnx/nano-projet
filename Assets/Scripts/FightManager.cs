@@ -43,9 +43,14 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     private void Awake()
     {
+        
+    }
+
+    public void customAwake()
+    {
         int movesLength = Enum.GetNames(typeof(Player.MoveType)).Length;
         coefficients = new float[movesLength, movesLength];
-        
+
         coefficients[(int)Player.MoveType.HIT, (int)Player.MoveType.LASER] = 1f;
         coefficients[(int)Player.MoveType.REFLECT, (int)Player.MoveType.HIT] = 1f;
         coefficients[(int)Player.MoveType.LASER, (int)Player.MoveType.REFLECT] = 1f;
@@ -60,6 +65,11 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     }
 
     private void Start()
+    {
+       
+    }
+
+    public void customStart()
     {
         counter = 0;
         InputTranslator.RegisterOnInputBeatElement(this);

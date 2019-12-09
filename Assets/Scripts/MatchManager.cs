@@ -27,13 +27,10 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
 
     void Start()
-    {
-
-        Init();
-        
+    {        
     }
 
-    public void Init()
+    public void customStart()
     {
         Camera.main.backgroundColor = baseColor;
 
@@ -47,19 +44,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void OnBeat()
     {
-        /*if (isWon)
-        {
-            winner.wins += 1;
-            winSliders[winnerID].value = winner.wins;
-            onRoundEnd();
-            resetRound();
-
-            if (winner != null && winner.wins == roundToWin)
-            {
-                // onMatchEnd(players[winner]);
-            }
-
-        }*/
+        
     }
 
     void Update()

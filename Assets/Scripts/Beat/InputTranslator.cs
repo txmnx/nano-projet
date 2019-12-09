@@ -34,10 +34,9 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
     void Awake()
     {
-        Init();
     }
 
-    public void Init()
+    public void customAwake()
     {
         onInputBeatElements = new List<OnInputBeatElement>();
         onActionBeatElements = new List<OnActionBeatElement>();
@@ -54,15 +53,15 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
     void Start()
     {
-        BeatManager.RegisterOnBeatElement(this);
+        
     }
 
 
-
-    /**
-     * TODO : should have an Init method to first call OnInputBeat and OnActionBeat when the music starts
-     */
-    
+    public void customStart()
+    {
+        BeatManager.RegisterOnBeatElement(this);
+    }
+   
     public void OnBeat()
     {
         
