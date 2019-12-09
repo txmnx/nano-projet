@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuChoices : MonoBehaviour
 {
@@ -23,14 +25,19 @@ public class MenuChoices : MonoBehaviour
 
     private bool isMoving = false;
 
+    public TextMeshProUGUI[] choicesTexts;
+
 
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+
+        HighlightText(selection);
     }
 
     private void Update()
     {
+        //Lancer les events WWISE
         if (!isMoving) {
             if (Input.GetAxisRaw("SelectionVerticalButton") > 0f || Input.GetAxisRaw("SelectionVerticalJoystick") > 0f) {
                 Debug.Log("UP");
@@ -42,6 +49,8 @@ public class MenuChoices : MonoBehaviour
                     selection--;
                     MoveUp();
                 }
+
+                HighlightText(selection);
             }
             else if (Input.GetAxisRaw("SelectionVerticalButton") < 0f || Input.GetAxisRaw("SelectionVerticalJoystick") < 0f) {
                 if (selection + 1 >= (Choice)choicesLength) {
@@ -52,12 +61,28 @@ public class MenuChoices : MonoBehaviour
                     selection++;
                     MoveDown();
                 }
+
+                HighlightText(selection);
             }
         }
 
         if (Input.GetButtonDown("Validate")) {
-            //valider
-            Debug.Log(selection);
+            switch(selection) {
+                case Choice.VERSUS:
+                    SceneManager.LoadScene("SampleScene");
+                    break;
+                case Choice.AI:
+                    SceneManager.LoadScene("FightSceneAI");
+                    break;
+                case Choice.CONTROLS:
+                    //TODO : popup controls
+                    break;
+                case Choice.OPTIONS:
+                    //TODO : Options scene
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
@@ -76,13 +101,13 @@ public class MenuChoices : MonoBehaviour
     private void MoveTop()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.1f, -distanceBetweenChoices * 3));
+        StartCoroutine(MoveAnimation(0.15f, -distanceBetweenChoices * 3));
     }
 
     private void MoveBottom()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.1f, distanceBetweenChoices * 3));
+        StartCoroutine(MoveAnimation(0.15f, distanceBetweenChoices * 3));
     }
 
     private IEnumerator MoveAnimation(float duration, float offset)
@@ -108,5 +133,19 @@ public class MenuChoices : MonoBehaviour
 
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initY + offset);
         isMoving = false;
+    }
+
+    private void HighlightText(Choice choice)
+    {
+        for (int i = 0; i < choicesTexts.Length; ++i) {
+            if (i == (int)choice) {
+                choicesTexts[i].fontSize = 33;
+                choicesTexts[i].color = Color.white;
+            }
+            else {
+                choicesTexts[i].fontSize = 30;
+                choicesTexts[i].color = Color.gray;
+            }
+        }
     }
 }
