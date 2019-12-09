@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenuBenoit : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class MainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public Text theText;
