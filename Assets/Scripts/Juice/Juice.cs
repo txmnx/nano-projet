@@ -5,16 +5,25 @@ using UnityEngine;
 public class Juice : MonoBehaviour, OnBeatElement
 {
     public Camera camera;
+    private Animator cameraAnimator;
+
     public AnimationCurve screenShakeCurve;
 
     void Start()
     {
         BeatManager.RegisterOnBeatElement(this);
+        cameraAnimator = camera.GetComponent<Animator>();
     }
 
     public void OnBeat()
     {
-        ScreenShake(0.3f, 0.5f);
+        ScreenPulse();
+        //ScreenShake(0.3f, 0.5f);
+    }
+
+    public void ScreenPulse()
+    {
+        cameraAnimator.Play("pulse_clip", 0);
     }
 
     public void ScreenShake(float duration, float magnitude)
