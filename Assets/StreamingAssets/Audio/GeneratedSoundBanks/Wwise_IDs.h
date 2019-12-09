@@ -36,7 +36,7 @@ namespace AK
         static const AkUniqueID FOLEY_JAPAN_WHOOSH = 3507717920U;
         static const AkUniqueID FOLEY_JAPAN_WIN = 2771932084U;
         static const AkUniqueID MUSIC_R0_INIT = 2178242372U;
-        static const AkUniqueID MUSIC_ROUNDENDPART2_US = 4093640312U;
+        static const AkUniqueID MUSIC_ROUNDENDPART2 = 2927058889U;
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
         static const AkUniqueID SFX_AMERICAN_DEATH = 2506831292U;
         static const AkUniqueID SFX_AMERICAN_FENTE = 3508642320U;
@@ -66,6 +66,7 @@ namespace AK
         static const AkUniqueID UI_MENU_PAUSEGAME = 2559298002U;
         static const AkUniqueID UI_MENU_START_GAME = 1529249135U;
         static const AkUniqueID UI_MENU_UNPAUSEGAME = 455738561U;
+        static const AkUniqueID V0_VICTORY_FIGHT = 858171719U;
         static const AkUniqueID VO_AMERICAN_ATTACK = 2414228328U;
         static const AkUniqueID VO_AMERICAN_DEATH = 390301034U;
         static const AkUniqueID VO_AMERICAN_WIN = 957164294U;
@@ -105,6 +106,17 @@ namespace AK
                 static const AkUniqueID ST_WINUS = 3179318095U;
             } // namespace STATE
         } // namespace MUSICTOPLAY
+
+        namespace ROUNDWINNER
+        {
+            static const AkUniqueID GROUP = 3957034330U;
+
+            namespace STATE
+            {
+                static const AkUniqueID JP = 1735860063U;
+                static const AkUniqueID US = 1551306157U;
+            } // namespace STATE
+        } // namespace ROUNDWINNER
 
     } // namespace STATES
 

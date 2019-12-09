@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	3012001959	MusicToPlay			\Music_States\MusicToPlay	
+	3957034330	RoundWinner			\Music_States\RoundWinner	
 
 State	ID	Name	State Group			Notes
 	0	None	MusicToPlay			
@@ -14,6 +15,9 @@ State	ID	Name	State Group			Notes
 	3179318095	ST_WinUS	MusicToPlay			
 	3955955234	ST_R2_LeadJP	MusicToPlay			
 	4274730056	ST_R2_LeadUS	MusicToPlay			
+	0	None	RoundWinner			
+	1551306157	US	RoundWinner			
+	1735860063	JP	RoundWinner			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	81210309	Sidechain_All_By_VO			\Sidechain\Sidechain_All_By_VO	
