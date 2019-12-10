@@ -28,9 +28,9 @@ public class PostWwiseEventAnim : MonoBehaviour
         AkSoundEngine.PostEvent("Foley_Robot_Laser_Shoot", gameObject);
     }
 
-    public void Foley_Robot_Door_Open()
+    public void Foley_Robot_Laser_Door_Open()
     {
-        AkSoundEngine.PostEvent("Foley_Robot_Door_Open", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Laser_Door_Open", gameObject);
     }
 
     public void Foley_Robot_Laser_Door_Close()
@@ -93,11 +93,6 @@ public class PostWwiseEventAnim : MonoBehaviour
     public void SFX_Robot_SpecialAttack()
     {
         AkSoundEngine.PostEvent("SFX_Robot_SpecialAttack", gameObject);
-    }
-
-    public void SFX_Robot_Damage()
-    {
-        AkSoundEngine.PostEvent("SFX_Robot_Damage", gameObject);
     }
 
     public void SFX_Robot_Death()

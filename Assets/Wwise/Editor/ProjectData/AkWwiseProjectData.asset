@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586262370701636324
+    m_lastTime: -8586257072129118933
     List:
     - name: Reverb_Environment
       guid: e75504b6b32e344fada0c027ecb4f84e
@@ -106,291 +106,155 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586262150809812981
+    m_lastTime: -8586256178699336114
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
     guid: 2819fee626dec34fad76f39d0b5e8fee
     GuidInternal: 
-    m_lastTime: -8586262276753060430
+    m_lastTime: -8586256173646823358
     List:
-    - name: Foley_American_Death
-      guid: 143f11c13bf0064d9e8c125301118550
-      id: 4288989348
+    - name: Foley_Robot_Damage
+      guid: 5c4b80f78d52fe4bb57372af5699d6d4
+      id: 1606116385
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Death
+      - ElementName: Foley_Robot_Damage
         ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Death
+      Path: Foley_Event\Foley_Robot_Damage
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_American_Fente
-      guid: 7ab080a5d13ba4419303bdff43664c54
-      id: 1110922584
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Fente
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Fente
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Guard
-      guid: 21033c565d7f8e4a8b3d70d74450b6bf
-      id: 1032420381
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Guard
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Guard
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Iddle
-      guid: fbf7aae919c57345ac97f8d507aca4ee
-      id: 3496178862
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Iddle
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Iddle
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Laser_Impact_Succes
-      guid: b349dd9ea0806645a49b6987e798db9b
-      id: 1349299605
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Laser_Impact_Succes
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Laser_Impact_Succes
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Laser_Shoot
-      guid: cc79c0f8ae38cd4982a4fc8cb3376677
-      id: 4161925103
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Laser_Shoot
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Laser_Shoot
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Shield
-      guid: ae8e085b212a184f9bbd39d6df138aec
-      id: 3565974273
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Shield
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Shield
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_SpecialAttack
-      guid: 06b00b6ec78893448b7b111a70fcfb80
-      id: 4166644487
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_SpecialAttack
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_SpecialAttack
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Whoosh
-      guid: b7b58a0c2b1bfb42ba06610b0f7459b3
-      id: 304721924
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Whoosh
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Whoosh
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_American_Win
-      guid: 2606bad4e91493498c16fa2b23d9cf7d
-      id: 3982623016
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: Foley_American_Win
-        ObjectType: 3
-      Path: Foley_Event\American\Foley_American_Win
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_Japan_Death
+    - name: Foley_Robot_Death
       guid: a06ea4056cd36a4d97e1992a9353b254
-      id: 3352986648
+      id: 1218823660
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Death
+      - ElementName: Foley_Robot_Death
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Death
+      Path: Foley_Event\Foley_Robot_Death
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Fente
+    - name: Foley_Robot_Fente
       guid: 76b2fdc32a64a3439d4a8f23d229380c
-      id: 749948348
+      id: 1796177216
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Fente
+      - ElementName: Foley_Robot_Fente
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Fente
+      Path: Foley_Event\Foley_Robot_Fente
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Guard
+    - name: Foley_Robot_Guard
       guid: 19f4273687faf94a812ddd6e3313825a
-      id: 2736421857
+      id: 3951945397
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Guard
+      - ElementName: Foley_Robot_Guard
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Guard
+      Path: Foley_Event\Foley_Robot_Guard
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Iddle
+    - name: Foley_Robot_Iddle
       guid: fb3210ed215eab43aa33077ae877efb2
-      id: 3372103450
+      id: 1531385158
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Iddle
+      - ElementName: Foley_Robot_Iddle
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Iddle
+      Path: Foley_Event\Foley_Robot_Iddle
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Laser_Impact_Succes
-      guid: 9687ba22a016244280c51866131b5ba7
-      id: 979677841
-      PathAndIcons:
-      - ElementName: Foley_Event
-        ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Laser_Impact_Succes
-        ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Laser_Impact_Succes
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Foley_Japan_Laser_Shoot
+    - name: Foley_Robot_Laser_Door_Close
       guid: 0aa0eb5228dcf349b21377fd036dd830
-      id: 4143784539
+      id: 3924484359
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Laser_Shoot
+      - ElementName: Foley_Robot_Laser_Door_Close
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Laser_Shoot
+      Path: Foley_Event\Foley_Robot_Laser_Door_Close
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Shield
+    - name: Foley_Robot_Laser_Door_Open
+      guid: 3343af6d2382204882e091c11b57efbb
+      id: 2167064369
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Laser_Door_Open
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Laser_Door_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Lose_Arm
+      guid: 5cec16f240451045bad46e139312b2fb
+      id: 248344350
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Lose_Arm
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Lose_Arm
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Shield
       guid: 99008662199a2845844c81b96ad1292d
-      id: 4207739101
+      id: 2768415929
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Shield
+      - ElementName: Foley_Robot_Shield
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Shield
+      Path: Foley_Event\Foley_Robot_Shield
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_SpecialAttack
+    - name: Foley_Robot_SpecialAttack
       guid: 28aea9cff22e794dbfc314a39caaef0e
-      id: 803184659
+      id: 2142273903
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_SpecialAttack
+      - ElementName: Foley_Robot_SpecialAttack
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_SpecialAttack
+      Path: Foley_Event\Foley_Robot_SpecialAttack
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Whoosh
+    - name: Foley_Robot_Whoosh
       guid: 1f5344d7fec8764fbdf51a5918422016
-      id: 3507717920
+      id: 929055660
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Whoosh
+      - ElementName: Foley_Robot_Whoosh
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Whoosh
+      Path: Foley_Event\Foley_Robot_Whoosh
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Foley_Japan_Win
+    - name: Foley_Robot_Win
       guid: 0d6f0a7c899e604c83ccb7f92d9cca17
-      id: 2771932084
+      id: 1105393344
       PathAndIcons:
       - ElementName: Foley_Event
         ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: Foley_Japan_Win
+      - ElementName: Foley_Robot_Win
         ObjectType: 3
-      Path: Foley_Event\Japan\Foley_Japan_Win
+      Path: Foley_Event\Foley_Robot_Win
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -398,7 +262,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586262235132091814
+    m_lastTime: -8586256194057510088
     List:
     - name: Music_R0_Init
       guid: 8c59682d33566943b084a0642d65d713
@@ -409,6 +273,18 @@ MonoBehaviour:
       - ElementName: Music_R0_Init
         ObjectType: 3
       Path: Music_Event\Music_R0_Init
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_RoundEndPart2
+      guid: 713bb08513b76b43a0f097bf5dbd25e8
+      id: 2927058889
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Music_RoundEndPart2
+        ObjectType: 3
+      Path: Music_Event\Music_RoundEndPart2
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -424,124 +300,24 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Music_Pause
+      guid: 75d8f7aa1bfb6241a0c807829788c646
+      id: 1122264096
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Play_Music_Pause
+        ObjectType: 3
+      Path: Music_Event\Play_Music_Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\SFX_Event.wwu
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586262150809914219
+    m_lastTime: -8586256178699236373
     List:
-    - name: SFX_American_Death
-      guid: 9a0aac69a70ad34495364ba705e031db
-      id: 2506831292
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Death
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Death
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_Fente
-      guid: c56431c66e3dae42a7e6a1c9c39a7a51
-      id: 3508642320
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Fente
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Fente
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_Laser_Impact_Succes
-      guid: c5a1d4f9f3c1c34eb57306bd9666bec9
-      id: 119557261
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Laser_Impact_Succes
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Laser_Impact_Succes
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_Laser_Shoot
-      guid: d67e3a89b9995a4d82b9421983f8a3fe
-      id: 4275657479
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Laser_Shoot
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Laser_Shoot
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_Particles
-      guid: 99ff9e0f93880e44b7a4c0b787f40a3e
-      id: 3421765259
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Particles
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Particles
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_Projectile_Woosh
-      guid: e82a5072071c224d9119a98fe371e695
-      id: 1902165926
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Projectile_Woosh
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Projectile_Woosh
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_Shield
-      guid: 536b09ef2597c24db3c5d58a740182e7
-      id: 1159243881
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_Shield
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_Shield
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_American_SpecialAttack
-      guid: 1c332bcc422f4849825d78b0a07a69c5
-      id: 3672859679
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: SFX_American_SpecialAttack
-        ObjectType: 3
-      Path: SFX_Event\American\SFX_American_SpecialAttack
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: SFX_Common_Electric_Sparks
       guid: 5f73930f1958f841a06b5e8fea70caba
       id: 2927774105
@@ -598,115 +374,157 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Death
+    - name: SFX_Robot_Death
       guid: 1b8be307addd644c8dec3d7fe0b582f1
-      id: 2398750736
+      id: 591816388
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Death
+      - ElementName: SFX_Robot_Death
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Death
+      Path: SFX_Event\Robot\SFX_Robot_Death
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Fente
+    - name: SFX_Robot_Explosion
+      guid: de8d0885b3fb204c8010794ef7a13f98
+      id: 3716377771
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Explosion
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Fente
       guid: 760979f180e05c4aba41fceae2f581d4
-      id: 217610004
+      id: 1708613752
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Fente
+      - ElementName: SFX_Robot_Fente
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Fente
+      Path: SFX_Event\Robot\SFX_Robot_Fente
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Laser_Impact_Succes
+    - name: SFX_Robot_Laser_Impact_Reflect
+      guid: 98a178fedf7a6e4d924517c48a293f61
+      id: 2599727010
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Impact_Reflect
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Impact_Reflect
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Laser_Impact_Succes
       guid: aa6e17048c26364688095483b72951cb
-      id: 1314745705
+      id: 3580743349
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Laser_Impact_Succes
+      - ElementName: SFX_Robot_Laser_Impact_Succes
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Laser_Impact_Succes
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Impact_Succes
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Laser_Shoot
+    - name: SFX_Robot_Laser_Reload
+      guid: aa6f56ce45be514fa261a8caf402999d
+      id: 4210766769
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Reload
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Reload
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Laser_Shoot
       guid: 1731f71e6584fe4ea3b08a3e8e4c3322
-      id: 394728051
+      id: 2331834703
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Laser_Shoot
+      - ElementName: SFX_Robot_Laser_Shoot
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Laser_Shoot
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Shoot
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Particles
+    - name: SFX_Robot_Particles
       guid: bc2bdb2582b06a46a019485fa43bec7c
-      id: 2168208239
+      id: 515042147
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Particles
+      - ElementName: SFX_Robot_Particles
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Particles
+      Path: SFX_Event\Robot\SFX_Robot_Particles
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Projectile_Woosh
+    - name: SFX_Robot_Projectile_Woosh
       guid: 7b92b27a1ef75e40a5d76c01afbfecb0
-      id: 872414754
+      id: 1580043918
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Projectile_Woosh
+      - ElementName: SFX_Robot_Projectile_Woosh
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Projectile_Woosh
+      Path: SFX_Event\Robot\SFX_Robot_Projectile_Woosh
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_Shield
+    - name: SFX_Robot_Shield
       guid: ff8ce9ae9eaead448e52b8758e6697c9
-      id: 3056811045
+      id: 159250081
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_Shield
+      - ElementName: SFX_Robot_Shield
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_Shield
+      Path: SFX_Event\Robot\SFX_Robot_Shield
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Japan_SpecialAttack
+    - name: SFX_Robot_SpecialAttack
       guid: 1aabc34eff3e474dac14b8105909d3bf
-      id: 1941465131
+      id: 681096487
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
-      - ElementName: Japan
+      - ElementName: Robot
         ObjectType: 4
-      - ElementName: SFX_Japan_SpecialAttack
+      - ElementName: SFX_Robot_SpecialAttack
         ObjectType: 3
-      Path: SFX_Event\Japan\SFX_Japan_SpecialAttack
+      Path: SFX_Event\Robot\SFX_Robot_SpecialAttack
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -756,7 +574,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586259753437070908
+    m_lastTime: -8586256194057410343
     List:
     - name: UI_Menu_Hovered_Main
       guid: 2fe81cc189869d49a14a41089043f113
@@ -818,8 +636,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586259760373180493
+    m_lastTime: -8586257011947891933
     List:
+    - name: V0_Victory_Fight
+      guid: 8af026f934d53947a5a9f985734c5409
+      id: 858171719
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: Speaker
+        ObjectType: 4
+      - ElementName: V0_Victory_Fight
+        ObjectType: 3
+      Path: VO_Event\Speaker\V0_Victory_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: VO_American_Attack
       guid: 86aad0fb208c894d815705dd0061feb6
       id: 2414228328
@@ -1049,7 +881,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 99bf92aa40e6ff40899e4dba44f66b8a
     GuidInternal: 
-    m_lastTime: -8586277868845960550
+    m_lastTime: -8586259693435031733
     List: []
   - PhysicalPath: Game Parameters\GameParameters.wwu
     ParentPhysicalPath: 
@@ -1096,6 +928,21 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586274199511690565
     List: []
+  - PhysicalPath: Game Parameters\Sidechain.wwu
+    ParentPhysicalPath: 
+    guid: a70defde949534459cacfeb3308c2fb7
+    GuidInternal: 
+    m_lastTime: -8586259693127635718
+    List:
+    - name: Sidechain_All_By_VO
+      guid: 838ec22530227d45a9e0df36c90b4bd5
+      id: 81210309
+      PathAndIcons:
+      - ElementName: Sidechain
+        ObjectType: 12
+      - ElementName: Sidechain_All_By_VO
+        ObjectType: 13
+      Path: Sidechain\Sidechain_All_By_VO
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -1107,7 +954,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5bd7f45acdf4224bb51914ac15a62692
     GuidInternal: 
-    m_lastTime: -8586262235072837365
+    m_lastTime: -8586256169414888969
     List:
     - name: MusicToPlay
       guid: b394364a4d7a57449b3cf624048b65f3
@@ -1119,23 +966,23 @@ MonoBehaviour:
         ObjectType: 9
       Path: Music_States\MusicToPlay
       values:
-      - name: Idle
-        guid: acbf07adb500ec4bbd0288bfd21416ea
-        id: 1874288895
-        PathAndIcons:
-        - ElementName: Idle
-          ObjectType: 8
       - name: None
         guid: a1296e87abdd1b4490740c518fb1fe71
         id: 748895195
         PathAndIcons:
         - ElementName: None
           ObjectType: 8
-      - name: R0_Init
-        guid: 4297113d7ef6c14d9705c9e99134c7ce
-        id: 274558428
+      - name: ST_Idle
+        guid: acbf07adb500ec4bbd0288bfd21416ea
+        id: 1151771561
         PathAndIcons:
-        - ElementName: R0_Init
+        - ElementName: ST_Idle
+          ObjectType: 8
+      - name: ST_R0_Init
+        guid: 4297113d7ef6c14d9705c9e99134c7ce
+        id: 2299586414
+        PathAndIcons:
+        - ElementName: ST_R0_Init
           ObjectType: 8
       - name: ST_R1_LeadJP
         guid: fa71948c96aaae4ea45d1b76dd0e5052
@@ -1190,6 +1037,37 @@ MonoBehaviour:
         id: 3179318095
         PathAndIcons:
         - ElementName: ST_WinUS
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: RoundWinner
+      guid: 86feeb584a7f6841b27a6a80cdebce9c
+      id: 3957034330
+      PathAndIcons:
+      - ElementName: Music_States
+        ObjectType: 12
+      - ElementName: RoundWinner
+        ObjectType: 9
+      Path: Music_States\RoundWinner
+      values:
+      - name: JP
+        guid: b73c643c16873845b73daf95373b662d
+        id: 1735860063
+        PathAndIcons:
+        - ElementName: JP
+          ObjectType: 8
+      - name: None
+        guid: 3e0a5076179bc8459c211a45ceda373b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: US
+        guid: 8b5fe8f03543174d9294050a956d8322
+        id: 1551306157
+        PathAndIcons:
+        - ElementName: US
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []
