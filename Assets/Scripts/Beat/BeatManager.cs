@@ -16,9 +16,13 @@ public class BeatManager : MonoBehaviour
 
     void Awake()
     {
-        onBeatElements = new List<OnBeatElement>();
+       customAwake();
     }
 
+    public void customAwake()
+    {
+        onBeatElements = new List<OnBeatElement>();
+    }
     void PlayBeat()
     {
         foreach (OnBeatElement element in onBeatElements) {

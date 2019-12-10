@@ -29,11 +29,11 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     void Start()
     {
 
-        Init();
+        customStart();
         
     }
 
-    public void Init()
+    public void customStart()
     {
         Camera.main.backgroundColor = baseColor;
 

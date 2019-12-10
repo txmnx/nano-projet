@@ -46,10 +46,10 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     protected virtual void Start()
     {
-        Init();
+        customStart();
     }
 
-    public void Init()
+    public void customStart()
     {
         wins = 0;
         currentLife = maxLife;
