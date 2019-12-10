@@ -96,7 +96,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         player1.PlayAnim(player1.buffer[counter], damagePlayer1 != 0f);
         player2.PlayAnim(player2.buffer[counter], damagePlayer2 != 0f);
 
-        player1.currentLife -= damagePlayer2;
+        player1.currentLife -= damagePlayer1;
         player2.currentLife -= damagePlayer2;
         player1.health.value = player1.currentLife;
         player2.health.value = player2.currentLife;
