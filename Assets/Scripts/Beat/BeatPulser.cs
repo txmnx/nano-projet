@@ -5,7 +5,7 @@ using UnityEngine;
 /**
  * BeatPulser is a sample class to show the use of BeatManager.
  */
-[RequireComponent(typeof(Animator))]
+/*[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(MeshRenderer))]
 public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnInputBeatElement
 {
@@ -42,4 +42,4 @@ public class BeatPulser : MonoBehaviour, OnBeatElement, OnActionBeatElement, OnI
 
     public void OnInputBeat() { }
     public void OnActionBeat() { }
-}
+}*/
