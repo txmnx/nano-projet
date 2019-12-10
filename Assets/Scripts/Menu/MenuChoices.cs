@@ -24,8 +24,11 @@ public class MenuChoices : MonoBehaviour
     public float distanceBetweenChoices = 60f;
 
     private bool isMoving = false;
+    private bool isPausing = false;
 
     public TextMeshProUGUI[] choicesTexts;
+
+    public MainMenu mainMenu;
 
 
     private void Start()
@@ -37,6 +40,8 @@ public class MenuChoices : MonoBehaviour
 
     private void Update()
     {
+        if (isPausing) return;
+
         //Lancer les events WWISE
         if (!isMoving) {
             if (Input.GetAxisRaw("SelectionVerticalButton") > 0f || Input.GetAxisRaw("SelectionVerticalJoystick") > 0f) {
@@ -78,12 +83,19 @@ public class MenuChoices : MonoBehaviour
                     //TODO : popup controls
                     break;
                 case Choice.OPTIONS:
-                    //TODO : Options scene
+                    mainMenu.DisplayOptionsPanel();
                     break;
                 default:
                     break;
             }
         }
+    }
+
+    public void Reset()
+    {
+        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 0f);
+        selection = Choice.VERSUS;
+        HighlightText(selection);
     }
 
     private void MoveUp()
@@ -121,8 +133,8 @@ public class MenuChoices : MonoBehaviour
 
         while (timer < duration) {
             progress = Mathf.Clamp(timer / duration, 0f, 1f);
-
-            y = Mathf.Lerp(0, offset, progress);
+            
+            y = selectionCurve.Evaluate(progress) * offset;
 
             rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initY + y);
 
@@ -147,5 +159,10 @@ public class MenuChoices : MonoBehaviour
                 choicesTexts[i].color = Color.gray;
             }
         }
+    }
+
+    public void Pause(bool pause)
+    {
+        isPausing = pause;
     }
 }
