@@ -1,8 +1,12 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1316503075	CueManager			\Music_States\CueManager	
 	3012001959	MusicToPlay			\Music_States\MusicToPlay	
 	3957034330	RoundWinner			\Music_States\RoundWinner	
 
 State	ID	Name	State Group			Notes
+	0	None	CueManager			
+	2473054966	NewCue	CueManager			
+	3041563226	Silence	CueManager			
 	0	None	MusicToPlay			
 	1151771561	ST_Idle	MusicToPlay			
 	2004344129	ST_RoundWinUS	MusicToPlay			

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMB_MAIN_START = 1418672556U;
         static const AkUniqueID AMB_MENU_START = 3958906054U;
+        static const AkUniqueID CUEMANAGER_NEWCUE = 2279207821U;
         static const AkUniqueID FOLEY_ROBOT_DAMAGE = 1606116385U;
         static const AkUniqueID FOLEY_ROBOT_DEATH = 1218823660U;
         static const AkUniqueID FOLEY_ROBOT_FENTE = 1796177216U;
@@ -29,6 +30,7 @@ namespace AK
         static const AkUniqueID FOLEY_ROBOT_WIN = 1105393344U;
         static const AkUniqueID MUSIC_R0_INIT = 2178242372U;
         static const AkUniqueID MUSIC_ROUNDENDPART2 = 2927058889U;
+        static const AkUniqueID PLAY_CUEMANAGER = 1568189152U;
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
         static const AkUniqueID PLAY_MUSIC_PAUSE = 1122264096U;
         static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS = 2927774105U;
@@ -49,7 +51,6 @@ namespace AK
         static const AkUniqueID SFX_TITLE_FIGHT = 2335777874U;
         static const AkUniqueID SFX_TITLE_TIMER = 3290104963U;
         static const AkUniqueID SFX_TITLE_WIN = 1985058514U;
-        static const AkUniqueID SON_TEMOIN = 1502450958U;
         static const AkUniqueID UI_MENU_HOVERED_MAIN = 2697976037U;
         static const AkUniqueID UI_MENU_PAUSEGAME = 2559298002U;
         static const AkUniqueID UI_MENU_START_GAME = 1529249135U;
@@ -75,6 +76,17 @@ namespace AK
 
     namespace STATES
     {
+        namespace CUEMANAGER
+        {
+            static const AkUniqueID GROUP = 1316503075U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NEWCUE = 2473054966U;
+                static const AkUniqueID SILENCE = 3041563226U;
+            } // namespace STATE
+        } // namespace CUEMANAGER
+
         namespace MUSICTOPLAY
         {
             static const AkUniqueID GROUP = 3012001959U;
@@ -115,6 +127,11 @@ namespace AK
         static const AkUniqueID RTPC_LOWEST_HEALTH = 1386449390U;
         static const AkUniqueID SIDECHAIN_ALL_BY_VO = 81210309U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID NEWCUE = 2473054966U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
