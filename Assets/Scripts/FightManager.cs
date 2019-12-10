@@ -4,12 +4,12 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement
+public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatElement, OnIdleBeatElement
 {
     public Player player1;
     public Player player2;
-    public float basicDamage = 100.0f;
-    public float chargedCoeff = 2f;
+    public float basicDamage = 300.0f;
+    public float chargedCoeff = 3f;
     public float specialCoeff = 5f;
     private int counter;
 
@@ -24,6 +24,8 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Sprite neutralSprite;
 
     private float[,] coefficients;
+
+    public System.Random random = new System.Random();
 
 
     /**
@@ -64,6 +66,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         InputTranslator.RegisterOnInputBeatElement(this);
         InputTranslator.RegisterOnActionBeatElement(this);
+        InputTranslator.RegisterOnIdleBeatElement(this);
     }
 
     public void OnEnterInputBeat()
@@ -71,22 +74,35 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         action1Image.enabled = false;
         action2Image.enabled = false;
+    }
+
+    public void OnEnterIdleBeat()
+    {
+        counter = 0;
+        action1Image.enabled = false;
+        action2Image.enabled = false;
+
+        Debug.Log("INCROYABLE");
 
         player1.Reset();
         player2.Reset();
-
     }
 
     public void OnActionBeat()
     {
-        player1.currentLife -= CompareMove(player1.buffer[counter], player2.buffer[counter]);
-        player2.currentLife -= CompareMove(player2.buffer[counter], player1.buffer[counter]);
+        float damagePlayer1 = CompareMove(player1.buffer[counter], player2.buffer[counter]);
+        float damagePlayer2 = CompareMove(player2.buffer[counter], player1.buffer[counter]);
+
+        player1.PlayAnim(player1.buffer[counter], damagePlayer1 != 0f);
+        player2.PlayAnim(player2.buffer[counter], damagePlayer2 != 0f);
+
+        player1.currentLife -= damagePlayer2;
+        player2.currentLife -= damagePlayer2;
         player1.health.value = player1.currentLife;
         player2.health.value = player2.currentLife;
 
         counter = counter + 1;
 
-        Debug.Log("ACTION");
         if (!action1Image.enabled) {
             action1Image.enabled = true;
             action2Image.enabled = true;
@@ -108,11 +124,16 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public float CompareMove(Player.Move move1, Player.Move move2) //return HP lost for the player for his move and his opponent's
     {
         if (move2.isCharged) {
-            if (move1.move == move2.move && move1.isCharged) {
-                return basicDamage * coefficients[(int)move1.move, (int)move2.move];
+            if (move1.move == move2.move) {
+                if (move1.isCharged) {
+                    return basicDamage * coefficients[(int)move1.move, (int)move2.move];
+                }
+                else {
+                    return basicDamage * chargedCoeff;
+                }
             }
             else {
-                return basicDamage * chargedCoeff;
+                return basicDamage * coefficients[(int)move1.move, (int)move2.move] * chargedCoeff;
             }
         }
         else {
@@ -120,6 +141,51 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         }
     }
 
+    public Sprite GetMoveSprite(Player.MoveType move)
+    {
+        switch (move) {
+            case Player.MoveType.HIT:
+                return hitSprite;
+            case Player.MoveType.REFLECT:
+                return reflectSprite;
+            case Player.MoveType.LASER:
+                return laserSprite;
+            case Player.MoveType.GUARD:
+                return guardSprite;
+            case Player.MoveType.SPECIAL:
+                return specialSprite;
+            default:
+                return neutralSprite;
+        }
+    }
+
+    public bool IsCounterMove(Player.MoveType type1, Player.MoveType type2)
+    {
+        return (coefficients[(int)type1, (int)type2] != 0);
+    }
+
+    public Player.MoveType GetCounterMoveType(Player.MoveType type)
+    {
+        switch(type) {
+            case Player.MoveType.HIT:
+                return Player.MoveType.LASER;
+            case Player.MoveType.LASER:
+                return Player.MoveType.REFLECT;
+            case Player.MoveType.REFLECT:
+                return Player.MoveType.HIT;
+            case Player.MoveType.SPECIAL:
+                return AIMovePicker.RandomSimpleMove(this).move;
+            case Player.MoveType.GUARD:
+                return Player.MoveType.SPECIAL;
+            default:
+                return AIMovePicker.RandomMove(this).move;
+        }
+    }
+
     public void OnInputBeat() { }
+    public void OnIdleBeat() { }
     public void OnEnterActionBeat() { }
+
+
+    
 }
