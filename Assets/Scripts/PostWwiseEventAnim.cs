@@ -3,195 +3,130 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PostWwiseEventAnim : MonoBehaviour
-{  
+{
     // WWise event for anim 
 
-    //FOLEY JAPAN
+    //FOLEY Robot
 
-    public void Foley_Japan_Guard()
+    public void Foley_Robot_Guard()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Guard", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Guard", gameObject);
     }
 
-    public void Foley_Japan_Shield()
+    public void Foley_Robot_Shield()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Shield", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Shield", gameObject);
     }
 
-    public void Foley_Japan_Fente()
+    public void Foley_Robot_Fente()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Fente", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Fente", gameObject);
     }
 
-    public void Foley_Japan_Laser_Shoot()
+    public void Foley_Robot_Laser_Shoot()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Laser_Shoot", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Laser_Shoot", gameObject);
     }
 
-    public void Foley_Japan_Laser_Impact_Succes()
+    public void Foley_Robot_Door_Open()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Laser_Impact_Succes", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Door_Open", gameObject);
     }
 
-    public void Foley_Japan_SpecialAttack()
+    public void Foley_Robot_Laser_Door_Close()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_SpecialAttack", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Laser_Door_Close", gameObject);
     }
 
-    public void Foley_Japan_Death()
+    public void Foley_Robot_SpecialAttack()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Death", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_SpecialAttack", gameObject);
     }
 
-    public void Foley_Japan_Iddle()
+    public void Foley_Robot_Death()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Iddle", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Death", gameObject);
     }
 
-    public void Foley_Japan_Win()
+    public void Foley_Robot_Iddle()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Win", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Iddle", gameObject);
     }
 
-    public void Foley_Japan_Whoosh()
+    public void Foley_Robot_Win()
     {
-        AkSoundEngine.PostEvent("Foley_Japan_Whoosh", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Win", gameObject);
     }
 
-    // SFX JAPAN
-
-    public void SFX_Japan_Laser_Shoot()
+    public void Foley_Robot_Whoosh()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Laser_Shoot", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Whoosh", gameObject);
     }
 
-    public void SFX_Japan_Laser_Impact_Succes()
+    public void Foley_Robot_Damage()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Laser_Impact_Succes", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Damage", gameObject);
     }
 
-    public void SFX_Japan_Fente()
+    public void Foley_Robot_Lose_Arm()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Fente", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Lose_Arm", gameObject);
     }
 
-    public void SFX_Japan_SpecialAttack()
+    // SFX Robot
+
+    public void SFX_Robot_Laser_Shoot()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_SpecialAttack", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Laser_Shoot", gameObject);
     }
 
-    public void SFX_Japan_Shield()
+    public void SFX_Robot_Laser_Impact_Succes()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Shield", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Laser_Impact_Succes", gameObject);
     }
 
-    public void SFX_Japan_Death()
+    public void SFX_Robot_Fente()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Death", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Fente", gameObject);
     }
 
-    public void SFX_Japan_Particles()
+    public void SFX_Robot_SpecialAttack()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Particles", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_SpecialAttack", gameObject);
     }
 
-    public void SFX_Japan_Projectile_Woosh()
+    public void SFX_Robot_Damage()
     {
-        AkSoundEngine.PostEvent("SFX_Japan_Projectile_Woosh", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Damage", gameObject);
     }
 
-    //FOLEY AMERICAN
-
-    public void Foley_American_Guard()
+    public void SFX_Robot_Death()
     {
-        AkSoundEngine.PostEvent("Foley_American_Guard", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Death", gameObject);
     }
 
-    public void Foley_American_Shield()
+    public void SFX_Robot_Particles()
     {
-        AkSoundEngine.PostEvent("Foley_American_Shield", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Particles", gameObject);
     }
 
-    public void Foley_American_Fente()
+    public void SFX_Robot_Projectile_Woosh()
     {
-        AkSoundEngine.PostEvent("Foley_American_Fente", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Projectile_Woosh", gameObject);
     }
 
-    public void Foley_American_Laser_Shoot()
+    public void SFX_Robot_Laser_Impact_Reflect()
     {
-        AkSoundEngine.PostEvent("Foley_American_Laser_Shoot", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Laser_Impact_Reflect", gameObject);
     }
 
-    public void Foley_American_Laser_Impact_Succes()
+    public void SFX_Robot_Laser_Reload()
     {
-        AkSoundEngine.PostEvent("Foley_American_Laser_Impact_Succes", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Laser_Reload", gameObject);
     }
 
-    public void Foley_American_SpecialAttack()
+    public void SFX_Robot_Explosion()
     {
-        AkSoundEngine.PostEvent("Foley_American_SpecialAttack", gameObject);
-    }
-
-    public void Foley_American_Death()
-    {
-        AkSoundEngine.PostEvent("Foley_American_Death", gameObject);
-    }
-
-    public void Foley_American_Iddle()
-    {
-        AkSoundEngine.PostEvent("Foley_American_Iddle", gameObject);
-    }
-
-    public void Foley_American_Win()
-    {
-        AkSoundEngine.PostEvent("Foley_American_Win", gameObject);
-    }
-
-    public void Foley_American_Whoosh()
-    {
-        AkSoundEngine.PostEvent("Foley_American_Whoosh", gameObject);
-    }
-
-
-    // SFX AMERICAN
-
-    public void SFX_American_Laser_Shoot()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Laser_Shoot", gameObject);
-    }
-
-    public void SFX_American_Laser_Impact_Succes()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Laser_Impact_Succes", gameObject);
-    }
-
-    public void SFX_American_Fente()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Fente", gameObject);
-    }
-
-    public void SFX_American_SpecialAttack()
-    {
-        AkSoundEngine.PostEvent("SFX_American_SpecialAttack", gameObject);
-    }
-
-    public void SFX_American_Shield()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Shield", gameObject);
-    }
-
-    public void SFX_Amercian_Death()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Death", gameObject);
-    }
-
-    public void SFX_American_Particles()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Particles", gameObject);
-    }
-
-    public void SFX_American_Projectile_Woosh()
-    {
-        AkSoundEngine.PostEvent("SFX_American_Projectile_Woosh", gameObject);
+        AkSoundEngine.PostEvent("SFX_Robot_Explosion", gameObject);
     }
 }
