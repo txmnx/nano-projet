@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 184791165}
   - component: {fileID: 184791164}
   - component: {fileID: 184791163}
-  - component: {fileID: 184791166}
   m_Layer: 0
   m_Name: Start_Music
   m_TagString: Untagged
@@ -195,7 +194,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9958bac94fe73a848b9f712d44ec8636,
+    WwiseObjectReference: {fileID: 11400000, guid: 8cfe1cd7e377da249ab078676ba27a9f,
       type: 2}
   useCallbacks: 1
   Callbacks:
@@ -203,6 +202,10 @@ MonoBehaviour:
       value: 256
     FunctionName: PlayBeat
     GameObject: {fileID: 1226417286}
+  - Flags:
+      value: 8192
+    FunctionName: CueFunction
+    GameObject: {fileID: 894088823}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
@@ -245,40 +248,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &184791166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184791162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac14ea3b17d092047a4a9709c0ce4a8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3411ead065fea4d4b8f3978fbdad2711,
-      type: 2}
-  useCallbacks: 1
-  Callbacks:
-  - Flags:
-      value: 8192
-    FunctionName: CueFunction
-    GameObject: {fileID: 894088823}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &378731118
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +944,7 @@ GameObject:
   - component: {fileID: 894088824}
   - component: {fileID: 894088829}
   - component: {fileID: 894088825}
+  - component: {fileID: 894088827}
   m_Layer: 0
   m_Name: AudioSources
   m_TagString: Untagged
@@ -1007,7 +977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueCounter: 0
-  isCounting: 1
+  matchManager: {fileID: 1226417292}
 --- !u!4 &894088826
 Transform:
   m_ObjectHideFlags: 0
@@ -1022,6 +992,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894088827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894088823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5672dac8346524fac2832ae3501524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matchManager: {fileID: 1226417292}
+  fightManager: {fileID: 1226417291}
 --- !u!114 &894088829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,6 +1295,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 970834250}
+  - component: {fileID: 970834251}
+  - component: {fileID: 970834252}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1333,6 +1319,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &970834251
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970834249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc4cef93a3993654b8aa563d6c848e7c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &970834252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970834249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e417a0ee8d79241aa1349311a6299e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicManager: {fileID: 894088827}
 --- !u!1 &997180164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,10 +1650,13 @@ MonoBehaviour:
   - {fileID: 2136094363}
   - {fileID: 2011355447}
   winner: {fileID: 0}
+  winnerID: 0
   isWon: 0
   victoryJapColor: {r: 0.8301887, g: 0, b: 0, a: 0.49019608}
   victoryUsColor: {r: 0, g: 0.19432807, b: 1, a: 0.49019608}
   baseColor: {r: 0.7754474, g: 0.9056604, b: 0.38020647, a: 0.46666667}
+  musicManager: {fileID: 894088827}
+  camera: {fileID: 970834249}
 --- !u!1 &1247210510
 GameObject:
   m_ObjectHideFlags: 0

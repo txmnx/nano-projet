@@ -14,7 +14,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     private Sequence currentSequence;
     public Player winner;
-    private int winnerID;
+    public int winnerID;
     public bool isWon = false;
 
     private bool gameIsPaused = false;
@@ -24,6 +24,11 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Color victoryJapColor;
     public Color victoryUsColor;
     public Color baseColor;
+
+    //SONDIER
+    public MusicManager musicManager;
+    public GameObject camera;
+    //SONDIER
 
 
     void Start()
@@ -64,8 +69,19 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isWon)
         {
             winner.wins += 1;
-            //bool = true;
             winSliders[winnerID].value = winner.wins;
+
+            //SONDIER
+            if(winnerID == 0)
+            {
+                musicManager.RoundWinUS();
+            }
+            if (winnerID == 1)
+            {
+                musicManager.RoundWinJP();
+            }
+            //SONDIER
+
             onRoundEnd();
 
             if (winner != null && winner.wins == roundToWin)
@@ -99,9 +115,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             }
     }
 
+    public void customResetRound()
+    {
+        camera.GetComponent<Animator>().SetTrigger("Start");
+    }
+
     public void onRoundEnd()
     {
-
         //anim/sons de fin de round
     }
 

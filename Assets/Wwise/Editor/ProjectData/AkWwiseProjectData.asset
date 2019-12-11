@@ -64,7 +64,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86770a334b68ee4aace1537791113e2f
     GuidInternal: 
-    m_lastTime: -8586262226026270220
+    m_lastTime: -8586255888242972653
     List:
     - name: Amb_Main_Start
       guid: b26f12f46b949d4bab2aa71a3d9e6586
@@ -87,18 +87,6 @@ MonoBehaviour:
       - ElementName: Amb_Menu_Start
         ObjectType: 3
       Path: Ambience_Event\Amb_Menu_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Son_Temoin
-      guid: 114690534b416341b41e1f8f0664b094
-      id: 1502450958
-      PathAndIcons:
-      - ElementName: Ambience_Event
-        ObjectType: 12
-      - ElementName: Son_Temoin
-        ObjectType: 3
-      Path: Ambience_Event\Son_Temoin
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -262,8 +250,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586256195526149075
+    m_lastTime: -8586255900375268715
     List:
+    - name: CueManager_NewCue
+      guid: d5915c242ff48647b0ea9a8a8a03be3e
+      id: 2279207821
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager_NewCue
+        ObjectType: 3
+      Path: Music_Event\CueManager_NewCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_R0_Init
       guid: 8c59682d33566943b084a0642d65d713
       id: 2178242372
@@ -285,6 +285,18 @@ MonoBehaviour:
       - ElementName: Music_RoundEndPart2
         ObjectType: 3
       Path: Music_Event\Music_RoundEndPart2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_CueManager
+      guid: b88143f51f169548a0fb752bc270cf26
+      id: 1568189152
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Play_CueManager
+        ObjectType: 3
+      Path: Music_Event\Play_CueManager
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -636,7 +648,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586257002969800906
+    m_lastTime: -8586255882824087962
     List:
     - name: V0_Victory_Fight
       guid: 8af026f934d53947a5a9f985734c5409
@@ -954,8 +966,39 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5bd7f45acdf4224bb51914ac15a62692
     GuidInternal: 
-    m_lastTime: -8586256190687152985
+    m_lastTime: -8586255904283222730
     List:
+    - name: CueManager
+      guid: ae3093224713db45ace8d61f3d6706dc
+      id: 1316503075
+      PathAndIcons:
+      - ElementName: Music_States
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 9
+      Path: Music_States\CueManager
+      values:
+      - name: NewCue
+        guid: 402bcd76a6b87e4f89b776b627ad1513
+        id: 2473054966
+        PathAndIcons:
+        - ElementName: NewCue
+          ObjectType: 8
+      - name: None
+        guid: e6482fe5d3547e4899a4ec4b57f83749
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Silence
+        guid: 581e07720f454e4a8887f6bf7bdcbc2c
+        id: 3041563226
+        PathAndIcons:
+        - ElementName: Silence
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: MusicToPlay
       guid: b394364a4d7a57449b3cf624048b65f3
       id: 3012001959
@@ -1083,7 +1126,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 443a80c3c9f6c94fbd0facfa8f0143ab
     GuidInternal: 
-    m_lastTime: -8586271789597342750
+    m_lastTime: -8586256043523617370
     List: []
   - PhysicalPath: Switches\SFX_Switch.wwu
     ParentPhysicalPath: 
@@ -1098,6 +1141,21 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586277873411167824
     List: []
+  - PhysicalPath: Triggers\Music_Triggers.wwu
+    ParentPhysicalPath: 
+    guid: 8fef727bf33bd045888b876f6c901765
+    GuidInternal: 
+    m_lastTime: -8586255900374790011
+    List:
+    - name: NewCue
+      guid: 17660fc613facd4aac6558ff9685f4ed
+      id: 2473054966
+      PathAndIcons:
+      - ElementName: Music_Triggers
+        ObjectType: 12
+      - ElementName: NewCue
+        ObjectType: 14
+      Path: Music_Triggers\NewCue
   ExpandedItems:
   - /nano-projet_WwiseProject
   - /nano-projet_WwiseProject/Events

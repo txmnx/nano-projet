@@ -6,7 +6,9 @@ public class CueManager : MonoBehaviour
 {
 
     public int cueCounter = 0;
-    public bool isCounting = false;
+    public static bool isCounting = false;
+
+    public MatchManager matchManager;
 
     public void CueFunction()
     {
@@ -28,17 +30,19 @@ public class CueManager : MonoBehaviour
 
                 case 3:         //Flag lancement fight
                     //Functions to call
-
+                    StopCueCounting();
                     break;
 
                 case 4:         //Début d'outro
                     //Functions to call
-
+                    matchManager.onRoundEnd();
                     break;
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
-
+                    matchManager.resetRound();
+                    matchManager.customResetRound();
+                    cueCounter = 0;
                     break;
             }
         }
