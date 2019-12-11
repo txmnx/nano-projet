@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Nano_Project_Unity\branches\integration-son\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="845961116" Language="SFX">
@@ -16,7 +16,7 @@
 				<Event Id="1418672556" Name="Amb_Main_Start" ObjectPath="\Events\Ambience_Event\Amb_Main_Start" DurationType="Infinite"/>
 				<Event Id="3958906054" Name="Amb_Menu_Start" ObjectPath="\Events\Ambience_Event\Amb_Menu_Start" DurationType="Infinite"/>
 				<Event Id="2279207821" Name="CueManager_NewCue" ObjectPath="\Events\Music_Event\CueManager_NewCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="2.449446" DurationMax="3.086109"/>
+				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.429466" DurationMax="4.001542"/>
 				<Event Id="1218823660" Name="Foley_Robot_Death" ObjectPath="\Events\Foley_Event\Foley_Robot_Death" DurationType="OneShot" DurationMin="5.839773" DurationMax="8.006871"/>
 				<Event Id="1796177216" Name="Foley_Robot_Fente" ObjectPath="\Events\Foley_Event\Foley_Robot_Fente" DurationType="OneShot" DurationMin="0.597664" DurationMax="0.597664"/>
 				<Event Id="3951945397" Name="Foley_Robot_Guard" ObjectPath="\Events\Foley_Event\Foley_Robot_Guard" DurationType="OneShot" DurationMin="3.433608" DurationMax="11.862400"/>
@@ -51,27 +51,16 @@
 				<Event Id="2335777874" Name="SFX_Title_Fight" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Fight" DurationType="OneShot" DurationMin="4.350476" DurationMax="4.350476"/>
 				<Event Id="3290104963" Name="SFX_Title_Timer" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Timer" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1985058514" Name="SFX_Title_Win" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Win" DurationType="OneShot" DurationMin="1.904898" DurationMax="1.904898"/>
+				<Event Id="773074497" Name="UI_Menu_Clic_Option" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Clic_Option" DurationType="OneShot" DurationMin="0.050000" DurationMax="0.050000"/>
 				<Event Id="2697976037" Name="UI_Menu_Hovered_Main" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Hovered_Main" DurationType="OneShot" DurationMin="0.020000" DurationMax="0.020000"/>
 				<Event Id="2559298002" Name="UI_Menu_PauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_PauseGame" DurationType="Infinite"/>
 				<Event Id="1529249135" Name="UI_Menu_Start_Game" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Start_Game" DurationType="OneShot" DurationMin="1.033401" DurationMax="1.033401"/>
 				<Event Id="455738561" Name="UI_Menu_UnPauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_UnPauseGame" DurationType="OneShot" DurationMin="2.446671" DurationMax="2.446671"/>
-				<Event Id="858171719" Name="V0_Victory_Fight" ObjectPath="\Events\VO_Event\Speaker\V0_Victory_Fight" DurationType="OneShot" DurationMin="4.995612" DurationMax="7.789365"/>
-				<Event Id="2414228328" Name="VO_American_Attack" ObjectPath="\Events\VO_Event\American\VO_American_Attack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="390301034" Name="VO_American_Death" ObjectPath="\Events\VO_Event\American\VO_American_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="957164294" Name="VO_American_Win" ObjectPath="\Events\VO_Event\American\VO_American_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="437585428" Name="VO_Japan_Attack" ObjectPath="\Events\VO_Event\Japan\VO_Japan_Attack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="978479414" Name="VO_Japan_Death" ObjectPath="\Events\VO_Event\Japan\VO_Japan_Death" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2169528442" Name="VO_Japan_Win" ObjectPath="\Events\VO_Event\Japan\VO_Japan_Win" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1547089927" Name="VO_Speaker_American_Win_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_American_Win_Fight" DurationType="OneShot" DurationMin="3.609773" DurationMax="6.128006"/>
-				<Event Id="1444082811" Name="VO_Speaker_Japan_Win_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Japan_Win_Fight" DurationType="OneShot" DurationMin="3.609773" DurationMax="6.128006"/>
-				<Event Id="551141550" Name="VO_Speaker_Ready" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Ready" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3174962419" Name="VO_Speaker_Round_1" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_1" DurationType="OneShot" DurationMin="4.445692" DurationMax="4.445692"/>
-				<Event Id="3174962416" Name="VO_Speaker_Round_2" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_2" DurationType="OneShot" DurationMin="4.677891" DurationMax="4.677891"/>
-				<Event Id="3174962417" Name="VO_Speaker_Round_3" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_3" DurationType="OneShot" DurationMin="4.399252" DurationMax="4.399252"/>
-				<Event Id="3174962422" Name="VO_Speaker_Round_4" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_4" DurationType="OneShot" DurationMin="4.445692" DurationMax="4.445692"/>
-				<Event Id="3535674012" Name="VO_Speaker_Round_Win" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Round_Win" DurationType="OneShot" DurationMin="3.609773" DurationMax="6.128006"/>
-				<Event Id="3797693660" Name="VO_Speaker_Start_Fight" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_Start_Fight" DurationType="OneShot" DurationMin="3.145374" DurationMax="3.145374"/>
-				<Event Id="3097949019" Name="VO_Speaker_UltimeRound" ObjectPath="\Events\VO_Event\Speaker\VO_Speaker_UltimeRound" DurationType="OneShot" DurationMin="4.631451" DurationMax="4.631451"/>
+				<Event Id="1047748741" Name="UI_Option_Back" ObjectPath="\Events\UI_Event\Menu\UI_Option_Back" DurationType="OneShot" DurationMin="0.050000" DurationMax="0.050000"/>
+				<Event Id="858171719" Name="V0_Victory_Fight" ObjectPath="\Events\VO_Event\V0_Victory_Fight" DurationType="OneShot" DurationMin="4.995612" DurationMax="7.789365"/>
+				<Event Id="2824871891" Name="VO_Speaker_Round" ObjectPath="\Events\VO_Event\VO_Speaker_Round" DurationType="OneShot" DurationMin="0.000000" DurationMax="4.677891"/>
+				<Event Id="3535674012" Name="VO_Speaker_Round_Win" ObjectPath="\Events\VO_Event\VO_Speaker_Round_Win" DurationType="OneShot" DurationMin="3.609773" DurationMax="6.128006"/>
+				<Event Id="3797693660" Name="VO_Speaker_Start_Fight" ObjectPath="\Events\VO_Event\VO_Speaker_Start_Fight" DurationType="OneShot" DurationMin="3.145374" DurationMax="3.145374"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="469132256" Language="SFX">
@@ -424,6 +413,10 @@
 				<File Id="697105512" Language="SFX">
 					<ShortName>SFX_Japan_Laser_Impact_Succes.wav</ShortName>
 					<Path>SFX\SFX_Japan_Laser_Impact_Succes_66C02B12.wem</Path>
+				</File>
+				<File Id="708949003" Language="SFX">
+					<ShortName>SFX_Robot_Particles_01.wav</ShortName>
+					<Path>SFX\SFX_Robot_Particles_01_3A0F2ED0.wem</Path>
 				</File>
 				<File Id="709282913" Language="SFX">
 					<ShortName>fantastish.wav</ShortName>

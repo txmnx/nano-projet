@@ -184,19 +184,19 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         switch (move)
         {
             case Player.MoveType.LASER:
-                AkSoundEngine.SetSwitch("Damage", "Laser", gameObject);
+                AkSoundEngine.SetState("Damage", "Laser");
                 break;
             case Player.MoveType.HIT:
-                AkSoundEngine.SetSwitch("Damage", "Fente", gameObject);
+                AkSoundEngine.SetState("Damage", "Fente");
                 break;
             case Player.MoveType.SPECIAL:
-                AkSoundEngine.SetSwitch("Damage", "Special", gameObject);
+                AkSoundEngine.SetState("Damage", "Special");
                 break;
             case Player.MoveType.REFLECT:
-                AkSoundEngine.SetSwitch("Damage", "Reflect", gameObject);
+                AkSoundEngine.SetState("Damage", "Reflect");
                 break;
             default:
-                AkSoundEngine.SetSwitch("Damage", "Neutral", gameObject);
+                AkSoundEngine.SetState("Damage", "Neutral");
                 break;
         }
     }

@@ -51,27 +51,16 @@ namespace AK
         static const AkUniqueID SFX_TITLE_FIGHT = 2335777874U;
         static const AkUniqueID SFX_TITLE_TIMER = 3290104963U;
         static const AkUniqueID SFX_TITLE_WIN = 1985058514U;
+        static const AkUniqueID UI_MENU_CLIC_OPTION = 773074497U;
         static const AkUniqueID UI_MENU_HOVERED_MAIN = 2697976037U;
         static const AkUniqueID UI_MENU_PAUSEGAME = 2559298002U;
         static const AkUniqueID UI_MENU_START_GAME = 1529249135U;
         static const AkUniqueID UI_MENU_UNPAUSEGAME = 455738561U;
+        static const AkUniqueID UI_OPTION_BACK = 1047748741U;
         static const AkUniqueID V0_VICTORY_FIGHT = 858171719U;
-        static const AkUniqueID VO_AMERICAN_ATTACK = 2414228328U;
-        static const AkUniqueID VO_AMERICAN_DEATH = 390301034U;
-        static const AkUniqueID VO_AMERICAN_WIN = 957164294U;
-        static const AkUniqueID VO_JAPAN_ATTACK = 437585428U;
-        static const AkUniqueID VO_JAPAN_DEATH = 978479414U;
-        static const AkUniqueID VO_JAPAN_WIN = 2169528442U;
-        static const AkUniqueID VO_SPEAKER_AMERICAN_WIN_FIGHT = 1547089927U;
-        static const AkUniqueID VO_SPEAKER_JAPAN_WIN_FIGHT = 1444082811U;
-        static const AkUniqueID VO_SPEAKER_READY = 551141550U;
-        static const AkUniqueID VO_SPEAKER_ROUND_1 = 3174962419U;
-        static const AkUniqueID VO_SPEAKER_ROUND_2 = 3174962416U;
-        static const AkUniqueID VO_SPEAKER_ROUND_3 = 3174962417U;
-        static const AkUniqueID VO_SPEAKER_ROUND_4 = 3174962422U;
+        static const AkUniqueID VO_SPEAKER_ROUND = 2824871891U;
         static const AkUniqueID VO_SPEAKER_ROUND_WIN = 3535674012U;
         static const AkUniqueID VO_SPEAKER_START_FIGHT = 3797693660U;
-        static const AkUniqueID VO_SPEAKER_ULTIMEROUND = 3097949019U;
     } // namespace EVENTS
 
     namespace STATES
@@ -86,6 +75,20 @@ namespace AK
                 static const AkUniqueID SILENCE = 3041563226U;
             } // namespace STATE
         } // namespace CUEMANAGER
+
+        namespace DAMAGE
+        {
+            static const AkUniqueID GROUP = 1786804762U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FENTE = 1343249213U;
+                static const AkUniqueID LASER = 3982605422U;
+                static const AkUniqueID NEUTRAL = 670611050U;
+                static const AkUniqueID REFLECT = 243379636U;
+                static const AkUniqueID SPECIAL = 3064974266U;
+            } // namespace STATE
+        } // namespace DAMAGE
 
         namespace MUSICTOPLAY
         {
@@ -119,6 +122,25 @@ namespace AK
         } // namespace ROUNDWINNER
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace ROUND
+        {
+            static const AkUniqueID GROUP = 1413238543U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FINALROUND = 1608193273U;
+                static const AkUniqueID NOTHING = 4248742144U;
+                static const AkUniqueID ROUND1 = 2851108012U;
+                static const AkUniqueID ROUND2 = 2851108015U;
+                static const AkUniqueID ROUND3 = 2851108014U;
+                static const AkUniqueID ROUND4 = 2851108009U;
+            } // namespace SWITCH
+        } // namespace ROUND
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

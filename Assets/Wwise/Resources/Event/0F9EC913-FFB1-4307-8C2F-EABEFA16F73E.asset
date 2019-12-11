@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
   m_Name: 0F9EC913-FFB1-4307-8C2F-EABEFA16F73E
   m_EditorClassIdentifier: 
-  objectName: VO_Speaker_UltimeRound
-  id: 3097949019
+  objectName: VO_Speaker_Round
+  id: 2824871891
   guid: 0F9EC913-FFB1-4307-8C2F-EABEFA16F73E

@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integration-son\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
   "StreamedFiles": [
@@ -67,8 +67,8 @@
       "Name": "Foley_Robot_Damage",
       "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Damage",
       "DurationType": "OneShot",
-      "DurationMin": "2.449446",
-      "DurationMax": "3.086109"
+      "DurationMin": "0.429466",
+      "DurationMax": "4.001542"
      },
      {
       "Id": "1218823660",
@@ -330,6 +330,14 @@
       "DurationMax": "1.904898"
      },
      {
+      "Id": "773074497",
+      "Name": "UI_Menu_Clic_Option",
+      "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Menu_Clic_Option",
+      "DurationType": "OneShot",
+      "DurationMin": "0.050000",
+      "DurationMax": "0.050000"
+     },
+     {
       "Id": "2697976037",
       "Name": "UI_Menu_Hovered_Main",
       "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Menu_Hovered_Main",
@@ -360,124 +368,33 @@
       "DurationMax": "2.446671"
      },
      {
+      "Id": "1047748741",
+      "Name": "UI_Option_Back",
+      "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Option_Back",
+      "DurationType": "OneShot",
+      "DurationMin": "0.050000",
+      "DurationMax": "0.050000"
+     },
+     {
       "Id": "858171719",
       "Name": "V0_Victory_Fight",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\V0_Victory_Fight",
+      "ObjectPath": "\\Events\\VO_Event\\V0_Victory_Fight",
       "DurationType": "OneShot",
       "DurationMin": "4.995612",
       "DurationMax": "7.789365"
      },
      {
-      "Id": "2414228328",
-      "Name": "VO_American_Attack",
-      "ObjectPath": "\\Events\\VO_Event\\American\\VO_American_Attack",
-      "MaxAttenuation": "0.000000",
+      "Id": "2824871891",
+      "Name": "VO_Speaker_Round",
+      "ObjectPath": "\\Events\\VO_Event\\VO_Speaker_Round",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "390301034",
-      "Name": "VO_American_Death",
-      "ObjectPath": "\\Events\\VO_Event\\American\\VO_American_Death",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "957164294",
-      "Name": "VO_American_Win",
-      "ObjectPath": "\\Events\\VO_Event\\American\\VO_American_Win",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "437585428",
-      "Name": "VO_Japan_Attack",
-      "ObjectPath": "\\Events\\VO_Event\\Japan\\VO_Japan_Attack",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "978479414",
-      "Name": "VO_Japan_Death",
-      "ObjectPath": "\\Events\\VO_Event\\Japan\\VO_Japan_Death",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "2169528442",
-      "Name": "VO_Japan_Win",
-      "ObjectPath": "\\Events\\VO_Event\\Japan\\VO_Japan_Win",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "1547089927",
-      "Name": "VO_Speaker_American_Win_Fight",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_American_Win_Fight",
-      "DurationType": "OneShot",
-      "DurationMin": "3.609773",
-      "DurationMax": "6.128006"
-     },
-     {
-      "Id": "1444082811",
-      "Name": "VO_Speaker_Japan_Win_Fight",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Japan_Win_Fight",
-      "DurationType": "OneShot",
-      "DurationMin": "3.609773",
-      "DurationMax": "6.128006"
-     },
-     {
-      "Id": "551141550",
-      "Name": "VO_Speaker_Ready",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Ready",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "3174962419",
-      "Name": "VO_Speaker_Round_1",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Round_1",
-      "DurationType": "OneShot",
-      "DurationMin": "4.445692",
-      "DurationMax": "4.445692"
-     },
-     {
-      "Id": "3174962416",
-      "Name": "VO_Speaker_Round_2",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Round_2",
-      "DurationType": "OneShot",
-      "DurationMin": "4.677891",
       "DurationMax": "4.677891"
-     },
-     {
-      "Id": "3174962417",
-      "Name": "VO_Speaker_Round_3",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Round_3",
-      "DurationType": "OneShot",
-      "DurationMin": "4.399252",
-      "DurationMax": "4.399252"
-     },
-     {
-      "Id": "3174962422",
-      "Name": "VO_Speaker_Round_4",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Round_4",
-      "DurationType": "OneShot",
-      "DurationMin": "4.445692",
-      "DurationMax": "4.445692"
      },
      {
       "Id": "3535674012",
       "Name": "VO_Speaker_Round_Win",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Round_Win",
+      "ObjectPath": "\\Events\\VO_Event\\VO_Speaker_Round_Win",
       "DurationType": "OneShot",
       "DurationMin": "3.609773",
       "DurationMax": "6.128006"
@@ -485,18 +402,10 @@
      {
       "Id": "3797693660",
       "Name": "VO_Speaker_Start_Fight",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_Start_Fight",
+      "ObjectPath": "\\Events\\VO_Event\\VO_Speaker_Start_Fight",
       "DurationType": "OneShot",
       "DurationMin": "3.145374",
       "DurationMax": "3.145374"
-     },
-     {
-      "Id": "3097949019",
-      "Name": "VO_Speaker_UltimeRound",
-      "ObjectPath": "\\Events\\VO_Event\\Speaker\\VO_Speaker_UltimeRound",
-      "DurationType": "OneShot",
-      "DurationMin": "4.631451",
-      "DurationMax": "4.631451"
      }
     ],
     "ReferencedStreamedFiles": [
@@ -1015,6 +924,12 @@
       "Language": "SFX",
       "ShortName": "SFX_Japan_Laser_Impact_Succes.wav",
       "Path": "SFX\\SFX_Japan_Laser_Impact_Succes_66C02B12.wem"
+     },
+     {
+      "Id": "708949003",
+      "Language": "SFX",
+      "ShortName": "SFX_Robot_Particles_01.wav",
+      "Path": "SFX\\SFX_Robot_Particles_01_3A0F2ED0.wem"
      },
      {
       "Id": "709282913",
