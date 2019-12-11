@@ -100,8 +100,14 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
     public void OnActionBeat()
     {
-        player1.currentLife -= CompareMove(player1.buffer[counter], player2.buffer[counter]);
-        player2.currentLife -= CompareMove(player2.buffer[counter], player1.buffer[counter]);
+        float damagePlayer1 = CompareMove(player1.buffer[counter], player2.buffer[counter]);
+        float damagePlayer2 = CompareMove(player2.buffer[counter], player1.buffer[counter]);
+
+        player1.PlayAnim(player1.buffer[counter], damagePlayer1 != 0f);
+        player2.PlayAnim(player2.buffer[counter], damagePlayer2 != 0f);
+
+        player1.currentLife -= damagePlayer2;
+        player2.currentLife -= damagePlayer2;
         player1.health.value = player1.currentLife;
         player2.health.value = player2.currentLife;
 
