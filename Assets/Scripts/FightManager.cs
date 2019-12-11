@@ -109,7 +109,9 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         player1.currentLife -= damagePlayer2;
         player2.currentLife -= damagePlayer2;
         player1.health.value = player1.currentLife;
+        AkSoundEngine.SetRTPCValue("RTPC_American_Health", player1.currentLife);
         player2.health.value = player2.currentLife;
+        AkSoundEngine.SetRTPCValue("RTPC_Japan_Health", player2.currentLife);
 
         counter = counter + 1;
 
@@ -136,21 +138,25 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         if (move2.isCharged) {
             if (move1.move == move2.move) {
                 if (move1.isCharged) {
-                    postHitEvent(move2.move);
+                    if(coefficients[(int)move1.move, (int)move2.move] > 0f)
+                        postHitEvent(move2.move);
                     return basicDamage * coefficients[(int)move1.move, (int)move2.move];
                 }
                 else {
-                    postHitEvent(move2.move);
+                    if (coefficients[(int)move1.move, (int)move2.move] > 0f)
+                        postHitEvent(move2.move);
                     return basicDamage * chargedCoeff;
                 }
             }
             else {
-                postHitEvent(move2.move);
+                if (coefficients[(int)move1.move, (int)move2.move] > 0f)
+                    postHitEvent(move2.move);
                 return basicDamage * coefficients[(int)move1.move, (int)move2.move] * chargedCoeff;
             }
         }
         else {
-            postHitEvent(move2.move);
+            if (coefficients[(int)move1.move, (int)move2.move] > 0f)
+                postHitEvent(move2.move);
             return basicDamage * coefficients[(int)move1.move, (int)move2.move];
         }
     }
@@ -185,6 +191,9 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
                 break;
             case Player.MoveType.SPECIAL:
                 AkSoundEngine.SetSwitch("Damage", "Special", gameObject);
+                break;
+            case Player.MoveType.REFLECT:
+                AkSoundEngine.SetSwitch("Damage", "Reflect", gameObject);
                 break;
             default:
                 AkSoundEngine.SetSwitch("Damage", "Neutral", gameObject);
