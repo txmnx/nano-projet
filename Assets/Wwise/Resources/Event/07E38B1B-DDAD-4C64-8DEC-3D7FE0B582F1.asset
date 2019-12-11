@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
   m_Name: 07E38B1B-DDAD-4C64-8DEC-3D7FE0B582F1
   m_EditorClassIdentifier: 
-  objectName: SFX_Japan_Death
-  id: 2398750736
+  objectName: SFX_Robot_Death
+  id: 591816388
   guid: 07E38B1B-DDAD-4C64-8DEC-3D7FE0B582F1

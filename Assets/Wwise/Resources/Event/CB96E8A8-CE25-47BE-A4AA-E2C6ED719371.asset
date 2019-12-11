@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
-  m_Name: CFA9AE28-2EF2-4D79-BFC3-14A39CAAEF0E
+  m_Name: CB96E8A8-CE25-47BE-A4AA-E2C6ED719371
   m_EditorClassIdentifier: 
-  objectName: Foley_Robot_SpecialAttack
-  id: 2142273903
-  guid: CFA9AE28-2EF2-4D79-BFC3-14A39CAAEF0E
+  objectName: VO_Speaker_Round_1
+  id: 3174962419
+  guid: CB96E8A8-CE25-47BE-A4AA-E2C6ED719371

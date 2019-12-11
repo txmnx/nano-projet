@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
   m_Name: C3FDB276-642A-43A3-9D4A-8F23D229380C
   m_EditorClassIdentifier: 
-  objectName: Foley_Japan_Fente
-  id: 749948348
+  objectName: Foley_Robot_Fente
+  id: 1796177216
   guid: C3FDB276-642A-43A3-9D4A-8F23D229380C

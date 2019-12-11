@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6f59ae2603fd524c83e0e880814a4d92
     GuidInternal: 
-    m_lastTime: -8586277868655958563
+    m_lastTime: -8586277873411011597
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586257072129118933
+    m_lastTime: -8586256211048500504
     List:
     - name: Reverb_Environment
       guid: e75504b6b32e344fada0c027ecb4f84e
@@ -42,13 +42,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ecf03042b7b91a439d21c630e3e238d4
     GuidInternal: 
-    m_lastTime: -8586277749165085305
+    m_lastTime: -8586271789597811388
     List: []
   - PhysicalPath: SoundBanks\SNB_Main.wwu
     ParentPhysicalPath: 
     guid: b6386809e450f84a89d7618320656b7b
     GuidInternal: 
-    m_lastTime: -8586260583277184612
+    m_lastTime: -8586260530870195610
     List:
     - name: SNB_Main
       guid: 5a38715bda597948abec28b707c2d621
@@ -64,7 +64,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86770a334b68ee4aace1537791113e2f
     GuidInternal: 
-    m_lastTime: -8586262373741666430
+    m_lastTime: -8586262226026270220
     List:
     - name: Amb_Main_Start
       guid: b26f12f46b949d4bab2aa71a3d9e6586
@@ -106,13 +106,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586256178699336114
+    m_lastTime: -8586262238816350761
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
     guid: 2819fee626dec34fad76f39d0b5e8fee
     GuidInternal: 
-    m_lastTime: -8586256173646823358
+    m_lastTime: -8586256164141158165
     List:
     - name: Foley_Robot_Damage
       guid: 5c4b80f78d52fe4bb57372af5699d6d4
@@ -262,7 +262,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586256194057510088
+    m_lastTime: -8586256195526149075
     List:
     - name: Music_R0_Init
       guid: 8c59682d33566943b084a0642d65d713
@@ -316,7 +316,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586256178699236373
+    m_lastTime: -8586256164141054892
     List:
     - name: SFX_Common_Electric_Sparks
       guid: 5f73930f1958f841a06b5e8fea70caba
@@ -574,7 +574,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586256194057410343
+    m_lastTime: -8586256194112047741
     List:
     - name: UI_Menu_Hovered_Main
       guid: 2fe81cc189869d49a14a41089043f113
@@ -636,7 +636,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586257011947891933
+    m_lastTime: -8586257002969800906
     List:
     - name: V0_Victory_Fight
       guid: 8af026f934d53947a5a9f985734c5409
@@ -881,13 +881,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 99bf92aa40e6ff40899e4dba44f66b8a
     GuidInternal: 
-    m_lastTime: -8586259693435031733
+    m_lastTime: -8586277873578083488
     List: []
   - PhysicalPath: Game Parameters\GameParameters.wwu
     ParentPhysicalPath: 
     guid: 9c12ca43141ceb4fa0904c48c50fc66f
     GuidInternal: 
-    m_lastTime: -8586262330413460722
+    m_lastTime: -8586262225904176663
     List:
     - name: RTPC_American_Health
       guid: 0c2d74fb3f61c843b49f0bb7f210bd57
@@ -911,7 +911,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 00f8bec34e6cc147a114597dd7e19d49
     GuidInternal: 
-    m_lastTime: -8586260628204809063
+    m_lastTime: -8586262170764949771
     List:
     - name: RTPC_Lowest_Health
       guid: 8d6584ac40b3c840ba5a1af5614c618e
@@ -926,13 +926,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 27c794134e2fbb49b93a32208e411fd2
     GuidInternal: 
-    m_lastTime: -8586274199511690565
+    m_lastTime: -8586271789598706902
     List: []
   - PhysicalPath: Game Parameters\Sidechain.wwu
     ParentPhysicalPath: 
     guid: a70defde949534459cacfeb3308c2fb7
     GuidInternal: 
-    m_lastTime: -8586259693127635718
+    m_lastTime: -8586259603564730834
     List:
     - name: Sidechain_All_By_VO
       guid: 838ec22530227d45a9e0df36c90b4bd5
@@ -948,13 +948,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2998adf915598c4782afc7f2fa59a7d9
     GuidInternal: 
-    m_lastTime: -8586277868656257215
+    m_lastTime: -8586262358495186373
     List: []
   - PhysicalPath: States\Music_States.wwu
     ParentPhysicalPath: 
     guid: 5bd7f45acdf4224bb51914ac15a62692
     GuidInternal: 
-    m_lastTime: -8586256169414888969
+    m_lastTime: -8586256190687152985
     List:
     - name: MusicToPlay
       guid: b394364a4d7a57449b3cf624048b65f3
@@ -1077,28 +1077,32 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bcefb86a0c078f4eb53a0dc795b4a9c1
     GuidInternal: 
-    m_lastTime: -8586266552085238916
+    m_lastTime: -8586277873411167824
     List: []
   - PhysicalPath: Switches\Music_Switch.wwu
     ParentPhysicalPath: 
     guid: 443a80c3c9f6c94fbd0facfa8f0143ab
     GuidInternal: 
-    m_lastTime: -8586274393612650035
+    m_lastTime: -8586271789597342750
     List: []
   - PhysicalPath: Switches\SFX_Switch.wwu
     ParentPhysicalPath: 
     guid: ceccf3f5cfadcd4389f0188ef4ead3fd
     GuidInternal: 
-    m_lastTime: -8586274393283546095
+    m_lastTime: -8586271789597342750
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 650da5fbe5676d4284afdd0cf3823b06
     GuidInternal: 
-    m_lastTime: -8586277868656057904
+    m_lastTime: -8586277873411167824
     List: []
   ExpandedItems:
   - /nano-projet_WwiseProject
+  - /nano-projet_WwiseProject/Events
+  - /nano-projet_WwiseProject/Events/Music_Event
+  - /nano-projet_WwiseProject/Events/VO_Event
+  - /nano-projet_WwiseProject/Events/VO_Event/Speaker
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

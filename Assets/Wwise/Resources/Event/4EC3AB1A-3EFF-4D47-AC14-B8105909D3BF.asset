@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
   m_Name: 4EC3AB1A-3EFF-4D47-AC14-B8105909D3BF
   m_EditorClassIdentifier: 
-  objectName: SFX_Japan_SpecialAttack
-  id: 1941465131
+  objectName: SFX_Robot_SpecialAttack
+  id: 681096487
   guid: 4EC3AB1A-3EFF-4D47-AC14-B8105909D3BF

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55276d5885a8f83408785a70d0f162c9, type: 3}
   m_Name: 04176EAA-268C-4636-8809-5483B72951CB
   m_EditorClassIdentifier: 
-  objectName: SFX_Japan_Laser_Impact_Succes
-  id: 1314745705
+  objectName: SFX_Robot_Laser_Impact_Succes
+  id: 3580743349
   guid: 04176EAA-268C-4636-8809-5483B72951CB
