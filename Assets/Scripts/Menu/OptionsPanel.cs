@@ -5,6 +5,7 @@ using UnityEngine;
 public class OptionsPanel : MonoBehaviour
 {
     public MainMenu mainMenu;
+    public Animator exitAnimator;
 
     private bool isPausing = false;
 
@@ -14,6 +15,7 @@ public class OptionsPanel : MonoBehaviour
         if (isPausing) return;
 
         if (Input.GetButtonDown("Exit")) {
+            exitAnimator.SetTrigger("press");
             mainMenu.ReturnToMenuChoices();
         }
     }

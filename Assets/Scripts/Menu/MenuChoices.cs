@@ -30,6 +30,8 @@ public class MenuChoices : MonoBehaviour
 
     public MainMenu mainMenu;
 
+    public Animator validateAnimator;
+
 
     private void Start()
     {
@@ -45,7 +47,7 @@ public class MenuChoices : MonoBehaviour
         //Lancer les events WWISE
         if (!isMoving) {
             if (Input.GetAxisRaw("SelectionVerticalButton") > 0f || Input.GetAxisRaw("SelectionVerticalJoystick") > 0f) {
-                Debug.Log("UP");
+                validateAnimator.Play("Giggle Up", 0, 0);
                 if (selection - 1 < 0) {
                     selection = (Choice)choicesLength - 1;
                     MoveBottom();
@@ -58,6 +60,7 @@ public class MenuChoices : MonoBehaviour
                 HighlightText(selection);
             }
             else if (Input.GetAxisRaw("SelectionVerticalButton") < 0f || Input.GetAxisRaw("SelectionVerticalJoystick") < 0f) {
+                validateAnimator.Play("Giggle Down", 0, 0);
                 if (selection + 1 >= (Choice)choicesLength) {
                     selection = 0;
                     MoveTop();
@@ -72,7 +75,8 @@ public class MenuChoices : MonoBehaviour
         }
 
         if (Input.GetButtonDown("Validate")) {
-            switch(selection) {
+            validateAnimator.Play("Press", 0, 0);
+            switch (selection) {
                 case Choice.VERSUS:
                     SceneManager.LoadScene("SampleScene");
                     break;
@@ -101,25 +105,25 @@ public class MenuChoices : MonoBehaviour
     private void MoveUp()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.1f, -distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.15f, -distanceBetweenChoices));
     }
 
     private void MoveDown()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.1f, distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.15f, distanceBetweenChoices));
     }
 
     private void MoveTop()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.15f, -distanceBetweenChoices * 3));
+        StartCoroutine(MoveAnimation(0.2f, -distanceBetweenChoices * 3));
     }
 
     private void MoveBottom()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.15f, distanceBetweenChoices * 3));
+        StartCoroutine(MoveAnimation(0.2f, distanceBetweenChoices * 3));
     }
 
     private IEnumerator MoveAnimation(float duration, float offset)
