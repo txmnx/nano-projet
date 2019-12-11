@@ -1,31 +1,40 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1316503075	CueManager			\Music_States\CueManager	
 	3012001959	MusicToPlay			\Music_States\MusicToPlay	
+	3957034330	RoundWinner			\Music_States\RoundWinner	
 
 State	ID	Name	State Group			Notes
+	0	None	CueManager			
+	2473054966	NewCue	CueManager			
+	3041563226	Silence	CueManager			
 	0	None	MusicToPlay			
-	274558428	R0_Init	MusicToPlay			
-	1874288895	Idle	MusicToPlay			
+	1151771561	ST_Idle	MusicToPlay			
 	2004344129	ST_RoundWinUS	MusicToPlay			
 	2043216656	ST_R2_Draw	MusicToPlay			
 	2263923035	ST_R1_LeadJP	MusicToPlay			
+	2299586414	ST_R0_Init	MusicToPlay			
 	2323118955	ST_RoundWinJP	MusicToPlay			
 	2482032081	ST_R1_LeadUS	MusicToPlay			
 	3028319585	ST_WinJP	MusicToPlay			
 	3179318095	ST_WinUS	MusicToPlay			
 	3955955234	ST_R2_LeadJP	MusicToPlay			
 	4274730056	ST_R2_LeadUS	MusicToPlay			
+	0	None	RoundWinner			
+	1551306157	US	RoundWinner			
+	1735860063	JP	RoundWinner			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	81210309	Sidechain_All_By_VO			\Sidechain\Sidechain_All_By_VO	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
-	436743010	Character			\Default Work Unit\Master Audio Bus\SFX\Character	
 	482648852	VO_Character			\Default Work Unit\Master Audio Bus\VO\VO_Character	
-	532012563	Japan			\Default Work Unit\Master Audio Bus\SFX\Character\Japan	
 	1031316333	Reverb_Menu			\Default Work Unit\Master Audio Bus\UI\Reverb_Menu	
 	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
 	2395677314	Common			\Default Work Unit\Master Audio Bus\SFX\Common	
-	2437018863	American			\Default Work Unit\Master Audio Bus\SFX\Character\American	
 	2607556080	Menu			\Default Work Unit\Master Audio Bus\UI\Menu	
 	2748973500	Speaker			\Default Work Unit\Master Audio Bus\VO\Speaker	
 	2967546505	In_Game			\Default Work Unit\Master Audio Bus\UI\In_Game	
@@ -36,6 +45,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
+
+Effect plug-ins	ID	Name	Type				Notes
+	289702920	Wwise_Meter_(Custom)	Wwise Meter			
+	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
+	1588715066	Echoes_Linear	Wwise Delay			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

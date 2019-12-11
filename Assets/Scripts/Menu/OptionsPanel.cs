@@ -15,6 +15,7 @@ public class OptionsPanel : MonoBehaviour
         if (isPausing) return;
 
         if (Input.GetButtonDown("Exit")) {
+            AkSoundEngine.PostEvent("UI_Option_Back", gameObject);
             exitAnimator.SetTrigger("press");
             mainMenu.ReturnToMenuChoices();
         }

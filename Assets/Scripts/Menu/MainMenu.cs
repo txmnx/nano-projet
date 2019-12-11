@@ -45,7 +45,6 @@ public class MainMenu : MonoBehaviour
         optionsPanel.Pause(true);
 
         menuChoices.Reset();
-
         isMoving = true;
         StartCoroutine(MovePanelCoroutine(0.5f, -distanceBetweenPanels));
     }

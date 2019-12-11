@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586264702407587261
+    m_lastTime: -8586257072129118933
     List:
     - name: Reverb_Environment
       guid: e75504b6b32e344fada0c027ecb4f84e
@@ -48,7 +48,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b6386809e450f84a89d7618320656b7b
     GuidInternal: 
-    m_lastTime: -8586277742523273528
+    m_lastTime: -8586260583277184612
     List:
     - name: SNB_Main
       guid: 5a38715bda597948abec28b707c2d621
@@ -64,17 +64,29 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86770a334b68ee4aace1537791113e2f
     GuidInternal: 
-    m_lastTime: -8586266552084770278
+    m_lastTime: -8586256068043256206
     List:
-    - name: Son_Temoin
-      guid: 114690534b416341b41e1f8f0664b094
-      id: 1502450958
+    - name: Amb_Main_Start
+      guid: b26f12f46b949d4bab2aa71a3d9e6586
+      id: 1418672556
       PathAndIcons:
       - ElementName: Ambience_Event
         ObjectType: 12
-      - ElementName: Son_Temoin
+      - ElementName: Amb_Main_Start
         ObjectType: 3
-      Path: Ambience_Event\Son_Temoin
+      Path: Ambience_Event\Amb_Main_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Amb_Menu_Start
+      guid: 083d34cab83aef4894b72c1749d5a480
+      id: 3958906054
+      PathAndIcons:
+      - ElementName: Ambience_Event
+        ObjectType: 12
+      - ElementName: Amb_Menu_Start
+        ObjectType: 3
+      Path: Ambience_Event\Amb_Menu_Start
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -82,14 +94,176 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586264910893453850
+    m_lastTime: -8586256178699336114
     List: []
+  - PhysicalPath: Events\Foley_Event.wwu
+    ParentPhysicalPath: 
+    guid: 2819fee626dec34fad76f39d0b5e8fee
+    GuidInternal: 
+    m_lastTime: -8586255444009495395
+    List:
+    - name: Foley_Robot_Damage
+      guid: 5c4b80f78d52fe4bb57372af5699d6d4
+      id: 1606116385
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Damage
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Damage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Death
+      guid: a06ea4056cd36a4d97e1992a9353b254
+      id: 1218823660
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Death
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Fente
+      guid: 76b2fdc32a64a3439d4a8f23d229380c
+      id: 1796177216
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Fente
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Fente
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Guard
+      guid: 19f4273687faf94a812ddd6e3313825a
+      id: 3951945397
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Guard
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Guard
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Iddle
+      guid: fb3210ed215eab43aa33077ae877efb2
+      id: 1531385158
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Iddle
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Iddle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Laser_Door_Close
+      guid: 0aa0eb5228dcf349b21377fd036dd830
+      id: 3924484359
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Laser_Door_Close
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Laser_Door_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Laser_Door_Open
+      guid: 3343af6d2382204882e091c11b57efbb
+      id: 2167064369
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Laser_Door_Open
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Laser_Door_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Lose_Arm
+      guid: 5cec16f240451045bad46e139312b2fb
+      id: 248344350
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Lose_Arm
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Lose_Arm
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Shield
+      guid: 99008662199a2845844c81b96ad1292d
+      id: 2768415929
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Shield
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Shield
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_SpecialAttack
+      guid: 28aea9cff22e794dbfc314a39caaef0e
+      id: 2142273903
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_SpecialAttack
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_SpecialAttack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Whoosh
+      guid: 1f5344d7fec8764fbdf51a5918422016
+      id: 929055660
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Whoosh
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Whoosh
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Win
+      guid: 0d6f0a7c899e604c83ccb7f92d9cca17
+      id: 1105393344
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Win
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Music_Event.wwu
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586264908293806449
+    m_lastTime: -8586255211202148943
     List:
+    - name: CueManager_NewCue
+      guid: d5915c242ff48647b0ea9a8a8a03be3e
+      id: 2279207821
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager_NewCue
+        ObjectType: 3
+      Path: Music_Event\CueManager_NewCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_R0_Init
       guid: 8c59682d33566943b084a0642d65d713
       id: 2178242372
@@ -102,43 +276,551 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music_RoundEndPart2
+      guid: 713bb08513b76b43a0f097bf5dbd25e8
+      id: 2927058889
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Music_RoundEndPart2
+        ObjectType: 3
+      Path: Music_Event\Music_RoundEndPart2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_CueManager
+      guid: b88143f51f169548a0fb752bc270cf26
+      id: 1568189152
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Play_CueManager
+        ObjectType: 3
+      Path: Music_Event\Play_CueManager
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Main_Music
+      guid: 69779325c47ab640864be4c3d71d2504
+      id: 414863633
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Play_Main_Music
+        ObjectType: 3
+      Path: Music_Event\Play_Main_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Pause
+      guid: 75d8f7aa1bfb6241a0c807829788c646
+      id: 1122264096
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Play_Music_Pause
+        ObjectType: 3
+      Path: Music_Event\Play_Music_Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\SFX_Event.wwu
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586277742718771233
-    List: []
+    m_lastTime: -8586256178699236373
+    List:
+    - name: SFX_Common_Electric_Sparks
+      guid: 5f73930f1958f841a06b5e8fea70caba
+      id: 2927774105
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Electric_Sparks
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Electric_Sparks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Oil
+      guid: a29aa1e3fc161e48872b1b56a5afc916
+      id: 2534836963
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Oil
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Oil
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_InputPhase_In
+      guid: 5d5d0a7bcf428e4b86cc653d396b3d2e
+      id: 427260706
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_InputPhase_In
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_InputPhase_In
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_InputPhase_Out
+      guid: 854021a00064b14ca82dc39291ac39d8
+      id: 1142057693
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_InputPhase_Out
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_InputPhase_Out
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Death
+      guid: 1b8be307addd644c8dec3d7fe0b582f1
+      id: 591816388
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Death
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Explosion
+      guid: de8d0885b3fb204c8010794ef7a13f98
+      id: 3716377771
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Explosion
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Fente
+      guid: 760979f180e05c4aba41fceae2f581d4
+      id: 1708613752
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Fente
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Fente
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Laser_Impact_Reflect
+      guid: 98a178fedf7a6e4d924517c48a293f61
+      id: 2599727010
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Impact_Reflect
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Impact_Reflect
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Laser_Impact_Succes
+      guid: aa6e17048c26364688095483b72951cb
+      id: 3580743349
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Impact_Succes
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Impact_Succes
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Laser_Reload
+      guid: aa6f56ce45be514fa261a8caf402999d
+      id: 4210766769
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Reload
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Reload
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Laser_Shoot
+      guid: 1731f71e6584fe4ea3b08a3e8e4c3322
+      id: 2331834703
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Shoot
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Shoot
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Particles
+      guid: bc2bdb2582b06a46a019485fa43bec7c
+      id: 515042147
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Particles
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Particles
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Projectile_Woosh
+      guid: 7b92b27a1ef75e40a5d76c01afbfecb0
+      id: 1580043918
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Projectile_Woosh
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Projectile_Woosh
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_Shield
+      guid: ff8ce9ae9eaead448e52b8758e6697c9
+      id: 159250081
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Shield
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Shield
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Robot_SpecialAttack
+      guid: 1aabc34eff3e474dac14b8105909d3bf
+      id: 681096487
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_SpecialAttack
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_SpecialAttack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Title_Fight
+      guid: c810fb195a3e4f4cac35ca316abbd77c
+      id: 2335777874
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Title
+        ObjectType: 4
+      - ElementName: SFX_Title_Fight
+        ObjectType: 3
+      Path: SFX_Event\Title\SFX_Title_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Title_Timer
+      guid: 94836f4b8c9bdb4ba510d044dfc98293
+      id: 3290104963
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Title
+        ObjectType: 4
+      - ElementName: SFX_Title_Timer
+        ObjectType: 3
+      Path: SFX_Event\Title\SFX_Title_Timer
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Title_Win
+      guid: a3ad7547725db54995d557b54774f79d
+      id: 1985058514
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Title
+        ObjectType: 4
+      - ElementName: SFX_Title_Win
+        ObjectType: 3
+      Path: SFX_Event\Title\SFX_Title_Win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\UI_Event.wwu
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586274393954548555
-    List: []
+    m_lastTime: -8586255390425689651
+    List:
+    - name: UI_Menu_Clic_Option
+      guid: 1c0fd2e95166224c881a521a1555ea8a
+      id: 773074497
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Menu_Clic_Option
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Menu_Clic_Option
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Menu_Hovered_Main
+      guid: 2fe81cc189869d49a14a41089043f113
+      id: 2697976037
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Menu_Hovered_Main
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Menu_Hovered_Main
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Menu_PauseGame
+      guid: 9b612923bca9c043bf521c29966b56c5
+      id: 2559298002
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu_Pause
+        ObjectType: 4
+      - ElementName: UI_Menu_PauseGame
+        ObjectType: 3
+      Path: UI_Event\Menu_Pause\UI_Menu_PauseGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Menu_Start_Game
+      guid: 99b56cd18c13f54e80b88fb9b0811fc7
+      id: 1529249135
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Menu_Start_Game
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Menu_Start_Game
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Menu_UnPauseGame
+      guid: abd84df07969064ca8984b06fd5ee7bc
+      id: 455738561
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu_Pause
+        ObjectType: 4
+      - ElementName: UI_Menu_UnPauseGame
+        ObjectType: 3
+      Path: UI_Event\Menu_Pause\UI_Menu_UnPauseGame
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Option_Back
+      guid: 7281e72ae7fa6f4bb6680c5d5febe0c4
+      id: 1047748741
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Option_Back
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Option_Back
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Option_Clic
+      guid: e026d6677592a546955e223e563f34cc
+      id: 2774704533
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Option_Clic
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Option_Clic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Option_Hovered
+      guid: 5b1bf01fd15897478c9429d3bf418913
+      id: 269563613
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Option_Hovered
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Option_Hovered
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\VO_Event.wwu
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586277742523370475
-    List: []
+    m_lastTime: -8586255196527576862
+    List:
+    - name: V0_Victory_Fight
+      guid: 8af026f934d53947a5a9f985734c5409
+      id: 858171719
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: V0_Victory_Fight
+        ObjectType: 3
+      Path: VO_Event\V0_Victory_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Round
+      guid: 13c99e0fb1ff07438c2feabefa16f73e
+      id: 2824871891
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: VO_Speaker_Round
+        ObjectType: 3
+      Path: VO_Event\VO_Speaker_Round
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Round_Win
+      guid: ef5e480dec5b9741b731253966160a3e
+      id: 3535674012
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: VO_Speaker_Round_Win
+        ObjectType: 3
+      Path: VO_Event\VO_Speaker_Round_Win
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VO_Speaker_Start_Fight
+      guid: 454b4feb07c0044e8ba748ed29fe1c54
+      id: 3797693660
+      PathAndIcons:
+      - ElementName: VO_Event
+        ObjectType: 12
+      - ElementName: VO_Speaker_Start_Fight
+        ObjectType: 3
+      Path: VO_Event\VO_Speaker_Start_Fight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 99bf92aa40e6ff40899e4dba44f66b8a
     GuidInternal: 
-    m_lastTime: -8586277868845960550
+    m_lastTime: -8586259693435031733
     List: []
+  - PhysicalPath: Game Parameters\GameParameters.wwu
+    ParentPhysicalPath: 
+    guid: 9c12ca43141ceb4fa0904c48c50fc66f
+    GuidInternal: 
+    m_lastTime: -8586255445283248095
+    List:
+    - name: RTPC_American_Health
+      guid: 0c2d74fb3f61c843b49f0bb7f210bd57
+      id: 1818309602
+      PathAndIcons:
+      - ElementName: GameParameters
+        ObjectType: 12
+      - ElementName: RTPC_American_Health
+        ObjectType: 13
+      Path: GameParameters\RTPC_American_Health
+    - name: RTPC_Japan_Health
+      guid: 6518753afdd39949bc9f774190a2b931
+      id: 3984115470
+      PathAndIcons:
+      - ElementName: GameParameters
+        ObjectType: 12
+      - ElementName: RTPC_Japan_Health
+        ObjectType: 13
+      Path: GameParameters\RTPC_Japan_Health
   - PhysicalPath: Game Parameters\Music_GameParameters.wwu
     ParentPhysicalPath: 
     guid: 00f8bec34e6cc147a114597dd7e19d49
     GuidInternal: 
-    m_lastTime: -8586266552084926487
-    List: []
+    m_lastTime: -8586260628204809063
+    List:
+    - name: RTPC_Lowest_Health
+      guid: 8d6584ac40b3c840ba5a1af5614c618e
+      id: 1386449390
+      PathAndIcons:
+      - ElementName: Music_GameParameters
+        ObjectType: 12
+      - ElementName: RTPC_Lowest_Health
+        ObjectType: 13
+      Path: Music_GameParameters\RTPC_Lowest_Health
   - PhysicalPath: Game Parameters\SFX_GameParameters.wwu
     ParentPhysicalPath: 
     guid: 27c794134e2fbb49b93a32208e411fd2
     GuidInternal: 
     m_lastTime: -8586274199511690565
     List: []
+  - PhysicalPath: Game Parameters\Sidechain.wwu
+    ParentPhysicalPath: 
+    guid: a70defde949534459cacfeb3308c2fb7
+    GuidInternal: 
+    m_lastTime: -8586259693127635718
+    List:
+    - name: Sidechain_All_By_VO
+      guid: 838ec22530227d45a9e0df36c90b4bd5
+      id: 81210309
+      PathAndIcons:
+      - ElementName: Sidechain
+        ObjectType: 12
+      - ElementName: Sidechain_All_By_VO
+        ObjectType: 13
+      Path: Sidechain\Sidechain_All_By_VO
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -146,6 +828,159 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586277868656257215
     List: []
+  - PhysicalPath: States\Music_States.wwu
+    ParentPhysicalPath: 
+    guid: 5bd7f45acdf4224bb51914ac15a62692
+    GuidInternal: 
+    m_lastTime: -8586255211138642897
+    List:
+    - name: CueManager
+      guid: ae3093224713db45ace8d61f3d6706dc
+      id: 1316503075
+      PathAndIcons:
+      - ElementName: Music_States
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 9
+      Path: Music_States\CueManager
+      values:
+      - name: NewCue
+        guid: 402bcd76a6b87e4f89b776b627ad1513
+        id: 2473054966
+        PathAndIcons:
+        - ElementName: NewCue
+          ObjectType: 8
+      - name: None
+        guid: e6482fe5d3547e4899a4ec4b57f83749
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Silence
+        guid: 581e07720f454e4a8887f6bf7bdcbc2c
+        id: 3041563226
+        PathAndIcons:
+        - ElementName: Silence
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MusicToPlay
+      guid: b394364a4d7a57449b3cf624048b65f3
+      id: 3012001959
+      PathAndIcons:
+      - ElementName: Music_States
+        ObjectType: 12
+      - ElementName: MusicToPlay
+        ObjectType: 9
+      Path: Music_States\MusicToPlay
+      values:
+      - name: None
+        guid: a1296e87abdd1b4490740c518fb1fe71
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: ST_Idle
+        guid: acbf07adb500ec4bbd0288bfd21416ea
+        id: 1151771561
+        PathAndIcons:
+        - ElementName: ST_Idle
+          ObjectType: 8
+      - name: ST_R0_Init
+        guid: 4297113d7ef6c14d9705c9e99134c7ce
+        id: 2299586414
+        PathAndIcons:
+        - ElementName: ST_R0_Init
+          ObjectType: 8
+      - name: ST_R1_LeadJP
+        guid: fa71948c96aaae4ea45d1b76dd0e5052
+        id: 2263923035
+        PathAndIcons:
+        - ElementName: ST_R1_LeadJP
+          ObjectType: 8
+      - name: ST_R1_LeadUS
+        guid: 97db969c62c5a047b7bde85ca675a34f
+        id: 2482032081
+        PathAndIcons:
+        - ElementName: ST_R1_LeadUS
+          ObjectType: 8
+      - name: ST_R2_Draw
+        guid: 3da0ad2e81b37c438336498de950ea4c
+        id: 2043216656
+        PathAndIcons:
+        - ElementName: ST_R2_Draw
+          ObjectType: 8
+      - name: ST_R2_LeadJP
+        guid: 55e3bfafa0ecee4db4e3b14390115c9f
+        id: 3955955234
+        PathAndIcons:
+        - ElementName: ST_R2_LeadJP
+          ObjectType: 8
+      - name: ST_R2_LeadUS
+        guid: 0131dd48be4f454bb58bed968125235b
+        id: 4274730056
+        PathAndIcons:
+        - ElementName: ST_R2_LeadUS
+          ObjectType: 8
+      - name: ST_RoundWinJP
+        guid: ff926de021ebad4985bc8bff43e5e9cd
+        id: 2323118955
+        PathAndIcons:
+        - ElementName: ST_RoundWinJP
+          ObjectType: 8
+      - name: ST_RoundWinUS
+        guid: 11725ee603d4c3438c92a94ec599243e
+        id: 2004344129
+        PathAndIcons:
+        - ElementName: ST_RoundWinUS
+          ObjectType: 8
+      - name: ST_WinJP
+        guid: 0537af7dba374f4c88633321696a273a
+        id: 3028319585
+        PathAndIcons:
+        - ElementName: ST_WinJP
+          ObjectType: 8
+      - name: ST_WinUS
+        guid: 6c8b1a2e3320174084340b86cb3c921f
+        id: 3179318095
+        PathAndIcons:
+        - ElementName: ST_WinUS
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: RoundWinner
+      guid: 86feeb584a7f6841b27a6a80cdebce9c
+      id: 3957034330
+      PathAndIcons:
+      - ElementName: Music_States
+        ObjectType: 12
+      - ElementName: RoundWinner
+        ObjectType: 9
+      Path: Music_States\RoundWinner
+      values:
+      - name: JP
+        guid: b73c643c16873845b73daf95373b662d
+        id: 1735860063
+        PathAndIcons:
+        - ElementName: JP
+          ObjectType: 8
+      - name: None
+        guid: 3e0a5076179bc8459c211a45ceda373b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: US
+        guid: 8b5fe8f03543174d9294050a956d8322
+        id: 1551306157
+        PathAndIcons:
+        - ElementName: US
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -157,14 +992,106 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 443a80c3c9f6c94fbd0facfa8f0143ab
     GuidInternal: 
-    m_lastTime: -8586274393612650035
-    List: []
+    m_lastTime: -8586255197251447333
+    List:
+    - name: Round
+      guid: f03f18ad88d0f6478361085adc540329
+      id: 1413238543
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: Round
+        ObjectType: 11
+      Path: Music_Switch\Round
+      values:
+      - name: FinalRound
+        guid: 7fd1bf8c13116d4e9c89793953180622
+        id: 1608193273
+        PathAndIcons:
+        - ElementName: FinalRound
+          ObjectType: 10
+      - name: Nothing
+        guid: bed27cdc83a42c49af92f1e3a19327c9
+        id: 4248742144
+        PathAndIcons:
+        - ElementName: Nothing
+          ObjectType: 10
+      - name: Round1
+        guid: d1cd5ab35220b645941312cc98543bfe
+        id: 2851108012
+        PathAndIcons:
+        - ElementName: Round1
+          ObjectType: 10
+      - name: Round2
+        guid: f7986db64cf04d4e8d2793aa3b51a6eb
+        id: 2851108015
+        PathAndIcons:
+        - ElementName: Round2
+          ObjectType: 10
+      - name: Round3
+        guid: 447e0690aa85824c9afda2603f2691b8
+        id: 2851108014
+        PathAndIcons:
+        - ElementName: Round3
+          ObjectType: 10
+      - name: Round4
+        guid: ee1773cffa220f4db0afddec2abdeb97
+        id: 2851108009
+        PathAndIcons:
+        - ElementName: Round4
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\SFX_Switch.wwu
     ParentPhysicalPath: 
     guid: ceccf3f5cfadcd4389f0188ef4ead3fd
     GuidInternal: 
-    m_lastTime: -8586274393283546095
-    List: []
+    m_lastTime: -8586255433733180645
+    List:
+    - name: Damage
+      guid: 63e73f6b8c164f40bd256e46ca94a92c
+      id: 1786804762
+      PathAndIcons:
+      - ElementName: SFX_Switch
+        ObjectType: 12
+      - ElementName: Damage
+        ObjectType: 11
+      Path: SFX_Switch\Damage
+      values:
+      - name: Fente
+        guid: 5a29b8ca4d16a64b89c8e2b5f06df426
+        id: 1343249213
+        PathAndIcons:
+        - ElementName: Fente
+          ObjectType: 10
+      - name: Laser
+        guid: 65c6d07d0d5c404c88818acb3f041473
+        id: 3982605422
+        PathAndIcons:
+        - ElementName: Laser
+          ObjectType: 10
+      - name: Neutral
+        guid: 68c5902f69187f4b96a32d7d75181f63
+        id: 670611050
+        PathAndIcons:
+        - ElementName: Neutral
+          ObjectType: 10
+      - name: Reflect
+        guid: 40c1f4d48bd14b48958f2b571843a65a
+        id: 243379636
+        PathAndIcons:
+        - ElementName: Reflect
+          ObjectType: 10
+      - name: Special
+        guid: 749691b770f75344b0122b243d0d65c4
+        id: 3064974266
+        PathAndIcons:
+        - ElementName: Special
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -172,6 +1099,21 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586277868656057904
     List: []
+  - PhysicalPath: Triggers\Music_Triggers.wwu
+    ParentPhysicalPath: 
+    guid: 8fef727bf33bd045888b876f6c901765
+    GuidInternal: 
+    m_lastTime: -8586255210893445824
+    List:
+    - name: NewCue
+      guid: 17660fc613facd4aac6558ff9685f4ed
+      id: 2473054966
+      PathAndIcons:
+      - ElementName: Music_Triggers
+        ObjectType: 12
+      - ElementName: NewCue
+        ObjectType: 14
+      Path: Music_Triggers\NewCue
   ExpandedItems:
   - /nano-projet_WwiseProject
   autoPopulateEnabled: 1

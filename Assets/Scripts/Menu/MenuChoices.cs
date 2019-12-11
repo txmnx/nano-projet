@@ -79,15 +79,19 @@ public class MenuChoices : MonoBehaviour
             switch (selection) {
                 case Choice.VERSUS:
                     SceneManager.LoadScene("SampleScene");
+                    AkSoundEngine.PostEvent("UI_Menu_Start_Game", gameObject);
                     break;
                 case Choice.AI:
                     SceneManager.LoadScene("FightSceneAI");
+                    AkSoundEngine.PostEvent("UI_Menu_Start_Game", gameObject);
                     break;
                 case Choice.CONTROLS:
                     //TODO : popup controls
+                    AkSoundEngine.PostEvent("UI_Menu_Clic_Option", gameObject);
                     break;
                 case Choice.OPTIONS:
                     mainMenu.DisplayOptionsPanel();
+                    AkSoundEngine.PostEvent("UI_Menu_Clic_Option", gameObject);
                     break;
                 default:
                     break;
@@ -106,24 +110,28 @@ public class MenuChoices : MonoBehaviour
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.15f, -distanceBetweenChoices));
+        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private void MoveDown()
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.15f, distanceBetweenChoices));
+        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private void MoveTop()
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.2f, -distanceBetweenChoices * 3));
+        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private void MoveBottom()
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.2f, distanceBetweenChoices * 3));
+        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private IEnumerator MoveAnimation(float duration, float offset)
