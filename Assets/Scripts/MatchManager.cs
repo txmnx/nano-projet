@@ -76,6 +76,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isWon)
         {
             winner.wins += 1;
+            //bool = true;
             winSliders[winnerID].value = winner.wins;
             onRoundEnd();
 

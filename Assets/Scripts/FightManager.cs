@@ -130,17 +130,21 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         if (move2.isCharged) {
             if (move1.move == move2.move) {
                 if (move1.isCharged) {
+                    postHitEvent(move2.move);
                     return basicDamage * coefficients[(int)move1.move, (int)move2.move];
                 }
                 else {
+                    postHitEvent(move2.move);
                     return basicDamage * chargedCoeff;
                 }
             }
             else {
+                postHitEvent(move2.move);
                 return basicDamage * coefficients[(int)move1.move, (int)move2.move] * chargedCoeff;
             }
         }
         else {
+            postHitEvent(move2.move);
             return basicDamage * coefficients[(int)move1.move, (int)move2.move];
         }
     }
@@ -160,6 +164,25 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
                 return specialSprite;
             default:
                 return neutralSprite;
+        }
+    }
+
+    public void postHitEvent(Player.MoveType move)
+    {
+        switch (move)
+        {
+            case Player.MoveType.LASER:
+                AkSoundEngine.SetSwitch("Damage", "Laser", gameObject);
+                break;
+            case Player.MoveType.HIT:
+                AkSoundEngine.SetSwitch("Damage", "Fente", gameObject);
+                break;
+            case Player.MoveType.SPECIAL:
+                AkSoundEngine.SetSwitch("Damage", "Special", gameObject);
+                break;
+            default:
+                AkSoundEngine.SetSwitch("Damage", "Neutral", gameObject);
+                break;
         }
     }
 
