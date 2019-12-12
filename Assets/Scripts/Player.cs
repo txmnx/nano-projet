@@ -14,7 +14,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 {
     public PlayerID id;
     private string idString;
-
     public float chargeTime = 0.80f;
     public float chargeTimer = 0;
     protected bool isCharging = false;
@@ -221,23 +220,23 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
             switch (move.move) {
                 case MoveType.HIT:
                     animator.SetTrigger("doFente");
-                    //TODO : placer le son avec deux coups similaires
+                   AkSoundEngine.PostEvent("SFX_Common_Fente", gameObject);
                     break;
                 case MoveType.REFLECT:
                     animator.SetTrigger("doReflect");
-                    //TODO : placer le son avec deux coups similaires
+                    AkSoundEngine.PostEvent("SFX_Common_Reflect", gameObject);
                     break;
                 case MoveType.LASER:
                     animator.SetTrigger("doLaser");
-                    //TODO : placer le son avec deux coups similaires
+                    AkSoundEngine.PostEvent("SFX_Common_Laser",gameObject);
                     break;
                 case MoveType.SPECIAL:
                     animator.SetTrigger("doSpecial");
-                    //TODO : placer le son avec deux coups similaires
+                    AkSoundEngine.PostEvent("SFX_Common_Special", gameObject);
                     break;
                 case MoveType.GUARD:
                     animator.SetTrigger("doGuard");
-                    //TODO : placer le son avec deux coups similaires
+                    AkSoundEngine.PostEvent("SFX_Common_Guard", gameObject);
                     break;
                 default:
                     break;
@@ -249,7 +248,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     animator.SetTrigger("doDamageReflect");
                     break;
                 case MoveType.LASER:
-                    //TODO : ici c'est quand le player fait le laser et se prend le reflect
+                    // ici c'est quand le player fait le laser et se prend le reflect
+                    AkSoundEngine.PostEvent("SFX_Robot_Laser_Damage", gameObject);
                     animator.SetTrigger("doDamageLaser");
                     break;
                 default:
@@ -264,7 +264,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     break;
                 case MoveType.REFLECT:
                     if (player2DoLaser) {
-                        //TODO : ici c'est quand le reflect renvoie le laser
+                        // ici c'est quand le reflect renvoie le laser
+                        AkSoundEngine.PostEvent("SFX_Robot_Laser_Impact_Reflect", gameObject);
                     }
                     animator.SetTrigger("doReflect");
                     break;

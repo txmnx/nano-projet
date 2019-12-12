@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
@@ -55,6 +55,22 @@
       "DurationType": "OneShot",
       "DurationMin": "5.839773",
       "DurationMax": "8.006871"
+     },
+     {
+      "Id": "2452461343",
+      "Name": "Foley_Robot_Death_Metal_Creaking",
+      "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Death_Metal_Creaking",
+      "DurationType": "OneShot",
+      "DurationMin": "1.866238",
+      "DurationMax": "2.202939"
+     },
+     {
+      "Id": "3709968817",
+      "Name": "Foley_Robot_Fall",
+      "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Fall",
+      "DurationType": "OneShot",
+      "DurationMin": "1.590243",
+      "DurationMax": "3.021819"
      },
      {
       "Id": "1796177216",
@@ -103,6 +119,14 @@
       "DurationType": "OneShot",
       "DurationMin": "4.316032",
       "DurationMax": "4.875601"
+     },
+     {
+      "Id": "1722131082",
+      "Name": "Foley_Robot_Metal_Creaking",
+      "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Metal_Creaking",
+      "DurationType": "OneShot",
+      "DurationMin": "0.593549",
+      "DurationMax": "0.862634"
      },
      {
       "Id": "2768415929",
@@ -181,10 +205,50 @@
       "DurationType": "Infinite"
      },
      {
+      "Id": "657576033",
+      "Name": "SFX_Common_Fente",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Fente",
+      "DurationType": "OneShot",
+      "DurationMin": "0.659887",
+      "DurationMax": "0.659887"
+     },
+     {
+      "Id": "2840219912",
+      "Name": "SFX_Common_Guard",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Guard",
+      "DurationType": "OneShot",
+      "DurationMin": "0.659887",
+      "DurationMax": "0.659887"
+     },
+     {
+      "Id": "2413456602",
+      "Name": "SFX_Common_Laser",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Laser",
+      "DurationType": "OneShot",
+      "DurationMin": "0.659887",
+      "DurationMax": "0.659887"
+     },
+     {
       "Id": "2534836963",
       "Name": "SFX_Common_Oil",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Oil",
       "DurationType": "Infinite"
+     },
+     {
+      "Id": "2807764600",
+      "Name": "SFX_Common_Reflect",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Reflect",
+      "DurationType": "OneShot",
+      "DurationMin": "0.659887",
+      "DurationMax": "0.659887"
+     },
+     {
+      "Id": "1518756630",
+      "Name": "SFX_Common_Special",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Special",
+      "DurationType": "OneShot",
+      "DurationMin": "0.659887",
+      "DurationMax": "0.659887"
      },
      {
       "Id": "427260706",
@@ -206,7 +270,6 @@
       "Id": "591816388",
       "Name": "SFX_Robot_Death",
       "ObjectPath": "\\Events\\SFX_Event\\Robot\\SFX_Robot_Death",
-      "MaxAttenuation": "100.000000",
       "DurationType": "OneShot",
       "DurationMin": "4.157958",
       "DurationMax": "8.052399"
@@ -228,20 +291,20 @@
       "DurationMax": "1.513810"
      },
      {
+      "Id": "3793944345",
+      "Name": "SFX_Robot_Laser_Damage",
+      "ObjectPath": "\\Events\\SFX_Event\\Robot\\SFX_Robot_Laser_Damage",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "2599727010",
       "Name": "SFX_Robot_Laser_Impact_Reflect",
       "ObjectPath": "\\Events\\SFX_Event\\Robot\\SFX_Robot_Laser_Impact_Reflect",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
       "DurationMax": "0.000000"
-     },
-     {
-      "Id": "3580743349",
-      "Name": "SFX_Robot_Laser_Impact_Succes",
-      "ObjectPath": "\\Events\\SFX_Event\\Robot\\SFX_Robot_Laser_Impact_Succes",
-      "DurationType": "OneShot",
-      "DurationMin": "1.802721",
-      "DurationMax": "1.802721"
      },
      {
       "Id": "4210766769",
@@ -743,6 +806,12 @@
       "PrefetchSize": "557"
      },
      {
+      "Id": "40582120",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_Fall_04.wav",
+      "Path": "SFX\\Foley_Robot_Damage_Fall_04_66C02B12.wem"
+     },
+     {
       "Id": "45029081",
       "Language": "SFX",
       "ShortName": "R2_Common_02_Base.wav",
@@ -750,10 +819,22 @@
       "PrefetchSize": "557"
      },
      {
+      "Id": "46501841",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_Fall_03.wav",
+      "Path": "SFX\\Foley_Robot_Damage_Fall_03_66C02B12.wem"
+     },
+     {
       "Id": "53367911",
       "Language": "SFX",
       "ShortName": "Foley_Robot_Loose_Arm_01.wav",
       "Path": "SFX\\Foley_Robot_Loose_Arm_01_66C02B12.wem"
+     },
+     {
+      "Id": "53559621",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-07.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-07_66C02B12.wem"
      },
      {
       "Id": "55459180",
@@ -838,6 +919,12 @@
       "Path": "SFX\\SFX_Japan_Fente_66C02B12.wem"
      },
      {
+      "Id": "138083199",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_Fall_02.wav",
+      "Path": "SFX\\Foley_Robot_Damage_Fall_02_66C02B12.wem"
+     },
+     {
       "Id": "151844640",
       "Language": "SFX",
       "ShortName": "Foley_Robot_Damage_03.wav",
@@ -895,6 +982,12 @@
       "Language": "SFX",
       "ShortName": "Final Round.wav",
       "Path": "SFX\\Final Round_66C02B12.wem"
+     },
+     {
+      "Id": "198863485",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_Fall_05.wav",
+      "Path": "SFX\\Foley_Robot_Damage_Fall_05_66C02B12.wem"
      },
      {
       "Id": "211938432",
@@ -993,6 +1086,12 @@
       "Path": "SFX\\SFX_Common_Projectile_Woosh_66C02B12.wem"
      },
      {
+      "Id": "328006507",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-04.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-04_66C02B12.wem"
+     },
+     {
       "Id": "351510707",
       "Language": "SFX",
       "ShortName": "PM_LFT_17 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav",
@@ -1062,6 +1161,12 @@
       "PrefetchSize": "8237"
      },
      {
+      "Id": "474779492",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Death_Metal_Creaking_01.wav",
+      "Path": "SFX\\Foley_Robot_Death_Metal_Creaking_01_66C02B12.wem"
+     },
+     {
       "Id": "474812567",
       "Language": "SFX",
       "ShortName": "Outro_EndingLoop_JP.wav",
@@ -1099,6 +1204,12 @@
       "ShortName": "R0_Init_05_Top.wav",
       "Path": "SFX\\R0_Init_05_Top_C42B8C3C.wem",
       "PrefetchSize": "557"
+     },
+     {
+      "Id": "503120644",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-02.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-02_66C02B12.wem"
      },
      {
       "Id": "503319023",
@@ -1183,6 +1294,12 @@
       "PrefetchSize": "3890"
      },
      {
+      "Id": "595244415",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-05.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-05_66C02B12.wem"
+     },
+     {
       "Id": "596378155",
       "Language": "SFX",
       "ShortName": "Victory Failed.wav",
@@ -1212,6 +1329,12 @@
       "Language": "SFX",
       "ShortName": "SFX_Japan_Shield.wav",
       "Path": "SFX\\SFX_Japan_Shield_66C02B12.wem"
+     },
+     {
+      "Id": "665243362",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-06.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-06_66C02B12.wem"
      },
      {
       "Id": "672067433",
@@ -1244,12 +1367,6 @@
       "Language": "SFX",
       "ShortName": "Foley_Robot_Laser_Shoot_Door_Open_01.wav",
       "Path": "SFX\\Foley_Robot_Laser_Shoot_Door_Open_01_66C02B12.wem"
-     },
-     {
-      "Id": "697105512",
-      "Language": "SFX",
-      "ShortName": "SFX_Japan_Laser_Impact_Succes.wav",
-      "Path": "SFX\\SFX_Japan_Laser_Impact_Succes_66C02B12.wem"
      },
      {
       "Id": "708949003",
@@ -1314,6 +1431,12 @@
       "Path": "SFX\\Explosion_C42B8C3C.wem"
      },
      {
+      "Id": "756634333",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-01.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-01_66C02B12.wem"
+     },
+     {
       "Id": "766508983",
       "Language": "SFX",
       "ShortName": "Close one.wav",
@@ -1332,10 +1455,22 @@
       "Path": "SFX\\SFX_Robot_Particles_03_66C02B12.wem"
      },
      {
+      "Id": "778457763",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_01-03.wav",
+      "Path": "SFX\\Foley_Robot_Damage_01-03_66C02B12.wem"
+     },
+     {
       "Id": "782501702",
       "Language": "SFX",
       "ShortName": "SFX_Robot_Laser_Shoot_Reload_02.wav",
       "Path": "SFX\\SFX_Robot_Laser_Shoot_Reload_02_66C02B12.wem"
+     },
+     {
+      "Id": "789499349",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Damage_Fall_01.wav",
+      "Path": "SFX\\Foley_Robot_Damage_Fall_01_66C02B12.wem"
      },
      {
       "Id": "802587850",
@@ -1415,6 +1550,12 @@
       "Language": "SFX",
       "ShortName": "SFX_Robot_Laser_Shoot_01.wav",
       "Path": "SFX\\SFX_Robot_Laser_Shoot_01_66C02B12.wem"
+     },
+     {
+      "Id": "893894245",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Death_Metal_Creaking_02.wav",
+      "Path": "SFX\\Foley_Robot_Death_Metal_Creaking_02_66C02B12.wem"
      },
      {
       "Id": "895209398",

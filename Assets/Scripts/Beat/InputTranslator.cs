@@ -74,6 +74,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnEnterActionBeat();
                     element.OnActionBeat();
+                    AkSoundEngine.PostEvent("SFX_InputPhase_Out", gameObject);
                 }
                 sequence = Sequence.ACTION;
             } 
@@ -96,6 +97,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnInputBeat();
                 }
                 sequence = Sequence.INPUT;
+                AkSoundEngine.PostEvent("SFX_InputPhase_In", gameObject);
             }
             currentStep = 1;
         }

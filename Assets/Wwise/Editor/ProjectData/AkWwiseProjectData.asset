@@ -24,8 +24,19 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586257072129118933
+    m_lastTime: -8586254379930650438
     List:
+    - name: Reverb_Decheterie
+      guid: c1c2f16fd0c0894a85cf05c9d62cba71
+      id: 1952182940
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb_Decheterie
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Reverb_Decheterie
     - name: Reverb_Environment
       guid: e75504b6b32e344fada0c027ecb4f84e
       id: 2846107099
@@ -94,13 +105,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586256178699336114
+    m_lastTime: -8586254382379068290
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
     guid: 2819fee626dec34fad76f39d0b5e8fee
     GuidInternal: 
-    m_lastTime: -8586255444009495395
+    m_lastTime: -8586254382378958227
     List:
     - name: Foley_Robot_Damage
       guid: 5c4b80f78d52fe4bb57372af5699d6d4
@@ -123,6 +134,30 @@ MonoBehaviour:
       - ElementName: Foley_Robot_Death
         ObjectType: 3
       Path: Foley_Event\Foley_Robot_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Death_Metal_Creaking
+      guid: d2d8d10e89b3184e98af1d6463e95e11
+      id: 2452461343
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Death_Metal_Creaking
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Death_Metal_Creaking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Fall
+      guid: 93331702ef192d43b4ddc39aad1faeef
+      id: 3709968817
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Fall
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Fall
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -198,6 +233,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Foley_Robot_Metal_Creaking
+      guid: 5eb205c50e888444966a97318fd42c49
+      id: 1722131082
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Metal_Creaking
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Metal_Creaking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Foley_Robot_Shield
       guid: 99008662199a2845844c81b96ad1292d
       id: 2768415929
@@ -250,7 +297,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586255211202148943
+    m_lastTime: -8586254388740713140
     List:
     - name: CueManager_NewCue
       guid: d5915c242ff48647b0ea9a8a8a03be3e
@@ -312,6 +359,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Menu_Music
+      guid: eeed0e968ac2c14786ef63cbf6d40b34
+      id: 2228153899
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: Play_Menu_Music
+        ObjectType: 3
+      Path: Music_Event\Play_Menu_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Music_Pause
       guid: 75d8f7aa1bfb6241a0c807829788c646
       id: 1122264096
@@ -328,7 +387,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586256178699236373
+    m_lastTime: -8586254424540179011
     List:
     - name: SFX_Common_Electric_Sparks
       guid: 5f73930f1958f841a06b5e8fea70caba
@@ -344,6 +403,48 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SFX_Common_Fente
+      guid: 8317ef846c544e48b251ef9e5a356f3f
+      id: 657576033
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Fente
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Fente
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Guard
+      guid: 2fda18aa9d0f81418e1477028e4bd051
+      id: 2840219912
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Guard
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Guard
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Laser
+      guid: 8bc323c561ac914ea54bfd9eda0492a6
+      id: 2413456602
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Laser
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Laser
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX_Common_Oil
       guid: a29aa1e3fc161e48872b1b56a5afc916
       id: 2534836963
@@ -355,6 +456,34 @@ MonoBehaviour:
       - ElementName: SFX_Common_Oil
         ObjectType: 3
       Path: SFX_Event\Common\SFX_Common_Oil
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Reflect
+      guid: 6c6975858d0229489fb8518603e95f0c
+      id: 2807764600
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Reflect
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Reflect
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Special
+      guid: e799237544b2a4428872adfb0124747e
+      id: 1518756630
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Special
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Special
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -428,6 +557,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SFX_Robot_Laser_Damage
+      guid: 7311473653427246ace2c71baa1e8b5c
+      id: 3793944345
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Robot
+        ObjectType: 4
+      - ElementName: SFX_Robot_Laser_Damage
+        ObjectType: 3
+      Path: SFX_Event\Robot\SFX_Robot_Laser_Damage
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX_Robot_Laser_Impact_Reflect
       guid: 98a178fedf7a6e4d924517c48a293f61
       id: 2599727010
@@ -439,20 +582,6 @@ MonoBehaviour:
       - ElementName: SFX_Robot_Laser_Impact_Reflect
         ObjectType: 3
       Path: SFX_Event\Robot\SFX_Robot_Laser_Impact_Reflect
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: SFX_Robot_Laser_Impact_Succes
-      guid: aa6e17048c26364688095483b72951cb
-      id: 3580743349
-      PathAndIcons:
-      - ElementName: SFX_Event
-        ObjectType: 12
-      - ElementName: Robot
-        ObjectType: 4
-      - ElementName: SFX_Robot_Laser_Impact_Succes
-        ObjectType: 3
-      Path: SFX_Event\Robot\SFX_Robot_Laser_Impact_Succes
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -586,10 +715,10 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586255390425689651
+    m_lastTime: -8586255132574768167
     List:
     - name: UI_Menu_Clic_Option
-      guid: 1c0fd2e95166224c881a521a1555ea8a
+      guid: 5b1bf01fd15897478c9429d3bf418913
       id: 773074497
       PathAndIcons:
       - ElementName: UI_Event
@@ -672,34 +801,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: UI_Option_Clic
-      guid: e026d6677592a546955e223e563f34cc
-      id: 2774704533
-      PathAndIcons:
-      - ElementName: UI_Event
-        ObjectType: 12
-      - ElementName: Menu
-        ObjectType: 4
-      - ElementName: UI_Option_Clic
-        ObjectType: 3
-      Path: UI_Event\Menu\UI_Option_Clic
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: UI_Option_Hovered
-      guid: 5b1bf01fd15897478c9429d3bf418913
-      id: 269563613
-      PathAndIcons:
-      - ElementName: UI_Event
-        ObjectType: 12
-      - ElementName: Menu
-        ObjectType: 4
-      - ElementName: UI_Option_Hovered
-        ObjectType: 3
-      Path: UI_Event\Menu\UI_Option_Hovered
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
   - PhysicalPath: Events\VO_Event.wwu
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
@@ -765,7 +866,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9c12ca43141ceb4fa0904c48c50fc66f
     GuidInternal: 
-    m_lastTime: -8586255445283248095
+    m_lastTime: -8586255111058233288
     List:
     - name: RTPC_American_Health
       guid: 0c2d74fb3f61c843b49f0bb7f210bd57
@@ -789,7 +890,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 00f8bec34e6cc147a114597dd7e19d49
     GuidInternal: 
-    m_lastTime: -8586260628204809063
+    m_lastTime: -8586254388616926591
     List:
     - name: RTPC_Lowest_Health
       guid: 8d6584ac40b3c840ba5a1af5614c618e
@@ -981,6 +1082,61 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: States\SFX_States.wwu
+    ParentPhysicalPath: 
+    guid: 9435b629aaebad42beff3cac1971c2b1
+    GuidInternal: 
+    m_lastTime: -8586255111392435807
+    List:
+    - name: Damage
+      guid: 5b56fd62f818c748bc54d156b1e85337
+      id: 1786804762
+      PathAndIcons:
+      - ElementName: SFX_States
+        ObjectType: 12
+      - ElementName: Damage
+        ObjectType: 9
+      Path: SFX_States\Damage
+      values:
+      - name: Fente
+        guid: cfded81ee5e5e1409240d94f6a2eb28b
+        id: 1343249213
+        PathAndIcons:
+        - ElementName: Fente
+          ObjectType: 8
+      - name: Laser
+        guid: ed62191503e5c1448aa6f39b19a7e75c
+        id: 3982605422
+        PathAndIcons:
+        - ElementName: Laser
+          ObjectType: 8
+      - name: Neutral
+        guid: 1d07f7e850a79c478801b1530187eda7
+        id: 670611050
+        PathAndIcons:
+        - ElementName: Neutral
+          ObjectType: 8
+      - name: None
+        guid: 87276a97053e0d49819a15ae47055c69
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Reflect
+        guid: 9be45e39aa6fbb4d807af4b6495f9da4
+        id: 243379636
+        PathAndIcons:
+        - ElementName: Reflect
+          ObjectType: 8
+      - name: Special
+        guid: 51cba900ba9b7647a619578d9b227c7c
+        id: 3064974266
+        PathAndIcons:
+        - ElementName: Special
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -1047,51 +1203,8 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ceccf3f5cfadcd4389f0188ef4ead3fd
     GuidInternal: 
-    m_lastTime: -8586255433733180645
-    List:
-    - name: Damage
-      guid: 63e73f6b8c164f40bd256e46ca94a92c
-      id: 1786804762
-      PathAndIcons:
-      - ElementName: SFX_Switch
-        ObjectType: 12
-      - ElementName: Damage
-        ObjectType: 11
-      Path: SFX_Switch\Damage
-      values:
-      - name: Fente
-        guid: 5a29b8ca4d16a64b89c8e2b5f06df426
-        id: 1343249213
-        PathAndIcons:
-        - ElementName: Fente
-          ObjectType: 10
-      - name: Laser
-        guid: 65c6d07d0d5c404c88818acb3f041473
-        id: 3982605422
-        PathAndIcons:
-        - ElementName: Laser
-          ObjectType: 10
-      - name: Neutral
-        guid: 68c5902f69187f4b96a32d7d75181f63
-        id: 670611050
-        PathAndIcons:
-        - ElementName: Neutral
-          ObjectType: 10
-      - name: Reflect
-        guid: 40c1f4d48bd14b48958f2b571843a65a
-        id: 243379636
-        PathAndIcons:
-        - ElementName: Reflect
-          ObjectType: 10
-      - name: Special
-        guid: 749691b770f75344b0122b243d0d65c4
-        id: 3064974266
-        PathAndIcons:
-        - ElementName: Special
-          ObjectType: 10
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8586255110414134305
+    List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -1116,5 +1229,8 @@ MonoBehaviour:
       Path: Music_Triggers\NewCue
   ExpandedItems:
   - /nano-projet_WwiseProject
+  - /nano-projet_WwiseProject/Events
+  - /nano-projet_WwiseProject/Events/Music_Event
+  - /nano-projet_WwiseProject/Events/VO_Event
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

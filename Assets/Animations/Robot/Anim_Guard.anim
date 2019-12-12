@@ -4300,6 +4300,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.33333334
+    functionName: Foley_Robot_Fall
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.56666666
     functionName: SFX_Robot_Projectile_Woosh
     data: 

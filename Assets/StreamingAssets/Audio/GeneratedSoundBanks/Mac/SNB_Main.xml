@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="845961116" Language="SFX">
@@ -18,12 +18,15 @@
 				<Event Id="2279207821" Name="CueManager_NewCue" ObjectPath="\Events\Music_Event\CueManager_NewCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.429466" DurationMax="4.001542"/>
 				<Event Id="1218823660" Name="Foley_Robot_Death" ObjectPath="\Events\Foley_Event\Foley_Robot_Death" DurationType="OneShot" DurationMin="5.839773" DurationMax="8.006871"/>
+				<Event Id="2452461343" Name="Foley_Robot_Death_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Death_Metal_Creaking" DurationType="OneShot" DurationMin="1.866238" DurationMax="2.202939"/>
+				<Event Id="3709968817" Name="Foley_Robot_Fall" ObjectPath="\Events\Foley_Event\Foley_Robot_Fall" DurationType="OneShot" DurationMin="1.590243" DurationMax="3.021819"/>
 				<Event Id="1796177216" Name="Foley_Robot_Fente" ObjectPath="\Events\Foley_Event\Foley_Robot_Fente" DurationType="OneShot" DurationMin="0.597664" DurationMax="0.597664"/>
 				<Event Id="3951945397" Name="Foley_Robot_Guard" ObjectPath="\Events\Foley_Event\Foley_Robot_Guard" DurationType="OneShot" DurationMin="3.433608" DurationMax="11.862400"/>
 				<Event Id="1531385158" Name="Foley_Robot_Iddle" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle" DurationType="OneShot" DurationMin="0.983197" DurationMax="0.983197"/>
 				<Event Id="3924484359" Name="Foley_Robot_Laser_Door_Close" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Close" DurationType="OneShot" DurationMin="1.992088" DurationMax="2.920875"/>
 				<Event Id="2167064369" Name="Foley_Robot_Laser_Door_Open" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Open" DurationType="OneShot" DurationMin="1.462123" DurationMax="1.549065"/>
 				<Event Id="248344350" Name="Foley_Robot_Lose_Arm" ObjectPath="\Events\Foley_Event\Foley_Robot_Lose_Arm" DurationType="OneShot" DurationMin="4.316032" DurationMax="4.875601"/>
+				<Event Id="1722131082" Name="Foley_Robot_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Metal_Creaking" DurationType="OneShot" DurationMin="0.593549" DurationMax="0.862634"/>
 				<Event Id="2768415929" Name="Foley_Robot_Shield" ObjectPath="\Events\Foley_Event\Foley_Robot_Shield" DurationType="OneShot" DurationMin="0.605119" DurationMax="0.719611"/>
 				<Event Id="2142273903" Name="Foley_Robot_SpecialAttack" ObjectPath="\Events\Foley_Event\Foley_Robot_SpecialAttack" DurationType="OneShot" DurationMin="0.671361" DurationMax="0.671361"/>
 				<Event Id="929055660" Name="Foley_Robot_Whoosh" ObjectPath="\Events\Foley_Event\Foley_Robot_Whoosh" DurationType="OneShot" DurationMin="0.423117" DurationMax="0.503174"/>
@@ -35,14 +38,19 @@
 				<Event Id="2228153899" Name="Play_Menu_Music" ObjectPath="\Events\Music_Event\Play_Menu_Music" DurationType="OneShot" DurationMin="283.792267" DurationMax="283.792267"/>
 				<Event Id="1122264096" Name="Play_Music_Pause" ObjectPath="\Events\Music_Event\Play_Music_Pause" DurationType="Infinite"/>
 				<Event Id="2927774105" Name="SFX_Common_Electric_Sparks" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Electric_Sparks" DurationType="Infinite"/>
+				<Event Id="657576033" Name="SFX_Common_Fente" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Fente" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
+				<Event Id="2840219912" Name="SFX_Common_Guard" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Guard" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
+				<Event Id="2413456602" Name="SFX_Common_Laser" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Laser" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
 				<Event Id="2534836963" Name="SFX_Common_Oil" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Oil" DurationType="Infinite"/>
+				<Event Id="2807764600" Name="SFX_Common_Reflect" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Reflect" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
+				<Event Id="1518756630" Name="SFX_Common_Special" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Special" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
 				<Event Id="427260706" Name="SFX_InputPhase_In" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_In" DurationType="OneShot" DurationMin="0.581565" DurationMax="0.581565"/>
 				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="1.948951" DurationMax="1.948951"/>
-				<Event Id="591816388" Name="SFX_Robot_Death" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Death" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="4.157958" DurationMax="8.052399"/>
+				<Event Id="591816388" Name="SFX_Robot_Death" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Death" DurationType="OneShot" DurationMin="4.157958" DurationMax="8.052399"/>
 				<Event Id="3716377771" Name="SFX_Robot_Explosion" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Explosion" DurationType="OneShot" DurationMin="15.158931" DurationMax="17.339424"/>
 				<Event Id="1708613752" Name="SFX_Robot_Fente" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Fente" DurationType="OneShot" DurationMin="1.513810" DurationMax="1.513810"/>
+				<Event Id="3793944345" Name="SFX_Robot_Laser_Damage" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Damage" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2599727010" Name="SFX_Robot_Laser_Impact_Reflect" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Impact_Reflect" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3580743349" Name="SFX_Robot_Laser_Impact_Succes" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Impact_Succes" DurationType="OneShot" DurationMin="1.802721" DurationMax="1.802721"/>
 				<Event Id="4210766769" Name="SFX_Robot_Laser_Reload" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Reload" DurationType="OneShot" DurationMin="0.533401" DurationMax="0.708345"/>
 				<Event Id="2331834703" Name="SFX_Robot_Laser_Shoot" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Shoot" DurationType="OneShot" DurationMin="3.176026" DurationMax="5.341418"/>
 				<Event Id="515042147" Name="SFX_Robot_Particles" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Particles" DurationType="OneShot" DurationMin="1.446349" DurationMax="2.991247"/>
@@ -297,14 +305,26 @@
 					<Path>SFX\R0_Init_03_Top_C42B8C3C.wem</Path>
 					<PrefetchSize>557</PrefetchSize>
 				</File>
+				<File Id="40582120" Language="SFX">
+					<ShortName>Foley_Robot_Damage_Fall_04.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_Fall_04_66C02B12.wem</Path>
+				</File>
 				<File Id="45029081" Language="SFX">
 					<ShortName>R2_Common_02_Base.wav</ShortName>
 					<Path>SFX\R2_Common_02_Base_C42B8C3C.wem</Path>
 					<PrefetchSize>557</PrefetchSize>
 				</File>
+				<File Id="46501841" Language="SFX">
+					<ShortName>Foley_Robot_Damage_Fall_03.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_Fall_03_66C02B12.wem</Path>
+				</File>
 				<File Id="53367911" Language="SFX">
 					<ShortName>Foley_Robot_Loose_Arm_01.wav</ShortName>
 					<Path>SFX\Foley_Robot_Loose_Arm_01_66C02B12.wem</Path>
+				</File>
+				<File Id="53559621" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-07.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-07_66C02B12.wem</Path>
 				</File>
 				<File Id="55459180" Language="SFX">
 					<ShortName>R1_LeadJ2_01_Base.wav</ShortName>
@@ -362,6 +382,10 @@
 					<ShortName>SFX_Japan_Fente.wav</ShortName>
 					<Path>SFX\SFX_Japan_Fente_66C02B12.wem</Path>
 				</File>
+				<File Id="138083199" Language="SFX">
+					<ShortName>Foley_Robot_Damage_Fall_02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_Fall_02_66C02B12.wem</Path>
+				</File>
 				<File Id="151844640" Language="SFX">
 					<ShortName>Foley_Robot_Damage_03.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_03_66C02B12.wem</Path>
@@ -402,6 +426,10 @@
 				<File Id="196882520" Language="SFX">
 					<ShortName>Final Round.wav</ShortName>
 					<Path>SFX\Final Round_66C02B12.wem</Path>
+				</File>
+				<File Id="198863485" Language="SFX">
+					<ShortName>Foley_Robot_Damage_Fall_05.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_Fall_05_66C02B12.wem</Path>
 				</File>
 				<File Id="211938432" Language="SFX">
 					<ShortName>SFX_Robot_Death_04.wav</ShortName>
@@ -469,6 +497,10 @@
 					<ShortName>SFX_Common_Projectile_Woosh.wav</ShortName>
 					<Path>SFX\SFX_Common_Projectile_Woosh_66C02B12.wem</Path>
 				</File>
+				<File Id="328006507" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-04.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-04_66C02B12.wem</Path>
+				</File>
 				<File Id="351510707" Language="SFX">
 					<ShortName>PM_LFT_17 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav</ShortName>
 					<Path>SFX\PM_LFT_17 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_29682D0A.wem</Path>
@@ -516,6 +548,10 @@
 					<Path>SFX\R0_Init_04_C42B8C3C.wem</Path>
 					<PrefetchSize>8237</PrefetchSize>
 				</File>
+				<File Id="474779492" Language="SFX">
+					<ShortName>Foley_Robot_Death_Metal_Creaking_01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Death_Metal_Creaking_01_66C02B12.wem</Path>
+				</File>
 				<File Id="474812567" Language="SFX">
 					<ShortName>Outro_EndingLoop_JP.wav</ShortName>
 					<Path>SFX\Outro_EndingLoop_JP_C42B8C3C.wem</Path>
@@ -542,6 +578,10 @@
 					<ShortName>R0_Init_05_Top.wav</ShortName>
 					<Path>SFX\R0_Init_05_Top_C42B8C3C.wem</Path>
 					<PrefetchSize>557</PrefetchSize>
+				</File>
+				<File Id="503120644" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-02_66C02B12.wem</Path>
 				</File>
 				<File Id="503319023" Language="SFX">
 					<ShortName>SFX_Robot_Death_03.wav</ShortName>
@@ -599,6 +639,10 @@
 					<Path>SFX\R1_LeadJ2_02_Base_C42B8C3C.wem</Path>
 					<PrefetchSize>3890</PrefetchSize>
 				</File>
+				<File Id="595244415" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-05.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-05_66C02B12.wem</Path>
+				</File>
 				<File Id="596378155" Language="SFX">
 					<ShortName>Victory Failed.wav</ShortName>
 					<Path>SFX\Victory Failed_C42B8C3C.wem</Path>
@@ -619,6 +663,10 @@
 				<File Id="663860118" Language="SFX">
 					<ShortName>SFX_Japan_Shield.wav</ShortName>
 					<Path>SFX\SFX_Japan_Shield_66C02B12.wem</Path>
+				</File>
+				<File Id="665243362" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-06.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-06_66C02B12.wem</Path>
 				</File>
 				<File Id="672067433" Language="SFX">
 					<ShortName>Foley_Robot_Guard_05.wav</ShortName>
@@ -641,10 +689,6 @@
 				<File Id="694044916" Language="SFX">
 					<ShortName>Foley_Robot_Laser_Shoot_Door_Open_01.wav</ShortName>
 					<Path>SFX\Foley_Robot_Laser_Shoot_Door_Open_01_66C02B12.wem</Path>
-				</File>
-				<File Id="697105512" Language="SFX">
-					<ShortName>SFX_Japan_Laser_Impact_Succes.wav</ShortName>
-					<Path>SFX\SFX_Japan_Laser_Impact_Succes_66C02B12.wem</Path>
 				</File>
 				<File Id="708949003" Language="SFX">
 					<ShortName>SFX_Robot_Particles_01.wav</ShortName>
@@ -688,6 +732,10 @@
 					<ShortName>Explosion.wav</ShortName>
 					<Path>SFX\Explosion_C42B8C3C.wem</Path>
 				</File>
+				<File Id="756634333" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-01_66C02B12.wem</Path>
+				</File>
 				<File Id="766508983" Language="SFX">
 					<ShortName>Close one.wav</ShortName>
 					<Path>SFX\Close one_C42B8C3C.wem</Path>
@@ -700,9 +748,17 @@
 					<ShortName>SFX_Robot_Particles_03.wav</ShortName>
 					<Path>SFX\SFX_Robot_Particles_03_66C02B12.wem</Path>
 				</File>
+				<File Id="778457763" Language="SFX">
+					<ShortName>Foley_Robot_Damage_01-03.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_01-03_66C02B12.wem</Path>
+				</File>
 				<File Id="782501702" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_Reload_02.wav</ShortName>
 					<Path>SFX\SFX_Robot_Laser_Shoot_Reload_02_66C02B12.wem</Path>
+				</File>
+				<File Id="789499349" Language="SFX">
+					<ShortName>Foley_Robot_Damage_Fall_01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Damage_Fall_01_66C02B12.wem</Path>
 				</File>
 				<File Id="802587850" Language="SFX">
 					<ShortName>R1_Common_02_Top.wav</ShortName>
@@ -758,6 +814,10 @@
 				<File Id="890565438" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Laser_Shoot_01_66C02B12.wem</Path>
+				</File>
+				<File Id="893894245" Language="SFX">
+					<ShortName>Foley_Robot_Death_Metal_Creaking_02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Death_Metal_Creaking_02_66C02B12.wem</Path>
 				</File>
 				<File Id="895209398" Language="SFX">
 					<ShortName>R0_Init_05_Base.wav</ShortName>

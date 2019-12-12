@@ -51,9 +51,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1952182940	Reverb_Decheterie			\Default Work Unit\Master Audio Bus\Reverb_Decheterie	
 	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
 
 Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	289702920	Wwise_Meter_(Custom)	Wwise Meter			
 	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
 	1588715066	Echoes_Linear	Wwise Delay			

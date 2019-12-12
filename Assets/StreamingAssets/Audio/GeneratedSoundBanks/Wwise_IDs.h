@@ -18,12 +18,15 @@ namespace AK
         static const AkUniqueID CUEMANAGER_NEWCUE = 2279207821U;
         static const AkUniqueID FOLEY_ROBOT_DAMAGE = 1606116385U;
         static const AkUniqueID FOLEY_ROBOT_DEATH = 1218823660U;
+        static const AkUniqueID FOLEY_ROBOT_DEATH_METAL_CREAKING = 2452461343U;
+        static const AkUniqueID FOLEY_ROBOT_FALL = 3709968817U;
         static const AkUniqueID FOLEY_ROBOT_FENTE = 1796177216U;
         static const AkUniqueID FOLEY_ROBOT_GUARD = 3951945397U;
         static const AkUniqueID FOLEY_ROBOT_IDDLE = 1531385158U;
         static const AkUniqueID FOLEY_ROBOT_LASER_DOOR_CLOSE = 3924484359U;
         static const AkUniqueID FOLEY_ROBOT_LASER_DOOR_OPEN = 2167064369U;
         static const AkUniqueID FOLEY_ROBOT_LOSE_ARM = 248344350U;
+        static const AkUniqueID FOLEY_ROBOT_METAL_CREAKING = 1722131082U;
         static const AkUniqueID FOLEY_ROBOT_SHIELD = 2768415929U;
         static const AkUniqueID FOLEY_ROBOT_SPECIALATTACK = 2142273903U;
         static const AkUniqueID FOLEY_ROBOT_WHOOSH = 929055660U;
@@ -35,14 +38,19 @@ namespace AK
         static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_MUSIC_PAUSE = 1122264096U;
         static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS = 2927774105U;
+        static const AkUniqueID SFX_COMMON_FENTE = 657576033U;
+        static const AkUniqueID SFX_COMMON_GUARD = 2840219912U;
+        static const AkUniqueID SFX_COMMON_LASER = 2413456602U;
         static const AkUniqueID SFX_COMMON_OIL = 2534836963U;
+        static const AkUniqueID SFX_COMMON_REFLECT = 2807764600U;
+        static const AkUniqueID SFX_COMMON_SPECIAL = 1518756630U;
         static const AkUniqueID SFX_INPUTPHASE_IN = 427260706U;
         static const AkUniqueID SFX_INPUTPHASE_OUT = 1142057693U;
         static const AkUniqueID SFX_ROBOT_DEATH = 591816388U;
         static const AkUniqueID SFX_ROBOT_EXPLOSION = 3716377771U;
         static const AkUniqueID SFX_ROBOT_FENTE = 1708613752U;
+        static const AkUniqueID SFX_ROBOT_LASER_DAMAGE = 3793944345U;
         static const AkUniqueID SFX_ROBOT_LASER_IMPACT_REFLECT = 2599727010U;
-        static const AkUniqueID SFX_ROBOT_LASER_IMPACT_SUCCES = 3580743349U;
         static const AkUniqueID SFX_ROBOT_LASER_RELOAD = 4210766769U;
         static const AkUniqueID SFX_ROBOT_LASER_SHOOT = 2331834703U;
         static const AkUniqueID SFX_ROBOT_PARTICLES = 515042147U;
@@ -183,6 +191,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID REVERB_DECHETERIE = 1952182940U;
         static const AkUniqueID REVERB_ENVIRONMENT = 2846107099U;
     } // namespace AUX_BUSSES
 

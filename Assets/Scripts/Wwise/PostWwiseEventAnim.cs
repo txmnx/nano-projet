@@ -23,11 +23,6 @@ public class PostWwiseEventAnim : MonoBehaviour
         AkSoundEngine.PostEvent("Foley_Robot_Fente", gameObject);
     }
 
-    public void Foley_Robot_Laser_Shoot()
-    {
-        AkSoundEngine.PostEvent("Foley_Robot_Laser_Shoot", gameObject);
-    }
-
     public void Foley_Robot_Laser_Door_Open()
     {
         AkSoundEngine.PostEvent("Foley_Robot_Laser_Door_Open", gameObject);
@@ -73,16 +68,27 @@ public class PostWwiseEventAnim : MonoBehaviour
         AkSoundEngine.PostEvent("Foley_Robot_Lose_Arm", gameObject);
     }
 
+    public void Foley_Robot_Metal_Creaking()
+    {
+        AkSoundEngine.PostEvent("Foley_Robot_Metal_Creaking", gameObject);
+    }
+
+    public void Foley_Robot_Fall()
+    {
+        AkSoundEngine.PostEvent("Foley_Robot_Fall", gameObject);
+    }
+
+    public void Foley_Robot_Death_Metal_Creakin()
+    {
+        AkSoundEngine.PostEvent("Foley_Robot_Death_Metal_Creakin", gameObject);
+    }
+    
+
     // SFX Robot
 
     public void SFX_Robot_Laser_Shoot()
     {
         AkSoundEngine.PostEvent("SFX_Robot_Laser_Shoot", gameObject);
-    }
-
-    public void SFX_Robot_Laser_Impact_Succes()
-    {
-        AkSoundEngine.PostEvent("SFX_Robot_Laser_Impact_Succes", gameObject);
     }
 
     public void SFX_Robot_Fente()
@@ -123,5 +129,15 @@ public class PostWwiseEventAnim : MonoBehaviour
     public void SFX_Robot_Explosion()
     {
         AkSoundEngine.PostEvent("SFX_Robot_Explosion", gameObject);
+    }
+
+    public void SFX_Robot_Shield()
+    {
+        AkSoundEngine.PostEvent("SFX_Robot_Shield", gameObject);
+    }
+
+    public void SFX_Robot_Laser_Damage()
+    {
+        AkSoundEngine.PostEvent("SFX_Robot_Laser_Damage", gameObject);
     }
 }
