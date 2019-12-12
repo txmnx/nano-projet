@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    public GameObject Start_Music;
     public MatchManager matchManager;
     public FightManager fightManager;
     private Player player1;
@@ -27,19 +28,19 @@ public class MusicManager : MonoBehaviour
         switch (roundNbr)
         {
             case (0):
-                AkSoundEngine.SetState("Round", "Round1");
+                AkSoundEngine.SetSwitch("Round", "Round1", Start_Music);
                 break;
             case (1):
-                AkSoundEngine.SetState("Round", "Round2");
+                AkSoundEngine.SetSwitch("Round", "Round2", Start_Music);
                 break;
             case (2):
-                AkSoundEngine.SetState("Round", "Round3");
+                AkSoundEngine.SetSwitch("Round", "Round3", Start_Music);
                 break;
             case (3):
-                AkSoundEngine.SetState("Round", "Round4");
+                AkSoundEngine.SetSwitch("Round", "Round4", Start_Music);
                 break;
             case (4):
-                AkSoundEngine.SetState("Round", "FinalRound");
+                AkSoundEngine.SetSwitch("Round", "FinalRound", Start_Music);
                 break;
         }
 
