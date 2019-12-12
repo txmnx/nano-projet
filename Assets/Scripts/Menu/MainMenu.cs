@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
 
         isMoving = true;
         creditsPanelTransform.anchoredPosition = new Vector2(0, creditsPanelTransform.anchoredPosition.y);
-        StartCoroutine(MovePanelCoroutine(creditsPanelTransform, 0.5f, distanceBetweenPanels));
+        StartCoroutine(MovePanelCoroutine(creditsPanelTransform, 0.3f, distanceBetweenPanels));
     }
 
     public void DisplayRulesPanel()
@@ -53,12 +53,14 @@ public class MainMenu : MonoBehaviour
 
         isMoving = true;
         rulesPanelTransform.anchoredPosition = new Vector2(0, rulesPanelTransform.anchoredPosition.y);
-        StartCoroutine(MovePanelCoroutine(rulesPanelTransform, 0.5f, distanceBetweenPanels));
+        StartCoroutine(MovePanelCoroutine(rulesPanelTransform, 0.3f, distanceBetweenPanels));
     }
 
     public void ReturnToMenuChoices(RectTransform rectTransform)
     {
         if (isMoving) return;
+
+        AkSoundEngine.PostEvent("UI_Option_Back", gameObject);
 
         menuChoices.Pause(false);
         creditsPanel.Pause(true);
@@ -66,7 +68,7 @@ public class MainMenu : MonoBehaviour
 
         menuChoices.Reset();
         isMoving = true;
-        StartCoroutine(MovePanelCoroutine(rectTransform, 0.5f, -distanceBetweenPanels, true));
+        StartCoroutine(MovePanelCoroutine(rectTransform, 0.3f, -distanceBetweenPanels, true));
     }
 
     private IEnumerator MovePanelCoroutine(RectTransform rectTransform, float duration, float offset, bool rebaseOnEnd = false)

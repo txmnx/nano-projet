@@ -15,7 +15,6 @@ public class RulesPanel : MonoBehaviour
         if (isPausing) return;
 
         if (Input.GetButtonDown("Exit")) {
-            AkSoundEngine.PostEvent("UI_Option_Back", gameObject);
             exitAnimator.Play("Press", 0, 0);
             mainMenu.ReturnToMenuChoices(GetComponent<RectTransform>());
         }
