@@ -215,14 +215,41 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
         return buffer[index];
     }
 
-    public void PlayAnim(Move move, bool takeDamage = false)
+    public void PlayAnim(Move move, bool cancel = false, bool takeDamage = false, bool player2DoLaser = false)
     {
-        if (takeDamage) {
+        if (cancel) {
+            switch (move.move) {
+                case MoveType.HIT:
+                    animator.SetTrigger("doFente");
+                    //TODO : placer le son avec deux coups similaires
+                    break;
+                case MoveType.REFLECT:
+                    animator.SetTrigger("doReflect");
+                    //TODO : placer le son avec deux coups similaires
+                    break;
+                case MoveType.LASER:
+                    animator.SetTrigger("doLaser");
+                    //TODO : placer le son avec deux coups similaires
+                    break;
+                case MoveType.SPECIAL:
+                    animator.SetTrigger("doSpecial");
+                    //TODO : placer le son avec deux coups similaires
+                    break;
+                case MoveType.GUARD:
+                    animator.SetTrigger("doGuard");
+                    //TODO : placer le son avec deux coups similaires
+                    break;
+                default:
+                    break;
+            }
+        }
+        else if (takeDamage) {
             switch (move.move) {
                 case MoveType.REFLECT:
                     animator.SetTrigger("doDamageReflect");
                     break;
                 case MoveType.LASER:
+                    //TODO : ici c'est quand le player fait le laser et se prend le reflect
                     animator.SetTrigger("doDamageLaser");
                     break;
                 default:
@@ -236,6 +263,9 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     animator.SetTrigger("doFente");
                     break;
                 case MoveType.REFLECT:
+                    if (player2DoLaser) {
+                        //TODO : ici c'est quand le reflect renvoie le laser
+                    }
                     animator.SetTrigger("doReflect");
                     break;
                 case MoveType.LASER:

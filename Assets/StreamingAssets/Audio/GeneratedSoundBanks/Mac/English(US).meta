@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/English(US).meta
 guid: a46bbb664984ead4dacef030574ea1b1
+=======
+guid: 6f03169ec5e1a6d4f9dcd3729c90c0c3
+>>>>>>> menu:Assets/Animations/UI.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6f59ae2603fd524c83e0e880814a4d92
     GuidInternal: 
-    m_lastTime: -8586277873411011597
+    m_lastTime: -8586277868655958563
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586256211048500504
+    m_lastTime: -8586257072129118933
     List:
     - name: Reverb_Environment
       guid: e75504b6b32e344fada0c027ecb4f84e
@@ -42,13 +42,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ecf03042b7b91a439d21c630e3e238d4
     GuidInternal: 
-    m_lastTime: -8586271789597811388
+    m_lastTime: -8586277749165085305
     List: []
   - PhysicalPath: SoundBanks\SNB_Main.wwu
     ParentPhysicalPath: 
     guid: b6386809e450f84a89d7618320656b7b
     GuidInternal: 
-    m_lastTime: -8586260530870195610
+    m_lastTime: -8586260583277184612
     List:
     - name: SNB_Main
       guid: 5a38715bda597948abec28b707c2d621
@@ -64,7 +64,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86770a334b68ee4aace1537791113e2f
     GuidInternal: 
-    m_lastTime: -8586255888242972653
+    m_lastTime: -8586256068043256206
     List:
     - name: Amb_Main_Start
       guid: b26f12f46b949d4bab2aa71a3d9e6586
@@ -94,13 +94,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586262238816350761
+    m_lastTime: -8586256178699336114
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
     guid: 2819fee626dec34fad76f39d0b5e8fee
     GuidInternal: 
-    m_lastTime: -8586256164141158165
+    m_lastTime: -8586255444009495395
     List:
     - name: Foley_Robot_Damage
       guid: 5c4b80f78d52fe4bb57372af5699d6d4
@@ -250,7 +250,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586255900375268715
+    m_lastTime: -8586255211202148943
     List:
     - name: CueManager_NewCue
       guid: d5915c242ff48647b0ea9a8a8a03be3e
@@ -328,7 +328,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586256164141054892
+    m_lastTime: -8586256178699236373
     List:
     - name: SFX_Common_Electric_Sparks
       guid: 5f73930f1958f841a06b5e8fea70caba
@@ -586,8 +586,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586256194112047741
+    m_lastTime: -8586255390425689651
     List:
+    - name: UI_Menu_Clic_Option
+      guid: 1c0fd2e95166224c881a521a1555ea8a
+      id: 773074497
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Menu_Clic_Option
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Menu_Clic_Option
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UI_Menu_Hovered_Main
       guid: 2fe81cc189869d49a14a41089043f113
       id: 2697976037
@@ -644,11 +658,53 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: UI_Option_Back
+      guid: 7281e72ae7fa6f4bb6680c5d5febe0c4
+      id: 1047748741
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Option_Back
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Option_Back
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Option_Clic
+      guid: e026d6677592a546955e223e563f34cc
+      id: 2774704533
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Option_Clic
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Option_Clic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Option_Hovered
+      guid: 5b1bf01fd15897478c9429d3bf418913
+      id: 269563613
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Option_Hovered
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Option_Hovered
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\VO_Event.wwu
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586255882824087962
+    m_lastTime: -8586255196527576862
     List:
     - name: V0_Victory_Fight
       guid: 8af026f934d53947a5a9f985734c5409
@@ -656,193 +712,21 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: VO_Event
         ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
       - ElementName: V0_Victory_Fight
         ObjectType: 3
-      Path: VO_Event\Speaker\V0_Victory_Fight
+      Path: VO_Event\V0_Victory_Fight
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: VO_American_Attack
-      guid: 86aad0fb208c894d815705dd0061feb6
-      id: 2414228328
+    - name: VO_Speaker_Round
+      guid: 13c99e0fb1ff07438c2feabefa16f73e
+      id: 2824871891
       PathAndIcons:
       - ElementName: VO_Event
         ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: VO_American_Attack
+      - ElementName: VO_Speaker_Round
         ObjectType: 3
-      Path: VO_Event\American\VO_American_Attack
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_American_Death
-      guid: a8942fe017176843a4fd1ea02e9dda9e
-      id: 390301034
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: VO_American_Death
-        ObjectType: 3
-      Path: VO_Event\American\VO_American_Death
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_American_Win
-      guid: f02640141d6e9b40bc1d2db2c46c4461
-      id: 957164294
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: American
-        ObjectType: 4
-      - ElementName: VO_American_Win
-        ObjectType: 3
-      Path: VO_Event\American\VO_American_Win
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Japan_Attack
-      guid: 6c2b93723ed8bc4a929b28374f9b4f85
-      id: 437585428
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: VO_Japan_Attack
-        ObjectType: 3
-      Path: VO_Event\Japan\VO_Japan_Attack
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Japan_Death
-      guid: 93c7b498d51984448c0a49a4819bcb0d
-      id: 978479414
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: VO_Japan_Death
-        ObjectType: 3
-      Path: VO_Event\Japan\VO_Japan_Death
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Japan_Win
-      guid: 33ea22d7b086cc469b3e18ec32459821
-      id: 2169528442
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Japan
-        ObjectType: 4
-      - ElementName: VO_Japan_Win
-        ObjectType: 3
-      Path: VO_Event\Japan\VO_Japan_Win
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_American_Win_Fight
-      guid: 17ee56011fa42e48b71d9689687db4fb
-      id: 1547089927
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_American_Win_Fight
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_American_Win_Fight
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_Japan_Win_Fight
-      guid: 26d7e06c427fc847ae4518c963411c07
-      id: 1444082811
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Japan_Win_Fight
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Japan_Win_Fight
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_Ready
-      guid: ca681e7a35d8bd45830614d1569141c1
-      id: 551141550
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Ready
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Ready
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_Round_1
-      guid: a8e896cb25cebe47a4aae2c6ed719371
-      id: 3174962419
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Round_1
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Round_1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_Round_2
-      guid: b70220e3eb04044988cd70471fa9d1bf
-      id: 3174962416
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Round_2
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Round_2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_Round_3
-      guid: 1856324150ae11479279a68c1d6e24b2
-      id: 3174962417
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Round_3
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Round_3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_Round_4
-      guid: 70f64211e174e4469fb79901f9652d99
-      id: 3174962422
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_Round_4
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Round_4
+      Path: VO_Event\VO_Speaker_Round
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -852,11 +736,9 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: VO_Event
         ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
       - ElementName: VO_Speaker_Round_Win
         ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Round_Win
+      Path: VO_Event\VO_Speaker_Round_Win
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -866,25 +748,9 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: VO_Event
         ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
       - ElementName: VO_Speaker_Start_Fight
         ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_Start_Fight
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: VO_Speaker_UltimeRound
-      guid: 13c99e0fb1ff07438c2feabefa16f73e
-      id: 3097949019
-      PathAndIcons:
-      - ElementName: VO_Event
-        ObjectType: 12
-      - ElementName: Speaker
-        ObjectType: 4
-      - ElementName: VO_Speaker_UltimeRound
-        ObjectType: 3
-      Path: VO_Event\Speaker\VO_Speaker_UltimeRound
+      Path: VO_Event\VO_Speaker_Start_Fight
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -893,13 +759,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 99bf92aa40e6ff40899e4dba44f66b8a
     GuidInternal: 
-    m_lastTime: -8586277873578083488
+    m_lastTime: -8586259693435031733
     List: []
   - PhysicalPath: Game Parameters\GameParameters.wwu
     ParentPhysicalPath: 
     guid: 9c12ca43141ceb4fa0904c48c50fc66f
     GuidInternal: 
-    m_lastTime: -8586262225904176663
+    m_lastTime: -8586255445283248095
     List:
     - name: RTPC_American_Health
       guid: 0c2d74fb3f61c843b49f0bb7f210bd57
@@ -923,7 +789,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 00f8bec34e6cc147a114597dd7e19d49
     GuidInternal: 
-    m_lastTime: -8586262170764949771
+    m_lastTime: -8586260628204809063
     List:
     - name: RTPC_Lowest_Health
       guid: 8d6584ac40b3c840ba5a1af5614c618e
@@ -938,13 +804,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 27c794134e2fbb49b93a32208e411fd2
     GuidInternal: 
-    m_lastTime: -8586271789598706902
+    m_lastTime: -8586274199511690565
     List: []
   - PhysicalPath: Game Parameters\Sidechain.wwu
     ParentPhysicalPath: 
     guid: a70defde949534459cacfeb3308c2fb7
     GuidInternal: 
-    m_lastTime: -8586259603564730834
+    m_lastTime: -8586259693127635718
     List:
     - name: Sidechain_All_By_VO
       guid: 838ec22530227d45a9e0df36c90b4bd5
@@ -960,13 +826,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2998adf915598c4782afc7f2fa59a7d9
     GuidInternal: 
-    m_lastTime: -8586262358495186373
+    m_lastTime: -8586277868656257215
     List: []
   - PhysicalPath: States\Music_States.wwu
     ParentPhysicalPath: 
     guid: 5bd7f45acdf4224bb51914ac15a62692
     GuidInternal: 
-    m_lastTime: -8586255904283222730
+    m_lastTime: -8586255211138642897
     List:
     - name: CueManager
       guid: ae3093224713db45ace8d61f3d6706dc
@@ -1120,32 +986,124 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bcefb86a0c078f4eb53a0dc795b4a9c1
     GuidInternal: 
-    m_lastTime: -8586277873411167824
+    m_lastTime: -8586266552085238916
     List: []
   - PhysicalPath: Switches\Music_Switch.wwu
     ParentPhysicalPath: 
     guid: 443a80c3c9f6c94fbd0facfa8f0143ab
     GuidInternal: 
-    m_lastTime: -8586256043523617370
-    List: []
+    m_lastTime: -8586255197251447333
+    List:
+    - name: Round
+      guid: f03f18ad88d0f6478361085adc540329
+      id: 1413238543
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: Round
+        ObjectType: 11
+      Path: Music_Switch\Round
+      values:
+      - name: FinalRound
+        guid: 7fd1bf8c13116d4e9c89793953180622
+        id: 1608193273
+        PathAndIcons:
+        - ElementName: FinalRound
+          ObjectType: 10
+      - name: Nothing
+        guid: bed27cdc83a42c49af92f1e3a19327c9
+        id: 4248742144
+        PathAndIcons:
+        - ElementName: Nothing
+          ObjectType: 10
+      - name: Round1
+        guid: d1cd5ab35220b645941312cc98543bfe
+        id: 2851108012
+        PathAndIcons:
+        - ElementName: Round1
+          ObjectType: 10
+      - name: Round2
+        guid: f7986db64cf04d4e8d2793aa3b51a6eb
+        id: 2851108015
+        PathAndIcons:
+        - ElementName: Round2
+          ObjectType: 10
+      - name: Round3
+        guid: 447e0690aa85824c9afda2603f2691b8
+        id: 2851108014
+        PathAndIcons:
+        - ElementName: Round3
+          ObjectType: 10
+      - name: Round4
+        guid: ee1773cffa220f4db0afddec2abdeb97
+        id: 2851108009
+        PathAndIcons:
+        - ElementName: Round4
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\SFX_Switch.wwu
     ParentPhysicalPath: 
     guid: ceccf3f5cfadcd4389f0188ef4ead3fd
     GuidInternal: 
-    m_lastTime: -8586271789597342750
-    List: []
+    m_lastTime: -8586255433733180645
+    List:
+    - name: Damage
+      guid: 63e73f6b8c164f40bd256e46ca94a92c
+      id: 1786804762
+      PathAndIcons:
+      - ElementName: SFX_Switch
+        ObjectType: 12
+      - ElementName: Damage
+        ObjectType: 11
+      Path: SFX_Switch\Damage
+      values:
+      - name: Fente
+        guid: 5a29b8ca4d16a64b89c8e2b5f06df426
+        id: 1343249213
+        PathAndIcons:
+        - ElementName: Fente
+          ObjectType: 10
+      - name: Laser
+        guid: 65c6d07d0d5c404c88818acb3f041473
+        id: 3982605422
+        PathAndIcons:
+        - ElementName: Laser
+          ObjectType: 10
+      - name: Neutral
+        guid: 68c5902f69187f4b96a32d7d75181f63
+        id: 670611050
+        PathAndIcons:
+        - ElementName: Neutral
+          ObjectType: 10
+      - name: Reflect
+        guid: 40c1f4d48bd14b48958f2b571843a65a
+        id: 243379636
+        PathAndIcons:
+        - ElementName: Reflect
+          ObjectType: 10
+      - name: Special
+        guid: 749691b770f75344b0122b243d0d65c4
+        id: 3064974266
+        PathAndIcons:
+        - ElementName: Special
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 650da5fbe5676d4284afdd0cf3823b06
     GuidInternal: 
-    m_lastTime: -8586277873411167824
+    m_lastTime: -8586277868656057904
     List: []
   - PhysicalPath: Triggers\Music_Triggers.wwu
     ParentPhysicalPath: 
     guid: 8fef727bf33bd045888b876f6c901765
     GuidInternal: 
-    m_lastTime: -8586255900374790011
+    m_lastTime: -8586255210893445824
     List:
     - name: NewCue
       guid: 17660fc613facd4aac6558ff9685f4ed
@@ -1158,9 +1116,5 @@ MonoBehaviour:
       Path: Music_Triggers\NewCue
   ExpandedItems:
   - /nano-projet_WwiseProject
-  - /nano-projet_WwiseProject/Events
-  - /nano-projet_WwiseProject/Events/Music_Event
-  - /nano-projet_WwiseProject/Events/VO_Event
-  - /nano-projet_WwiseProject/Events/VO_Event/Speaker
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

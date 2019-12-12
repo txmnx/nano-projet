@@ -50,6 +50,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1413238543	Round			\Music_Switch\Round	
+	1786804762	Damage			\SFX_Switch\Damage	
 
 Switch	ID	Name	Switch Group			Notes
 	1608193273	FinalRound	Round			
@@ -58,19 +59,17 @@ Switch	ID	Name	Switch Group			Notes
 	2851108014	Round3	Round			
 	2851108015	Round2	Round			
 	4248742144	Nothing	Round			
-
-State Group	ID	Name			Wwise Object Path	Notes
-	1786804762	Damage			\SFX_States\Damage	
-	3012001959	MusicToPlay			\Music_States\MusicToPlay	
-	3957034330	RoundWinner			\Music_States\RoundWinner	
-
-State	ID	Name	State Group			Notes
-	0	None	Damage			
 	243379636	Reflect	Damage			
 	670611050	Neutral	Damage			
 	1343249213	Fente	Damage			
 	3064974266	Special	Damage			
 	3982605422	Laser	Damage			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3012001959	MusicToPlay			\Music_States\MusicToPlay	
+	3957034330	RoundWinner			\Music_States\RoundWinner	
+
+State	ID	Name	State Group			Notes
 	0	None	MusicToPlay			
 	1151771561	ST_Idle	MusicToPlay			
 	2004344129	ST_RoundWinUS	MusicToPlay			
@@ -131,7 +130,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	191957831	Foley_Robot_Guard_01	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Robot_Guard_01_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Foley_Robot_Guard\Foley_Robot_Guard_01		192622
 	194011796	Intro_78BPM	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Intro_78BPM_C42B8C3C.wem		\Interactive Music Hierarchy\Music\Intros\Intro_78BPM\Intro_78BPM		499762
 	194145375	SFX_Robot_Laser_Shoot_03	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\SFX_Robot_Laser_Shoot_03_66C02B12.wem		\Actor-Mixer Hierarchy\SFX\Robot\SFX_Robot_Laser_Shoot\SFX_Robot_Laser_Shoot_03		198485
-	196882520	Final Round	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Final Round_66C02B12.wem		\Actor-Mixer Hierarchy\VO\VO_Speaker_Round\VO_Speaker_FinalRound\Final Round		138194
+	196882520	Final Round	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Final Round_66C02B12.wem		\Actor-Mixer Hierarchy\VO\VO_Speaker_Round\VO_Speaker_UltimeRound\Final Round		138194
 	211938432	SFX_Robot_Death_04	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\SFX_Robot_Death_04_66C02B12.wem		\Actor-Mixer Hierarchy\SFX\Robot\SFX_Robot_Death\SFX_Robot_Death_04		436167
 	215930261	R1_Common_03_Top	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\R1_Common_03_Top_C42B8C3C.wem		\Interactive Music Hierarchy\Music\Main Music Switch\R1_LeadUS\Variation 5\R1_Common_03_Top		888761
 	232999411	Foley_Japan_SpecialAttack	C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Japan_SpecialAttack_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Foley_Robot_SpecialAttack\Foley_Japan_SpecialAttack		54657

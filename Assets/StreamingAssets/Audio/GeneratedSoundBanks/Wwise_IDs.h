@@ -76,20 +76,6 @@ namespace AK
             } // namespace STATE
         } // namespace CUEMANAGER
 
-        namespace DAMAGE
-        {
-            static const AkUniqueID GROUP = 1786804762U;
-
-            namespace STATE
-            {
-                static const AkUniqueID FENTE = 1343249213U;
-                static const AkUniqueID LASER = 3982605422U;
-                static const AkUniqueID NEUTRAL = 670611050U;
-                static const AkUniqueID REFLECT = 243379636U;
-                static const AkUniqueID SPECIAL = 3064974266U;
-            } // namespace STATE
-        } // namespace DAMAGE
-
         namespace MUSICTOPLAY
         {
             static const AkUniqueID GROUP = 3012001959U;
@@ -125,6 +111,20 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace DAMAGE
+        {
+            static const AkUniqueID GROUP = 1786804762U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FENTE = 1343249213U;
+                static const AkUniqueID LASER = 3982605422U;
+                static const AkUniqueID NEUTRAL = 670611050U;
+                static const AkUniqueID REFLECT = 243379636U;
+                static const AkUniqueID SPECIAL = 3064974266U;
+            } // namespace SWITCH
+        } // namespace DAMAGE
+
         namespace ROUND
         {
             static const AkUniqueID GROUP = 1413238543U;

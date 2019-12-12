@@ -103,8 +103,10 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         float damagePlayer1 = CompareMove(player1.buffer[counter], player2.buffer[counter]);
         float damagePlayer2 = CompareMove(player2.buffer[counter], player1.buffer[counter]);
 
-        player1.PlayAnim(player1.buffer[counter], damagePlayer1 != 0f);
-        player2.PlayAnim(player2.buffer[counter], damagePlayer2 != 0f);
+        bool cancel = (player1.buffer[counter].move == player2.buffer[counter].move);
+
+        player1.PlayAnim(player1.buffer[counter], cancel, damagePlayer1 != 0f, player1.buffer[counter].move == Player.MoveType.LASER);
+        player2.PlayAnim(player2.buffer[counter], cancel, damagePlayer2 != 0f, player2.buffer[counter].move == Player.MoveType.LASER);
 
         player1.currentLife -= damagePlayer1;
         player2.currentLife -= damagePlayer2;
