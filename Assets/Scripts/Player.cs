@@ -42,6 +42,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public int bufferLength;
     private int currentAction;
 
+    public Animator animator;
+
     protected virtual void Start()
     {
         Init();
@@ -211,5 +213,43 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public Move GetMove(int index)
     {
         return buffer[index];
+    }
+
+    public void PlayAnim(Move move, bool takeDamage = false)
+    {
+        if (takeDamage) {
+            switch (move.move) {
+                case MoveType.REFLECT:
+                    animator.SetTrigger("doDamageReflect");
+                    break;
+                case MoveType.LASER:
+                    animator.SetTrigger("doDamageLaser");
+                    break;
+                default:
+                    animator.SetTrigger("doDamage");
+                    break;
+            }
+        }
+        else {
+            switch (move.move) {
+                case MoveType.HIT:
+                    animator.SetTrigger("doFente");
+                    break;
+                case MoveType.REFLECT:
+                    animator.SetTrigger("doReflect");
+                    break;
+                case MoveType.LASER:
+                    animator.SetTrigger("doLaser");
+                    break;
+                case MoveType.SPECIAL:
+                    animator.SetTrigger("doSpecial");
+                    break;
+                case MoveType.GUARD:
+                    animator.SetTrigger("doGuard");
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
