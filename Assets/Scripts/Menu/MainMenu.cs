@@ -10,50 +10,70 @@ public class MainMenu : MonoBehaviour
     public GameObject menuPanel;
     private RectTransform menuPanelTransform;
 
-    public OptionsPanel optionsPanel;
-    private RectTransform optionsPanelTransform;
+    public CreditsPanel creditsPanel;
+    public RulesPanel rulesPanel;
+    private RectTransform creditsPanelTransform;
+    private RectTransform rulesPanelTransform;
 
     public AnimationCurve transitionCurve;
 
+    private float screenSize = 800f;
     private float distanceBetweenPanels = 450f;
     private bool isMoving = false;
 
     private void Start()
     {
         menuPanelTransform = menuPanel.GetComponent<RectTransform>();
-        optionsPanelTransform = optionsPanel.GetComponent<RectTransform>();
+        creditsPanelTransform = creditsPanel.GetComponent<RectTransform>();
+        rulesPanelTransform = rulesPanel.GetComponent<RectTransform>();
+
         menuChoices.Pause(false);
-        optionsPanel.Pause(true);
+        creditsPanel.Pause(true);
+        rulesPanel.Pause(true);
     }
 
-    public void DisplayOptionsPanel()
+    public void DisplayCreditsPanel()
     {
         if (isMoving) return;
 
         menuChoices.Pause(true);
-        optionsPanel.Pause(false);
+        creditsPanel.Pause(false);
 
         isMoving = true;
-        StartCoroutine(MovePanelCoroutine(0.5f, distanceBetweenPanels));
+        creditsPanelTransform.anchoredPosition = new Vector2(0, creditsPanelTransform.anchoredPosition.y);
+        StartCoroutine(MovePanelCoroutine(creditsPanelTransform, 0.5f, distanceBetweenPanels));
     }
 
-    public void ReturnToMenuChoices()
+    public void DisplayRulesPanel()
+    {
+        if (isMoving) return;
+
+        menuChoices.Pause(true);
+        rulesPanel.Pause(false);
+
+        isMoving = true;
+        rulesPanelTransform.anchoredPosition = new Vector2(0, rulesPanelTransform.anchoredPosition.y);
+        StartCoroutine(MovePanelCoroutine(rulesPanelTransform, 0.5f, distanceBetweenPanels));
+    }
+
+    public void ReturnToMenuChoices(RectTransform rectTransform)
     {
         if (isMoving) return;
 
         menuChoices.Pause(false);
-        optionsPanel.Pause(true);
+        creditsPanel.Pause(true);
+        rulesPanel.Pause(true);
 
         menuChoices.Reset();
         isMoving = true;
-        StartCoroutine(MovePanelCoroutine(0.5f, -distanceBetweenPanels));
+        StartCoroutine(MovePanelCoroutine(rectTransform, 0.5f, -distanceBetweenPanels, true));
     }
 
-    private IEnumerator MovePanelCoroutine(float duration, float offset)
+    private IEnumerator MovePanelCoroutine(RectTransform rectTransform, float duration, float offset, bool rebaseOnEnd = false)
     {
         float timer = 0.0f;
         float initYMenu = menuPanelTransform.anchoredPosition.y;
-        float initYOptions = optionsPanelTransform.anchoredPosition.y;
+        float initYOptions = rectTransform.anchoredPosition.y;
         float y = 0f;
 
         float progress;
@@ -65,7 +85,7 @@ public class MainMenu : MonoBehaviour
             y = transitionCurve.Evaluate(progress) * offset;
 
             menuPanelTransform.anchoredPosition = new Vector2(menuPanelTransform.anchoredPosition.x, initYMenu + y);
-            optionsPanelTransform.anchoredPosition = new Vector2(optionsPanelTransform.anchoredPosition.x, initYOptions + y);
+            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initYOptions + y);
 
             timer += Time.deltaTime;
 
@@ -73,7 +93,10 @@ public class MainMenu : MonoBehaviour
         }
 
         menuPanelTransform.anchoredPosition = new Vector2(menuPanelTransform.anchoredPosition.x, initYMenu + offset);
-        optionsPanelTransform.anchoredPosition = new Vector2(optionsPanelTransform.anchoredPosition.x, initYOptions + offset);
+
+        if (rebaseOnEnd) rectTransform.anchoredPosition = new Vector2(screenSize, initYOptions + offset);
+        else rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initYOptions + offset);
+
         isMoving = false;
     }
 }

@@ -10,8 +10,8 @@ public class MenuChoices : MonoBehaviour
     {
         VERSUS,
         AI,
-        CONTROLS,
-        OPTIONS
+        RULES,
+        CREDITS
     }
    
 
@@ -48,6 +48,7 @@ public class MenuChoices : MonoBehaviour
         if (!isMoving) {
             if (Input.GetAxisRaw("SelectionVerticalButton") > 0f || Input.GetAxisRaw("SelectionVerticalJoystick") > 0f) {
                 validateAnimator.Play("Giggle Up", 0, 0);
+                AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
                 if (selection - 1 < 0) {
                     selection = (Choice)choicesLength - 1;
                     MoveBottom();
@@ -61,6 +62,7 @@ public class MenuChoices : MonoBehaviour
             }
             else if (Input.GetAxisRaw("SelectionVerticalButton") < 0f || Input.GetAxisRaw("SelectionVerticalJoystick") < 0f) {
                 validateAnimator.Play("Giggle Down", 0, 0);
+                AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
                 if (selection + 1 >= (Choice)choicesLength) {
                     selection = 0;
                     MoveTop();
@@ -85,12 +87,12 @@ public class MenuChoices : MonoBehaviour
                     SceneManager.LoadScene("FightSceneAI");
                     AkSoundEngine.PostEvent("UI_Menu_Start_Game", gameObject);
                     break;
-                case Choice.CONTROLS:
-                    //TODO : popup controls
+                case Choice.RULES:
+                    mainMenu.DisplayRulesPanel();
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Option", gameObject);
                     break;
-                case Choice.OPTIONS:
-                    mainMenu.DisplayOptionsPanel();
+                case Choice.CREDITS:
+                    mainMenu.DisplayCreditsPanel();
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Option", gameObject);
                     break;
                 default:
@@ -110,28 +112,24 @@ public class MenuChoices : MonoBehaviour
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.15f, -distanceBetweenChoices));
-        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private void MoveDown()
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.15f, distanceBetweenChoices));
-        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private void MoveTop()
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.2f, -distanceBetweenChoices * 3));
-        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private void MoveBottom()
     {
         isMoving = true;
         StartCoroutine(MoveAnimation(0.2f, distanceBetweenChoices * 3));
-        AkSoundEngine.PostEvent("UI_Menu_Hovered_Main", gameObject);
     }
 
     private IEnumerator MoveAnimation(float duration, float offset)

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OptionsPanel : MonoBehaviour
+public class RulesPanel : MonoBehaviour
 {
     public MainMenu mainMenu;
     public Animator exitAnimator;
@@ -16,8 +16,8 @@ public class OptionsPanel : MonoBehaviour
 
         if (Input.GetButtonDown("Exit")) {
             AkSoundEngine.PostEvent("UI_Option_Back", gameObject);
-            exitAnimator.SetTrigger("press");
-            mainMenu.ReturnToMenuChoices();
+            exitAnimator.Play("Press", 0, 0);
+            mainMenu.ReturnToMenuChoices(GetComponent<RectTransform>());
         }
     }
 
