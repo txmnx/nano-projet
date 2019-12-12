@@ -23,6 +23,10 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Sprite specialSprite;
     public Sprite neutralSprite;
 
+    //SONDIER
+    private float lowestHP;
+    //SONDIER
+
     private float[,] coefficients;
 
     public System.Random random = new System.Random();
@@ -110,10 +114,18 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
         player1.currentLife -= damagePlayer1;
         player2.currentLife -= damagePlayer2;
+
+        //SONDIER
         player1.health.value = player1.currentLife;
         AkSoundEngine.SetRTPCValue("RTPC_American_Health", player1.currentLife);
         player2.health.value = player2.currentLife;
         AkSoundEngine.SetRTPCValue("RTPC_Japan_Health", player2.currentLife);
+        if (player1.currentLife > player2.currentLife)
+            lowestHP = player1.currentLife;
+        else
+            lowestHP = player2.currentLife;
+        AkSoundEngine.SetRTPCValue("RTPC_Lowest_Health", lowestHP);
+        //SONDIER
 
         counter = counter + 1;
 

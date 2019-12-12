@@ -9,6 +9,7 @@ public class MusicManager : MonoBehaviour
     private Player player1;
     private Player player2;
     private int highScore;
+    private int roundNbr;
 
     private void Start()
     {
@@ -19,6 +20,28 @@ public class MusicManager : MonoBehaviour
     public void StartIntro()
     {
         CueManager.isCounting = true;
+
+        roundNbr = player1.wins + player2.wins;
+
+        //Switch pour l'annonce du round
+        switch (roundNbr)
+        {
+            case (0):
+                AkSoundEngine.SetState("Round", "Round1");
+                break;
+            case (1):
+                AkSoundEngine.SetState("Round", "Round2");
+                break;
+            case (2):
+                AkSoundEngine.SetState("Round", "Round3");
+                break;
+            case (3):
+                AkSoundEngine.SetState("Round", "Round4");
+                break;
+            case (4):
+                AkSoundEngine.SetState("Round", "FinalRound");
+                break;
+        }
 
         //CF Schéma système musical
         if (player1.wins == 0 && player2.wins == 0)

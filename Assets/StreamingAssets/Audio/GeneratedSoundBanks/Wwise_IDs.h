@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID MUSIC_ROUNDENDPART2 = 2927058889U;
         static const AkUniqueID PLAY_CUEMANAGER = 1568189152U;
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
+        static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_MUSIC_PAUSE = 1122264096U;
         static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS = 2927774105U;
         static const AkUniqueID SFX_COMMON_OIL = 2534836963U;
@@ -76,6 +77,20 @@ namespace AK
             } // namespace STATE
         } // namespace CUEMANAGER
 
+        namespace DAMAGE
+        {
+            static const AkUniqueID GROUP = 1786804762U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FENTE = 1343249213U;
+                static const AkUniqueID LASER = 3982605422U;
+                static const AkUniqueID NEUTRAL = 670611050U;
+                static const AkUniqueID REFLECT = 243379636U;
+                static const AkUniqueID SPECIAL = 3064974266U;
+            } // namespace STATE
+        } // namespace DAMAGE
+
         namespace MUSICTOPLAY
         {
             static const AkUniqueID GROUP = 3012001959U;
@@ -111,20 +126,6 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace DAMAGE
-        {
-            static const AkUniqueID GROUP = 1786804762U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID FENTE = 1343249213U;
-                static const AkUniqueID LASER = 3982605422U;
-                static const AkUniqueID NEUTRAL = 670611050U;
-                static const AkUniqueID REFLECT = 243379636U;
-                static const AkUniqueID SPECIAL = 3064974266U;
-            } // namespace SWITCH
-        } // namespace DAMAGE
-
         namespace ROUND
         {
             static const AkUniqueID GROUP = 1413238543U;
