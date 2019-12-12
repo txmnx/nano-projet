@@ -25,6 +25,8 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
     public static int step = 2; // How much beats for a sequence
     private static int currentStep;
+    public GameObject Player1Body;
+    public GameObject Player2Body;
 
     public FightManager fightManager;
 
@@ -98,6 +100,9 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                 }
                 sequence = Sequence.INPUT;
                 AkSoundEngine.PostEvent("SFX_InputPhase_In", gameObject);
+                AkSoundEngine.SetSwitch("Charged", "No", Player1Body);
+                AkSoundEngine.SetSwitch("Charged", "No", Player2Body);
+
             }
             currentStep = 1;
         }

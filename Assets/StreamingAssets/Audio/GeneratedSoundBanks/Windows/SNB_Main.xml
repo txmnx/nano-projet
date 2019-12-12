@@ -16,7 +16,7 @@
 				<Event Id="1418672556" Name="Amb_Main_Start" ObjectPath="\Events\Ambience_Event\Amb_Main_Start" DurationType="Infinite"/>
 				<Event Id="3958906054" Name="Amb_Menu_Start" ObjectPath="\Events\Ambience_Event\Amb_Menu_Start" DurationType="Infinite"/>
 				<Event Id="2279207821" Name="CueManager_NewCue" ObjectPath="\Events\Music_Event\CueManager_NewCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.429466" DurationMax="4.001542"/>
+				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.410726" DurationMax="4.001542"/>
 				<Event Id="1218823660" Name="Foley_Robot_Death" ObjectPath="\Events\Foley_Event\Foley_Robot_Death" DurationType="OneShot" DurationMin="5.839773" DurationMax="8.006871"/>
 				<Event Id="2452461343" Name="Foley_Robot_Death_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Death_Metal_Creaking" DurationType="OneShot" DurationMin="1.866238" DurationMax="2.202939"/>
 				<Event Id="3709968817" Name="Foley_Robot_Fall" ObjectPath="\Events\Foley_Event\Foley_Robot_Fall" DurationType="OneShot" DurationMin="1.590243" DurationMax="3.021819"/>
@@ -37,6 +37,7 @@
 				<Event Id="414863633" Name="Play_Main_Music" ObjectPath="\Events\Music_Event\Play_Main_Music" DurationType="Infinite"/>
 				<Event Id="2228153899" Name="Play_Menu_Music" ObjectPath="\Events\Music_Event\Play_Menu_Music" DurationType="OneShot" DurationMin="283.792267" DurationMax="283.792267"/>
 				<Event Id="1122264096" Name="Play_Music_Pause" ObjectPath="\Events\Music_Event\Play_Music_Pause" DurationType="Infinite"/>
+				<Event Id="3605011583" Name="SFX_Common_Charged" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Charged" DurationType="OneShot" DurationMin="0.789456" DurationMax="0.789456"/>
 				<Event Id="2927774105" Name="SFX_Common_Electric_Sparks" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Electric_Sparks" DurationType="Infinite"/>
 				<Event Id="657576033" Name="SFX_Common_Fente" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Fente" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
 				<Event Id="2840219912" Name="SFX_Common_Guard" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Guard" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
@@ -49,8 +50,8 @@
 				<Event Id="591816388" Name="SFX_Robot_Death" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Death" DurationType="OneShot" DurationMin="4.157958" DurationMax="8.052399"/>
 				<Event Id="3716377771" Name="SFX_Robot_Explosion" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Explosion" DurationType="OneShot" DurationMin="15.158931" DurationMax="17.339424"/>
 				<Event Id="1708613752" Name="SFX_Robot_Fente" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Fente" DurationType="OneShot" DurationMin="1.513810" DurationMax="1.513810"/>
-				<Event Id="3793944345" Name="SFX_Robot_Laser_Damage" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Damage" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2599727010" Name="SFX_Robot_Laser_Impact_Reflect" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Impact_Reflect" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3793944345" Name="SFX_Robot_Laser_Damage" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Damage" DurationType="OneShot" DurationMin="1.664313" DurationMax="1.664313"/>
+				<Event Id="2599727010" Name="SFX_Robot_Laser_Impact_Reflect" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Impact_Reflect" DurationType="OneShot" DurationMin="1.110575" DurationMax="1.110575"/>
 				<Event Id="4210766769" Name="SFX_Robot_Laser_Reload" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Reload" DurationType="OneShot" DurationMin="0.533401" DurationMax="0.708345"/>
 				<Event Id="2331834703" Name="SFX_Robot_Laser_Shoot" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Laser_Shoot" DurationType="OneShot" DurationMin="3.176026" DurationMax="5.341418"/>
 				<Event Id="515042147" Name="SFX_Robot_Particles" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Particles" DurationType="OneShot" DurationMin="1.446349" DurationMax="2.991247"/>
@@ -331,6 +332,10 @@
 					<Path>SFX\R1_LeadJ2_01_Base_C42B8C3C.wem</Path>
 					<PrefetchSize>557</PrefetchSize>
 				</File>
+				<File Id="65935960" Language="SFX">
+					<ShortName>SFX_Common_Electric_Sparkles.wav</ShortName>
+					<Path>SFX\SFX_Common_Electric_Sparkles_32878036.wem</Path>
+				</File>
 				<File Id="74623473" Language="SFX">
 					<ShortName>John Cena.wav</ShortName>
 					<Path>SFX\John Cena_C42B8C3C.wem</Path>
@@ -439,6 +444,10 @@
 					<ShortName>R1_Common_03_Top.wav</ShortName>
 					<Path>SFX\R1_Common_03_Top_C42B8C3C.wem</Path>
 					<PrefetchSize>557</PrefetchSize>
+				</File>
+				<File Id="229955774" Language="SFX">
+					<ShortName>MUI POP UP Metallic Power Surge.wav</ShortName>
+					<Path>SFX\MUI POP UP Metallic Power Surge_3694285E.wem</Path>
 				</File>
 				<File Id="232999411" Language="SFX">
 					<ShortName>Foley_Japan_SpecialAttack.wav</ShortName>

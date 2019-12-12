@@ -24,6 +24,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public float currentLife;
     public FightManager fightManager;               //Script managing fights, on the GameManager
     public int wins;
+    public GameObject PlayerBody;
 
     public enum MoveType { HIT, REFLECT, LASER, GUARD, SPECIAL, NEUTRAL }     //List of moves
 
@@ -168,6 +169,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                         {
                             inputsImage[bufferLength - 1].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
                             buffer[bufferLength - 1].isCharged = true;
+                            AkSoundEngine.PostEvent("SFX_Common_Charged", gameObject);
+                            AkSoundEngine.SetSwitch("Charged","Yes", PlayerBody);
                         }
                     }
                 }
@@ -264,8 +267,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     break;
                 case MoveType.REFLECT:
                     if (player2DoLaser) {
-                        // ici c'est quand le reflect renvoie le laser
-                        AkSoundEngine.PostEvent("SFX_Robot_Laser_Impact_Reflect", gameObject);
                     }
                     animator.SetTrigger("doReflect");
                     break;

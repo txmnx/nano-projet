@@ -732,6 +732,7 @@ MonoBehaviour:
   currentLife: 0
   fightManager: {fileID: 1226417291}
   wins: 0
+  PlayerBody: {fileID: 2100239044}
   inputsImage:
   - {fileID: 1393901136}
   - {fileID: 868422014}
@@ -1567,6 +1568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39c8d19e1e979646855e3bf96607b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player1Body: {fileID: 828260054}
+  Player2Body: {fileID: 2100239044}
   fightManager: {fileID: 1226417291}
 --- !u!4 &1226417288
 Transform:
@@ -2737,6 +2740,7 @@ MonoBehaviour:
   currentLife: 0
   fightManager: {fileID: 1226417291}
   wins: 0
+  PlayerBody: {fileID: 828260054}
   inputsImage:
   - {fileID: 1065347225}
   - {fileID: 1813833882}

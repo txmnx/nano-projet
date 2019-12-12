@@ -387,8 +387,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586254424540179011
+    m_lastTime: -8586254234478448737
     List:
+    - name: SFX_Common_Charged
+      guid: 179a08e096b51b49b6b516034637cf40
+      id: 3605011583
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Charged
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Charged
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX_Common_Electric_Sparks
       guid: 5f73930f1958f841a06b5e8fea70caba
       id: 2927774105
@@ -933,7 +947,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5bd7f45acdf4224bb51914ac15a62692
     GuidInternal: 
-    m_lastTime: -8586255211138642897
+    m_lastTime: -8586254247022148236
     List:
     - name: CueManager
       guid: ae3093224713db45ace8d61f3d6706dc
@@ -1086,7 +1100,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9435b629aaebad42beff3cac1971c2b1
     GuidInternal: 
-    m_lastTime: -8586255111392435807
+    m_lastTime: -8586254250248582814
     List:
     - name: Damage
       guid: 5b56fd62f818c748bc54d156b1e85337
@@ -1203,8 +1217,33 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ceccf3f5cfadcd4389f0188ef4ead3fd
     GuidInternal: 
-    m_lastTime: -8586255110414134305
-    List: []
+    m_lastTime: -8586254253132956973
+    List:
+    - name: Charged
+      guid: 04110e11b284ef439ec10b1c081b23b3
+      id: 3146088667
+      PathAndIcons:
+      - ElementName: SFX_Switch
+        ObjectType: 12
+      - ElementName: Charged
+        ObjectType: 11
+      Path: SFX_Switch\Charged
+      values:
+      - name: No
+        guid: e191306d4219cc458f380df574e2711d
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 10
+      - name: Yes
+        guid: d370172fde2d1640892b1abd778ea00c
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 

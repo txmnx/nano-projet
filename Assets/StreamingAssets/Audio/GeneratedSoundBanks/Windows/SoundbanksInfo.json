@@ -361,7 +361,7 @@
       "Name": "Foley_Robot_Damage",
       "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Damage",
       "DurationType": "OneShot",
-      "DurationMin": "0.429466",
+      "DurationMin": "0.410726",
       "DurationMax": "4.001542"
      },
      {
@@ -515,6 +515,14 @@
       "DurationType": "Infinite"
      },
      {
+      "Id": "3605011583",
+      "Name": "SFX_Common_Charged",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Charged",
+      "DurationType": "OneShot",
+      "DurationMin": "0.789456",
+      "DurationMax": "0.789456"
+     },
+     {
       "Id": "2927774105",
       "Name": "SFX_Common_Electric_Sparks",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Electric_Sparks",
@@ -611,16 +619,16 @@
       "Name": "SFX_Robot_Laser_Damage",
       "ObjectPath": "\\Events\\SFX_Event\\Robot\\SFX_Robot_Laser_Damage",
       "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "DurationMin": "1.664313",
+      "DurationMax": "1.664313"
      },
      {
       "Id": "2599727010",
       "Name": "SFX_Robot_Laser_Impact_Reflect",
       "ObjectPath": "\\Events\\SFX_Event\\Robot\\SFX_Robot_Laser_Impact_Reflect",
       "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "DurationMin": "1.110575",
+      "DurationMax": "1.110575"
      },
      {
       "Id": "4210766769",
@@ -1004,6 +1012,12 @@
       "PrefetchSize": "557"
      },
      {
+      "Id": "65935960",
+      "Language": "SFX",
+      "ShortName": "SFX_Common_Electric_Sparkles.wav",
+      "Path": "SFX\\SFX_Common_Electric_Sparkles_32878036.wem"
+     },
+     {
       "Id": "74623473",
       "Language": "SFX",
       "ShortName": "John Cena.wav",
@@ -1161,6 +1175,12 @@
       "ShortName": "R1_Common_03_Top.wav",
       "Path": "SFX\\R1_Common_03_Top_C42B8C3C.wem",
       "PrefetchSize": "557"
+     },
+     {
+      "Id": "229955774",
+      "Language": "SFX",
+      "ShortName": "MUI POP UP Metallic Power Surge.wav",
+      "Path": "SFX\\MUI POP UP Metallic Power Surge_3694285E.wem"
      },
      {
       "Id": "232999411",

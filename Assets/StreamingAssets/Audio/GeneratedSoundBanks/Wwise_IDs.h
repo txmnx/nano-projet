@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
         static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_MUSIC_PAUSE = 1122264096U;
+        static const AkUniqueID SFX_COMMON_CHARGED = 3605011583U;
         static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS = 2927774105U;
         static const AkUniqueID SFX_COMMON_FENTE = 657576033U;
         static const AkUniqueID SFX_COMMON_GUARD = 2840219912U;
@@ -134,6 +135,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace CHARGED
+        {
+            static const AkUniqueID GROUP = 3146088667U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace SWITCH
+        } // namespace CHARGED
+
         namespace ROUND
         {
             static const AkUniqueID GROUP = 1413238543U;
