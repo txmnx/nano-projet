@@ -121,9 +121,9 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         player2.health.value = player2.currentLife;
         AkSoundEngine.SetRTPCValue("RTPC_Japan_Health", player2.currentLife);
         if (player1.currentLife > player2.currentLife)
-            lowestHP = player1.currentLife;
-        else
             lowestHP = player2.currentLife;
+        else
+            lowestHP = player1.currentLife;
         AkSoundEngine.SetRTPCValue("RTPC_Lowest_Health", lowestHP);
         //SONDIER
 

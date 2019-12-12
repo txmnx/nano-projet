@@ -1646,7 +1646,7 @@ MonoBehaviour:
   players:
   - {fileID: 734479241}
   - {fileID: 1915892328}
-  roundToWin: 2
+  roundToWin: 3
   winSliders:
   - {fileID: 2136094363}
   - {fileID: 2011355447}
