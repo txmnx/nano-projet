@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     public Animator cameraAnimator;
 
     public AnimationCurve popCurve;
+    public Animator exitKeyAnimator;
 
     private RectTransform rectTransform;
 
@@ -28,21 +29,25 @@ public class PauseMenu : MonoBehaviour
     {
         if (isMoving) return;
 
-        if (Input.GetButtonDown("Pause")) {
-            if (!isPaused) {
-                Display();
-                isPaused = true;
+        if (isPaused) {
+            if (Input.GetButtonDown("Exit")) {
+                exitKeyAnimator.Play("Press", 0, 0);
+                ReturnToMainMenu();
+                return;
             }
-            else if (isPaused) {
+            if (Input.GetButtonDown("Pause")) {
                 Hide();
                 isPaused = false;
             }
+        }
+        else if (Input.GetButtonDown("Pause")) {
+            Display();
+            isPaused = true;
         }
     }
 
     public void Hide()
     {
-        //anim resume
         player1Animator.enabled = true;
         player2Animator.enabled = true;
         cameraAnimator.enabled = true;
@@ -54,7 +59,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Display()
     {
-        //anim pause
         player1Animator.enabled = false;
         player2Animator.enabled = false;
         cameraAnimator.enabled = false;
