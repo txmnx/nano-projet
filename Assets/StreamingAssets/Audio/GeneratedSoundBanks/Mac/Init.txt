@@ -1,6 +1,9 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1316503075	CueManager			\Music_States\CueManager	
+<<<<<<< HEAD
 	1786804762	Damage			\SFX_States\Damage	
+=======
+>>>>>>> menu
 	3012001959	MusicToPlay			\Music_States\MusicToPlay	
 	3957034330	RoundWinner			\Music_States\RoundWinner	
 
@@ -8,12 +11,15 @@ State	ID	Name	State Group			Notes
 	0	None	CueManager			
 	2473054966	NewCue	CueManager			
 	3041563226	Silence	CueManager			
+<<<<<<< HEAD
 	0	None	Damage			
 	243379636	Reflect	Damage			
 	670611050	Neutral	Damage			
 	1343249213	Fente	Damage			
 	3064974266	Special	Damage			
 	3982605422	Laser	Damage			
+=======
+>>>>>>> menu
 	0	None	MusicToPlay			
 	1151771561	ST_Idle	MusicToPlay			
 	2004344129	ST_RoundWinUS	MusicToPlay			
@@ -37,6 +43,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	482648852	VO_Character			\Default Work Unit\Master Audio Bus\VO\VO_Character	
+<<<<<<< HEAD
+=======
+	1031316333	Reverb_Menu			\Default Work Unit\Master Audio Bus\UI\Reverb_Menu	
+>>>>>>> menu
 	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
@@ -55,11 +65,16 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
 
 Effect plug-ins	ID	Name	Type				Notes
+<<<<<<< HEAD
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	175750078	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
 	289702920	Wwise_Meter_(Custom)	Wwise Meter			
 	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
 	1520064353	Hall_Medium_Bright	Wwise RoomVerb			
+=======
+	289702920	Wwise_Meter_(Custom)	Wwise Meter			
+	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
+>>>>>>> menu
 	1588715066	Echoes_Linear	Wwise Delay			
 
 Audio Devices	ID	Name	Type				Notes

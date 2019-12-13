@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Animations/UI/JoystickKey.meta
 guid: d8bcdb83b732e06499e6a64d1bc15bac
+=======
+guid: 6f03169ec5e1a6d4f9dcd3729c90c0c3
+>>>>>>> menu:Assets/Animations/UI.meta
+=======
+guid: d8bcdb83b732e06499e6a64d1bc15bac
+>>>>>>> menu
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
