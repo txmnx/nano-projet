@@ -1545,7 +1545,7 @@
       "Id": "571611849",
       "Language": "SFX",
       "ShortName": "PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav",
-      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_83378224.wem"
+      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_66DAD3EC.wem"
      },
      {
       "Id": "578364842",
@@ -2021,7 +2021,7 @@
       "Id": "1023978928",
       "Language": "SFX",
       "ShortName": "UI_Menu_Start_Game.wav",
-      "Path": "SFX\\UI_Menu_Start_Game_204E5F65.wem"
+      "Path": "SFX\\UI_Menu_Start_Game_F8D61BAB.wem"
      },
      {
       "Id": "1031812766",
@@ -2064,7 +2064,7 @@
       "Id": "1065728481",
       "Language": "SFX",
       "ShortName": "UI_Menu_Hovered_Main.wav",
-      "Path": "SFX\\UI_Menu_Hovered_Main_9264DAF3.wem"
+      "Path": "SFX\\UI_Menu_Hovered_Main_F8B03F00.wem"
      },
      {
       "Id": "1066614157",

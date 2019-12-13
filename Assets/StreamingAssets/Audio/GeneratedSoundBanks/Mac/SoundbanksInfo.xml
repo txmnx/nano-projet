@@ -752,7 +752,7 @@
 				</File>
 				<File Id="571611849" Language="SFX">
 					<ShortName>PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav</ShortName>
-					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_83378224.wem</Path>
+					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_66DAD3EC.wem</Path>
 				</File>
 				<File Id="578364842" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_02.wav</ShortName>
@@ -1076,7 +1076,7 @@
 				</File>
 				<File Id="1023978928" Language="SFX">
 					<ShortName>UI_Menu_Start_Game.wav</ShortName>
-					<Path>SFX\UI_Menu_Start_Game_204E5F65.wem</Path>
+					<Path>SFX\UI_Menu_Start_Game_F8D61BAB.wem</Path>
 				</File>
 				<File Id="1031812766" Language="SFX">
 					<ShortName>SFX_Common_Oil.wav</ShortName>
@@ -1105,7 +1105,7 @@
 				</File>
 				<File Id="1065728481" Language="SFX">
 					<ShortName>UI_Menu_Hovered_Main.wav</ShortName>
-					<Path>SFX\UI_Menu_Hovered_Main_9264DAF3.wem</Path>
+					<Path>SFX\UI_Menu_Hovered_Main_F8B03F00.wem</Path>
 				</File>
 				<File Id="1066614157" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_Charged_02.wav</ShortName>
