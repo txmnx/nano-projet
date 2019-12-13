@@ -20,6 +20,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     private bool gameIsPaused = false;
     private bool roundIsEnd = false;
     private bool matchIsEnd = false;
+    private bool hasIncremented = false;
     
     public Color victoryJapColor;
     public Color victoryUsColor;
@@ -69,8 +70,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
         if (isWon)
         {
-            winner.wins += 1;
-            winSliders[winnerID].value = winner.wins;
+            if(!hasIncremented)
+            {
+                winner.wins += 1;
+                winSliders[winnerID].value = winner.wins;
+                hasIncremented = true;
+            }
+
 
             //SONDIER
             if(winnerID == 0)
@@ -81,14 +87,28 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             {
                 musicManager.RoundWinJP();
             }
-            //SONDIER
+            //SONDIER;
 
             onRoundEnd();
 
             if (winner != null && winner.wins == roundToWin)
             {
-                onMatchEnd(winner);
+                
+
+                //SONDIER
+                if (winnerID == 0)
+                {
+                    onMatchEnd(players[0], players[1]);
+                    musicManager.WinUS();
+                }
+                if (winnerID == 1)
+                {
+                    onMatchEnd(players[1], players[0]);
+                    musicManager.WinJP();
+                }
+                //SONDIER;
             }
+
 
         }
         else if (players[0].currentLife <= 0)
@@ -105,11 +125,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             isWon = true;
         }
 
-        if (matchIsEnd)
-            if(Input.GetKeyDown(KeyCode.R))
-            {
-                resetGame();
-            }
+        //if (matchIsEnd)
+           
     }
 
     public void resetRound()
@@ -123,6 +140,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         }
         winner = null;
         isWon = false;
+        hasIncremented = false;
     }
 
     public void onRoundEnd()
@@ -132,15 +150,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
   
 
-    public void onMatchEnd(Player winner)
+    public void onMatchEnd(Player winner, Player loser)
     {
         matchIsEnd = true;
-        
-        if (winner == players[0])
-            Camera.main.backgroundColor = victoryUsColor;
-        else if (winner == players[1])
-            Camera.main.backgroundColor = victoryJapColor;
-        matchIsEnd = true;
+
+        winner.animator.Play("Victory", 0);
+        loser.animator.Play("Death", 0);
+
        
     }
 

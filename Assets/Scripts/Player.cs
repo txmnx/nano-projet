@@ -102,6 +102,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     void Update()
     {
+        //Debug.Log(wins);
+
         if (InputTranslator.sequence == Sequence.INPUT)      
         {
             if (bufferLength < InputTranslator.step)

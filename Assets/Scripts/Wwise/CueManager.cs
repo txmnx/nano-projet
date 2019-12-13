@@ -35,6 +35,7 @@ public class CueManager : MonoBehaviour
 
                 case 4:         //Début d'outro
                     //Functions to call
+                    InputTranslator.sequence = Sequence.IDLE;
                     isBeatDetected = false;
                     matchManager.onRoundEnd();
                     break;
