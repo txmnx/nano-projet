@@ -140,8 +140,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             Camera.main.backgroundColor = victoryUsColor;
         else if (winner == players[1])
             Camera.main.backgroundColor = victoryJapColor;
-        pause();
-        gameIsPaused = false;
         matchIsEnd = true;
        
     }
