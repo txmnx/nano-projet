@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
   "StreamedFiles": [
@@ -20,10 +20,88 @@
     "Path": "SFX\\Intro_39BPM_C42B8C3C.wem"
    },
    {
+    "Id": "12344872",
+    "Language": "SFX",
+    "ShortName": "RoundEnd_WinJP_Part1.wav",
+    "Path": "SFX\\RoundEnd_WinJP_Part1_C42B8C3C.wem"
+   },
+   {
+    "Id": "38141193",
+    "Language": "SFX",
+    "ShortName": "R0_Init_03_Top.wav",
+    "Path": "SFX\\R0_Init_03_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "45029081",
+    "Language": "SFX",
+    "ShortName": "R2_Common_02_Base.wav",
+    "Path": "SFX\\R2_Common_02_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "55459180",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ2_01_Base.wav",
+    "Path": "SFX\\R1_LeadJ2_01_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "96150274",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ2_02_Top.wav",
+    "Path": "SFX\\R1_LeadJ2_02_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "101685095",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ2_01_Top.wav",
+    "Path": "SFX\\R2_LeadJ2_01_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "133806832",
+    "Language": "SFX",
+    "ShortName": "R1_Common_02_Base.wav",
+    "Path": "SFX\\R1_Common_02_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "175973606",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ2_01_Top.wav",
+    "Path": "SFX\\R1_LeadJ2_01_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "181883819",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ1_01_Base.wav",
+    "Path": "SFX\\R1_LeadJ1_01_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "188598521",
+    "Language": "SFX",
+    "ShortName": "R2_Common_03_Top.wav",
+    "Path": "SFX\\R2_Common_03_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "189642575",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ1_02_Base.wav",
+    "Path": "SFX\\R2_LeadJ1_02_Base_C42B8C3C.wem"
+   },
+   {
     "Id": "194011796",
     "Language": "SFX",
     "ShortName": "Intro_78BPM.wav",
     "Path": "SFX\\Intro_78BPM_C42B8C3C.wem"
+   },
+   {
+    "Id": "215930261",
+    "Language": "SFX",
+    "ShortName": "R1_Common_03_Top.wav",
+    "Path": "SFX\\R1_Common_03_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "257449727",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ1_02_Top.wav",
+    "Path": "SFX\\R1_LeadJ1_02_Top_C42B8C3C.wem"
    },
    {
     "Id": "258035653",
@@ -32,10 +110,52 @@
     "Path": "SFX\\RoundEnd_WinJP_Part2_C42B8C3C.wem"
    },
    {
+    "Id": "274746922",
+    "Language": "SFX",
+    "ShortName": "R2_Common_01_Top.wav",
+    "Path": "SFX\\R2_Common_01_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "279887480",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ2_02_Top.wav",
+    "Path": "SFX\\R2_LeadJ2_02_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "427183628",
+    "Language": "SFX",
+    "ShortName": "R1_Common_01_Top.wav",
+    "Path": "SFX\\R1_Common_01_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "460059138",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ2_01_Base.wav",
+    "Path": "SFX\\R2_LeadJ2_01_Base_C42B8C3C.wem"
+   },
+   {
     "Id": "469132256",
     "Language": "SFX",
     "ShortName": "R0_Init_04.wav",
     "Path": "SFX\\R0_Init_04_C42B8C3C.wem"
+   },
+   {
+    "Id": "474812567",
+    "Language": "SFX",
+    "ShortName": "Outro_EndingLoop_JP.wav",
+    "Path": "SFX\\Outro_EndingLoop_JP_C42B8C3C.wem"
+   },
+   {
+    "Id": "477850786",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ1_01_Top.wav",
+    "Path": "SFX\\R2_LeadJ1_01_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "497591261",
+    "Language": "SFX",
+    "ShortName": "R0_Init_05_Top.wav",
+    "Path": "SFX\\R0_Init_05_Top_C42B8C3C.wem"
    },
    {
     "Id": "519801725",
@@ -44,10 +164,46 @@
     "Path": "SFX\\Amb_Main_Start_87303D88.wem"
    },
    {
+    "Id": "553069373",
+    "Language": "SFX",
+    "ShortName": "Outro_EndingLoop_US.wav",
+    "Path": "SFX\\Outro_EndingLoop_US_C42B8C3C.wem"
+   },
+   {
     "Id": "559559911",
     "Language": "SFX",
     "ShortName": "Amb_Main_Start.wav",
     "Path": "SFX\\Amb_Main_Start_86CB93F8.wem"
+   },
+   {
+    "Id": "571138565",
+    "Language": "SFX",
+    "ShortName": "R0_Init_01_Base.wav",
+    "Path": "SFX\\R0_Init_01_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "579694641",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ1_02_Base.wav",
+    "Path": "SFX\\R1_LeadJ1_02_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "586668224",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ2_02_Base.wav",
+    "Path": "SFX\\R1_LeadJ2_02_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "616052374",
+    "Language": "SFX",
+    "ShortName": "R0_Init_04_Top.wav",
+    "Path": "SFX\\R0_Init_04_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "631840085",
+    "Language": "SFX",
+    "ShortName": "R0_Init_03_Base.wav",
+    "Path": "SFX\\R0_Init_03_Base_C42B8C3C.wem"
    },
    {
     "Id": "676512627",
@@ -56,10 +212,112 @@
     "Path": "SFX\\Pause_39BPM_C42B8C3C.wem"
    },
    {
+    "Id": "683846320",
+    "Language": "SFX",
+    "ShortName": "R0_Init_02_Base.wav",
+    "Path": "SFX\\R0_Init_02_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "736632805",
+    "Language": "SFX",
+    "ShortName": "R2_Common_03_Base.wav",
+    "Path": "SFX\\R2_Common_03_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "745082184",
+    "Language": "SFX",
+    "ShortName": "R1_Common_01_Base.wav",
+    "Path": "SFX\\R1_Common_01_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "802587850",
+    "Language": "SFX",
+    "ShortName": "R1_Common_02_Top.wav",
+    "Path": "SFX\\R1_Common_02_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "818927288",
+    "Language": "SFX",
+    "ShortName": "R0_Init_01_Top.wav",
+    "Path": "SFX\\R0_Init_01_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "826199412",
+    "Language": "SFX",
+    "ShortName": "R0_Init_02_Top.wav",
+    "Path": "SFX\\R0_Init_02_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "829367693",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ2_02_Base.wav",
+    "Path": "SFX\\R2_LeadJ2_02_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "831454989",
+    "Language": "SFX",
+    "ShortName": "RoundEnd_WinUS_Part1.wav",
+    "Path": "SFX\\RoundEnd_WinUS_Part1_C42B8C3C.wem"
+   },
+   {
+    "Id": "853790913",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ1_01_Base.wav",
+    "Path": "SFX\\R2_LeadJ1_01_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "878937454",
+    "Language": "SFX",
+    "ShortName": "R2_Common_01_Base.wav",
+    "Path": "SFX\\R2_Common_01_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "895209398",
+    "Language": "SFX",
+    "ShortName": "R0_Init_05_Base.wav",
+    "Path": "SFX\\R0_Init_05_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "924882162",
+    "Language": "SFX",
+    "ShortName": "Outro_EndingHit.wav",
+    "Path": "SFX\\Outro_EndingHit_C42B8C3C.wem"
+   },
+   {
+    "Id": "958688997",
+    "Language": "SFX",
+    "ShortName": "R2_LeadJ1_02_Top.wav",
+    "Path": "SFX\\R2_LeadJ1_02_Top_C42B8C3C.wem"
+   },
+   {
+    "Id": "966950230",
+    "Language": "SFX",
+    "ShortName": "R0_Init_04_Base.wav",
+    "Path": "SFX\\R0_Init_04_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "999735148",
+    "Language": "SFX",
+    "ShortName": "R2_Common_02_Top.wav",
+    "Path": "SFX\\R2_Common_02_Top_C42B8C3C.wem"
+   },
+   {
     "Id": "1005534466",
     "Language": "SFX",
     "ShortName": "RoundEnd_WinUS_Part2.wav",
     "Path": "SFX\\RoundEnd_WinUS_Part2_C42B8C3C.wem"
+   },
+   {
+    "Id": "1015265713",
+    "Language": "SFX",
+    "ShortName": "R1_Common_03_Base.wav",
+    "Path": "SFX\\R1_Common_03_Base_C42B8C3C.wem"
+   },
+   {
+    "Id": "1055527686",
+    "Language": "SFX",
+    "ShortName": "R1_LeadJ1_01_Top.wav",
+    "Path": "SFX\\R1_LeadJ1_01_Top_C42B8C3C.wem"
    }
   ],
   "MediaFilesNotInAnyBank": [],
@@ -536,25 +794,154 @@
       "Id": "5142327"
      },
      {
+      "Id": "12344872"
+     },
+     {
+      "Id": "38141193"
+     },
+     {
+      "Id": "45029081"
+     },
+     {
+      "Id": "55459180"
+     },
+     {
+      "Id": "96150274"
+     },
+     {
+      "Id": "101685095"
+     },
+     {
+      "Id": "133806832"
+     },
+     {
+      "Id": "175973606"
+     },
+     {
+      "Id": "181883819"
+     },
+     {
+      "Id": "188598521"
+     },
+     {
+      "Id": "189642575"
+     },
+     {
       "Id": "194011796"
+     },
+     {
+      "Id": "215930261"
+     },
+     {
+      "Id": "257449727"
      },
      {
       "Id": "258035653"
      },
      {
+      "Id": "274746922"
+     },
+     {
+      "Id": "279887480"
+     },
+     {
+      "Id": "427183628"
+     },
+     {
+      "Id": "460059138"
+     },
+     {
       "Id": "469132256"
+     },
+     {
+      "Id": "474812567"
+     },
+     {
+      "Id": "477850786"
+     },
+     {
+      "Id": "497591261"
      },
      {
       "Id": "519801725"
      },
      {
+      "Id": "553069373"
+     },
+     {
       "Id": "559559911"
+     },
+     {
+      "Id": "571138565"
+     },
+     {
+      "Id": "579694641"
+     },
+     {
+      "Id": "586668224"
+     },
+     {
+      "Id": "616052374"
+     },
+     {
+      "Id": "631840085"
      },
      {
       "Id": "676512627"
      },
      {
+      "Id": "683846320"
+     },
+     {
+      "Id": "736632805"
+     },
+     {
+      "Id": "745082184"
+     },
+     {
+      "Id": "802587850"
+     },
+     {
+      "Id": "818927288"
+     },
+     {
+      "Id": "826199412"
+     },
+     {
+      "Id": "829367693"
+     },
+     {
+      "Id": "831454989"
+     },
+     {
+      "Id": "853790913"
+     },
+     {
+      "Id": "878937454"
+     },
+     {
+      "Id": "895209398"
+     },
+     {
+      "Id": "924882162"
+     },
+     {
+      "Id": "958688997"
+     },
+     {
+      "Id": "966950230"
+     },
+     {
+      "Id": "999735148"
+     },
+     {
       "Id": "1005534466"
+     },
+     {
+      "Id": "1015265713"
+     },
+     {
+      "Id": "1055527686"
      }
     ],
     "IncludedMemoryFiles": [
@@ -581,7 +968,8 @@
       "Id": "12344872",
       "Language": "SFX",
       "ShortName": "RoundEnd_WinJP_Part1.wav",
-      "Path": "SFX\\RoundEnd_WinJP_Part1_C42B8C3C.wem"
+      "Path": "SFX\\RoundEnd_WinJP_Part1_C42B8C3C.wem",
+      "PrefetchSize": "7537"
      },
      {
       "Id": "15763343",
@@ -593,7 +981,8 @@
       "Id": "38141193",
       "Language": "SFX",
       "ShortName": "R0_Init_03_Top.wav",
-      "Path": "SFX\\R0_Init_03_Top_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_03_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "40582120",
@@ -605,7 +994,8 @@
       "Id": "45029081",
       "Language": "SFX",
       "ShortName": "R2_Common_02_Base.wav",
-      "Path": "SFX\\R2_Common_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_Common_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "46501841",
@@ -629,7 +1019,8 @@
       "Id": "55459180",
       "Language": "SFX",
       "ShortName": "R1_LeadJ2_01_Base.wav",
-      "Path": "SFX\\R1_LeadJ2_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ2_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "74552780",
@@ -671,7 +1062,8 @@
       "Id": "96150274",
       "Language": "SFX",
       "ShortName": "R1_LeadJ2_02_Top.wav",
-      "Path": "SFX\\R1_LeadJ2_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ2_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "97274221",
@@ -683,7 +1075,8 @@
       "Id": "101685095",
       "Language": "SFX",
       "ShortName": "R2_LeadJ2_01_Top.wav",
-      "Path": "SFX\\R2_LeadJ2_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ2_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "103114941",
@@ -701,7 +1094,8 @@
       "Id": "133806832",
       "Language": "SFX",
       "ShortName": "R1_Common_02_Base.wav",
-      "Path": "SFX\\R1_Common_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_Common_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "5809"
      },
      {
       "Id": "134645060",
@@ -731,7 +1125,8 @@
       "Id": "175973606",
       "Language": "SFX",
       "ShortName": "R1_LeadJ2_01_Top.wav",
-      "Path": "SFX\\R1_LeadJ2_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ2_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "176044336",
@@ -743,19 +1138,22 @@
       "Id": "181883819",
       "Language": "SFX",
       "ShortName": "R1_LeadJ1_01_Base.wav",
-      "Path": "SFX\\R1_LeadJ1_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ1_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "188598521",
       "Language": "SFX",
       "ShortName": "R2_Common_03_Top.wav",
-      "Path": "SFX\\R2_Common_03_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_Common_03_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "189642575",
       "Language": "SFX",
       "ShortName": "R2_LeadJ1_02_Base.wav",
-      "Path": "SFX\\R2_LeadJ1_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ1_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "191957831",
@@ -810,7 +1208,8 @@
       "Id": "215930261",
       "Language": "SFX",
       "ShortName": "R1_Common_03_Top.wav",
-      "Path": "SFX\\R1_Common_03_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_Common_03_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "229955774",
@@ -846,7 +1245,8 @@
       "Id": "257449727",
       "Language": "SFX",
       "ShortName": "R1_LeadJ1_02_Top.wav",
-      "Path": "SFX\\R1_LeadJ1_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ1_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "258035653",
@@ -877,13 +1277,15 @@
       "Id": "274746922",
       "Language": "SFX",
       "ShortName": "R2_Common_01_Top.wav",
-      "Path": "SFX\\R2_Common_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_Common_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "279887480",
       "Language": "SFX",
       "ShortName": "R2_LeadJ2_02_Top.wav",
-      "Path": "SFX\\R2_LeadJ2_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ2_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "291437915",
@@ -997,7 +1399,8 @@
       "Id": "427183628",
       "Language": "SFX",
       "ShortName": "R1_Common_01_Top.wav",
-      "Path": "SFX\\R1_Common_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_Common_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "443519862",
@@ -1015,7 +1418,8 @@
       "Id": "460059138",
       "Language": "SFX",
       "ShortName": "R2_LeadJ2_01_Base.wav",
-      "Path": "SFX\\R2_LeadJ2_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ2_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "469132256",
@@ -1034,13 +1438,15 @@
       "Id": "474812567",
       "Language": "SFX",
       "ShortName": "Outro_EndingLoop_JP.wav",
-      "Path": "SFX\\Outro_EndingLoop_JP_C42B8C3C.wem"
+      "Path": "SFX\\Outro_EndingLoop_JP_C42B8C3C.wem",
+      "PrefetchSize": "9735"
      },
      {
       "Id": "477850786",
       "Language": "SFX",
       "ShortName": "R2_LeadJ1_01_Top.wav",
-      "Path": "SFX\\R2_LeadJ1_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ1_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "481028203",
@@ -1070,7 +1476,8 @@
       "Id": "497591261",
       "Language": "SFX",
       "ShortName": "R0_Init_05_Top.wav",
-      "Path": "SFX\\R0_Init_05_Top_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_05_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "500807097",
@@ -1124,7 +1531,8 @@
       "Id": "553069373",
       "Language": "SFX",
       "ShortName": "Outro_EndingLoop_US.wav",
-      "Path": "SFX\\Outro_EndingLoop_US_C42B8C3C.wem"
+      "Path": "SFX\\Outro_EndingLoop_US_C42B8C3C.wem",
+      "PrefetchSize": "9061"
      },
      {
       "Id": "553560115",
@@ -1142,7 +1550,8 @@
       "Id": "571138565",
       "Language": "SFX",
       "ShortName": "R0_Init_01_Base.wav",
-      "Path": "SFX\\R0_Init_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "549"
      },
      {
       "Id": "571611849",
@@ -1160,13 +1569,15 @@
       "Id": "579694641",
       "Language": "SFX",
       "ShortName": "R1_LeadJ1_02_Base.wav",
-      "Path": "SFX\\R1_LeadJ1_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ1_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "586668224",
       "Language": "SFX",
       "ShortName": "R1_LeadJ2_02_Base.wav",
-      "Path": "SFX\\R1_LeadJ2_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ2_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "3890"
      },
      {
       "Id": "595244415",
@@ -1202,7 +1613,8 @@
       "Id": "631840085",
       "Language": "SFX",
       "ShortName": "R0_Init_03_Base.wav",
-      "Path": "SFX\\R0_Init_03_Base_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_03_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "643277260",
@@ -1263,7 +1675,8 @@
       "Id": "683846320",
       "Language": "SFX",
       "ShortName": "R0_Init_02_Base.wav",
-      "Path": "SFX\\R0_Init_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "694044916",
@@ -1311,7 +1724,8 @@
       "Id": "736632805",
       "Language": "SFX",
       "ShortName": "R2_Common_03_Base.wav",
-      "Path": "SFX\\R2_Common_03_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_Common_03_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "741822729",
@@ -1329,7 +1743,8 @@
       "Id": "745082184",
       "Language": "SFX",
       "ShortName": "R1_Common_01_Base.wav",
-      "Path": "SFX\\R1_Common_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_Common_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "750947809",
@@ -1389,31 +1804,36 @@
       "Id": "802587850",
       "Language": "SFX",
       "ShortName": "R1_Common_02_Top.wav",
-      "Path": "SFX\\R1_Common_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_Common_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "818927288",
       "Language": "SFX",
       "ShortName": "R0_Init_01_Top.wav",
-      "Path": "SFX\\R0_Init_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "569"
      },
      {
       "Id": "826199412",
       "Language": "SFX",
       "ShortName": "R0_Init_02_Top.wav",
-      "Path": "SFX\\R0_Init_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "829367693",
       "Language": "SFX",
       "ShortName": "R2_LeadJ2_02_Base.wav",
-      "Path": "SFX\\R2_LeadJ2_02_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ2_02_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "831454989",
       "Language": "SFX",
       "ShortName": "RoundEnd_WinUS_Part1.wav",
-      "Path": "SFX\\RoundEnd_WinUS_Part1_C42B8C3C.wem"
+      "Path": "SFX\\RoundEnd_WinUS_Part1_C42B8C3C.wem",
+      "PrefetchSize": "8041"
      },
      {
       "Id": "846255399",
@@ -1425,7 +1845,8 @@
       "Id": "853790913",
       "Language": "SFX",
       "ShortName": "R2_LeadJ1_01_Base.wav",
-      "Path": "SFX\\R2_LeadJ1_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ1_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "855508481",
@@ -1461,7 +1882,8 @@
       "Id": "878937454",
       "Language": "SFX",
       "ShortName": "R2_Common_01_Base.wav",
-      "Path": "SFX\\R2_Common_01_Base_C42B8C3C.wem"
+      "Path": "SFX\\R2_Common_01_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "879783774",
@@ -1497,7 +1919,8 @@
       "Id": "895209398",
       "Language": "SFX",
       "ShortName": "R0_Init_05_Base.wav",
-      "Path": "SFX\\R0_Init_05_Base_C42B8C3C.wem"
+      "Path": "SFX\\R0_Init_05_Base_C42B8C3C.wem",
+      "PrefetchSize": "565"
      },
      {
       "Id": "899766938",
@@ -1521,7 +1944,8 @@
       "Id": "924882162",
       "Language": "SFX",
       "ShortName": "Outro_EndingHit.wav",
-      "Path": "SFX\\Outro_EndingHit_C42B8C3C.wem"
+      "Path": "SFX\\Outro_EndingHit_C42B8C3C.wem",
+      "PrefetchSize": "505"
      },
      {
       "Id": "928765954",
@@ -1569,7 +1993,8 @@
       "Id": "958688997",
       "Language": "SFX",
       "ShortName": "R2_LeadJ1_02_Top.wav",
-      "Path": "SFX\\R2_LeadJ1_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_LeadJ1_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "962307112",
@@ -1593,7 +2018,8 @@
       "Id": "999735148",
       "Language": "SFX",
       "ShortName": "R2_Common_02_Top.wav",
-      "Path": "SFX\\R2_Common_02_Top_C42B8C3C.wem"
+      "Path": "SFX\\R2_Common_02_Top_C42B8C3C.wem",
+      "PrefetchSize": "549"
      },
      {
       "Id": "1000421525",
@@ -1624,7 +2050,8 @@
       "Id": "1015265713",
       "Language": "SFX",
       "ShortName": "R1_Common_03_Base.wav",
-      "Path": "SFX\\R1_Common_03_Base_C42B8C3C.wem"
+      "Path": "SFX\\R1_Common_03_Base_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "1021443698",
@@ -1660,7 +2087,8 @@
       "Id": "1055527686",
       "Language": "SFX",
       "ShortName": "R1_LeadJ1_01_Top.wav",
-      "Path": "SFX\\R1_LeadJ1_01_Top_C42B8C3C.wem"
+      "Path": "SFX\\R1_LeadJ1_01_Top_C42B8C3C.wem",
+      "PrefetchSize": "557"
      },
      {
       "Id": "1062715868",
