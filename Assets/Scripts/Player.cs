@@ -223,7 +223,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
             switch (move.move) {
                 case MoveType.HIT:
                     animator.SetTrigger("doFente");
-                   AkSoundEngine.PostEvent("SFX_Common_Fente", gameObject);
+                    AkSoundEngine.PostEvent("SFX_Common_Fente", gameObject);
                     break;
                 case MoveType.REFLECT:
                     animator.SetTrigger("doReflect");
