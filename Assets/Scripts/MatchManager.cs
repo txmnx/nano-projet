@@ -12,9 +12,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public Slider[] winSliders;
 
-    [HideInInspector]
     public Sequence currentSequence;
-
     public Player winner;
     public int winnerID;
     public bool isWon = false;
@@ -22,14 +20,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     private bool gameIsPaused = false;
     private bool roundIsEnd = false;
     private bool matchIsEnd = false;
+    private bool hasIncremented = false;
     
     public Color victoryJapColor;
     public Color victoryUsColor;
     public Color baseColor;
+    public CueManager cueManager;
 
-    [Header("Pause")]
-    public PauseMenu pauseMenu;
-    [Space]
     //SONDIER
     public MusicManager musicManager;
     public GameObject camera;
@@ -64,25 +61,29 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     {
         if (isWon)
         {
-            winner.wins += 1;
-            winSliders[winnerID].value = winner.wins;
-
-            //SONDIER
-            if(winnerID == 0)
+            if(!hasIncremented)
             {
-                musicManager.RoundWinUS();
-            }
-            if (winnerID == 1)
-            {
-                musicManager.RoundWinJP();
+                winner.wins += 1;
+                winSliders[winnerID].value = winner.wins;
+                hasIncremented = true;
             }
             //SONDIER
 
             onRoundEnd();
 
-            if (winner != null && winner.wins == roundToWin)
-            {
-                onMatchEnd(winner);
+            if (winner != null && winner.wins == roundToWin) {
+
+
+                //SONDIER
+                if (winnerID == 0) {
+                    onMatchEnd(players[0], players[1]);
+                    musicManager.WinUS();
+                }
+                if (winnerID == 1) {
+                    onMatchEnd(players[1], players[0]);
+                    musicManager.WinJP();
+                }
+                //SONDIER;
             }
             else
             {
@@ -123,26 +124,24 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void resetRound()
     {
-        for(int i = 0; i<players.Length; i++)
-        {
+        camera.GetComponent<Animator>().SetTrigger("Start");
+        for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
             players[i].BufferReset();
         }
         winner = null;
         isWon = false;
+        hasIncremented = false;
     }
 
-    public void onMatchEnd(Player winner)
+
+    public void onMatchEnd(Player winner, Player loser)
     {
         matchIsEnd = true;
-        
-        if (winner == players[0])
-            Camera.main.backgroundColor = victoryUsColor;
-        else if (winner == players[1])
-            Camera.main.backgroundColor = victoryJapColor;
-        matchIsEnd = true;
-        //anim/son de fin de partie
+
+        winner.animator.Play("Victory", 0);
+        loser.animator.Play("Death", 0);
     }
 
     public void resetGame()

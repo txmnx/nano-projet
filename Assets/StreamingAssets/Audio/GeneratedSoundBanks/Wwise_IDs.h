@@ -23,10 +23,12 @@ namespace AK
         static const AkUniqueID FOLEY_ROBOT_FENTE = 1796177216U;
         static const AkUniqueID FOLEY_ROBOT_GUARD = 3951945397U;
         static const AkUniqueID FOLEY_ROBOT_IDDLE = 1531385158U;
+        static const AkUniqueID FOLEY_ROBOT_IDDLE_DOOR = 2444736181U;
         static const AkUniqueID FOLEY_ROBOT_LASER_DOOR_CLOSE = 3924484359U;
         static const AkUniqueID FOLEY_ROBOT_LASER_DOOR_OPEN = 2167064369U;
         static const AkUniqueID FOLEY_ROBOT_LOSE_ARM = 248344350U;
         static const AkUniqueID FOLEY_ROBOT_METAL_CREAKING = 1722131082U;
+        static const AkUniqueID FOLEY_ROBOT_REFLECT_OPENDOOR = 2924546668U;
         static const AkUniqueID FOLEY_ROBOT_SHIELD = 2768415929U;
         static const AkUniqueID FOLEY_ROBOT_SPECIALATTACK = 2142273903U;
         static const AkUniqueID FOLEY_ROBOT_WHOOSH = 929055660U;

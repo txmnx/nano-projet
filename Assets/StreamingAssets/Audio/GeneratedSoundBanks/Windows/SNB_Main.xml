@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="845961116" Language="SFX">
@@ -16,17 +16,19 @@
 				<Event Id="1418672556" Name="Amb_Main_Start" ObjectPath="\Events\Ambience_Event\Amb_Main_Start" DurationType="Infinite"/>
 				<Event Id="3958906054" Name="Amb_Menu_Start" ObjectPath="\Events\Ambience_Event\Amb_Menu_Start" DurationType="Infinite"/>
 				<Event Id="2279207821" Name="CueManager_NewCue" ObjectPath="\Events\Music_Event\CueManager_NewCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.694291" DurationMax="3.404394"/>
+				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.639290" DurationMax="3.404394"/>
 				<Event Id="1218823660" Name="Foley_Robot_Death" ObjectPath="\Events\Foley_Event\Foley_Robot_Death" DurationType="OneShot" DurationMin="5.839773" DurationMax="8.006871"/>
 				<Event Id="2452461343" Name="Foley_Robot_Death_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Death_Metal_Creaking" DurationType="OneShot" DurationMin="1.866238" DurationMax="2.202939"/>
 				<Event Id="3709968817" Name="Foley_Robot_Fall" ObjectPath="\Events\Foley_Event\Foley_Robot_Fall" DurationType="OneShot" DurationMin="1.590243" DurationMax="3.021819"/>
 				<Event Id="1796177216" Name="Foley_Robot_Fente" ObjectPath="\Events\Foley_Event\Foley_Robot_Fente" DurationType="OneShot" DurationMin="0.597664" DurationMax="0.597664"/>
 				<Event Id="3951945397" Name="Foley_Robot_Guard" ObjectPath="\Events\Foley_Event\Foley_Robot_Guard" DurationType="OneShot" DurationMin="3.433608" DurationMax="11.862400"/>
 				<Event Id="1531385158" Name="Foley_Robot_Iddle" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.839947"/>
+				<Event Id="2444736181" Name="Foley_Robot_Iddle_Door" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle_Door" DurationType="OneShot" DurationMin="0.000000" DurationMax="3.238672"/>
 				<Event Id="3924484359" Name="Foley_Robot_Laser_Door_Close" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Close" DurationType="OneShot" DurationMin="1.992088" DurationMax="2.920875"/>
 				<Event Id="2167064369" Name="Foley_Robot_Laser_Door_Open" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Open" DurationType="OneShot" DurationMin="1.462123" DurationMax="1.549065"/>
 				<Event Id="248344350" Name="Foley_Robot_Lose_Arm" ObjectPath="\Events\Foley_Event\Foley_Robot_Lose_Arm" DurationType="OneShot" DurationMin="4.316032" DurationMax="4.875601"/>
 				<Event Id="1722131082" Name="Foley_Robot_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Metal_Creaking" DurationType="OneShot" DurationMin="0.593549" DurationMax="0.862634"/>
+				<Event Id="2924546668" Name="Foley_Robot_Reflect_OpenDoor" ObjectPath="\Events\Foley_Event\Foley_Robot_Reflect_OpenDoor" DurationType="OneShot" DurationMin="0.677074" DurationMax="0.929876"/>
 				<Event Id="2768415929" Name="Foley_Robot_Shield" ObjectPath="\Events\Foley_Event\Foley_Robot_Shield" DurationType="OneShot" DurationMin="0.605119" DurationMax="0.719611"/>
 				<Event Id="2142273903" Name="Foley_Robot_SpecialAttack" ObjectPath="\Events\Foley_Event\Foley_Robot_SpecialAttack" DurationType="OneShot" DurationMin="0.671361" DurationMax="0.671361"/>
 				<Event Id="929055660" Name="Foley_Robot_Whoosh" ObjectPath="\Events\Foley_Event\Foley_Robot_Whoosh" DurationType="OneShot" DurationMin="1.834008" DurationMax="2.181015"/>
@@ -41,10 +43,10 @@
 				<Event Id="2927774105" Name="SFX_Common_Electric_Sparks" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Electric_Sparks" DurationType="Infinite"/>
 				<Event Id="657576033" Name="SFX_Common_Fente" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Fente" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
 				<Event Id="2840219912" Name="SFX_Common_Guard" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Guard" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
-				<Event Id="2413456602" Name="SFX_Common_Laser" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Laser" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
+				<Event Id="2413456602" Name="SFX_Common_Laser" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Laser" DurationType="OneShot" DurationMin="1.481166" DurationMax="1.481166"/>
 				<Event Id="2534836963" Name="SFX_Common_Oil" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Oil" DurationType="Infinite"/>
-				<Event Id="2807764600" Name="SFX_Common_Reflect" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Reflect" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
-				<Event Id="1518756630" Name="SFX_Common_Special" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Special" DurationType="OneShot" DurationMin="2.474694" DurationMax="3.546417"/>
+				<Event Id="2807764600" Name="SFX_Common_Reflect" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Reflect" DurationType="OneShot" DurationMin="5.308607" DurationMax="5.308607"/>
+				<Event Id="1518756630" Name="SFX_Common_Special" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Special" DurationType="OneShot" DurationMin="1.359887" DurationMax="1.359887"/>
 				<Event Id="427260706" Name="SFX_InputPhase_In" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_In" DurationType="OneShot" DurationMin="0.581565" DurationMax="0.581565"/>
 				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="1.948951" DurationMax="1.948951"/>
 				<Event Id="591816388" Name="SFX_Robot_Death" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Death" DurationType="OneShot" DurationMin="4.157958" DurationMax="8.052399"/>
@@ -77,209 +79,33 @@
 					<ShortName>Intro_39BPM.wav</ShortName>
 					<Path>SFX\Intro_39BPM_C42B8C3C.wem</Path>
 				</File>
-				<File Id="12344872" Language="SFX">
-					<ShortName>RoundEnd_WinJP_Part1.wav</ShortName>
-					<Path>SFX\RoundEnd_WinJP_Part1_C42B8C3C.wem</Path>
-				</File>
-				<File Id="38141193" Language="SFX">
-					<ShortName>R0_Init_03_Top.wav</ShortName>
-					<Path>SFX\R0_Init_03_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="45029081" Language="SFX">
-					<ShortName>R2_Common_02_Base.wav</ShortName>
-					<Path>SFX\R2_Common_02_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="55459180" Language="SFX">
-					<ShortName>R1_LeadJ2_01_Base.wav</ShortName>
-					<Path>SFX\R1_LeadJ2_01_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="96150274" Language="SFX">
-					<ShortName>R1_LeadJ2_02_Top.wav</ShortName>
-					<Path>SFX\R1_LeadJ2_02_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="101685095" Language="SFX">
-					<ShortName>R2_LeadJ2_01_Top.wav</ShortName>
-					<Path>SFX\R2_LeadJ2_01_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="133806832" Language="SFX">
-					<ShortName>R1_Common_02_Base.wav</ShortName>
-					<Path>SFX\R1_Common_02_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="175973606" Language="SFX">
-					<ShortName>R1_LeadJ2_01_Top.wav</ShortName>
-					<Path>SFX\R1_LeadJ2_01_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="181883819" Language="SFX">
-					<ShortName>R1_LeadJ1_01_Base.wav</ShortName>
-					<Path>SFX\R1_LeadJ1_01_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="188598521" Language="SFX">
-					<ShortName>R2_Common_03_Top.wav</ShortName>
-					<Path>SFX\R2_Common_03_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="189642575" Language="SFX">
-					<ShortName>R2_LeadJ1_02_Base.wav</ShortName>
-					<Path>SFX\R2_LeadJ1_02_Base_C42B8C3C.wem</Path>
-				</File>
 				<File Id="194011796" Language="SFX">
 					<ShortName>Intro_78BPM.wav</ShortName>
 					<Path>SFX\Intro_78BPM_C42B8C3C.wem</Path>
-				</File>
-				<File Id="215930261" Language="SFX">
-					<ShortName>R1_Common_03_Top.wav</ShortName>
-					<Path>SFX\R1_Common_03_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="257449727" Language="SFX">
-					<ShortName>R1_LeadJ1_02_Top.wav</ShortName>
-					<Path>SFX\R1_LeadJ1_02_Top_C42B8C3C.wem</Path>
 				</File>
 				<File Id="258035653" Language="SFX">
 					<ShortName>RoundEnd_WinJP_Part2.wav</ShortName>
 					<Path>SFX\RoundEnd_WinJP_Part2_C42B8C3C.wem</Path>
 				</File>
-				<File Id="274746922" Language="SFX">
-					<ShortName>R2_Common_01_Top.wav</ShortName>
-					<Path>SFX\R2_Common_01_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="279887480" Language="SFX">
-					<ShortName>R2_LeadJ2_02_Top.wav</ShortName>
-					<Path>SFX\R2_LeadJ2_02_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="288999018" Language="SFX">
-					<ShortName>Music5.wav</ShortName>
-					<Path>SFX\Music5_C42B8C3C.wem</Path>
-				</File>
-				<File Id="427183628" Language="SFX">
-					<ShortName>R1_Common_01_Top.wav</ShortName>
-					<Path>SFX\R1_Common_01_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="460059138" Language="SFX">
-					<ShortName>R2_LeadJ2_01_Base.wav</ShortName>
-					<Path>SFX\R2_LeadJ2_01_Base_C42B8C3C.wem</Path>
-				</File>
 				<File Id="469132256" Language="SFX">
 					<ShortName>R0_Init_04.wav</ShortName>
 					<Path>SFX\R0_Init_04_C42B8C3C.wem</Path>
-				</File>
-				<File Id="474812567" Language="SFX">
-					<ShortName>Outro_EndingLoop_JP.wav</ShortName>
-					<Path>SFX\Outro_EndingLoop_JP_C42B8C3C.wem</Path>
-				</File>
-				<File Id="477850786" Language="SFX">
-					<ShortName>R2_LeadJ1_01_Top.wav</ShortName>
-					<Path>SFX\R2_LeadJ1_01_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="497591261" Language="SFX">
-					<ShortName>R0_Init_05_Top.wav</ShortName>
-					<Path>SFX\R0_Init_05_Top_C42B8C3C.wem</Path>
 				</File>
 				<File Id="519801725" Language="SFX">
 					<ShortName>Amb_Main_Start.wav</ShortName>
 					<Path>SFX\Amb_Main_Start_87303D88.wem</Path>
 				</File>
-				<File Id="553069373" Language="SFX">
-					<ShortName>Outro_EndingLoop_US.wav</ShortName>
-					<Path>SFX\Outro_EndingLoop_US_C42B8C3C.wem</Path>
-				</File>
 				<File Id="559559911" Language="SFX">
 					<ShortName>Amb_Main_Start.wav</ShortName>
 					<Path>SFX\Amb_Main_Start_86CB93F8.wem</Path>
-				</File>
-				<File Id="571138565" Language="SFX">
-					<ShortName>R0_Init_01_Base.wav</ShortName>
-					<Path>SFX\R0_Init_01_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="579694641" Language="SFX">
-					<ShortName>R1_LeadJ1_02_Base.wav</ShortName>
-					<Path>SFX\R1_LeadJ1_02_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="586668224" Language="SFX">
-					<ShortName>R1_LeadJ2_02_Base.wav</ShortName>
-					<Path>SFX\R1_LeadJ2_02_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="616052374" Language="SFX">
-					<ShortName>R0_Init_04_Top.wav</ShortName>
-					<Path>SFX\R0_Init_04_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="631840085" Language="SFX">
-					<ShortName>R0_Init_03_Base.wav</ShortName>
-					<Path>SFX\R0_Init_03_Base_C42B8C3C.wem</Path>
 				</File>
 				<File Id="676512627" Language="SFX">
 					<ShortName>Pause_39BPM.wav</ShortName>
 					<Path>SFX\Pause_39BPM_C42B8C3C.wem</Path>
 				</File>
-				<File Id="683846320" Language="SFX">
-					<ShortName>R0_Init_02_Base.wav</ShortName>
-					<Path>SFX\R0_Init_02_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="736632805" Language="SFX">
-					<ShortName>R2_Common_03_Base.wav</ShortName>
-					<Path>SFX\R2_Common_03_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="745082184" Language="SFX">
-					<ShortName>R1_Common_01_Base.wav</ShortName>
-					<Path>SFX\R1_Common_01_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="802587850" Language="SFX">
-					<ShortName>R1_Common_02_Top.wav</ShortName>
-					<Path>SFX\R1_Common_02_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="818927288" Language="SFX">
-					<ShortName>R0_Init_01_Top.wav</ShortName>
-					<Path>SFX\R0_Init_01_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="826199412" Language="SFX">
-					<ShortName>R0_Init_02_Top.wav</ShortName>
-					<Path>SFX\R0_Init_02_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="829367693" Language="SFX">
-					<ShortName>R2_LeadJ2_02_Base.wav</ShortName>
-					<Path>SFX\R2_LeadJ2_02_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="831454989" Language="SFX">
-					<ShortName>RoundEnd_WinUS_Part1.wav</ShortName>
-					<Path>SFX\RoundEnd_WinUS_Part1_C42B8C3C.wem</Path>
-				</File>
-				<File Id="853790913" Language="SFX">
-					<ShortName>R2_LeadJ1_01_Base.wav</ShortName>
-					<Path>SFX\R2_LeadJ1_01_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="878937454" Language="SFX">
-					<ShortName>R2_Common_01_Base.wav</ShortName>
-					<Path>SFX\R2_Common_01_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="895209398" Language="SFX">
-					<ShortName>R0_Init_05_Base.wav</ShortName>
-					<Path>SFX\R0_Init_05_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="924882162" Language="SFX">
-					<ShortName>Outro_EndingHit.wav</ShortName>
-					<Path>SFX\Outro_EndingHit_C42B8C3C.wem</Path>
-				</File>
-				<File Id="958688997" Language="SFX">
-					<ShortName>R2_LeadJ1_02_Top.wav</ShortName>
-					<Path>SFX\R2_LeadJ1_02_Top_C42B8C3C.wem</Path>
-				</File>
-				<File Id="966950230" Language="SFX">
-					<ShortName>R0_Init_04_Base.wav</ShortName>
-					<Path>SFX\R0_Init_04_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="999735148" Language="SFX">
-					<ShortName>R2_Common_02_Top.wav</ShortName>
-					<Path>SFX\R2_Common_02_Top_C42B8C3C.wem</Path>
-				</File>
 				<File Id="1005534466" Language="SFX">
 					<ShortName>RoundEnd_WinUS_Part2.wav</ShortName>
 					<Path>SFX\RoundEnd_WinUS_Part2_C42B8C3C.wem</Path>
-				</File>
-				<File Id="1015265713" Language="SFX">
-					<ShortName>R1_Common_03_Base.wav</ShortName>
-					<Path>SFX\R1_Common_03_Base_C42B8C3C.wem</Path>
-				</File>
-				<File Id="1055527686" Language="SFX">
-					<ShortName>R1_LeadJ1_01_Top.wav</ShortName>
-					<Path>SFX\R1_LeadJ1_01_Top_C42B8C3C.wem</Path>
 				</File>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
@@ -299,7 +125,6 @@
 				<File Id="12344872" Language="SFX">
 					<ShortName>RoundEnd_WinJP_Part1.wav</ShortName>
 					<Path>SFX\RoundEnd_WinJP_Part1_C42B8C3C.wem</Path>
-					<PrefetchSize>7537</PrefetchSize>
 				</File>
 				<File Id="15763343" Language="SFX">
 					<ShortName>SFX_Robot_Particles_02.wav</ShortName>
@@ -308,7 +133,6 @@
 				<File Id="38141193" Language="SFX">
 					<ShortName>R0_Init_03_Top.wav</ShortName>
 					<Path>SFX\R0_Init_03_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="40582120" Language="SFX">
 					<ShortName>Foley_Robot_Damage_Fall_04.wav</ShortName>
@@ -317,7 +141,6 @@
 				<File Id="45029081" Language="SFX">
 					<ShortName>R2_Common_02_Base.wav</ShortName>
 					<Path>SFX\R2_Common_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="46501841" Language="SFX">
 					<ShortName>Foley_Robot_Damage_Fall_03.wav</ShortName>
@@ -334,7 +157,6 @@
 				<File Id="55459180" Language="SFX">
 					<ShortName>R1_LeadJ2_01_Base.wav</ShortName>
 					<Path>SFX\R1_LeadJ2_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="74552780" Language="SFX">
 					<ShortName>Foley_Robot_Iddle_07.wav</ShortName>
@@ -363,7 +185,6 @@
 				<File Id="96150274" Language="SFX">
 					<ShortName>R1_LeadJ2_02_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ2_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="97274221" Language="SFX">
 					<ShortName>Victory v2.wav</ShortName>
@@ -372,7 +193,6 @@
 				<File Id="101685095" Language="SFX">
 					<ShortName>R2_LeadJ2_01_Top.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="103114941" Language="SFX">
 					<ShortName>Round 2.wav</ShortName>
@@ -385,7 +205,6 @@
 				<File Id="133806832" Language="SFX">
 					<ShortName>R1_Common_02_Base.wav</ShortName>
 					<Path>SFX\R1_Common_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>5809</PrefetchSize>
 				</File>
 				<File Id="134645060" Language="SFX">
 					<ShortName>SFX_Japan_Fente.wav</ShortName>
@@ -395,6 +214,10 @@
 					<ShortName>Foley_Robot_Damage_Fall_02.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_Fall_02_66C02B12.wem</Path>
 				</File>
+				<File Id="144862328" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_02_66C02B12.wem</Path>
+				</File>
 				<File Id="151844640" Language="SFX">
 					<ShortName>Foley_Robot_Damage_03.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_03_66C02B12.wem</Path>
@@ -402,7 +225,6 @@
 				<File Id="175973606" Language="SFX">
 					<ShortName>R1_LeadJ2_01_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ2_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="176044336" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_Reflect_Metal_03.wav</ShortName>
@@ -411,17 +233,14 @@
 				<File Id="181883819" Language="SFX">
 					<ShortName>R1_LeadJ1_01_Base.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="188598521" Language="SFX">
 					<ShortName>R2_Common_03_Top.wav</ShortName>
 					<Path>SFX\R2_Common_03_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="189642575" Language="SFX">
 					<ShortName>R2_LeadJ1_02_Base.wav</ShortName>
 					<Path>SFX\R2_LeadJ1_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="191957831" Language="SFX">
 					<ShortName>Foley_Robot_Guard_01.wav</ShortName>
@@ -430,6 +249,10 @@
 				<File Id="192493404" Language="SFX">
 					<ShortName>Foley_Robot_Iddle_04.wav</ShortName>
 					<Path>SFX\Foley_Robot_Iddle_04_66C02B12.wem</Path>
+				</File>
+				<File Id="193012308" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_01_66C02B12.wem</Path>
 				</File>
 				<File Id="194011796" Language="SFX">
 					<ShortName>Intro_78BPM.wav</ShortName>
@@ -455,15 +278,22 @@
 				<File Id="215930261" Language="SFX">
 					<ShortName>R1_Common_03_Top.wav</ShortName>
 					<Path>SFX\R1_Common_03_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="229955774" Language="SFX">
 					<ShortName>MUI POP UP Metallic Power Surge.wav</ShortName>
 					<Path>SFX\MUI POP UP Metallic Power Surge_F43F7845.wem</Path>
 				</File>
+				<File Id="230328792" Language="SFX">
+					<ShortName>Menu_Init_115bpm.wav</ShortName>
+					<Path>SFX\Menu_Init_115bpm_C42B8C3C.wem</Path>
+				</File>
 				<File Id="232999411" Language="SFX">
 					<ShortName>Foley_Japan_SpecialAttack.wav</ShortName>
 					<Path>SFX\Foley_Japan_SpecialAttack_66C02B12.wem</Path>
+				</File>
+				<File Id="236196939" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_03.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_03_66C02B12.wem</Path>
 				</File>
 				<File Id="248100854" Language="SFX">
 					<ShortName>Foley_Robot_Impact_Fente_Small_01.wav</ShortName>
@@ -472,7 +302,6 @@
 				<File Id="257449727" Language="SFX">
 					<ShortName>R1_LeadJ1_02_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="258035653" Language="SFX">
 					<ShortName>RoundEnd_WinJP_Part2.wav</ShortName>
@@ -494,17 +323,10 @@
 				<File Id="274746922" Language="SFX">
 					<ShortName>R2_Common_01_Top.wav</ShortName>
 					<Path>SFX\R2_Common_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="279887480" Language="SFX">
 					<ShortName>R2_LeadJ2_02_Top.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
-				</File>
-				<File Id="288999018" Language="SFX">
-					<ShortName>Music5.wav</ShortName>
-					<Path>SFX\Music5_C42B8C3C.wem</Path>
-					<PrefetchSize>7727</PrefetchSize>
 				</File>
 				<File Id="291437915" Language="SFX">
 					<ShortName>Round 3.wav</ShortName>
@@ -526,10 +348,6 @@
 					<ShortName>Foley_Robot_Impact_Fente_Hight_01.wav</ShortName>
 					<Path>SFX\Foley_Robot_Impact_Fente_Hight_01_66C02B12.wem</Path>
 				</File>
-				<File Id="323623707" Language="SFX">
-					<ShortName>SFX_Common_Special_02.wav</ShortName>
-					<Path>SFX\SFX_Common_Special_02_66C02B12.wem</Path>
-				</File>
 				<File Id="328006507" Language="SFX">
 					<ShortName>Foley_Robot_Damage_01-04.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_01-04_66C02B12.wem</Path>
@@ -545,6 +363,10 @@
 				<File Id="359054190" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Impact_Laser_01_66C02B12.wem</Path>
+				</File>
+				<File Id="365294149" Language="SFX">
+					<ShortName>Foley_Robot_Reflect_OpenDoor_02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Reflect_OpenDoor_02_DC2A9CDF.wem</Path>
 				</File>
 				<File Id="388342333" Language="SFX">
 					<ShortName>Wouaouu.wav</ShortName>
@@ -566,10 +388,6 @@
 					<ShortName>KO.wav</ShortName>
 					<Path>SFX\KO_C42B8C3C.wem</Path>
 				</File>
-				<File Id="409937866" Language="SFX">
-					<ShortName>SFX_Common_Special_03.wav</ShortName>
-					<Path>SFX\SFX_Common_Special_03_66C02B12.wem</Path>
-				</File>
 				<File Id="419948415" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_Reflect_Metal_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Impact_Laser_Reflect_Metal_01_66C02B12.wem</Path>
@@ -585,11 +403,6 @@
 				<File Id="427183628" Language="SFX">
 					<ShortName>R1_Common_01_Top.wav</ShortName>
 					<Path>SFX\R1_Common_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
-				</File>
-				<File Id="441148777" Language="SFX">
-					<ShortName>SFX_Common_Special_04.wav</ShortName>
-					<Path>SFX\SFX_Common_Special_04_66C02B12.wem</Path>
 				</File>
 				<File Id="443519862" Language="SFX">
 					<ShortName>Foley_Robot_Guard_04.wav</ShortName>
@@ -602,7 +415,6 @@
 				<File Id="460059138" Language="SFX">
 					<ShortName>R2_LeadJ2_01_Base.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="469132256" Language="SFX">
 					<ShortName>R0_Init_04.wav</ShortName>
@@ -616,12 +428,10 @@
 				<File Id="474812567" Language="SFX">
 					<ShortName>Outro_EndingLoop_JP.wav</ShortName>
 					<Path>SFX\Outro_EndingLoop_JP_C42B8C3C.wem</Path>
-					<PrefetchSize>9735</PrefetchSize>
 				</File>
 				<File Id="477850786" Language="SFX">
 					<ShortName>R2_LeadJ1_01_Top.wav</ShortName>
 					<Path>SFX\R2_LeadJ1_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="481028203" Language="SFX">
 					<ShortName>SFX_Robot_Explosion_02.wav</ShortName>
@@ -642,7 +452,6 @@
 				<File Id="497591261" Language="SFX">
 					<ShortName>R0_Init_05_Top.wav</ShortName>
 					<Path>SFX\R0_Init_05_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="500807097" Language="SFX">
 					<ShortName>Foley_Robot_Impact_Fente_Hight_02.wav</ShortName>
@@ -679,7 +488,6 @@
 				<File Id="553069373" Language="SFX">
 					<ShortName>Outro_EndingLoop_US.wav</ShortName>
 					<Path>SFX\Outro_EndingLoop_US_C42B8C3C.wem</Path>
-					<PrefetchSize>9061</PrefetchSize>
 				</File>
 				<File Id="553560115" Language="SFX">
 					<ShortName>Foley_Robot_Loose_Arm_02.wav</ShortName>
@@ -692,11 +500,10 @@
 				<File Id="571138565" Language="SFX">
 					<ShortName>R0_Init_01_Base.wav</ShortName>
 					<Path>SFX\R0_Init_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>549</PrefetchSize>
 				</File>
 				<File Id="571611849" Language="SFX">
 					<ShortName>PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav</ShortName>
-					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_66DAD3EC.wem</Path>
+					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_83378224.wem</Path>
 				</File>
 				<File Id="578364842" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_02.wav</ShortName>
@@ -705,12 +512,10 @@
 				<File Id="579694641" Language="SFX">
 					<ShortName>R1_LeadJ1_02_Base.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="586668224" Language="SFX">
 					<ShortName>R1_LeadJ2_02_Base.wav</ShortName>
 					<Path>SFX\R1_LeadJ2_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>3890</PrefetchSize>
 				</File>
 				<File Id="595244415" Language="SFX">
 					<ShortName>Foley_Robot_Damage_01-05.wav</ShortName>
@@ -735,7 +540,6 @@
 				<File Id="631840085" Language="SFX">
 					<ShortName>R0_Init_03_Base.wav</ShortName>
 					<Path>SFX\R0_Init_03_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="643277260" Language="SFX">
 					<ShortName>Foley_Robot_Impact_Reflect_Small_02.wav</ShortName>
@@ -777,7 +581,6 @@
 				<File Id="683846320" Language="SFX">
 					<ShortName>R0_Init_02_Base.wav</ShortName>
 					<Path>SFX\R0_Init_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="694044916" Language="SFX">
 					<ShortName>Foley_Robot_Laser_Shoot_Door_Open_01.wav</ShortName>
@@ -786,6 +589,14 @@
 				<File Id="709282913" Language="SFX">
 					<ShortName>fantastish.wav</ShortName>
 					<Path>SFX\fantastish_C42B8C3C.wem</Path>
+				</File>
+				<File Id="710509302" Language="SFX">
+					<ShortName>SFX_Robot_Laser_Shoot_01.wav</ShortName>
+					<Path>SFX\SFX_Robot_Laser_Shoot_01_B88F64FE.wem</Path>
+				</File>
+				<File Id="711531986" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_05.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_05_66C02B12.wem</Path>
 				</File>
 				<File Id="712767870" Language="SFX">
 					<ShortName>Foley_Robot_Iddle_02.wav</ShortName>
@@ -802,7 +613,6 @@
 				<File Id="736632805" Language="SFX">
 					<ShortName>R2_Common_03_Base.wav</ShortName>
 					<Path>SFX\R2_Common_03_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="741822729" Language="SFX">
 					<ShortName>Foley_Robot_Destroyed_01.wav</ShortName>
@@ -815,7 +625,6 @@
 				<File Id="745082184" Language="SFX">
 					<ShortName>R1_Common_01_Base.wav</ShortName>
 					<Path>SFX\R1_Common_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="750947809" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_04.wav</ShortName>
@@ -856,27 +665,22 @@
 				<File Id="802587850" Language="SFX">
 					<ShortName>R1_Common_02_Top.wav</ShortName>
 					<Path>SFX\R1_Common_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="818927288" Language="SFX">
 					<ShortName>R0_Init_01_Top.wav</ShortName>
 					<Path>SFX\R0_Init_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>569</PrefetchSize>
 				</File>
 				<File Id="826199412" Language="SFX">
 					<ShortName>R0_Init_02_Top.wav</ShortName>
 					<Path>SFX\R0_Init_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="829367693" Language="SFX">
 					<ShortName>R2_LeadJ2_02_Base.wav</ShortName>
 					<Path>SFX\R2_LeadJ2_02_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="831454989" Language="SFX">
 					<ShortName>RoundEnd_WinUS_Part1.wav</ShortName>
 					<Path>SFX\RoundEnd_WinUS_Part1_C42B8C3C.wem</Path>
-					<PrefetchSize>8041</PrefetchSize>
 				</File>
 				<File Id="846255399" Language="SFX">
 					<ShortName>Swoosh - Tube 13.wav</ShortName>
@@ -885,7 +689,6 @@
 				<File Id="853790913" Language="SFX">
 					<ShortName>R2_LeadJ1_01_Base.wav</ShortName>
 					<Path>SFX\R2_LeadJ1_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="855508481" Language="SFX">
 					<ShortName>Foley_Robot_Guard_02.wav</ShortName>
@@ -910,7 +713,18 @@
 				<File Id="878937454" Language="SFX">
 					<ShortName>R2_Common_01_Base.wav</ShortName>
 					<Path>SFX\R2_Common_01_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
+				</File>
+				<File Id="879783774" Language="SFX">
+					<ShortName>Menu_Loop_115bpm.wav</ShortName>
+					<Path>SFX\Menu_Loop_115bpm_C42B8C3C.wem</Path>
+				</File>
+				<File Id="880425437" Language="SFX">
+					<ShortName>Foley_Robot_Reflect_OpenDoor_01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Reflect_OpenDoor_01_DC027DA5.wem</Path>
+				</File>
+				<File Id="886790692" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_04.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_04_66C02B12.wem</Path>
 				</File>
 				<File Id="890565438" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_01.wav</ShortName>
@@ -923,7 +737,6 @@
 				<File Id="895209398" Language="SFX">
 					<ShortName>R0_Init_05_Base.wav</ShortName>
 					<Path>SFX\R0_Init_05_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>565</PrefetchSize>
 				</File>
 				<File Id="899766938" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_Reflect_Metal_02.wav</ShortName>
@@ -940,7 +753,6 @@
 				<File Id="924882162" Language="SFX">
 					<ShortName>Outro_EndingHit.wav</ShortName>
 					<Path>SFX\Outro_EndingHit_C42B8C3C.wem</Path>
-					<PrefetchSize>505</PrefetchSize>
 				</File>
 				<File Id="928765954" Language="SFX">
 					<ShortName>Swoosh - Tube 11.wav</ShortName>
@@ -966,10 +778,13 @@
 					<ShortName>SFX_Robot_Laser_Shoot_Reload_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Laser_Shoot_Reload_01_66C02B12.wem</Path>
 				</File>
+				<File Id="957280360" Language="SFX">
+					<ShortName>Foley_Robot_Reflect_OpenDoor_03.wav</ShortName>
+					<Path>SFX\Foley_Robot_Reflect_OpenDoor_03_5EB88468.wem</Path>
+				</File>
 				<File Id="958688997" Language="SFX">
 					<ShortName>R2_LeadJ1_02_Top.wav</ShortName>
 					<Path>SFX\R2_LeadJ1_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="962307112" Language="SFX">
 					<ShortName>Foley_Robot_Damage_02.wav</ShortName>
@@ -979,10 +794,6 @@
 					<ShortName>R0_Init_04_Base.wav</ShortName>
 					<Path>SFX\R0_Init_04_Base_C42B8C3C.wem</Path>
 				</File>
-				<File Id="985315401" Language="SFX">
-					<ShortName>SFX_Common_Special_01.wav</ShortName>
-					<Path>SFX\SFX_Common_Special_01_66C02B12.wem</Path>
-				</File>
 				<File Id="997728567" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_03.wav</ShortName>
 					<Path>SFX\SFX_Robot_Impact_Laser_03_66C02B12.wem</Path>
@@ -990,7 +801,6 @@
 				<File Id="999735148" Language="SFX">
 					<ShortName>R2_Common_02_Top.wav</ShortName>
 					<Path>SFX\R2_Common_02_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>549</PrefetchSize>
 				</File>
 				<File Id="1000421525" Language="SFX">
 					<ShortName>Foley_Robot_Iddle_05.wav</ShortName>
@@ -1012,7 +822,6 @@
 				<File Id="1015265713" Language="SFX">
 					<ShortName>R1_Common_03_Base.wav</ShortName>
 					<Path>SFX\R1_Common_03_Base_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="1021443698" Language="SFX">
 					<ShortName>SFX_Robot_Particles_01.wav</ShortName>
@@ -1020,7 +829,7 @@
 				</File>
 				<File Id="1023978928" Language="SFX">
 					<ShortName>UI_Menu_Start_Game.wav</ShortName>
-					<Path>SFX\UI_Menu_Start_Game_F8D61BAB.wem</Path>
+					<Path>SFX\UI_Menu_Start_Game_204E5F65.wem</Path>
 				</File>
 				<File Id="1031812766" Language="SFX">
 					<ShortName>SFX_Common_Oil.wav</ShortName>
@@ -1037,7 +846,6 @@
 				<File Id="1055527686" Language="SFX">
 					<ShortName>R1_LeadJ1_01_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ1_01_Top_C42B8C3C.wem</Path>
-					<PrefetchSize>557</PrefetchSize>
 				</File>
 				<File Id="1062715868" Language="SFX">
 					<ShortName>Kaboum.wav</ShortName>
@@ -1049,7 +857,7 @@
 				</File>
 				<File Id="1065728481" Language="SFX">
 					<ShortName>UI_Menu_Hovered_Main.wav</ShortName>
-					<Path>SFX\UI_Menu_Hovered_Main_F8B03F00.wem</Path>
+					<Path>SFX\UI_Menu_Hovered_Main_9264DAF3.wem</Path>
 				</File>
 				<File Id="1066614157" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_Charged_02.wav</ShortName>

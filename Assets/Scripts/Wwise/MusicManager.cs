@@ -20,6 +20,7 @@ public class MusicManager : MonoBehaviour
 
     public void StartIntro()
     {
+
         CueManager.isCounting = true;
 
         roundNbr = player1.wins + player2.wins;
@@ -34,7 +35,7 @@ public class MusicManager : MonoBehaviour
                 AkSoundEngine.SetSwitch("Round", "Round2", Start_Music);
                 break;
             case (2):
-                AkSoundEngine.SetSwitch("Round", "Round3", Start_Music);
+                AkSoundEngine.SetSwitch("Round", "FinalRound", Start_Music);
                 break;
             case (3):
                 AkSoundEngine.SetSwitch("Round", "Round4", Start_Music);

@@ -7,6 +7,7 @@ public class CueManager : MonoBehaviour
 
     public int cueCounter = 0;
     public static bool isCounting = false;
+    public bool isBeatDetected = false;
 
     public MatchManager matchManager;
 
@@ -19,7 +20,6 @@ public class CueManager : MonoBehaviour
             switch (cueCounter)
             {
                 case 1:         //Début de la musique d'intro
-                    //Functions to call
                     
                     break;
 
@@ -35,13 +35,14 @@ public class CueManager : MonoBehaviour
 
                 case 4:         //Début d'outro
                     //Functions to call
+                    InputTranslator.sequence = Sequence.IDLE;
+                    isBeatDetected = false;
                     matchManager.onRoundEnd();
                     break;
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
                     matchManager.resetRound();
-                    matchManager.customResetRound();
                     cueCounter = 0;
                     break;
             }

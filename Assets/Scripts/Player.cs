@@ -102,6 +102,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     void Update()
     {
+        //Debug.Log(wins);
+
         if (InputTranslator.sequence == Sequence.INPUT)      
         {
             if (bufferLength < InputTranslator.step)
@@ -170,7 +172,6 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                             inputsImage[bufferLength - 1].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
                             buffer[bufferLength - 1].isCharged = true;
                             AkSoundEngine.PostEvent("SFX_Common_Charged", gameObject);
-                            AkSoundEngine.SetSwitch("Charged","Yes", PlayerBody);
                         }
                     }
                 }
@@ -219,6 +220,19 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     public void PlayAnim(Move move, bool cancel = false, bool takeDamage = false, bool player2DoLaser = false)
     {
+        if (move.isCharged)
+        {
+            {
+                AkSoundEngine.SetSwitch("Charged", "Yes",PlayerBody);
+            }
+        }
+
+        if(!move.isCharged)
+        { 
+                AkSoundEngine.SetSwitch("Charged", "No", PlayerBody);
+        }
+            
+
         if (cancel) {
             switch (move.move) {
                 case MoveType.HIT:
