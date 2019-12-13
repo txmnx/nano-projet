@@ -37,7 +37,6 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	482648852	VO_Character			\Default Work Unit\Master Audio Bus\VO\VO_Character	
-	1031316333	Reverb_Menu			\Default Work Unit\Master Audio Bus\UI\Reverb_Menu	
 	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
@@ -51,13 +50,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1031316333	Reverb_Menu			\Default Work Unit\Master Audio Bus\UI\Reverb_Menu	
 	1952182940	Reverb_Decheterie			\Default Work Unit\Master Audio Bus\Reverb_Decheterie	
 	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
 
 Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	175750078	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
 	289702920	Wwise_Meter_(Custom)	Wwise Meter			
 	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
+	1520064353	Hall_Medium_Bright	Wwise RoomVerb			
 	1588715066	Echoes_Linear	Wwise Delay			
 
 Audio Devices	ID	Name	Type				Notes

@@ -231,7 +231,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     break;
                 case MoveType.LASER:
                     animator.SetTrigger("doLaser");
-                    AkSoundEngine.PostEvent("SFX_Common_Laser",gameObject);
+                   AkSoundEngine.PostEvent("SFX_Common_Laser",gameObject);
                     break;
                 case MoveType.SPECIAL:
                     animator.SetTrigger("doSpecial");
