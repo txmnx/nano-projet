@@ -13,6 +13,8 @@ using UnityEngine;
 public class BeatManager : MonoBehaviour
 {
     private static List<OnBeatElement> onBeatElements;
+    public CueManager cueManager;
+
 
     void Awake()
     {
@@ -25,6 +27,7 @@ public class BeatManager : MonoBehaviour
     }
     void PlayBeat()
     {
+        if(cueManager.isBeatDetected)
         foreach (OnBeatElement element in onBeatElements) {
             element.OnBeat();
         }

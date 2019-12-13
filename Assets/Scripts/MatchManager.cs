@@ -24,6 +24,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Color victoryJapColor;
     public Color victoryUsColor;
     public Color baseColor;
+    public CueManager cueManager;
 
     //SONDIER
     public MusicManager musicManager;
@@ -88,10 +89,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             {
                 onMatchEnd(winner);
             }
-            else
-            {
-                resetRound();
-            }
 
         }
         else if (players[0].currentLife <= 0)
@@ -115,19 +112,10 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             }
     }
 
-    public void customResetRound()
-    {
-        camera.GetComponent<Animator>().SetTrigger("Start");
-    }
-
-    public void onRoundEnd()
-    {
-        //anim/sons de fin de round
-    }
-
     public void resetRound()
     {
-        for(int i = 0; i<players.Length; i++)
+        camera.GetComponent<Animator>().SetTrigger("Start");
+        for (int i = 0; i < players.Length; i++)
         {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
@@ -136,6 +124,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         winner = null;
         isWon = false;
     }
+
+    public void onRoundEnd()
+    {
+        //anim/sons de fin de round
+    }
+
+  
 
     public void onMatchEnd(Player winner)
     {
@@ -148,7 +143,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         pause();
         gameIsPaused = false;
         matchIsEnd = true;
-        //anim/son de fin de partie
+       
     }
 
     public void resume()
