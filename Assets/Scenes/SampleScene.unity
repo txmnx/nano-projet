@@ -1256,6 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueCounter: 0
+  isBeatDetected: 0
   matchManager: {fileID: 1226417292}
 --- !u!4 &894088826
 Transform:
@@ -1631,6 +1632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicManager: {fileID: 894088827}
+  cueManager: {fileID: 894088825}
 --- !u!1 &997180164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,6 +1913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53341baa09ecd464f92fa410bbcc4d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cueManager: {fileID: 894088825}
 --- !u!114 &1226417291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,7 +1965,7 @@ MonoBehaviour:
   victoryJapColor: {r: 0.8301887, g: 0, b: 0, a: 0.49019608}
   victoryUsColor: {r: 0, g: 0.19432807, b: 1, a: 0.49019608}
   baseColor: {r: 0.7754474, g: 0.9056604, b: 0.38020647, a: 0.46666667}
-  pauseMenu: {fileID: 2140668330}
+  cueManager: {fileID: 894088825}
   musicManager: {fileID: 894088827}
   camera: {fileID: 970834249}
 --- !u!1 &1247210510
