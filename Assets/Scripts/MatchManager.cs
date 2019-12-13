@@ -27,7 +27,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     [Header("Pause")]
     public PauseMenu pauseMenu;
-
+    [Space]
     //SONDIER
     public MusicManager musicManager;
     public GameObject camera;
@@ -60,13 +60,14 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     void Update()
     {
-        if (!gameIsPaused && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Pause"))
         {
-            pause();
-        }
-        else if(gameIsPaused && Input.GetKeyDown(KeyCode.Space))
-        {
-            resume();
+            if (!gameIsPaused) {
+                pause();
+            }
+            else {
+                resume();
+            }
         }
 
         if (isWon)
