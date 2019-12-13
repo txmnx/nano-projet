@@ -2267,6 +2267,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.41666666
+    functionName: Foley_Robot_Iddle_Door
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.6333333
     functionName: Foley_Robot_Iddle
     data: 
@@ -2276,6 +2283,13 @@ AnimationClip:
     messageOptions: 0
   - time: 1.3
     functionName: Foley_Robot_Iddle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5833334
+    functionName: Foley_Robot_Iddle_Door
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

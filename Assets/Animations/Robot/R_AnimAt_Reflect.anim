@@ -1330,7 +1330,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.2
-    functionName: Foley_Robot_Metal_Creaking
+    functionName: Foley_Robot_Reflect_OpenDoor
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
