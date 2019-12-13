@@ -9,7 +9,10 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject controlMenuUI;
     public GameObject pauseMenuUI;
- 
+
+    public Animator player1Animator;
+    public Animator player2Animator;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -27,15 +30,20 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
+        //pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        player1Animator.enabled = true;
+        player2Animator.enabled = true;
     }
     public void Pause()
     {
-        pauseMenuUI.SetActive(true);
+        Debug.Log("qzdzaidazdlknazdn");
+        //pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        player1Animator.enabled = false;
+        player2Animator.enabled = false;
     }
 
     public void LoadMenu()
@@ -43,15 +51,15 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenuScene");
     }
     public void ControlMenu()
-    {
+    {/*
         controlMenuUI.SetActive(true);
-        pauseMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(false);*/
     }
 
     public void QuitControlMenu()
     {
-        controlMenuUI.SetActive(false);
-        pauseMenuUI.SetActive(true);
+        //controlMenuUI.SetActive(false);
+        //pauseMenuUI.SetActive(true);
     }
     public void OptionMenu()
     {

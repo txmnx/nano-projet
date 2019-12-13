@@ -267,7 +267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &378731119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,7 +1576,6 @@ GameObject:
   - component: {fileID: 1226417288}
   - component: {fileID: 1226417289}
   - component: {fileID: 1226417287}
-  - component: {fileID: 1226417290}
   - component: {fileID: 1226417291}
   - component: {fileID: 1226417292}
   m_Layer: 0
@@ -1625,18 +1624,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53341baa09ecd464f92fa410bbcc4d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1226417290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226417286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8babb94c68ab3ea4587bff6b538b4186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1226417291
@@ -1689,6 +1676,8 @@ MonoBehaviour:
   victoryJapColor: {r: 0.8301887, g: 0, b: 0, a: 0.49019608}
   victoryUsColor: {r: 0, g: 0.19432807, b: 1, a: 0.49019608}
   baseColor: {r: 0.7754474, g: 0.9056604, b: 0.38020647, a: 0.46666667}
+  player1Animator: {fileID: 828260055}
+  player2Animator: {fileID: 2100239045}
   musicManager: {fileID: 894088827}
   camera: {fileID: 970834249}
 --- !u!1 &1247210510

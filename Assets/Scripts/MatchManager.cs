@@ -25,6 +25,9 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Color victoryUsColor;
     public Color baseColor;
 
+    public Animator player1Animator;
+    public Animator player2Animator;
+
     //SONDIER
     public MusicManager musicManager;
     public GameObject camera;
@@ -153,6 +156,9 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void resume()
     {
+        //PausePanel remove
+        player1Animator.enabled = true;
+        player2Animator.enabled = true;
         AkSoundEngine.PostEvent("UI_Menu_UnPauseGame", gameObject);
         gameIsPaused = false;
         InputTranslator.sequence = currentSequence;
@@ -160,6 +166,9 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void pause()
     {
+        //PausePanel display
+        player1Animator.enabled = false;
+        player2Animator.enabled = false;
         AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
         gameIsPaused = true;
         Debug.Log("PAUSE");
