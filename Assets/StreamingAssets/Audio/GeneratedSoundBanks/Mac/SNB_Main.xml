@@ -22,7 +22,7 @@
 				<Event Id="3709968817" Name="Foley_Robot_Fall" ObjectPath="\Events\Foley_Event\Foley_Robot_Fall" DurationType="OneShot" DurationMin="1.590243" DurationMax="3.021819"/>
 				<Event Id="1796177216" Name="Foley_Robot_Fente" ObjectPath="\Events\Foley_Event\Foley_Robot_Fente" DurationType="OneShot" DurationMin="0.597664" DurationMax="0.597664"/>
 				<Event Id="3951945397" Name="Foley_Robot_Guard" ObjectPath="\Events\Foley_Event\Foley_Robot_Guard" DurationType="OneShot" DurationMin="3.433608" DurationMax="11.862400"/>
-				<Event Id="1531385158" Name="Foley_Robot_Iddle" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle" DurationType="OneShot" DurationMin="0.333333" DurationMax="0.666667"/>
+				<Event Id="1531385158" Name="Foley_Robot_Iddle" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.839947"/>
 				<Event Id="3924484359" Name="Foley_Robot_Laser_Door_Close" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Close" DurationType="OneShot" DurationMin="1.992088" DurationMax="2.920875"/>
 				<Event Id="2167064369" Name="Foley_Robot_Laser_Door_Open" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Open" DurationType="OneShot" DurationMin="1.462123" DurationMax="1.549065"/>
 				<Event Id="248344350" Name="Foley_Robot_Lose_Arm" ObjectPath="\Events\Foley_Event\Foley_Robot_Lose_Arm" DurationType="OneShot" DurationMin="4.316032" DurationMax="4.875601"/>
@@ -696,7 +696,7 @@
 				</File>
 				<File Id="571611849" Language="SFX">
 					<ShortName>PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav</ShortName>
-					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_66DAD3EC.wem</Path>
+					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_83378224.wem</Path>
 				</File>
 				<File Id="578364842" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_02.wav</ShortName>
@@ -1020,7 +1020,7 @@
 				</File>
 				<File Id="1023978928" Language="SFX">
 					<ShortName>UI_Menu_Start_Game.wav</ShortName>
-					<Path>SFX\UI_Menu_Start_Game_F8D61BAB.wem</Path>
+					<Path>SFX\UI_Menu_Start_Game_204E5F65.wem</Path>
 				</File>
 				<File Id="1031812766" Language="SFX">
 					<ShortName>SFX_Common_Oil.wav</ShortName>
@@ -1049,7 +1049,7 @@
 				</File>
 				<File Id="1065728481" Language="SFX">
 					<ShortName>UI_Menu_Hovered_Main.wav</ShortName>
-					<Path>SFX\UI_Menu_Hovered_Main_F8B03F00.wem</Path>
+					<Path>SFX\UI_Menu_Hovered_Main_9264DAF3.wem</Path>
 				</File>
 				<File Id="1066614157" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_Charged_02.wav</ShortName>

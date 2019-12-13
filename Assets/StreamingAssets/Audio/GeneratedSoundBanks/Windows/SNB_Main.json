@@ -93,8 +93,8 @@
       "Name": "Foley_Robot_Iddle",
       "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Iddle",
       "DurationType": "OneShot",
-      "DurationMin": "0.333333",
-      "DurationMax": "0.666667"
+      "DurationMin": "0.000000",
+      "DurationMax": "0.839947"
      },
      {
       "Id": "3924484359",
@@ -1385,7 +1385,7 @@
       "Id": "571611849",
       "Language": "SFX",
       "ShortName": "PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav",
-      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_66DAD3EC.wem"
+      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_83378224.wem"
      },
      {
       "Id": "578364842",
@@ -1861,7 +1861,7 @@
       "Id": "1023978928",
       "Language": "SFX",
       "ShortName": "UI_Menu_Start_Game.wav",
-      "Path": "SFX\\UI_Menu_Start_Game_F8D61BAB.wem"
+      "Path": "SFX\\UI_Menu_Start_Game_204E5F65.wem"
      },
      {
       "Id": "1031812766",
@@ -1904,7 +1904,7 @@
       "Id": "1065728481",
       "Language": "SFX",
       "ShortName": "UI_Menu_Hovered_Main.wav",
-      "Path": "SFX\\UI_Menu_Hovered_Main_F8B03F00.wem"
+      "Path": "SFX\\UI_Menu_Hovered_Main_9264DAF3.wem"
      },
      {
       "Id": "1066614157",
