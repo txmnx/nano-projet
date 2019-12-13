@@ -66,9 +66,21 @@ public class MatchManager : MonoBehaviour, OnBeatElement
                 hasIncremented = true;
             }
 
+
+            //SONDIER
+            if (winnerID == 0) {
+                musicManager.RoundWinUS();
+            }
+            if (winnerID == 1) {
+                musicManager.RoundWinJP();
+            }
+            //SONDIER;
+
             onRoundEnd();
 
             if (winner != null && winner.wins == roundToWin) {
+
+
                 //SONDIER
                 if (winnerID == 0) {
                     onMatchEnd(players[0], players[1]);
@@ -80,17 +92,23 @@ public class MatchManager : MonoBehaviour, OnBeatElement
                 }
                 //SONDIER;
             }
-            else {
-                //SONDIER
-                if (winnerID == 0) {
-                    musicManager.RoundWinUS();
-                }
-                if (winnerID == 1) {
-                    musicManager.RoundWinJP();
-                }
-                //SONDIER;
-            }
+
+
         }
+        else if (players[0].currentLife <= 0) {
+            winner = players[1];
+            winnerID = 1;
+            isWon = true;
+        }
+
+        else if (players[1].currentLife <= 0) {
+            winner = players[0];
+            winnerID = 0;
+            isWon = true;
+        }
+
+        //if (matchIsEnd)
+
     }
 
     public void customResetRound()
