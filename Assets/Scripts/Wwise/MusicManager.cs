@@ -20,6 +20,7 @@ public class MusicManager : MonoBehaviour
 
     public void StartIntro()
     {
+
         CueManager.isCounting = true;
 
         roundNbr = player1.wins + player2.wins;
