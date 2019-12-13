@@ -12,7 +12,9 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public Slider[] winSliders;
 
-    private Sequence currentSequence;
+    [HideInInspector]
+    public Sequence currentSequence;
+
     public Player winner;
     public int winnerID;
     public bool isWon = false;
@@ -60,16 +62,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     void Update()
     {
-        if (Input.GetButtonDown("Pause"))
-        {
-            if (!gameIsPaused) {
-                pause();
-            }
-            else {
-                resume();
-            }
-        }
-
         if (isWon)
         {
             winner.wins += 1;
@@ -149,30 +141,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             Camera.main.backgroundColor = victoryUsColor;
         else if (winner == players[1])
             Camera.main.backgroundColor = victoryJapColor;
-        pause();
-        gameIsPaused = false;
         matchIsEnd = true;
         //anim/son de fin de partie
-    }
-
-    public void resume()
-    {
-        //PausePanel remove
-        pauseMenu.Hide();
-        AkSoundEngine.PostEvent("UI_Menu_UnPauseGame", gameObject);
-        gameIsPaused = false;
-        InputTranslator.sequence = currentSequence;
-    }
-
-    public void pause()
-    {
-        //PausePanel display
-        pauseMenu.Display();
-        AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
-        gameIsPaused = true;
-        Debug.Log("PAUSE");
-        currentSequence = InputTranslator.sequence;
-        InputTranslator.sequence = Sequence.IDLE;
     }
 
     public void resetGame()
@@ -184,6 +154,5 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             winSliders[i].value = players[i].wins;
         }
         resetRound();
-        resume();
     }
 }
