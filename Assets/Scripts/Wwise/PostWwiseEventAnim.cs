@@ -78,9 +78,9 @@ public class PostWwiseEventAnim : MonoBehaviour
         AkSoundEngine.PostEvent("Foley_Robot_Fall", gameObject);
     }
 
-    public void Foley_Robot_Death_Metal_Creakin()
+    public void Foley_Robot_Death_Metal_Creaking()
     {
-        AkSoundEngine.PostEvent("Foley_Robot_Death_Metal_Creakin", gameObject);
+        AkSoundEngine.PostEvent("Foley_Robot_Death_Metal_Creaking", gameObject);
     }
 
     public void Foley_Robot_Iddle_Door()
