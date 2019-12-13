@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
   "StreamedFiles": [
@@ -120,12 +120,6 @@
     "Language": "SFX",
     "ShortName": "R2_LeadJ2_02_Top.wav",
     "Path": "SFX\\R2_LeadJ2_02_Top_C42B8C3C.wem"
-   },
-   {
-    "Id": "288999018",
-    "Language": "SFX",
-    "ShortName": "Music5.wav",
-    "Path": "SFX\\Music5_C42B8C3C.wem"
    },
    {
     "Id": "427183628",
@@ -569,8 +563,8 @@
       "Name": "SFX_Common_Special",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Special",
       "DurationType": "OneShot",
-      "DurationMin": "2.474694",
-      "DurationMax": "3.546417"
+      "DurationMin": "1.359887",
+      "DurationMax": "1.359887"
      },
      {
       "Id": "427260706",
@@ -833,9 +827,6 @@
      },
      {
       "Id": "279887480"
-     },
-     {
-      "Id": "288999018"
      },
      {
       "Id": "427183628"
@@ -1199,6 +1190,12 @@
       "Path": "SFX\\MUI POP UP Metallic Power Surge_F43F7845.wem"
      },
      {
+      "Id": "230328792",
+      "Language": "SFX",
+      "ShortName": "Menu_Init_115bpm.wav",
+      "Path": "SFX\\Menu_Init_115bpm_C42B8C3C.wem"
+     },
+     {
       "Id": "232999411",
       "Language": "SFX",
       "ShortName": "Foley_Japan_SpecialAttack.wav",
@@ -1257,13 +1254,6 @@
       "PrefetchSize": "557"
      },
      {
-      "Id": "288999018",
-      "Language": "SFX",
-      "ShortName": "Music5.wav",
-      "Path": "SFX\\Music5_C42B8C3C.wem",
-      "PrefetchSize": "7727"
-     },
-     {
       "Id": "291437915",
       "Language": "SFX",
       "ShortName": "Round 3.wav",
@@ -1292,12 +1282,6 @@
       "Language": "SFX",
       "ShortName": "Foley_Robot_Impact_Fente_Hight_01.wav",
       "Path": "SFX\\Foley_Robot_Impact_Fente_Hight_01_66C02B12.wem"
-     },
-     {
-      "Id": "323623707",
-      "Language": "SFX",
-      "ShortName": "SFX_Common_Special_02.wav",
-      "Path": "SFX\\SFX_Common_Special_02_66C02B12.wem"
      },
      {
       "Id": "328006507",
@@ -1354,12 +1338,6 @@
       "Path": "SFX\\KO_C42B8C3C.wem"
      },
      {
-      "Id": "409937866",
-      "Language": "SFX",
-      "ShortName": "SFX_Common_Special_03.wav",
-      "Path": "SFX\\SFX_Common_Special_03_66C02B12.wem"
-     },
-     {
       "Id": "419948415",
       "Language": "SFX",
       "ShortName": "SFX_Robot_Impact_Laser_Reflect_Metal_01.wav",
@@ -1383,12 +1361,6 @@
       "ShortName": "R1_Common_01_Top.wav",
       "Path": "SFX\\R1_Common_01_Top_C42B8C3C.wem",
       "PrefetchSize": "557"
-     },
-     {
-      "Id": "441148777",
-      "Language": "SFX",
-      "ShortName": "SFX_Common_Special_04.wav",
-      "Path": "SFX\\SFX_Common_Special_04_66C02B12.wem"
      },
      {
       "Id": "443519862",
@@ -1545,7 +1517,7 @@
       "Id": "571611849",
       "Language": "SFX",
       "ShortName": "PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav",
-      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_66DAD3EC.wem"
+      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_83378224.wem"
      },
      {
       "Id": "578364842",
@@ -1862,6 +1834,12 @@
       "PrefetchSize": "557"
      },
      {
+      "Id": "879783774",
+      "Language": "SFX",
+      "ShortName": "Menu_Loop_115bpm.wav",
+      "Path": "SFX\\Menu_Loop_115bpm_C42B8C3C.wem"
+     },
+     {
       "Id": "890565438",
       "Language": "SFX",
       "ShortName": "SFX_Robot_Laser_Shoot_01.wav",
@@ -1961,12 +1939,6 @@
       "Path": "SFX\\R0_Init_04_Base_C42B8C3C.wem"
      },
      {
-      "Id": "985315401",
-      "Language": "SFX",
-      "ShortName": "SFX_Common_Special_01.wav",
-      "Path": "SFX\\SFX_Common_Special_01_66C02B12.wem"
-     },
-     {
       "Id": "997728567",
       "Language": "SFX",
       "ShortName": "SFX_Robot_Impact_Laser_03.wav",
@@ -2021,7 +1993,7 @@
       "Id": "1023978928",
       "Language": "SFX",
       "ShortName": "UI_Menu_Start_Game.wav",
-      "Path": "SFX\\UI_Menu_Start_Game_F8D61BAB.wem"
+      "Path": "SFX\\UI_Menu_Start_Game_204E5F65.wem"
      },
      {
       "Id": "1031812766",
@@ -2064,7 +2036,7 @@
       "Id": "1065728481",
       "Language": "SFX",
       "ShortName": "UI_Menu_Hovered_Main.wav",
-      "Path": "SFX\\UI_Menu_Hovered_Main_F8B03F00.wem"
+      "Path": "SFX\\UI_Menu_Hovered_Main_9264DAF3.wem"
      },
      {
       "Id": "1066614157",
