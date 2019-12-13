@@ -16,17 +16,19 @@
 				<Event Id="1418672556" Name="Amb_Main_Start" ObjectPath="\Events\Ambience_Event\Amb_Main_Start" DurationType="Infinite"/>
 				<Event Id="3958906054" Name="Amb_Menu_Start" ObjectPath="\Events\Ambience_Event\Amb_Menu_Start" DurationType="Infinite"/>
 				<Event Id="2279207821" Name="CueManager_NewCue" ObjectPath="\Events\Music_Event\CueManager_NewCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.694291" DurationMax="3.404394"/>
+				<Event Id="1606116385" Name="Foley_Robot_Damage" ObjectPath="\Events\Foley_Event\Foley_Robot_Damage" DurationType="OneShot" DurationMin="0.639290" DurationMax="3.404394"/>
 				<Event Id="1218823660" Name="Foley_Robot_Death" ObjectPath="\Events\Foley_Event\Foley_Robot_Death" DurationType="OneShot" DurationMin="5.839773" DurationMax="8.006871"/>
 				<Event Id="2452461343" Name="Foley_Robot_Death_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Death_Metal_Creaking" DurationType="OneShot" DurationMin="1.866238" DurationMax="2.202939"/>
 				<Event Id="3709968817" Name="Foley_Robot_Fall" ObjectPath="\Events\Foley_Event\Foley_Robot_Fall" DurationType="OneShot" DurationMin="1.590243" DurationMax="3.021819"/>
 				<Event Id="1796177216" Name="Foley_Robot_Fente" ObjectPath="\Events\Foley_Event\Foley_Robot_Fente" DurationType="OneShot" DurationMin="0.597664" DurationMax="0.597664"/>
 				<Event Id="3951945397" Name="Foley_Robot_Guard" ObjectPath="\Events\Foley_Event\Foley_Robot_Guard" DurationType="OneShot" DurationMin="3.433608" DurationMax="11.862400"/>
 				<Event Id="1531385158" Name="Foley_Robot_Iddle" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.839947"/>
+				<Event Id="2444736181" Name="Foley_Robot_Iddle_Door" ObjectPath="\Events\Foley_Event\Foley_Robot_Iddle_Door" DurationType="OneShot" DurationMin="0.000000" DurationMax="3.238672"/>
 				<Event Id="3924484359" Name="Foley_Robot_Laser_Door_Close" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Close" DurationType="OneShot" DurationMin="1.992088" DurationMax="2.920875"/>
 				<Event Id="2167064369" Name="Foley_Robot_Laser_Door_Open" ObjectPath="\Events\Foley_Event\Foley_Robot_Laser_Door_Open" DurationType="OneShot" DurationMin="1.462123" DurationMax="1.549065"/>
 				<Event Id="248344350" Name="Foley_Robot_Lose_Arm" ObjectPath="\Events\Foley_Event\Foley_Robot_Lose_Arm" DurationType="OneShot" DurationMin="4.316032" DurationMax="4.875601"/>
 				<Event Id="1722131082" Name="Foley_Robot_Metal_Creaking" ObjectPath="\Events\Foley_Event\Foley_Robot_Metal_Creaking" DurationType="OneShot" DurationMin="0.593549" DurationMax="0.862634"/>
+				<Event Id="2924546668" Name="Foley_Robot_Reflect_OpenDoor" ObjectPath="\Events\Foley_Event\Foley_Robot_Reflect_OpenDoor" DurationType="OneShot" DurationMin="0.677074" DurationMax="0.929876"/>
 				<Event Id="2768415929" Name="Foley_Robot_Shield" ObjectPath="\Events\Foley_Event\Foley_Robot_Shield" DurationType="OneShot" DurationMin="0.605119" DurationMax="0.719611"/>
 				<Event Id="2142273903" Name="Foley_Robot_SpecialAttack" ObjectPath="\Events\Foley_Event\Foley_Robot_SpecialAttack" DurationType="OneShot" DurationMin="0.671361" DurationMax="0.671361"/>
 				<Event Id="929055660" Name="Foley_Robot_Whoosh" ObjectPath="\Events\Foley_Event\Foley_Robot_Whoosh" DurationType="OneShot" DurationMin="1.834008" DurationMax="2.181015"/>
@@ -391,6 +393,10 @@
 					<ShortName>Foley_Robot_Damage_Fall_02.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_Fall_02_66C02B12.wem</Path>
 				</File>
+				<File Id="144862328" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_02_66C02B12.wem</Path>
+				</File>
 				<File Id="151844640" Language="SFX">
 					<ShortName>Foley_Robot_Damage_03.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_03_66C02B12.wem</Path>
@@ -426,6 +432,10 @@
 				<File Id="192493404" Language="SFX">
 					<ShortName>Foley_Robot_Iddle_04.wav</ShortName>
 					<Path>SFX\Foley_Robot_Iddle_04_66C02B12.wem</Path>
+				</File>
+				<File Id="193012308" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_01_66C02B12.wem</Path>
 				</File>
 				<File Id="194011796" Language="SFX">
 					<ShortName>Intro_78BPM.wav</ShortName>
@@ -464,6 +474,10 @@
 				<File Id="232999411" Language="SFX">
 					<ShortName>Foley_Japan_SpecialAttack.wav</ShortName>
 					<Path>SFX\Foley_Japan_SpecialAttack_66C02B12.wem</Path>
+				</File>
+				<File Id="236196939" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_03.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_03_66C02B12.wem</Path>
 				</File>
 				<File Id="248100854" Language="SFX">
 					<ShortName>Foley_Robot_Impact_Fente_Small_01.wav</ShortName>
@@ -536,6 +550,10 @@
 				<File Id="359054190" Language="SFX">
 					<ShortName>SFX_Robot_Impact_Laser_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Impact_Laser_01_66C02B12.wem</Path>
+				</File>
+				<File Id="365294149" Language="SFX">
+					<ShortName>Foley_Robot_Reflect_OpenDoor_02.wav</ShortName>
+					<Path>SFX\Foley_Robot_Reflect_OpenDoor_02_DC2A9CDF.wem</Path>
 				</File>
 				<File Id="388342333" Language="SFX">
 					<ShortName>Wouaouu.wav</ShortName>
@@ -770,6 +788,10 @@
 					<ShortName>fantastish.wav</ShortName>
 					<Path>SFX\fantastish_C42B8C3C.wem</Path>
 				</File>
+				<File Id="711531986" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_05.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_05_66C02B12.wem</Path>
+				</File>
 				<File Id="712767870" Language="SFX">
 					<ShortName>Foley_Robot_Iddle_02.wav</ShortName>
 					<Path>SFX\Foley_Robot_Iddle_02_66C02B12.wem</Path>
@@ -899,6 +921,14 @@
 					<ShortName>Menu_Loop_115bpm.wav</ShortName>
 					<Path>SFX\Menu_Loop_115bpm_C42B8C3C.wem</Path>
 				</File>
+				<File Id="880425437" Language="SFX">
+					<ShortName>Foley_Robot_Reflect_OpenDoor_01.wav</ShortName>
+					<Path>SFX\Foley_Robot_Reflect_OpenDoor_01_DC027DA5.wem</Path>
+				</File>
+				<File Id="886790692" Language="SFX">
+					<ShortName>Foley_Robot_Iddle_Low_04.wav</ShortName>
+					<Path>SFX\Foley_Robot_Iddle_Low_04_66C02B12.wem</Path>
+				</File>
 				<File Id="890565438" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Laser_Shoot_01_66C02B12.wem</Path>
@@ -952,6 +982,10 @@
 				<File Id="956270108" Language="SFX">
 					<ShortName>SFX_Robot_Laser_Shoot_Reload_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Laser_Shoot_Reload_01_66C02B12.wem</Path>
+				</File>
+				<File Id="957280360" Language="SFX">
+					<ShortName>Foley_Robot_Reflect_OpenDoor_03.wav</ShortName>
+					<Path>SFX\Foley_Robot_Reflect_OpenDoor_03_5EB88468.wem</Path>
 				</File>
 				<File Id="958688997" Language="SFX">
 					<ShortName>R2_LeadJ1_02_Top.wav</ShortName>

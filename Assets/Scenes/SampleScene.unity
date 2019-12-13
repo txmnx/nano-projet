@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -979,7 +979,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cueCounter: 0
   isBeatDetected: 0
-  inputTranslator: {fileID: 1226417287}
   matchManager: {fileID: 1226417292}
 --- !u!4 &894088826
 Transform:
@@ -1653,7 +1652,7 @@ MonoBehaviour:
   players:
   - {fileID: 734479241}
   - {fileID: 1915892328}
-  roundToWin: 3
+  roundToWin: 2
   winSliders:
   - {fileID: 2136094363}
   - {fileID: 2011355447}

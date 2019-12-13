@@ -45,7 +45,7 @@
       "Name": "Foley_Robot_Damage",
       "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Damage",
       "DurationType": "OneShot",
-      "DurationMin": "0.694291",
+      "DurationMin": "0.639290",
       "DurationMax": "3.404394"
      },
      {
@@ -97,6 +97,14 @@
       "DurationMax": "0.839947"
      },
      {
+      "Id": "2444736181",
+      "Name": "Foley_Robot_Iddle_Door",
+      "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Iddle_Door",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "3.238672"
+     },
+     {
       "Id": "3924484359",
       "Name": "Foley_Robot_Laser_Door_Close",
       "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Laser_Door_Close",
@@ -127,6 +135,14 @@
       "DurationType": "OneShot",
       "DurationMin": "0.593549",
       "DurationMax": "0.862634"
+     },
+     {
+      "Id": "2924546668",
+      "Name": "Foley_Robot_Reflect_OpenDoor",
+      "ObjectPath": "\\Events\\Foley_Event\\Foley_Robot_Reflect_OpenDoor",
+      "DurationType": "OneShot",
+      "DurationMin": "0.677074",
+      "DurationMax": "0.929876"
      },
      {
       "Id": "2768415929",
@@ -937,6 +953,12 @@
       "Path": "SFX\\Foley_Robot_Damage_Fall_02_66C02B12.wem"
      },
      {
+      "Id": "144862328",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Iddle_Low_02.wav",
+      "Path": "SFX\\Foley_Robot_Iddle_Low_02_66C02B12.wem"
+     },
+     {
       "Id": "151844640",
       "Language": "SFX",
       "ShortName": "Foley_Robot_Damage_03.wav",
@@ -987,6 +1009,12 @@
       "Language": "SFX",
       "ShortName": "Foley_Robot_Iddle_04.wav",
       "Path": "SFX\\Foley_Robot_Iddle_04_66C02B12.wem"
+     },
+     {
+      "Id": "193012308",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Iddle_Low_01.wav",
+      "Path": "SFX\\Foley_Robot_Iddle_Low_01_66C02B12.wem"
      },
      {
       "Id": "194011796",
@@ -1043,6 +1071,12 @@
       "Language": "SFX",
       "ShortName": "Foley_Japan_SpecialAttack.wav",
       "Path": "SFX\\Foley_Japan_SpecialAttack_66C02B12.wem"
+     },
+     {
+      "Id": "236196939",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Iddle_Low_03.wav",
+      "Path": "SFX\\Foley_Robot_Iddle_Low_03_66C02B12.wem"
      },
      {
       "Id": "248100854",
@@ -1149,6 +1183,12 @@
       "Language": "SFX",
       "ShortName": "SFX_Robot_Impact_Laser_01.wav",
       "Path": "SFX\\SFX_Robot_Impact_Laser_01_66C02B12.wem"
+     },
+     {
+      "Id": "365294149",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Reflect_OpenDoor_02.wav",
+      "Path": "SFX\\Foley_Robot_Reflect_OpenDoor_02_DC2A9CDF.wem"
      },
      {
       "Id": "388342333",
@@ -1494,6 +1534,12 @@
       "Path": "SFX\\fantastish_C42B8C3C.wem"
      },
      {
+      "Id": "711531986",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Iddle_Low_05.wav",
+      "Path": "SFX\\Foley_Robot_Iddle_Low_05_66C02B12.wem"
+     },
+     {
       "Id": "712767870",
       "Language": "SFX",
       "ShortName": "Foley_Robot_Iddle_02.wav",
@@ -1683,6 +1729,18 @@
       "Path": "SFX\\Menu_Loop_115bpm_C42B8C3C.wem"
      },
      {
+      "Id": "880425437",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Reflect_OpenDoor_01.wav",
+      "Path": "SFX\\Foley_Robot_Reflect_OpenDoor_01_DC027DA5.wem"
+     },
+     {
+      "Id": "886790692",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Iddle_Low_04.wav",
+      "Path": "SFX\\Foley_Robot_Iddle_Low_04_66C02B12.wem"
+     },
+     {
       "Id": "890565438",
       "Language": "SFX",
       "ShortName": "SFX_Robot_Laser_Shoot_01.wav",
@@ -1761,6 +1819,12 @@
       "Language": "SFX",
       "ShortName": "SFX_Robot_Laser_Shoot_Reload_01.wav",
       "Path": "SFX\\SFX_Robot_Laser_Shoot_Reload_01_66C02B12.wem"
+     },
+     {
+      "Id": "957280360",
+      "Language": "SFX",
+      "ShortName": "Foley_Robot_Reflect_OpenDoor_03.wav",
+      "Path": "SFX\\Foley_Robot_Reflect_OpenDoor_03_5EB88468.wem"
      },
      {
       "Id": "958688997",
