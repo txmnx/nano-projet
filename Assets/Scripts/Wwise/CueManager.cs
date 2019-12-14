@@ -42,7 +42,8 @@ public class CueManager : MonoBehaviour
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
-                    matchManager.resetRound();
+                    if(!matchManager.matchIsEnd)
+                        matchManager.resetRound();
                     cueCounter = 0;
                     break;
             }

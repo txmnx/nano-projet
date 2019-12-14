@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -517,8 +517,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e73d1d90d9a0bb14fbebb670b201822b,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -1985,14 +1984,16 @@ MonoBehaviour:
   players:
   - {fileID: 734479241}
   - {fileID: 1915892328}
-  roundToWin: 3
+  roundToWin: 2
   winSliders:
   - {fileID: 2136094363}
   - {fileID: 2011355447}
   currentSequence: 0
   winner: {fileID: 0}
+  loser: {fileID: 0}
   winnerID: 0
   isWon: 0
+  isFinalPhase: 0
   victoryJapColor: {r: 0.8301887, g: 0, b: 0, a: 0.49019608}
   victoryUsColor: {r: 0, g: 0.19432807, b: 1, a: 0.49019608}
   baseColor: {r: 0.7754474, g: 0.9056604, b: 0.38020647, a: 0.46666667}

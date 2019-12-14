@@ -92,7 +92,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnIdleBeat();
                 }
                 sequence = Sequence.ACTION;
-                step = 2;
 
             }
             else {
