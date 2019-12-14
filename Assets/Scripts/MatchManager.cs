@@ -109,6 +109,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
         }
         else if (players[0].currentLife <= 0) {
+            players[0].health.enabled = false;
             winner = players[1];
             loser = players[0];
             winnerID = 1;
@@ -116,6 +117,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         }
 
         else if (players[1].currentLife <= 0) {
+            players[1].health.enabled = false;
             winner = players[0];
             loser = players[1];
             winnerID = 0;
@@ -149,6 +151,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
+            players[i].health.enabled = true;
             players[i].BufferReset();
         }
         winner = null;
