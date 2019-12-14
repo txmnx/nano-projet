@@ -77,14 +77,14 @@
 				<Event Id="1122264096" Name="Play_Music_Pause" ObjectPath="\Events\Music_Event\Play_Music_Pause" DurationType="Infinite"/>
 				<Event Id="3605011583" Name="SFX_Common_Charged" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Charged" DurationType="OneShot" DurationMin="0.789456" DurationMax="0.789456"/>
 				<Event Id="2927774105" Name="SFX_Common_Electric_Sparks" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Electric_Sparks" DurationType="Infinite"/>
-				<Event Id="657576033" Name="SFX_Common_Fente" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Fente" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
-				<Event Id="2840219912" Name="SFX_Common_Guard" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Guard" DurationType="OneShot" DurationMin="0.659887" DurationMax="0.659887"/>
-				<Event Id="2413456602" Name="SFX_Common_Laser" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Laser" DurationType="OneShot" DurationMin="1.481166" DurationMax="1.481166"/>
+				<Event Id="657576033" Name="SFX_Common_Fente" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Fente" DurationType="OneShot" DurationMin="1.502903" DurationMax="1.502903"/>
+				<Event Id="2840219912" Name="SFX_Common_Guard" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Guard" DurationType="OneShot" DurationMin="2.763826" DurationMax="2.763826"/>
+				<Event Id="2413456602" Name="SFX_Common_Laser" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Laser" DurationType="OneShot" DurationMin="1.502903" DurationMax="1.502903"/>
 				<Event Id="2534836963" Name="SFX_Common_Oil" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Oil" DurationType="Infinite"/>
 				<Event Id="2807764600" Name="SFX_Common_Reflect" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Reflect" DurationType="OneShot" DurationMin="5.308607" DurationMax="5.308607"/>
-				<Event Id="1518756630" Name="SFX_Common_Special" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Special" DurationType="OneShot" DurationMin="1.359887" DurationMax="1.359887"/>
+				<Event Id="1518756630" Name="SFX_Common_Special" ObjectPath="\Events\SFX_Event\Common\SFX_Common_Special" DurationType="OneShot" DurationMin="1.502903" DurationMax="1.502903"/>
 				<Event Id="427260706" Name="SFX_InputPhase_In" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_In" DurationType="OneShot" DurationMin="0.581565" DurationMax="0.581565"/>
-				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="1.948951" DurationMax="1.948951"/>
+				<Event Id="1142057693" Name="SFX_InputPhase_Out" ObjectPath="\Events\SFX_Event\Common\SFX_InputPhase_Out" DurationType="OneShot" DurationMin="0.501661" DurationMax="0.501661"/>
 				<Event Id="591816388" Name="SFX_Robot_Death" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Death" DurationType="OneShot" DurationMin="4.157958" DurationMax="8.052399"/>
 				<Event Id="3716377771" Name="SFX_Robot_Explosion" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Explosion" DurationType="OneShot" DurationMin="15.158931" DurationMax="17.339424"/>
 				<Event Id="1708613752" Name="SFX_Robot_Fente" ObjectPath="\Events\SFX_Event\Robot\SFX_Robot_Fente" DurationType="OneShot" DurationMin="1.513810" DurationMax="1.513810"/>
@@ -102,7 +102,7 @@
 				<Event Id="773074497" Name="UI_Menu_Clic_Option" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Clic_Option" DurationType="OneShot" DurationMin="0.789864" DurationMax="0.789864"/>
 				<Event Id="2697976037" Name="UI_Menu_Hovered_Main" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Hovered_Main" DurationType="OneShot" DurationMin="0.061940" DurationMax="0.061940"/>
 				<Event Id="2559298002" Name="UI_Menu_PauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_PauseGame" DurationType="Infinite"/>
-				<Event Id="1529249135" Name="UI_Menu_Start_Game" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Start_Game" DurationType="OneShot" DurationMin="3.330975" DurationMax="3.330975"/>
+				<Event Id="1529249135" Name="UI_Menu_Start_Game" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Start_Game" DurationType="OneShot" DurationMin="12.272333" DurationMax="12.272333"/>
 				<Event Id="455738561" Name="UI_Menu_UnPauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_UnPauseGame" DurationType="OneShot" DurationMin="0.367378" DurationMax="0.367378"/>
 				<Event Id="1047748741" Name="UI_Option_Back" ObjectPath="\Events\UI_Event\Menu\UI_Option_Back" DurationType="OneShot" DurationMin="0.367378" DurationMax="0.367378"/>
 				<Event Id="858171719" Name="V0_Victory_Fight" ObjectPath="\Events\VO_Event\V0_Victory_Fight" DurationType="OneShot" DurationMin="4.995612" DurationMax="7.789365"/>
@@ -352,6 +352,10 @@
 					<ShortName>Swoosh - Tube 08.wav</ShortName>
 					<Path>SFX\Swoosh - Tube 08_66C02B12.wem</Path>
 				</File>
+				<File Id="297461524" Language="SFX">
+					<ShortName>UI_Start_Game.wav</ShortName>
+					<Path>SFX\UI_Start_Game_66C02B12.wem</Path>
+				</File>
 				<File Id="301162270" Language="SFX">
 					<ShortName>SFX_Common_Projectile_Woosh.wav</ShortName>
 					<Path>SFX\SFX_Common_Projectile_Woosh_66C02B12.wem</Path>
@@ -489,10 +493,6 @@
 					<ShortName>Foley_Robot_Laser_Shoot_Door_Open_03.wav</ShortName>
 					<Path>SFX\Foley_Robot_Laser_Shoot_Door_Open_03_66C02B12.wem</Path>
 				</File>
-				<File Id="544209955" Language="SFX">
-					<ShortName>SFX_InputPhase_Out.wav</ShortName>
-					<Path>SFX\SFX_InputPhase_Out_66C02B12.wem</Path>
-				</File>
 				<File Id="544635784" Language="SFX">
 					<ShortName>SFX_Common_Electric_Sparkles.wav</ShortName>
 					<Path>SFX\SFX_Common_Electric_Sparkles_C42B8C3C.wem</Path>
@@ -594,6 +594,10 @@
 					<ShortName>R0_Init_02_Base.wav</ShortName>
 					<Path>SFX\R0_Init_02_Base_C42B8C3C.wem</Path>
 				</File>
+				<File Id="685898553" Language="SFX">
+					<ShortName>SFX_Common_Equality.wav</ShortName>
+					<Path>SFX\SFX_Common_Equality_66C02B12.wem</Path>
+				</File>
 				<File Id="694044916" Language="SFX">
 					<ShortName>Foley_Robot_Laser_Shoot_Door_Open_01.wav</ShortName>
 					<Path>SFX\Foley_Robot_Laser_Shoot_Door_Open_01_66C02B12.wem</Path>
@@ -625,6 +629,10 @@
 				<File Id="736632805" Language="SFX">
 					<ShortName>R2_Common_03_Base.wav</ShortName>
 					<Path>SFX\R2_Common_03_Base_C42B8C3C.wem</Path>
+				</File>
+				<File Id="740556503" Language="SFX">
+					<ShortName>SFX_InputPhase_Out.wav</ShortName>
+					<Path>SFX\SFX_InputPhase_Out_C9D32C80.wem</Path>
 				</File>
 				<File Id="741822729" Language="SFX">
 					<ShortName>Foley_Robot_Destroyed_01.wav</ShortName>
@@ -838,10 +846,6 @@
 				<File Id="1021443698" Language="SFX">
 					<ShortName>SFX_Robot_Particles_01.wav</ShortName>
 					<Path>SFX\SFX_Robot_Particles_01_66C02B12.wem</Path>
-				</File>
-				<File Id="1023978928" Language="SFX">
-					<ShortName>UI_Menu_Start_Game.wav</ShortName>
-					<Path>SFX\UI_Menu_Start_Game_204E5F65.wem</Path>
 				</File>
 				<File Id="1031812766" Language="SFX">
 					<ShortName>SFX_Common_Oil.wav</ShortName>

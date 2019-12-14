@@ -171,6 +171,7 @@ namespace AK
         static const AkUniqueID RTPC_JAPAN_HEALTH = 3984115470U;
         static const AkUniqueID RTPC_LOWEST_HEALTH = 1386449390U;
         static const AkUniqueID SIDECHAIN_ALL_BY_VO = 81210309U;
+        static const AkUniqueID SIDECHAIN_ROBOT_DAMAGE = 436444058U;
     } // namespace GAME_PARAMETERS
 
     namespace TRIGGERS
@@ -194,6 +195,7 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID ROBOT_DAMAGE = 1073294121U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID SPEAKER = 2748973500U;
         static const AkUniqueID TITLE = 3705726509U;
