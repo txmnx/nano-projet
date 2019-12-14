@@ -283,24 +283,24 @@
       "Name": "SFX_Common_Fente",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Fente",
       "DurationType": "OneShot",
-      "DurationMin": "0.659887",
-      "DurationMax": "0.659887"
+      "DurationMin": "1.502903",
+      "DurationMax": "1.502903"
      },
      {
       "Id": "2840219912",
       "Name": "SFX_Common_Guard",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Guard",
       "DurationType": "OneShot",
-      "DurationMin": "0.659887",
-      "DurationMax": "0.659887"
+      "DurationMin": "2.763826",
+      "DurationMax": "2.763826"
      },
      {
       "Id": "2413456602",
       "Name": "SFX_Common_Laser",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Laser",
       "DurationType": "OneShot",
-      "DurationMin": "1.481166",
-      "DurationMax": "1.481166"
+      "DurationMin": "1.502903",
+      "DurationMax": "1.502903"
      },
      {
       "Id": "2534836963",
@@ -321,8 +321,8 @@
       "Name": "SFX_Common_Special",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Special",
       "DurationType": "OneShot",
-      "DurationMin": "1.359887",
-      "DurationMax": "1.359887"
+      "DurationMin": "1.502903",
+      "DurationMax": "1.502903"
      },
      {
       "Id": "427260706",
@@ -337,8 +337,8 @@
       "Name": "SFX_InputPhase_Out",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_InputPhase_Out",
       "DurationType": "OneShot",
-      "DurationMin": "1.948951",
-      "DurationMax": "1.948951"
+      "DurationMin": "0.501661",
+      "DurationMax": "0.501661"
      },
      {
       "Id": "591816388",
@@ -479,8 +479,8 @@
       "Name": "UI_Menu_Start_Game",
       "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Menu_Start_Game",
       "DurationType": "OneShot",
-      "DurationMin": "3.330975",
-      "DurationMax": "3.330975"
+      "DurationMin": "12.272333",
+      "DurationMax": "12.272333"
      },
      {
       "Id": "455738561",
@@ -904,6 +904,12 @@
       "Path": "SFX\\Swoosh - Tube 08_66C02B12.wem"
      },
      {
+      "Id": "297461524",
+      "Language": "SFX",
+      "ShortName": "UI_Start_Game.wav",
+      "Path": "SFX\\UI_Start_Game_66C02B12.wem"
+     },
+     {
       "Id": "301162270",
       "Language": "SFX",
       "ShortName": "SFX_Common_Projectile_Woosh.wav",
@@ -1109,12 +1115,6 @@
       "Path": "SFX\\Foley_Robot_Laser_Shoot_Door_Open_03_66C02B12.wem"
      },
      {
-      "Id": "544209955",
-      "Language": "SFX",
-      "ShortName": "SFX_InputPhase_Out.wav",
-      "Path": "SFX\\SFX_InputPhase_Out_66C02B12.wem"
-     },
-     {
       "Id": "544635784",
       "Language": "SFX",
       "ShortName": "SFX_Common_Electric_Sparkles.wav",
@@ -1266,6 +1266,12 @@
       "Path": "SFX\\R0_Init_02_Base_C42B8C3C.wem"
      },
      {
+      "Id": "685898553",
+      "Language": "SFX",
+      "ShortName": "SFX_Common_Equality.wav",
+      "Path": "SFX\\SFX_Common_Equality_66C02B12.wem"
+     },
+     {
       "Id": "694044916",
       "Language": "SFX",
       "ShortName": "Foley_Robot_Laser_Shoot_Door_Open_01.wav",
@@ -1312,6 +1318,12 @@
       "Language": "SFX",
       "ShortName": "R2_Common_03_Base.wav",
       "Path": "SFX\\R2_Common_03_Base_C42B8C3C.wem"
+     },
+     {
+      "Id": "740556503",
+      "Language": "SFX",
+      "ShortName": "SFX_InputPhase_Out.wav",
+      "Path": "SFX\\SFX_InputPhase_Out_C9D32C80.wem"
      },
      {
       "Id": "741822729",
@@ -1631,12 +1643,6 @@
       "Language": "SFX",
       "ShortName": "SFX_Robot_Particles_01.wav",
       "Path": "SFX\\SFX_Robot_Particles_01_66C02B12.wem"
-     },
-     {
-      "Id": "1023978928",
-      "Language": "SFX",
-      "ShortName": "UI_Menu_Start_Game.wav",
-      "Path": "SFX\\UI_Menu_Start_Game_204E5F65.wem"
      },
      {
       "Id": "1031812766",

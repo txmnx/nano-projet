@@ -32,11 +32,13 @@ State	ID	Name	State Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	81210309	Sidechain_All_By_VO			\Sidechain\Sidechain_All_By_VO	
+	436444058	Sidechain_Robot_Damage			\Sidechain\Sidechain_Robot_Damage	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	482648852	VO_Character			\Default Work Unit\Master Audio Bus\VO\VO_Character	
+	1073294121	Robot_Damage			\Default Work Unit\Master Audio Bus\SFX\Characters\Robot_Damage	
 	1534528548	VO			\Default Work Unit\Master Audio Bus\VO	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
 	1557941045	Characters			\Default Work Unit\Master Audio Bus\SFX\Characters	
@@ -58,6 +60,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	175750078	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
 	289702920	Wwise_Meter_(Custom)	Wwise Meter			
+	990009746	Wwise_Meter_(Custom)	Wwise Meter			
 	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
 	1520064353	Hall_Medium_Bright	Wwise RoomVerb			
 	1588715066	Echoes_Linear	Wwise Delay			

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586253630039070571
+    m_lastTime: -8586253602168785128
     List:
     - name: Reverb_Decheterie
       guid: c1c2f16fd0c0894a85cf05c9d62cba71
@@ -118,13 +118,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586254382379068290
+    m_lastTime: -8586253544186978916
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
     guid: 2819fee626dec34fad76f39d0b5e8fee
     GuidInternal: 
-    m_lastTime: -8586253650861200609
+    m_lastTime: -8586253529448049560
     List:
     - name: Foley_Robot_Damage
       guid: 5c4b80f78d52fe4bb57372af5699d6d4
@@ -210,6 +210,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Foley_Robot_Iddle_Door
+      guid: f74eafad6748c24caa23315a8f5864b9
+      id: 2444736181
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Iddle_Door
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Iddle_Door
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Foley_Robot_Laser_Door_Close
       guid: 0aa0eb5228dcf349b21377fd036dd830
       id: 3924484359
@@ -255,6 +267,18 @@ MonoBehaviour:
       - ElementName: Foley_Robot_Metal_Creaking
         ObjectType: 3
       Path: Foley_Event\Foley_Robot_Metal_Creaking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley_Robot_Reflect_OpenDoor
+      guid: c0e211726ce6bf4c80a38966c35a564c
+      id: 2924546668
+      PathAndIcons:
+      - ElementName: Foley_Event
+        ObjectType: 12
+      - ElementName: Foley_Robot_Reflect_OpenDoor
+        ObjectType: 3
+      Path: Foley_Event\Foley_Robot_Reflect_OpenDoor
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -310,7 +334,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586254181610901103
+    m_lastTime: -8586253503807761285
     List:
     - name: CueManager_NewCue
       guid: d5915c242ff48647b0ea9a8a8a03be3e
@@ -1113,7 +1137,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9435b629aaebad42beff3cac1971c2b1
     GuidInternal: 
-    m_lastTime: -8586254250248582814
+    m_lastTime: -8586253552146445179
     List:
     - name: Damage
       guid: 5b56fd62f818c748bc54d156b1e85337

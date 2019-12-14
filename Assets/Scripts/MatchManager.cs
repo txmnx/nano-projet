@@ -12,7 +12,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public Slider[] winSliders;
 
-    private Sequence currentSequence;
+    public Sequence currentSequence;
     public Player winner;
     public int winnerID;
     public bool isWon = false;
@@ -59,19 +59,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     void Update()
     {
-        if (!gameIsPaused && Input.GetKeyDown(KeyCode.Space))
-        {
-            pause();
-        }
-        else if(gameIsPaused && Input.GetKeyDown(KeyCode.Space))
-        {
-            resume();
-        }
-
-        if (isWon)
-        {
-            if(!hasIncremented)
-            {
+        if (isWon) {
+            if (!hasIncremented) {
                 winner.wins += 1;
                 winSliders[winnerID].value = winner.wins;
                 hasIncremented = true;
@@ -79,30 +68,25 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
 
             //SONDIER
-            if(winnerID == 0)
-            {
+            if (winnerID == 0) {
                 musicManager.RoundWinUS();
             }
-            if (winnerID == 1)
-            {
+            if (winnerID == 1) {
                 musicManager.RoundWinJP();
             }
             //SONDIER;
 
             onRoundEnd();
 
-            if (winner != null && winner.wins == roundToWin)
-            {
-                
+            if (winner != null && winner.wins == roundToWin) {
+
 
                 //SONDIER
-                if (winnerID == 0)
-                {
+                if (winnerID == 0) {
                     onMatchEnd(players[0], players[1]);
                     musicManager.WinUS();
                 }
-                if (winnerID == 1)
-                {
+                if (winnerID == 1) {
                     onMatchEnd(players[1], players[0]);
                     musicManager.WinJP();
                 }
@@ -111,29 +95,36 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
 
         }
-        else if (players[0].currentLife <= 0)
-        {
+        else if (players[0].currentLife <= 0) {
             winner = players[1];
             winnerID = 1;
             isWon = true;
         }
 
-        else if(players[1].currentLife <= 0)
-        {
+        else if (players[1].currentLife <= 0) {
             winner = players[0];
             winnerID = 0;
             isWon = true;
         }
 
         //if (matchIsEnd)
-           
+
+    }
+
+    public void customResetRound()
+    {
+        camera.GetComponent<Animator>().SetTrigger("Start");
+    }
+
+    public void onRoundEnd()
+    {
+        //anim/sons de fin de round
     }
 
     public void resetRound()
     {
         camera.GetComponent<Animator>().SetTrigger("Start");
-        for (int i = 0; i < players.Length; i++)
-        {
+        for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
             players[i].BufferReset();
@@ -143,12 +134,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         hasIncremented = false;
     }
 
-    public void onRoundEnd()
-    {
-        //anim/sons de fin de round
-    }
-
-  
 
     public void onMatchEnd(Player winner, Player loser)
     {
@@ -156,24 +141,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
         winner.animator.Play("Victory", 0);
         loser.animator.Play("Death", 0);
-
-       
-    }
-
-    public void resume()
-    {
-        AkSoundEngine.PostEvent("UI_Menu_UnPauseGame", gameObject);
-        gameIsPaused = false;
-        InputTranslator.sequence = currentSequence;
-    }
-
-    public void pause()
-    {
-        AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
-        gameIsPaused = true;
-        Debug.Log("PAUSE");
-        currentSequence = InputTranslator.sequence;
-        InputTranslator.sequence = Sequence.IDLE;
     }
 
     public void resetGame()
@@ -185,6 +152,5 @@ public class MatchManager : MonoBehaviour, OnBeatElement
             winSliders[i].value = players[i].wins;
         }
         resetRound();
-        resume();
     }
 }
