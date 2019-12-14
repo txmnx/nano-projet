@@ -30,6 +30,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Color baseColor;
     public CueManager cueManager;
 
+    public FinalMenu finalMenu;
+
     //SONDIER
     public MusicManager musicManager;
     public GameObject camera;
@@ -109,6 +111,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
         }
         else if (players[0].currentLife <= 0) {
+            players[0].health.gameObject.SetActive(false);
             winner = players[1];
             loser = players[0];
             winnerID = 1;
@@ -116,6 +119,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         }
 
         else if (players[1].currentLife <= 0) {
+            players[1].health.gameObject.SetActive(false);
             winner = players[0];
             loser = players[1];
             winnerID = 0;
@@ -144,12 +148,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isFinalPhase)
         {
             InputTranslator.step = 1;
-           
+          
         }
 
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
+            players[i].health.gameObject.SetActive(true);
             players[i].BufferReset();
         }
         camera.GetComponent<Animator>().SetTrigger("Start");
@@ -158,8 +163,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         loser = null;
         isWon = false;
         hasIncremented = false;
-
-        
     }
 
 

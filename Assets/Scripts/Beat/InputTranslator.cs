@@ -24,7 +24,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     private static List<OnIdleBeatElement> onIdleBeatElements;
 
     public static int step = 2; // How much beats for a sequence
-    private static int currentStep;
+    public static int currentStep;
     public GameObject Player1Body;
     public GameObject Player2Body;
 

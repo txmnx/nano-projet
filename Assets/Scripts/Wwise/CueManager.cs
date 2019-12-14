@@ -10,6 +10,7 @@ public class CueManager : MonoBehaviour
     public static bool isCounting = false;
     public bool isBeatDetected = false;
 
+
     public MatchManager matchManager;
 
     public void CueFunction()
@@ -39,14 +40,17 @@ public class CueManager : MonoBehaviour
                     InputTranslator.sequence = Sequence.IDLE;
                     isBeatDetected = false;
                     matchManager.onRoundEnd();
+                    if (matchManager.matchIsEnd)
+                        finalMenu.Display();
                     break;
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
                     if (!matchManager.matchIsEnd)
                         matchManager.resetRound();
-                    else
-                        finalMenu.Display();
+
+                    InputTranslator.currentStep = 1;
+
                     cueCounter = 0;
                     break;
             }
