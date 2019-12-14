@@ -22,7 +22,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     private bool roundIsEnd = false;
     private bool matchIsEnd = false;
     private bool hasIncremented = false;
-    
+    public bool isFinalPhase;
+
     public Color victoryJapColor;
     public Color victoryUsColor;
     public Color baseColor;
