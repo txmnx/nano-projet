@@ -64,6 +64,7 @@ namespace AK
         static const AkUniqueID SFX_TITLE_TIMER = 3290104963U;
         static const AkUniqueID SFX_TITLE_WIN = 1985058514U;
         static const AkUniqueID UI_MENU_CLIC_OPTION = 773074497U;
+        static const AkUniqueID UI_MENU_CLIC_START = 473947498U;
         static const AkUniqueID UI_MENU_HOVERED_MAIN = 2697976037U;
         static const AkUniqueID UI_MENU_PAUSEGAME = 2559298002U;
         static const AkUniqueID UI_MENU_START_GAME = 1529249135U;

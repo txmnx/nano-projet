@@ -18,6 +18,7 @@ public class MenuChoices : MonoBehaviour
     Choice selection = Choice.VERSUS;
     int choicesLength = 4;
 
+    public GameObject UI_StartGame;
     private RectTransform rectTransform;
 
     public AnimationCurve selectionCurve;
@@ -81,11 +82,11 @@ public class MenuChoices : MonoBehaviour
             switch (selection) {
                 case Choice.VERSUS:
                     SceneManager.LoadScene("SampleScene");
-                    AkSoundEngine.PostEvent("UI_Menu_Start_Game", gameObject);
+                    AkSoundEngine.PostEvent("UI_Menu_Clic_Start", UI_StartGame);
                     break;
                 case Choice.AI:
                     SceneManager.LoadScene("FightSceneAI");
-                    AkSoundEngine.PostEvent("UI_Menu_Start_Game", gameObject);
+                    AkSoundEngine.PostEvent("UI_Menu_Clic_Start", UI_StartGame);
                     break;
                 case Choice.RULES:
                     mainMenu.DisplayRulesPanel();

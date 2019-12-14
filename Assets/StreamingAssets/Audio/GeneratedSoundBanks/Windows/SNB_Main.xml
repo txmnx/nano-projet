@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="845961116" Language="SFX">
@@ -63,11 +63,12 @@
 				<Event Id="2335777874" Name="SFX_Title_Fight" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Fight" DurationType="OneShot" DurationMin="4.350476" DurationMax="4.350476"/>
 				<Event Id="3290104963" Name="SFX_Title_Timer" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Timer" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1985058514" Name="SFX_Title_Win" ObjectPath="\Events\SFX_Event\Title\SFX_Title_Win" DurationType="OneShot" DurationMin="1.904898" DurationMax="1.904898"/>
-				<Event Id="773074497" Name="UI_Menu_Clic_Option" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Clic_Option" DurationType="OneShot" DurationMin="0.789864" DurationMax="0.789864"/>
+				<Event Id="773074497" Name="UI_Menu_Clic_Option" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Clic_Option" DurationType="OneShot" DurationMin="0.294896" DurationMax="0.294896"/>
+				<Event Id="473947498" Name="UI_Menu_Clic_Start" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Clic_Start" DurationType="OneShot" DurationMin="0.284119" DurationMax="0.284119"/>
 				<Event Id="2697976037" Name="UI_Menu_Hovered_Main" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Hovered_Main" DurationType="OneShot" DurationMin="0.061940" DurationMax="0.061940"/>
 				<Event Id="2559298002" Name="UI_Menu_PauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_PauseGame" DurationType="Infinite"/>
 				<Event Id="1529249135" Name="UI_Menu_Start_Game" ObjectPath="\Events\UI_Event\Menu\UI_Menu_Start_Game" DurationType="OneShot" DurationMin="12.272333" DurationMax="12.272333"/>
-				<Event Id="455738561" Name="UI_Menu_UnPauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_UnPauseGame" DurationType="OneShot" DurationMin="0.367378" DurationMax="0.367378"/>
+				<Event Id="455738561" Name="UI_Menu_UnPauseGame" ObjectPath="\Events\UI_Event\Menu_Pause\UI_Menu_UnPauseGame" DurationType="OneShot" DurationMin="0.117185" DurationMax="0.117185"/>
 				<Event Id="1047748741" Name="UI_Option_Back" ObjectPath="\Events\UI_Event\Menu\UI_Option_Back" DurationType="OneShot" DurationMin="0.367378" DurationMax="0.367378"/>
 				<Event Id="858171719" Name="V0_Victory_Fight" ObjectPath="\Events\VO_Event\V0_Victory_Fight" DurationType="OneShot" DurationMin="4.995612" DurationMax="7.789365"/>
 				<Event Id="2824871891" Name="VO_Speaker_Round" ObjectPath="\Events\VO_Event\VO_Speaker_Round" DurationType="OneShot" DurationMin="0.000000" DurationMax="4.677891"/>
@@ -86,6 +87,10 @@
 				<File Id="258035653" Language="SFX">
 					<ShortName>RoundEnd_WinJP_Part2.wav</ShortName>
 					<Path>SFX\RoundEnd_WinJP_Part2_C42B8C3C.wem</Path>
+				</File>
+				<File Id="297461524" Language="SFX">
+					<ShortName>UI_Start_Game.wav</ShortName>
+					<Path>SFX\UI_Start_Game_66C02B12.wem</Path>
 				</File>
 				<File Id="469132256" Language="SFX">
 					<ShortName>R0_Init_04.wav</ShortName>
@@ -222,6 +227,10 @@
 					<ShortName>Foley_Robot_Damage_03.wav</ShortName>
 					<Path>SFX\Foley_Robot_Damage_03_66C02B12.wem</Path>
 				</File>
+				<File Id="159675984" Language="SFX">
+					<ShortName>UI_Menu_Clic_Option.wav</ShortName>
+					<Path>SFX\UI_Menu_Clic_Option_5A8B001A.wem</Path>
+				</File>
 				<File Id="175973606" Language="SFX">
 					<ShortName>R1_LeadJ2_01_Top.wav</ShortName>
 					<Path>SFX\R1_LeadJ2_01_Top_C42B8C3C.wem</Path>
@@ -278,6 +287,10 @@
 				<File Id="215930261" Language="SFX">
 					<ShortName>R1_Common_03_Top.wav</ShortName>
 					<Path>SFX\R1_Common_03_Top_C42B8C3C.wem</Path>
+				</File>
+				<File Id="229496985" Language="SFX">
+					<ShortName>UI_Menu_Clic_Start.wav</ShortName>
+					<Path>SFX\UI_Menu_Clic_Start_CD1803BB.wem</Path>
 				</File>
 				<File Id="229955774" Language="SFX">
 					<ShortName>MUI POP UP Metallic Power Surge.wav</ShortName>
@@ -343,6 +356,7 @@
 				<File Id="297461524" Language="SFX">
 					<ShortName>UI_Start_Game.wav</ShortName>
 					<Path>SFX\UI_Start_Game_66C02B12.wem</Path>
+					<PrefetchSize>8684</PrefetchSize>
 				</File>
 				<File Id="301162270" Language="SFX">
 					<ShortName>SFX_Common_Projectile_Woosh.wav</ShortName>
@@ -398,7 +412,7 @@
 				</File>
 				<File Id="423734698" Language="SFX">
 					<ShortName>UI_Menu_Clic_Option.wav</ShortName>
-					<Path>SFX\UI_Menu_Clic_Option_66C02B12.wem</Path>
+					<Path>SFX\UI_Menu_Clic_Option_F200E956.wem</Path>
 				</File>
 				<File Id="425021210" Language="SFX">
 					<ShortName>Round 4.wav</ShortName>
@@ -613,6 +627,10 @@
 				<File Id="728740889" Language="SFX">
 					<ShortName>Round 1.wav</ShortName>
 					<Path>SFX\Round 1_66C02B12.wem</Path>
+				</File>
+				<File Id="729317737" Language="SFX">
+					<ShortName>PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav</ShortName>
+					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_2454D6E0.wem</Path>
 				</File>
 				<File Id="736632805" Language="SFX">
 					<ShortName>R2_Common_03_Base.wav</ShortName>
