@@ -1985,12 +1985,13 @@ MonoBehaviour:
   players:
   - {fileID: 734479241}
   - {fileID: 1915892328}
-  roundToWin: 3
+  roundToWin: 2
   winSliders:
   - {fileID: 2136094363}
   - {fileID: 2011355447}
   currentSequence: 0
   winner: {fileID: 0}
+  loser: {fileID: 0}
   winnerID: 0
   isWon: 0
   victoryJapColor: {r: 0.8301887, g: 0, b: 0, a: 0.49019608}

@@ -3217,7 +3217,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.1
-    functionName: Foley_Robot_Death_Metal_Creakin
+    functionName: Foley_Robot_Death_Metal_Creaking
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
