@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -638,7 +638,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rectTransform: {fileID: 2061061636}
+  rectTransformChoices: {fileID: 2061061636}
+  rectTransformWrapper: {fileID: 1311889974}
   validateAnimator: {fileID: 1039929051}
   choicesTexts:
   - {fileID: 654972972}
@@ -1712,6 +1713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9d18a501230134f8a09873f1611de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalMenu: {fileID: 365255823}
   cueCounter: 0
   isBeatDetected: 0
   matchManager: {fileID: 1226417292}
@@ -2943,7 +2945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 800, y: 0}
   m_SizeDelta: {x: 800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1323175218

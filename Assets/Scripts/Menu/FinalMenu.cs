@@ -16,19 +16,47 @@ public class FinalMenu : MonoBehaviour
     private float distanceBetweenChoices = 60f;
 
     public AnimationCurve selectionCurve;
-    public RectTransform rectTransform;
+    public RectTransform rectTransformChoices;
+    public RectTransform rectTransformWrapper;
 
     public Animator validateAnimator;
     public TextMeshProUGUI[] choicesTexts;
 
     private Choice selection = Choice.REPLAY;
     private bool isMoving = false;
+    private bool isPausing = true;
 
     public void Display()
     {
-
+        isMoving = true;
+        StartCoroutine(DisplayAnimation(0.7f, -800f));
     }
+    
+    private IEnumerator DisplayAnimation(float duration, float offset)
+    {
+        float timer = 0.0f;
+        float initX = rectTransformWrapper.anchoredPosition.x;
+        float x = initX;
 
+        float progress;
+        progress = timer / duration;
+
+        while (timer < duration) {
+            progress = Mathf.Clamp(timer / duration, 0f, 1f);
+
+            x = selectionCurve.Evaluate(progress) * offset;
+
+            rectTransformWrapper.anchoredPosition = new Vector2(initX + x, rectTransformWrapper.anchoredPosition.y);
+
+            timer += Time.deltaTime;
+
+            yield return null;
+        }
+
+        rectTransformWrapper.anchoredPosition = new Vector2(initX + offset, rectTransformWrapper.anchoredPosition.y);
+        isMoving = false;
+        isPausing = false;
+    }
 
     private void Start()
     {
@@ -37,6 +65,8 @@ public class FinalMenu : MonoBehaviour
 
     private void Update()
     {
+        if (isPausing) return;
+
         //Lancer les events WWISE
         if (!isMoving) {
             if (Input.GetAxisRaw("SelectionVerticalButton") > 0f || Input.GetAxisRaw("SelectionVerticalJoystick") > 0f) {
@@ -88,7 +118,7 @@ public class FinalMenu : MonoBehaviour
 
     public void Reset()
     {
-        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 0f);
+        rectTransformChoices.anchoredPosition = new Vector2(rectTransformChoices.anchoredPosition.x, 0f);
         selection = Choice.REPLAY;
         HighlightText(selection);
     }
@@ -120,7 +150,7 @@ public class FinalMenu : MonoBehaviour
     private IEnumerator MoveAnimation(float duration, float offset)
     {
         float timer = 0.0f;
-        float initY = rectTransform.anchoredPosition.y;
+        float initY = rectTransformChoices.anchoredPosition.y;
         float y = initY;
 
         float progress;
@@ -131,14 +161,14 @@ public class FinalMenu : MonoBehaviour
 
             y = selectionCurve.Evaluate(progress) * offset;
 
-            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initY + y);
+            rectTransformChoices.anchoredPosition = new Vector2(rectTransformChoices.anchoredPosition.x, initY + y);
 
             timer += Time.deltaTime;
 
             yield return null;
         }
 
-        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, initY + offset);
+        rectTransformChoices.anchoredPosition = new Vector2(rectTransformChoices.anchoredPosition.x, initY + offset);
         isMoving = false;
     }
 
