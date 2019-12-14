@@ -17,12 +17,14 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Player loser;
     public int winnerID;
     public bool isWon = false;
+    public bool matchIsEnd = false;
 
     private bool gameIsPaused = false;
     private bool roundIsEnd = false;
-    private bool matchIsEnd = false;
+   
     private bool hasIncremented = false;
-    
+    public bool isFinalPhase = false;
+
     public Color victoryJapColor;
     public Color victoryUsColor;
     public Color baseColor;
@@ -65,6 +67,15 @@ public class MatchManager : MonoBehaviour, OnBeatElement
                 winner.wins += 1;
                 winSliders[winnerID].value = winner.wins;
                 hasIncremented = true;
+
+                Debug.Log("test");
+                if (winner.wins == loser.wins && winner.wins == roundToWin - 1)
+                {
+                    isFinalPhase = true;
+                    Debug.Log(isFinalPhase);
+                }
+                    
+
             }
 
             onRoundEnd();
@@ -128,6 +139,14 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void resetRound()
     {
+        camera.GetComponent<Animator>().SetTrigger("Start");
+        loser.animator.Play("Idle", 0);
+        if (isFinalPhase)
+        {
+            InputTranslator.step = 1;
+           
+        }
+
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
@@ -139,6 +158,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         loser = null;
         isWon = false;
         hasIncremented = false;
+
+        
     }
 
 

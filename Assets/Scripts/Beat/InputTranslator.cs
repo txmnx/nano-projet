@@ -28,6 +28,8 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     public GameObject Player1Body;
     public GameObject Player2Body;
 
+    
+
     public FightManager fightManager;
 
     // TODO : here we should have a buffer of two inputs as a private member
@@ -90,7 +92,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnIdleBeat();
                 }
                 sequence = Sequence.ACTION;
-                step = 2;
 
             }
             else {

@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
@@ -717,7 +717,7 @@
       "Id": "159675984",
       "Language": "SFX",
       "ShortName": "UI_Menu_Clic_Option.wav",
-      "Path": "SFX\\UI_Menu_Clic_Option_5A8B001A.wem"
+      "Path": "SFX\\UI_Menu_Clic_Option_1091852D.wem"
      },
      {
       "Id": "175973606",
@@ -808,7 +808,7 @@
       "Id": "229496985",
       "Language": "SFX",
       "ShortName": "UI_Menu_Clic_Start.wav",
-      "Path": "SFX\\UI_Menu_Clic_Start_CD1803BB.wem"
+      "Path": "SFX\\UI_Menu_Clic_Start_FE146E75.wem"
      },
      {
       "Id": "229955774",
@@ -990,7 +990,7 @@
       "Id": "423734698",
       "Language": "SFX",
       "ShortName": "UI_Menu_Clic_Option.wav",
-      "Path": "SFX\\UI_Menu_Clic_Option_F200E956.wem"
+      "Path": "SFX\\UI_Menu_Clic_Option_7940053A.wem"
      },
      {
       "Id": "425021210",
@@ -1316,7 +1316,7 @@
       "Id": "729317737",
       "Language": "SFX",
       "ShortName": "PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav",
-      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_2454D6E0.wem"
+      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_A6CAEC02.wem"
      },
      {
       "Id": "736632805",

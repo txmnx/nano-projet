@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CueManager : MonoBehaviour
 {
+    public FinalMenu finalMenu;
 
     public int cueCounter = 0;
     public static bool isCounting = false;
@@ -42,7 +43,10 @@ public class CueManager : MonoBehaviour
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
-                    matchManager.resetRound();
+                    if (!matchManager.matchIsEnd)
+                        matchManager.resetRound();
+                    else
+                        finalMenu.Display();
                     cueCounter = 0;
                     break;
             }

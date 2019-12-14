@@ -81,6 +81,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     public virtual void Reset()
     {
+        Debug.Log(InputTranslator.step);
         for (int i = 0; i < InputTranslator.step; i++) {     //initialising the buffer
             buffer[i].move = MoveType.NEUTRAL;
             buffer[i].isCharged = false;

@@ -171,6 +171,7 @@ namespace AK
         static const AkUniqueID RTPC_AMERICAN_HEALTH = 1818309602U;
         static const AkUniqueID RTPC_JAPAN_HEALTH = 3984115470U;
         static const AkUniqueID RTPC_LOWEST_HEALTH = 1386449390U;
+        static const AkUniqueID SIDECHAIN_ALL_BY_SFX = 2092023757U;
         static const AkUniqueID SIDECHAIN_ALL_BY_VO = 81210309U;
         static const AkUniqueID SIDECHAIN_ROBOT_DAMAGE = 436444058U;
     } // namespace GAME_PARAMETERS

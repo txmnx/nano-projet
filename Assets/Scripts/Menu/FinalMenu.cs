@@ -24,10 +24,17 @@ public class FinalMenu : MonoBehaviour
     private Choice selection = Choice.REPLAY;
     private bool isMoving = false;
 
+    public void Display()
+    {
+
+    }
+
+
     private void Start()
     {
         Reset();
     }
+
     private void Update()
     {
         //Lancer les events WWISE
