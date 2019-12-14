@@ -33,6 +33,7 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	81210309	Sidechain_All_By_VO			\Sidechain\Sidechain_All_By_VO	
 	436444058	Sidechain_Robot_Damage			\Sidechain\Sidechain_Robot_Damage	
+	2092023757	Sidechain_All_by_SFX			\Sidechain\Sidechain_All_by_SFX	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
@@ -57,6 +58,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2846107099	Reverb_Environment			\Default Work Unit\Master Audio Bus\Reverb_Environment	
 
 Effect plug-ins	ID	Name	Type				Notes
+	38010093	Wwise_Meter_(Custom)	Wwise Meter			
 	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 	175750078	Wwise_Stereo_Delay_(Custom)	Wwise Stereo Delay			
 	289702920	Wwise_Meter_(Custom)	Wwise Meter			
