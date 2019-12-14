@@ -90,12 +90,17 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
             image.enabled = false;
         }
 
+        animator.ResetTrigger("doDamage");
+        animator.ResetTrigger("doDamageReflect");
+        animator.ResetTrigger("doDamageLaser");
+
         bufferLength = 0;
         currentAction = 0;
     }
 
     public void BufferReset()
     {
+        Debug.Log("RESET");
         buffer = new Move[InputTranslator.step];
         Reset();
     }

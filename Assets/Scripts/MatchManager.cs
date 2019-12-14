@@ -128,13 +128,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void resetRound()
     {
-        camera.GetComponent<Animator>().SetTrigger("Start");
-        loser.animator.Play("Idle", 0);
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
             players[i].BufferReset();
         }
+        camera.GetComponent<Animator>().SetTrigger("Start");
+        loser.animator.Play("Idle", 0);
         winner = null;
         loser = null;
         isWon = false;
