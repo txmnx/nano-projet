@@ -3322,8 +3322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   matchManager: {fileID: 1226417292}
-  player1Animator: {fileID: 0}
-  player2Animator: {fileID: 0}
+  player1Animator: {fileID: 6272940826232327247}
+  player2Animator: {fileID: 6981050488872968538}
   cameraAnimator: {fileID: 970834251}
   popCurve:
     serializedVersion: 2
