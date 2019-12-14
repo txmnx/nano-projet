@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PostWwiseEventAnim : MonoBehaviour
 {
-
-    public GameObject PlayerBody1;
-    public GameObject PlayerBody2;
-
+ 
     // WWise event for anim 
 
     //FOLEY Robot
@@ -155,15 +152,9 @@ public class PostWwiseEventAnim : MonoBehaviour
         AkSoundEngine.PostEvent("SFX_Robot_Laser_Damage", gameObject);
     }
 
-    public void ElectricAmerican ()
+    public void SFX_Stop_Electric()
     {
-        AkSoundEngine.PostEvent("SFX_Common_Electric_Sparks_American", PlayerBody1);
+        AkSoundEngine.PostEvent("Stop_Electric", gameObject);
     }
-
-    public void ElectricJapan()
-    {
-        AkSoundEngine.PostEvent("SFX_Common_Electric_Sparks_Japan", PlayerBody2);
-    }
-
-
+   
 }
