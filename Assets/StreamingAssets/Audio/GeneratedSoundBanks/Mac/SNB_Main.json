@@ -5,11 +5,11 @@
   "SchemaVersion": "11",
   "SoundbankVersion": "134",
   "RootPaths": {
-   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
-   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Mac\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Mac"
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\Nano_Project\\Nano_Project_Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Mac"
   },
   "SoundBanks": [
    {
@@ -405,8 +405,16 @@
       "Name": "UI_Menu_Clic_Option",
       "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Menu_Clic_Option",
       "DurationType": "OneShot",
-      "DurationMin": "0.789864",
-      "DurationMax": "0.789864"
+      "DurationMin": "0.294896",
+      "DurationMax": "0.294896"
+     },
+     {
+      "Id": "473947498",
+      "Name": "UI_Menu_Clic_Start",
+      "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Menu_Clic_Start",
+      "DurationType": "OneShot",
+      "DurationMin": "0.284119",
+      "DurationMax": "0.284119"
      },
      {
       "Id": "2697976037",
@@ -435,8 +443,8 @@
       "Name": "UI_Menu_UnPauseGame",
       "ObjectPath": "\\Events\\UI_Event\\Menu_Pause\\UI_Menu_UnPauseGame",
       "DurationType": "OneShot",
-      "DurationMin": "0.367378",
-      "DurationMax": "0.367378"
+      "DurationMin": "0.117185",
+      "DurationMax": "0.117185"
      },
      {
       "Id": "1047748741",
@@ -497,6 +505,12 @@
       "Language": "SFX",
       "ShortName": "RoundEnd_WinJP_Part2.wav",
       "Path": "SFX\\RoundEnd_WinJP_Part2_C42B8C3C.wem"
+     },
+     {
+      "Id": "297461524",
+      "Language": "SFX",
+      "ShortName": "UI_Start_Game.wav",
+      "Path": "SFX\\UI_Start_Game_66C02B12.wem"
      },
      {
       "Id": "469132256",
@@ -700,6 +714,12 @@
       "Path": "SFX\\Foley_Robot_Damage_03_66C02B12.wem"
      },
      {
+      "Id": "159675984",
+      "Language": "SFX",
+      "ShortName": "UI_Menu_Clic_Option.wav",
+      "Path": "SFX\\UI_Menu_Clic_Option_5A8B001A.wem"
+     },
+     {
       "Id": "175973606",
       "Language": "SFX",
       "ShortName": "R1_LeadJ2_01_Top.wav",
@@ -783,6 +803,12 @@
       "Language": "SFX",
       "ShortName": "R1_Common_03_Top.wav",
       "Path": "SFX\\R1_Common_03_Top_C42B8C3C.wem"
+     },
+     {
+      "Id": "229496985",
+      "Language": "SFX",
+      "ShortName": "UI_Menu_Clic_Start.wav",
+      "Path": "SFX\\UI_Menu_Clic_Start_CD1803BB.wem"
      },
      {
       "Id": "229955774",
@@ -879,7 +905,8 @@
       "Id": "297461524",
       "Language": "SFX",
       "ShortName": "UI_Start_Game.wav",
-      "Path": "SFX\\UI_Start_Game_66C02B12.wem"
+      "Path": "SFX\\UI_Start_Game_66C02B12.wem",
+      "PrefetchSize": "8684"
      },
      {
       "Id": "301162270",
@@ -963,7 +990,7 @@
       "Id": "423734698",
       "Language": "SFX",
       "ShortName": "UI_Menu_Clic_Option.wav",
-      "Path": "SFX\\UI_Menu_Clic_Option_66C02B12.wem"
+      "Path": "SFX\\UI_Menu_Clic_Option_F200E956.wem"
      },
      {
       "Id": "425021210",
@@ -1284,6 +1311,12 @@
       "Language": "SFX",
       "ShortName": "Round 1.wav",
       "Path": "SFX\\Round 1_66C02B12.wem"
+     },
+     {
+      "Id": "729317737",
+      "Language": "SFX",
+      "ShortName": "PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav",
+      "Path": "SFX\\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_2454D6E0.wem"
      },
      {
       "Id": "736632805",

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586253602168785128
+    m_lastTime: -8586252824789290440
     List:
     - name: Reverb_Decheterie
       guid: c1c2f16fd0c0894a85cf05c9d62cba71
@@ -334,7 +334,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586253503807761285
+    m_lastTime: -8586252811330323971
     List:
     - name: CueManager_NewCue
       guid: d5915c242ff48647b0ea9a8a8a03be3e
@@ -424,7 +424,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586253729341285175
+    m_lastTime: -8586252866603985672
     List:
     - name: SFX_Common_Charged
       guid: 179a08e096b51b49b6b516034637cf40
@@ -766,7 +766,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586255132574768167
+    m_lastTime: -8586252802890623297
     List:
     - name: UI_Menu_Clic_Option
       guid: 5b1bf01fd15897478c9429d3bf418913
@@ -962,7 +962,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a70defde949534459cacfeb3308c2fb7
     GuidInternal: 
-    m_lastTime: -8586259693127635718
+    m_lastTime: -8586252825262087941
     List:
     - name: Sidechain_All_By_VO
       guid: 838ec22530227d45a9e0df36c90b4bd5
@@ -973,6 +973,15 @@ MonoBehaviour:
       - ElementName: Sidechain_All_By_VO
         ObjectType: 13
       Path: Sidechain\Sidechain_All_By_VO
+    - name: Sidechain_Robot_Damage
+      guid: 2091eff8aa094640bf23c75ca042b85a
+      id: 436444058
+      PathAndIcons:
+      - ElementName: Sidechain
+        ObjectType: 12
+      - ElementName: Sidechain_Robot_Damage
+        ObjectType: 13
+      Path: Sidechain\Sidechain_Robot_Damage
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -1305,8 +1314,5 @@ MonoBehaviour:
       Path: Music_Triggers\NewCue
   ExpandedItems:
   - /nano-projet_WwiseProject
-  - /nano-projet_WwiseProject/Events
-  - /nano-projet_WwiseProject/Events/Music_Event
-  - /nano-projet_WwiseProject/Events/VO_Event
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
