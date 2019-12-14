@@ -101,6 +101,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
+        AkSoundEngine.PostEvent("UI_Option_Back",gameObject);
         SceneManager.LoadScene("MainMenuScene");
     }
 }
