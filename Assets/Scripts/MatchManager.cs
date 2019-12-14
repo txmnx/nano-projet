@@ -14,6 +14,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public Sequence currentSequence;
     public Player winner;
+    public Player loser;
     public int winnerID;
     public bool isWon = false;
 
@@ -97,12 +98,14 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         }
         else if (players[0].currentLife <= 0) {
             winner = players[1];
+            loser = players[0];
             winnerID = 1;
             isWon = true;
         }
 
         else if (players[1].currentLife <= 0) {
             winner = players[0];
+            loser = players[1];
             winnerID = 0;
             isWon = true;
         }
@@ -118,18 +121,21 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void onRoundEnd()
     {
+        loser.animator.Play("Death", 0);
         //anim/sons de fin de round
     }
 
     public void resetRound()
     {
         camera.GetComponent<Animator>().SetTrigger("Start");
+        loser.animator.Play("Idle", 0);
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
             players[i].BufferReset();
         }
         winner = null;
+        loser = null;
         isWon = false;
         hasIncremented = false;
     }
