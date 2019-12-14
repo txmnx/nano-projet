@@ -12,4 +12,9 @@ public class StartIntro : MonoBehaviour
         cueManager.isBeatDetected = true;
         musicManager.StartIntro();
     }
+
+    public void IdleMusicState()
+    {
+        AkSoundEngine.SetState("MusicToPlay", "ST_Idle");
+    }
 }
