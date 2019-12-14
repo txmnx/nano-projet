@@ -118,7 +118,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586253544186978916
+    m_lastTime: -8586252784774699658
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
@@ -766,7 +766,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586252802890623297
+    m_lastTime: -8586252777668877148
     List:
     - name: UI_Menu_Clic_Option
       guid: 5b1bf01fd15897478c9429d3bf418913
@@ -779,6 +779,20 @@ MonoBehaviour:
       - ElementName: UI_Menu_Clic_Option
         ObjectType: 3
       Path: UI_Event\Menu\UI_Menu_Clic_Option
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Menu_Clic_Start
+      guid: 5342d4acbf36ff4293907ceab8606867
+      id: 473947498
+      PathAndIcons:
+      - ElementName: UI_Event
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 4
+      - ElementName: UI_Menu_Clic_Start
+        ObjectType: 3
+      Path: UI_Event\Menu\UI_Menu_Clic_Start
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1314,5 +1328,8 @@ MonoBehaviour:
       Path: Music_Triggers\NewCue
   ExpandedItems:
   - /nano-projet_WwiseProject
+  - /nano-projet_WwiseProject/Events
+  - /nano-projet_WwiseProject/Events/UI_Event
+  - /nano-projet_WwiseProject/Events/UI_Event/Menu
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -50,20 +50,9 @@ public class MusicManager : MonoBehaviour
         {
             AkSoundEngine.SetState("MusicToPlay", "ST_R0_Init");
         }
-        else if (player1.wins == player2.wins)
+        else if (player1.wins == 1 && player2.wins == 1)
         {
-            if(player1.wins == 2)
-            {
-                AkSoundEngine.SetState("MusicToPlay", "ST_R2_Draw");
-            }
-            else if (matchManager.winnerID == 0)
-            {
-                AkSoundEngine.SetState("MusicToPlay", "ST_R1_LeadUS");
-            }
-            else if (matchManager.winnerID == 1)
-            {
-                AkSoundEngine.SetState("MusicToPlay", "ST_R1_LeadJP");
-            }
+            AkSoundEngine.SetState("MusicToPlay", "ST_R2_Draw");
         }
         else
         {
@@ -83,14 +72,6 @@ public class MusicManager : MonoBehaviour
             else if (matchManager.winnerID == 1 && highScore == 1)
             {
                 AkSoundEngine.SetState("MusicToPlay", "ST_R1_LeadJP");
-            }
-            else if (matchManager.winnerID == 0 && highScore == 2)
-            {
-                AkSoundEngine.SetState("MusicToPlay", "ST_R2_LeadUS");
-            }
-            else if (matchManager.winnerID == 1 && highScore == 2)
-            {
-                AkSoundEngine.SetState("MusicToPlay", "ST_R2_LeadJP");
             }
         }
     }
