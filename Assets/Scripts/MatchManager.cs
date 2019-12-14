@@ -146,7 +146,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isFinalPhase)
         {
             InputTranslator.step = 1;
-           
+          
         }
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
