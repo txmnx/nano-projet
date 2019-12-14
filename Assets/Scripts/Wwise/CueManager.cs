@@ -46,10 +46,9 @@ public class CueManager : MonoBehaviour
                     if(!matchManager.matchIsEnd)
                         matchManager.resetRound();
 
-                    if(!matchManager.isFinalPhase)
-                        InputTranslator.currentStep = 2;
-                    else
+ 
                         InputTranslator.currentStep = 1;
+
 
                     cueCounter = 0;
                     break;
