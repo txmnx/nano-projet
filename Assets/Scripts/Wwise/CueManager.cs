@@ -9,6 +9,7 @@ public class CueManager : MonoBehaviour
     public static bool isCounting = false;
     public bool isBeatDetected = false;
 
+
     public MatchManager matchManager;
 
     public void CueFunction()
@@ -44,6 +45,9 @@ public class CueManager : MonoBehaviour
                     //Functions to call
                     if(!matchManager.matchIsEnd)
                         matchManager.resetRound();
+
+                    InputTranslator.currentStep = 2;
+                    
                     cueCounter = 0;
                     break;
             }
