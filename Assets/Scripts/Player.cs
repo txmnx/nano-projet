@@ -47,6 +47,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public GameObject round1Item;
     public GameObject round2Item;
 
+    public Animator laserAnimator;
+
 
     protected virtual void Start()
     {
@@ -255,7 +257,8 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     break;
                 case MoveType.LASER:
                     animator.SetTrigger("doLaser");
-                   AkSoundEngine.PostEvent("SFX_Common_Laser",gameObject);
+                    laserAnimator.Play("Anim_Laser_vs_laser", 0, 0);
+                    AkSoundEngine.PostEvent("SFX_Common_Laser",gameObject);
                     break;
                 case MoveType.SPECIAL:
                     animator.SetTrigger("doSpecial");
@@ -277,6 +280,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                 case MoveType.LASER:
                     // ici c'est quand le player fait le laser et se prend le reflect
                     AkSoundEngine.PostEvent("SFX_Robot_Laser_Damage", gameObject);
+                    laserAnimator.Play("Anim_Laser_Reflected", 0, 0);
                     animator.SetTrigger("doDamageLaser");
                     break;
                 default:
@@ -296,6 +300,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     break;
                 case MoveType.LASER:
                     animator.SetTrigger("doLaser");
+                    laserAnimator.Play("Anim_Laser", 0, 0);
                     break;
                 case MoveType.SPECIAL:
                     animator.SetTrigger("doSpecial");
