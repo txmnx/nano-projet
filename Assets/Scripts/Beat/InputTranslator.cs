@@ -30,6 +30,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
     public GameObject inputFilter;
 
+    public MatchManager mm;
     
 
     public FightManager fightManager;
@@ -55,6 +56,10 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
         fightManager.OnEnterIdleBeat();
         sequence = Sequence.IDLE;
 
+        if(mm.isFinalPhase)
+        {
+            currentStep = 1;
+        }
         
     }
 
