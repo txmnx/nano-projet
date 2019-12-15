@@ -10,7 +10,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Player[] players;
     public int roundToWin = 2;
 
-    public Slider[] winSliders;
 
     public Sequence currentSequence;
     public Player winner;
@@ -37,6 +36,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public GameObject camera;
     //SONDIER
 
+    public bool isAI = false;
+    private PlayerAI playerAI;
 
     void Start()
     {
@@ -48,15 +49,16 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public void customStart()
     {
         Camera.main.backgroundColor = baseColor;
+        foreach (Player player in players) {
+            player.UpdateRoundCounter();
+        }
 
         BeatManager.RegisterOnBeatElement(this);
-        //TODO : faire avec les boulons
-        /*
-        for (int i = 0; i < winSliders.Length; i++)
-        {
-            winSliders[i].maxValue = roundToWin;
+
+        if (isAI) {
+            playerAI = (PlayerAI)players[1];
+            playerAI.SetInputLength(3f);
         }
-        */
     }
 
     public void OnBeat()
@@ -69,13 +71,16 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isWon) {
             if (!hasIncremented) {
                 winner.wins += 1;
-                //TODO : faire avec les boulons
-                //winSliders[winnerID].value = winner.wins;
+
+                winner.UpdateRoundCounter();
                 hasIncremented = true;
 
                 Debug.Log("test");
                 if (winner.wins == loser.wins && winner.wins == roundToWin - 1)
                 {
+                    if (isAI) {
+                        playerAI.SetInputLength(1f);
+                    }
                     isFinalPhase = true;
                     Debug.Log(isFinalPhase);
                 }
@@ -183,7 +188,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         for (int i = 0; i < players.Length; i++)
         {
             players[i].wins = 0;
-            winSliders[i].value = players[i].wins;
+            players[i].UpdateRoundCounter();
         }
         resetRound();
     }
