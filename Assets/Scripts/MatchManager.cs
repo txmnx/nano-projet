@@ -151,7 +151,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
-            players[i].health.value = players[i].currentLife;
+            players[i].health.currentAmount = players[i].currentLife;
+            players[i].health.refreshHealth();
             players[i].health.gameObject.SetActive(true);
             players[i].BufferReset();
         }

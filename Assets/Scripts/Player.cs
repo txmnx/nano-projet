@@ -19,7 +19,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     protected bool isCharging = false;
     private string chargingMove;
 
-    public Slider health;
+    public Health health;
     public float maxLife = 1200;
     public float currentLife;
     public FightManager fightManager;               //Script managing fights, on the GameManager
@@ -202,10 +202,14 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                 if (Input.GetButtonDown("EraseKey" + idString)) {
                     if (bufferLength > 0) {
                         buffer[bufferLength - 1].move = MoveType.NEUTRAL;
+                        buffer[bufferLength - 1].isCharged = false;
                         buffer[bufferLength - 1].sprite = fightManager.neutralSprite;
                         Debug.Log("NEUTRAL " + (bufferLength - 1));
                         inputsImage[bufferLength - 1].enabled = false;
+                        inputsImage[bufferLength - 1].transform.localScale = new Vector3(0.75f, 0.75f, 1f);
                         bufferLength--;
+
+
                     }
                 }
             }

@@ -23,6 +23,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Sprite specialSprite;
     public Sprite neutralSprite;
 
+    
 
     public Animator laserAnimator;
     public Animator cancelAnimator;
@@ -126,9 +127,11 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         player2.currentLife -= damagePlayer2;
 
         //SONDIER
-        player1.health.value = player1.currentLife;
+        player1.health.currentAmount = player1.currentLife;
+        player2.health.refreshHealth();
         AkSoundEngine.SetRTPCValue("RTPC_American_Health", player1.currentLife);
-        player2.health.value = player2.currentLife;
+        player2.health.currentAmount = player2.currentLife;
+        player2.health.refreshHealth();
         AkSoundEngine.SetRTPCValue("RTPC_Japan_Health", player2.currentLife);
         if (player1.currentLife > player2.currentLife)
             lowestHP = player2.currentLife;
