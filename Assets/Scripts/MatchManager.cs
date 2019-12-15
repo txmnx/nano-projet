@@ -145,7 +145,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         loser.animator.Play("Idle", 0);
         if (isFinalPhase)
         {
-            InputTranslator.step = 1;
+            InputTranslator.step = 0;
           
         }
 

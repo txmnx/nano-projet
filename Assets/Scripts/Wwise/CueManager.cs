@@ -13,20 +13,28 @@ public class CueManager : MonoBehaviour
 
     public MatchManager matchManager;
 
+    public InputTranslator it;
+
     //NEW FUNCTIONS
     public void OnActionCue() //Début de phase d'action
     {
+        InputTranslator.sequence = Sequence.ACTION;
         Debug.Log("OnActionCue");
+        InputTranslator.currentStep = 1;
     }
 
     public void OnInputCue() //Début de phase d'Input
     {
+        InputTranslator.sequence = Sequence.INPUT;
         Debug.Log("OnInputCue");
+        InputTranslator.currentStep = 1;
     }
 
     public void OnIdleCue() //Début de phase d'Idle
     {
+        InputTranslator.sequence = Sequence.IDLE;
         Debug.Log("OnIdleCue");
+        InputTranslator.currentStep = 1;
     }
 
     public void OnIntroStartCue() //Début de la musique d'intro
@@ -46,21 +54,29 @@ public class CueManager : MonoBehaviour
 
     public void OnRoundOutroCue() //Début de la musique d'outro de round
     {
+        InputTranslator.sequence = Sequence.IDLE;
+        matchManager.onRoundEnd();
         Debug.Log("OnRoundOutroCue");
     }
 
     public void OnRoundResetCue() //Fin de la musique d'outro du round
     {
+        matchManager.resetRound();
+
+
         Debug.Log("OnRoundResetCue");
     }
 
     public void OnMatchOutroCue() //Début de la musique d'outro du match
     {
+        InputTranslator.sequence = Sequence.IDLE;
         Debug.Log("OnMatchOutroCue");
     }
 
     public void OnMatchEndCue() //Affichage du menu de fin de match par-dessus la loop musicale du thème du vainqueur
     {
+        if (matchManager.matchIsEnd)
+            finalMenu.Display();
         Debug.Log("OnMatchEndCue");
     }
 
@@ -93,19 +109,15 @@ public class CueManager : MonoBehaviour
 
                 case 4:         //Début d'outro
                     //Functions to call
-                    InputTranslator.sequence = Sequence.IDLE;
+                    
                     isBeatDetected = false;
-                    matchManager.onRoundEnd();
-                    if (matchManager.matchIsEnd)
-                        finalMenu.Display();
+                    
+                    
                     break;
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
-                    if (!matchManager.matchIsEnd)
-                        matchManager.resetRound();
-
-                    InputTranslator.currentStep = 1;
+                    
 
                     cueCounter = 0;
                     break;

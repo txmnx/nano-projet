@@ -51,7 +51,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
         currentStep = 1;
         fightManager.OnEnterIdleBeat();
-        sequence = Sequence.IDLE;
+ 
 
         
     }
@@ -78,9 +78,9 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                 foreach (OnActionBeatElement element in onActionBeatElements) {
                     element.OnEnterActionBeat();
                     element.OnActionBeat();
-                    AkSoundEngine.PostEvent("SFX_InputPhase_Out", gameObject);
+                    
                 }
-                sequence = Sequence.ACTION;
+                AkSoundEngine.PostEvent("SFX_InputPhase_Out", gameObject);
             } 
             else if(sequence == Sequence.IDLE)
             {
@@ -91,7 +91,6 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnEnterIdleBeat();
                     element.OnIdleBeat();
                 }
-                sequence = Sequence.ACTION;
 
             }
             else {
@@ -99,13 +98,11 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnEnterInputBeat();
                     element.OnInputBeat();
                 }
-                sequence = Sequence.INPUT;
                 AkSoundEngine.PostEvent("SFX_InputPhase_In", gameObject);
                 AkSoundEngine.SetSwitch("Charged", "No", Player1Body);
                 AkSoundEngine.SetSwitch("Charged", "No", Player2Body);
 
             }
-            currentStep = 1;
         }
         else{
             if (sequence == Sequence.INPUT) {
