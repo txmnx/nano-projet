@@ -11,6 +11,7 @@ public class CueManager : MonoBehaviour
     public bool isBeatDetected = false;
     public GameObject round1Sprite;
     public GameObject round2Sprite;
+    public GameObject finalRoundSprite;
     public GameObject fightSprite;
     public GameObject victory1Sprite;
     public GameObject victory2Sprite;
@@ -34,6 +35,8 @@ public class CueManager : MonoBehaviour
                         round1Sprite.GetComponent<Animator>().Play("AnimRound", 0, 0);
                     else if ((matchManager.players[0].wins == 0 && matchManager.players[1].wins == 1) || (matchManager.players[0].wins == 1 && matchManager.players[1].wins == 0))
                         round2Sprite.GetComponent<Animator>().Play("AnimRound", 0, 0);
+                    else
+                        finalRoundSprite.GetComponent<Animator>().Play("AnimRound", 0, 0);
                     //Functions to call
 
                     break;
