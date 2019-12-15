@@ -10,7 +10,6 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Player[] players;
     public int roundToWin = 2;
 
-    public Slider[] winSliders;
 
     public Sequence currentSequence;
     public Player winner;
@@ -48,15 +47,11 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public void customStart()
     {
         Camera.main.backgroundColor = baseColor;
+        foreach (Player player in players) {
+            player.UpdateRoundCounter();
+        }
 
         BeatManager.RegisterOnBeatElement(this);
-        //TODO : faire avec les boulons
-        /*
-        for (int i = 0; i < winSliders.Length; i++)
-        {
-            winSliders[i].maxValue = roundToWin;
-        }
-        */
     }
 
     public void OnBeat()
@@ -69,8 +64,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isWon) {
             if (!hasIncremented) {
                 winner.wins += 1;
-                //TODO : faire avec les boulons
-                //winSliders[winnerID].value = winner.wins;
+
+                winner.UpdateRoundCounter();
                 hasIncremented = true;
 
                 Debug.Log("test");
@@ -183,7 +178,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         for (int i = 0; i < players.Length; i++)
         {
             players[i].wins = 0;
-            winSliders[i].value = players[i].wins;
+            players[i].UpdateRoundCounter();
         }
         resetRound();
     }

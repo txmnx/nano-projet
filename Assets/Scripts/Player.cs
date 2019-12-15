@@ -44,6 +44,9 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
 
     public Animator animator;
 
+    public GameObject round1Item;
+    public GameObject round2Item;
+
     protected virtual void Start()
     {
         customStart();
@@ -303,5 +306,27 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     break;
             }
         }
+    }
+
+    public void ResetWins()
+    {
+        wins = 0;
+    }
+
+    public void UpdateRoundCounter()
+    {
+        if (wins == 2) {
+            round1Item.SetActive(true);
+            round2Item.SetActive(true);
+        }
+        else if (wins == 1) {
+            round1Item.SetActive(true);
+            round2Item.SetActive(false);
+        }
+        else {
+            round1Item.SetActive(false);
+            round2Item.SetActive(false);
+        }
+        //ici boulons = wins
     }
 }
