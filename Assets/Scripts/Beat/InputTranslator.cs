@@ -28,6 +28,8 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
     public GameObject Player1Body;
     public GameObject Player2Body;
 
+    public GameObject inputFilter;
+
     
 
     public FightManager fightManager;
@@ -80,6 +82,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnActionBeat();
                     AkSoundEngine.PostEvent("SFX_InputPhase_Out", gameObject);
                 }
+                inputFilter.SetActive(false);
                 sequence = Sequence.ACTION;
             } 
             else if(sequence == Sequence.IDLE)
@@ -91,6 +94,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnEnterIdleBeat();
                     element.OnIdleBeat();
                 }
+                inputFilter.SetActive(false);
                 sequence = Sequence.ACTION;
 
             }
@@ -99,6 +103,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnEnterInputBeat();
                     element.OnInputBeat();
                 }
+                inputFilter.SetActive(true);
                 sequence = Sequence.INPUT;
                 AkSoundEngine.PostEvent("SFX_InputPhase_In", gameObject);
                 AkSoundEngine.SetSwitch("Charged", "No", Player1Body);
