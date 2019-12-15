@@ -25,6 +25,7 @@ public class FinalMenu : MonoBehaviour
     private Choice selection = Choice.REPLAY;
     private bool isMoving = false;
     private bool isPausing = true;
+    public bool isAI = false;
 
     public void Display()
     {
@@ -103,7 +104,12 @@ public class FinalMenu : MonoBehaviour
             validateAnimator.Play("Press", 0, 0);
             switch (selection) {
                 case Choice.REPLAY:
-                    SceneManager.LoadScene("SampleScene");
+                    if (isAI) {
+                        SceneManager.LoadScene("VersusAI");
+                    }
+                    else {
+                        SceneManager.LoadScene("SampleScene");
+                    }
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Start", gameObject);
                     break;
                 case Choice.RETURN:
