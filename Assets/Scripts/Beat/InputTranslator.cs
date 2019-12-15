@@ -51,7 +51,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
 
         step = 2;
 
-        currentStep = 1;
+        currentStep = 2;
         fightManager.OnEnterIdleBeat();
         sequence = Sequence.IDLE;
 
