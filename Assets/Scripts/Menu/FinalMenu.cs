@@ -103,12 +103,16 @@ public class FinalMenu : MonoBehaviour
             validateAnimator.Play("Press", 0, 0);
             switch (selection) {
                 case Choice.REPLAY:
-                    SceneManager.LoadScene("SampleScene");
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Start", gameObject);
+                    AkSoundEngine.PostEvent("UI_Back_Main_Menu", gameObject);
+                    SceneManager.LoadScene("SampleScene");
+                   
                     break;
                 case Choice.RETURN:
-                    SceneManager.LoadScene("MainMenuScene");
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Option", gameObject);
+                    AkSoundEngine.PostEvent("UI_Back_Main_Menu", gameObject);
+                    SceneManager.LoadScene("MainMenuScene");
+               
                     break;
                 default:
                     break;
