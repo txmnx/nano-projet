@@ -4934,7 +4934,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2779191178683623442}
-  - component: {fileID: 2779191178683623453}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -4942,32 +4941,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2779191178683623453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2779191178683623443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be91dc8504979c640a65711c9ffdcd52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 1
-  chargeTime: 0.8
-  chargeTimer: 0
-  health: {fileID: 0}
-  maxLife: 1200
-  currentLife: 0
-  fightManager: {fileID: 0}
-  wins: 0
-  PlayerBody: {fileID: 0}
-  inputsImage:
-  - {fileID: 0}
-  - {fileID: 0}
-  bufferLength: 0
-  animator: {fileID: 2779191178666115248}
 --- !u!1001 &2779191178724262028
 PrefabInstance:
   m_ObjectHideFlags: 0
