@@ -4970,7 +4970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b6415eb5237057348b22d7ce4aa21915, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9da834155b34c649b57ace4a9d23243, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38044,9 +38044,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   matchManager: {fileID: 1226417292}
-  player1Animator: {fileID: 0}
+  player1Animator: {fileID: 1087869080}
   player2Animator: {fileID: 6981050488872968538}
-  cameraAnimator: {fileID: 0}
+  cameraAnimator: {fileID: 1407214306686364233}
+  announceText: {fileID: 5811216349655770419}
   popCurve:
     serializedVersion: 2
     m_Curve:
@@ -59688,6 +59689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5811216349655770417}
+  - component: {fileID: 5811216349655770419}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -59695,6 +59697,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5811216349655770419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5811216349655770418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4215ce0a03f6f49b2fac899469e16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animFight: {fileID: 5811216350154612465}
+  round1Fight: {fileID: 5811216351189900155}
+  round2Fight: {fileID: 5811216351241476198}
+  victory1Fight: {fileID: 5811216351212756200}
+  victory2Fight: {fileID: 5811216349575180172}
 --- !u!212 &5811216350154612464
 SpriteRenderer:
   m_ObjectHideFlags: 0
