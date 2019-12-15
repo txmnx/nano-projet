@@ -23,7 +23,10 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Sprite specialSprite;
     public Sprite neutralSprite;
 
-    
+
+    public Animator laserAnimator;
+    public Animator cancelAnimator;
+
 
     //SONDIER
     private float lowestHP;
@@ -108,6 +111,13 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         float damagePlayer2 = CompareMove(player2.buffer[counter], player1.buffer[counter]);
 
         bool cancel = (player1.buffer[counter].move == player2.buffer[counter].move);
+
+        if (cancel) {
+            if (player1.buffer[counter].move != Player.MoveType.NEUTRAL) {
+                cancelAnimator.Play("Cancel", 0, 0);
+            }
+        }
+
 
         player1.PlayAnim(player1.buffer[counter], cancel, damagePlayer1 != 0f, player1.buffer[counter].move == Player.MoveType.LASER);
         player2.PlayAnim(player2.buffer[counter], cancel, damagePlayer2 != 0f, player2.buffer[counter].move == Player.MoveType.LASER);
