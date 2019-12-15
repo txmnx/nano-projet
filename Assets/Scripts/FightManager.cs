@@ -23,6 +23,8 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
     public Sprite specialSprite;
     public Sprite neutralSprite;
 
+    
+
     //SONDIER
     private float lowestHP;
     //SONDIER
@@ -95,8 +97,6 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
         counter = 0;
         action1Image.enabled = false;
         action2Image.enabled = false;
-
-        Debug.Log("INCROYABLE");
 
         player1.Reset();
         player2.Reset();

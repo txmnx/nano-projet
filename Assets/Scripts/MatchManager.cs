@@ -17,16 +17,20 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public Player loser;
     public int winnerID;
     public bool isWon = false;
+    public bool matchIsEnd = false;
 
     private bool gameIsPaused = false;
     private bool roundIsEnd = false;
-    private bool matchIsEnd = false;
+   
     private bool hasIncremented = false;
-    
+    public bool isFinalPhase = false;
+
     public Color victoryJapColor;
     public Color victoryUsColor;
     public Color baseColor;
     public CueManager cueManager;
+
+    public FinalMenu finalMenu;
 
     //SONDIER
     public MusicManager musicManager;
@@ -46,11 +50,13 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         Camera.main.backgroundColor = baseColor;
 
         BeatManager.RegisterOnBeatElement(this);
-
+        //TODO : faire avec les boulons
+        /*
         for (int i = 0; i < winSliders.Length; i++)
         {
             winSliders[i].maxValue = roundToWin;
         }
+        */
     }
 
     public void OnBeat()
@@ -63,8 +69,18 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         if (isWon) {
             if (!hasIncremented) {
                 winner.wins += 1;
-                winSliders[winnerID].value = winner.wins;
+                //TODO : faire avec les boulons
+                //winSliders[winnerID].value = winner.wins;
                 hasIncremented = true;
+
+                Debug.Log("test");
+                if (winner.wins == loser.wins && winner.wins == roundToWin - 1)
+                {
+                    isFinalPhase = true;
+                    Debug.Log(isFinalPhase);
+                }
+                    
+
             }
 
             onRoundEnd();
@@ -98,6 +114,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
         }
         else if (players[0].currentLife <= 0) {
+            players[0].health.gameObject.SetActive(false);
             winner = players[1];
             loser = players[0];
             winnerID = 1;
@@ -105,6 +122,7 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         }
 
         else if (players[1].currentLife <= 0) {
+            players[1].health.gameObject.SetActive(false);
             winner = players[0];
             loser = players[1];
             winnerID = 0;
@@ -128,9 +146,18 @@ public class MatchManager : MonoBehaviour, OnBeatElement
 
     public void resetRound()
     {
+        camera.GetComponent<Animator>().SetTrigger("Start");
+        loser.animator.Play("Idle", 0);
+        if (isFinalPhase)
+        {
+            InputTranslator.step = 1;
+          
+        }
+
         for (int i = 0; i < players.Length; i++) {
             players[i].currentLife = players[i].maxLife;
             players[i].health.value = players[i].currentLife;
+            players[i].health.gameObject.SetActive(true);
             players[i].BufferReset();
         }
         camera.GetComponent<Animator>().SetTrigger("Start");
