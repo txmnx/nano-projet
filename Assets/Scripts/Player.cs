@@ -69,7 +69,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     {
         for(int i = 0; i<inputsImage.Length; i++)
         {
-            inputsImage[i].transform.localScale = new Vector3(1, 1, 1);
+            inputsImage[i].transform.localScale = new Vector3(0.75f, 0.75f, 1);
         }
 
         Reset();
@@ -175,7 +175,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
                     {
                         if (!buffer[bufferLength - 1].isCharged)
                         {
-                            inputsImage[bufferLength - 1].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+                            inputsImage[bufferLength - 1].transform.localScale = new Vector3(0.9f, 0.9f, 1f);
                             buffer[bufferLength - 1].isCharged = true;
                             AkSoundEngine.PostEvent("SFX_Common_Charged", gameObject);
                         }

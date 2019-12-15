@@ -40,7 +40,7 @@ public class PlayerAI : Player
             if (isCharging) {
                 chargeTimer += Time.deltaTime;
                 if (chargeTimer > chargeTime) {
-                    inputsImage[bufferLength - 1].transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+                    inputsImage[bufferLength - 1].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
                     buffer[bufferLength - 1].isCharged = true;
 
                     chargeTimer = 0.0f;
