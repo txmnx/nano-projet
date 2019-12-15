@@ -21906,6 +21906,7 @@ MonoBehaviour:
   Player1Body: {fileID: 1087869079}
   Player2Body: {fileID: 501163903}
   inputFilter: {fileID: 1644373658699143249}
+  mm: {fileID: 1226417292}
   fightManager: {fileID: 1226417291}
 --- !u!4 &1226417288
 Transform:
