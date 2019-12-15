@@ -128,7 +128,7 @@ public class FightManager : MonoBehaviour, OnInputBeatElement, OnActionBeatEleme
 
         //SONDIER
         player1.health.currentAmount = player1.currentLife;
-        player2.health.refreshHealth();
+        player1.health.refreshHealth();
         AkSoundEngine.SetRTPCValue("RTPC_American_Health", player1.currentLife);
         player2.health.currentAmount = player2.currentLife;
         player2.health.refreshHealth();
