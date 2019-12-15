@@ -21948,9 +21948,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 1597863165}
   player2: {fileID: 6981050488989551095}
-  basicDamage: 100
-  chargedCoeff: 6
-  specialCoeff: 5
+  basicDamage: 150
+  chargedCoeff: 2
+  specialCoeff: 2
   action1Image: {fileID: 1698788733489565358}
   action2Image: {fileID: 8141125923607667147}
   hitSprite: {fileID: 21300000, guid: 670fcdf072520e7419935523069b731c, type: 3}
