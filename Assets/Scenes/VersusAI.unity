@@ -22145,6 +22145,7 @@ MonoBehaviour:
   finalMenu: {fileID: 365255823}
   musicManager: {fileID: 894088827}
   camera: {fileID: 1407214306686364235}
+  isAI: 1
 --- !u!1 &1290057931
 GameObject:
   m_ObjectHideFlags: 0

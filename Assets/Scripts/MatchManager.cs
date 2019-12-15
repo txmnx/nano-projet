@@ -36,6 +36,8 @@ public class MatchManager : MonoBehaviour, OnBeatElement
     public GameObject camera;
     //SONDIER
 
+    public bool isAI = false;
+    private PlayerAI playerAI;
 
     void Start()
     {
@@ -52,6 +54,11 @@ public class MatchManager : MonoBehaviour, OnBeatElement
         }
 
         BeatManager.RegisterOnBeatElement(this);
+
+        if (isAI) {
+            playerAI = (PlayerAI)players[1];
+            playerAI.SetInputLength(3f);
+        }
     }
 
     public void OnBeat()
@@ -71,6 +78,9 @@ public class MatchManager : MonoBehaviour, OnBeatElement
                 Debug.Log("test");
                 if (winner.wins == loser.wins && winner.wins == roundToWin - 1)
                 {
+                    if (isAI) {
+                        playerAI.SetInputLength(1f);
+                    }
                     isFinalPhase = true;
                     Debug.Log(isFinalPhase);
                 }
