@@ -7,7 +7,7 @@
   "RootPaths": {
    "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
    "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\final-son\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\sound-fx\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
    "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },

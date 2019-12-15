@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID AMB_MAIN_START = 1418672556U;
         static const AkUniqueID AMB_MENU_START = 3958906054U;
-        static const AkUniqueID CUEMANAGER_NEWCUE = 2279207821U;
         static const AkUniqueID FOLEY_ROBOT_DAMAGE = 1606116385U;
         static const AkUniqueID FOLEY_ROBOT_DEATH = 1218823660U;
         static const AkUniqueID FOLEY_ROBOT_DEATH_METAL_CREAKING = 2452461343U;
@@ -35,16 +34,47 @@ namespace AK
         static const AkUniqueID FOLEY_ROBOT_WIN = 1105393344U;
         static const AkUniqueID MUSIC_R0_INIT = 2178242372U;
         static const AkUniqueID MUSIC_ROUNDENDPART2 = 2927058889U;
-        static const AkUniqueID PLAY_CUEMANAGER = 1568189152U;
         static const AkUniqueID PLAY_MAIN_MUSIC = 414863633U;
         static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_MUSIC_PAUSE = 1122264096U;
+        static const AkUniqueID PLAYACTIONCUE = 2153856366U;
+        static const AkUniqueID PLAYIDLECUE = 2578546882U;
+        static const AkUniqueID PLAYINPUTCUE = 4260899194U;
+        static const AkUniqueID PLAYINTROFIGHTCUE = 980500664U;
+        static const AkUniqueID PLAYMATCHENDCUE = 2915503442U;
+        static const AkUniqueID PLAYMATCHOUTROCUE = 1153050680U;
+        static const AkUniqueID PLAYROUNDINTROCUE = 1021446294U;
+        static const AkUniqueID PLAYROUNDOUTROCUE = 3418588931U;
+        static const AkUniqueID PLAYROUNDRESETCUE = 3637748999U;
+        static const AkUniqueID PLAYSTARTINTROCUE = 3933135626U;
+        static const AkUniqueID SETACTIONCUE = 2316884950U;
+        static const AkUniqueID SETACTIONSLIENCE = 913050544U;
+        static const AkUniqueID SETIDLECUE = 3027721818U;
+        static const AkUniqueID SETIDLESILENCE = 1721873390U;
+        static const AkUniqueID SETINPUTCUE = 1672356194U;
+        static const AkUniqueID SETINPUTSLIENCE = 1299824204U;
+        static const AkUniqueID SETINTROFIGHTCUE = 1877049344U;
+        static const AkUniqueID SETINTROFIGHTSILENCE = 3991617220U;
+        static const AkUniqueID SETMATCHENDCUE = 2473752858U;
+        static const AkUniqueID SETMATCHENDSILENCE = 709162926U;
+        static const AkUniqueID SETMATCHOUTROCUE = 1893972432U;
+        static const AkUniqueID SETMATCHOUTROSILENCE = 1474554644U;
+        static const AkUniqueID SETROUNDINTROCUE = 699261182U;
+        static const AkUniqueID SETROUNDINTROSILENCE = 4187047986U;
+        static const AkUniqueID SETROUNDOUTROCUE = 18555899U;
+        static const AkUniqueID SETROUNDOUTROSILENCE = 3189743371U;
+        static const AkUniqueID SETROUNDRESETCUE = 236608575U;
+        static const AkUniqueID SETROUNDRESETSILENCE = 2894093199U;
+        static const AkUniqueID SETSTARTINTROCUE = 3411659282U;
+        static const AkUniqueID SETSTARTINTROSILENCE = 2070579798U;
         static const AkUniqueID SFX_COMMON_CHARGED = 3605011583U;
-        static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS = 2927774105U;
+        static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS_AMERICAN = 2679173430U;
+        static const AkUniqueID SFX_COMMON_ELECTRIC_SPARKS_JAPAN = 3037153600U;
         static const AkUniqueID SFX_COMMON_FENTE = 657576033U;
         static const AkUniqueID SFX_COMMON_GUARD = 2840219912U;
         static const AkUniqueID SFX_COMMON_LASER = 2413456602U;
-        static const AkUniqueID SFX_COMMON_OIL = 2534836963U;
+        static const AkUniqueID SFX_COMMON_OIL_AMERICAN = 460343140U;
+        static const AkUniqueID SFX_COMMON_OIL_JAPAN = 1353233454U;
         static const AkUniqueID SFX_COMMON_REFLECT = 2807764600U;
         static const AkUniqueID SFX_COMMON_SPECIAL = 1518756630U;
         static const AkUniqueID SFX_INPUTPHASE_IN = 427260706U;
@@ -63,6 +93,8 @@ namespace AK
         static const AkUniqueID SFX_TITLE_FIGHT = 2335777874U;
         static const AkUniqueID SFX_TITLE_TIMER = 3290104963U;
         static const AkUniqueID SFX_TITLE_WIN = 1985058514U;
+        static const AkUniqueID STOP_ELECTRIC = 745372469U;
+        static const AkUniqueID UI_BACK_MAIN_MENU = 2335589549U;
         static const AkUniqueID UI_MENU_CLIC_OPTION = 773074497U;
         static const AkUniqueID UI_MENU_CLIC_START = 473947498U;
         static const AkUniqueID UI_MENU_HOVERED_MAIN = 2697976037U;
@@ -138,6 +170,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace ACTION
+        {
+            static const AkUniqueID GROUP = 209137191U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ACTIONCUE = 1598928224U;
+                static const AkUniqueID ACTIONSILENCE = 703332644U;
+            } // namespace SWITCH
+        } // namespace ACTION
+
         namespace CHARGED
         {
             static const AkUniqueID GROUP = 3146088667U;
@@ -148,6 +191,61 @@ namespace AK
                 static const AkUniqueID YES = 979470758U;
             } // namespace SWITCH
         } // namespace CHARGED
+
+        namespace FIGHTINTRO
+        {
+            static const AkUniqueID GROUP = 1024145737U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FIGHTINTROCUE = 2197357298U;
+                static const AkUniqueID FIGHTINTROSILENCE = 1420413750U;
+            } // namespace SWITCH
+        } // namespace FIGHTINTRO
+
+        namespace IDLE
+        {
+            static const AkUniqueID GROUP = 1874288895U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID IDLECUE = 884671112U;
+                static const AkUniqueID IDLESILENCE = 3905243164U;
+            } // namespace SWITCH
+        } // namespace IDLE
+
+        namespace INPUT
+        {
+            static const AkUniqueID GROUP = 1444863999U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID INPUTCUE = 752498568U;
+                static const AkUniqueID INPUTSILENCE = 753061148U;
+            } // namespace SWITCH
+        } // namespace INPUT
+
+        namespace MATCHEND
+        {
+            static const AkUniqueID GROUP = 4131982911U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID MATCHENDCUE = 642314184U;
+                static const AkUniqueID MATCHENDSILENCE = 2260604252U;
+            } // namespace SWITCH
+        } // namespace MATCHEND
+
+        namespace MATCHOUTRO
+        {
+            static const AkUniqueID GROUP = 2670776597U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID MATCHOUTROCUE = 4030993286U;
+                static const AkUniqueID MATCHOUTROSILENCE = 65913002U;
+            } // namespace SWITCH
+        } // namespace MATCHOUTRO
 
         namespace ROUND
         {
@@ -164,6 +262,50 @@ namespace AK
             } // namespace SWITCH
         } // namespace ROUND
 
+        namespace ROUNDINTRO
+        {
+            static const AkUniqueID GROUP = 3859864659U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ROUNDINTROCUE = 2967578548U;
+                static const AkUniqueID ROUNDINTROSILENCE = 2779827416U;
+            } // namespace SWITCH
+        } // namespace ROUNDINTRO
+
+        namespace ROUNDOUTRO
+        {
+            static const AkUniqueID GROUP = 4091964912U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ROUNDOUTROCUE = 498668177U;
+                static const AkUniqueID ROUNDOUTROSILENCE = 3707361081U;
+            } // namespace SWITCH
+        } // namespace ROUNDOUTRO
+
+        namespace ROUNDRESET
+        {
+            static const AkUniqueID GROUP = 390378104U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ROUNDRESETCUE = 1171485257U;
+                static const AkUniqueID ROUNDRESETSILENCE = 144757057U;
+            } // namespace SWITCH
+        } // namespace ROUNDRESET
+
+        namespace STARTINTRO
+        {
+            static const AkUniqueID GROUP = 4042048507U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID STARTINTROCUE = 2469998604U;
+                static const AkUniqueID STARTINTROSILENCE = 3276818560U;
+            } // namespace SWITCH
+        } // namespace STARTINTRO
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -175,11 +317,6 @@ namespace AK
         static const AkUniqueID SIDECHAIN_ALL_BY_VO = 81210309U;
         static const AkUniqueID SIDECHAIN_ROBOT_DAMAGE = 436444058U;
     } // namespace GAME_PARAMETERS
-
-    namespace TRIGGERS
-    {
-        static const AkUniqueID NEWCUE = 2473054966U;
-    } // namespace TRIGGERS
 
     namespace BANKS
     {
