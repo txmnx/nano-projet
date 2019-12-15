@@ -47,6 +47,7 @@ public class Player : MonoBehaviour, OnActionBeatElement, OnInputBeatElement
     public GameObject round1Item;
     public GameObject round2Item;
 
+
     protected virtual void Start()
     {
         customStart();

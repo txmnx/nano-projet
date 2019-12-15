@@ -2741,6 +2741,8 @@ MonoBehaviour:
   guardSprite: {fileID: 21300000, guid: 1f4f408d445637e47a0924ecc5756466, type: 3}
   specialSprite: {fileID: 21300000, guid: 3fc68e773f1632241920e535b94e33c9, type: 3}
   neutralSprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  laserAnimator: {fileID: 7162106832761059165}
+  cancelAnimator: {fileID: 3045651447859505759}
 --- !u!114 &1226417292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16096,7 +16098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3045651447859505758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.1, z: -1.26}
+  m_LocalPosition: {x: -0.64, y: 0.1, z: -1.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3045651447772723165}
@@ -16112,13 +16114,33 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3045651447859505757}
+  - component: {fileID: 3045651447859505759}
   m_Layer: 0
   m_Name: "FX_Egalit\xE9_des_coups"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!95 &3045651447859505759
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045651447859505758}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bdd16a90630af94897fe30b7652eabc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &3480575115578391586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38116,7 +38138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &7162106832702770265
 ParticleSystem:
   m_ObjectHideFlags: 0
