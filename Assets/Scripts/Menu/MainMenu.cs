@@ -25,7 +25,7 @@ public class MainMenu : MonoBehaviour
     {
         menuPanelTransform = menuPanel.GetComponent<RectTransform>();
         creditsPanelTransform = creditsPanel.GetComponent<RectTransform>();
-        rulesPanelTransform = rulesPanel.GetComponent<RectTransform>();
+        rulesPanelTransform = rulesPanel.GetComponent<RectTransform>(); 
 
         menuChoices.Pause(false);
         creditsPanel.Pause(true);

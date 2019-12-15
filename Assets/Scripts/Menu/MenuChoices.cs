@@ -85,7 +85,7 @@ public class MenuChoices : MonoBehaviour
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Start", UI_StartGame);
                     break;
                 case Choice.AI:
-                    SceneManager.LoadScene("FightSceneAI");
+                    //SceneManager.LoadScene("FightSceneAI");
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Start", UI_StartGame);
                     break;
                 case Choice.RULES:

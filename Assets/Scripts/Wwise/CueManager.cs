@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CueManager : MonoBehaviour
 {
+    public FinalMenu finalMenu;
 
     public int cueCounter = 0;
     public static bool isCounting = false;
     public bool isBeatDetected = false;
+
 
     public MatchManager matchManager;
 
@@ -38,11 +40,17 @@ public class CueManager : MonoBehaviour
                     InputTranslator.sequence = Sequence.IDLE;
                     isBeatDetected = false;
                     matchManager.onRoundEnd();
+                    if (matchManager.matchIsEnd)
+                        finalMenu.Display();
                     break;
 
                 case 5:         //Fin d'outro / Initialisation prochain round
                     //Functions to call
-                    matchManager.resetRound();
+                    if (!matchManager.matchIsEnd)
+                        matchManager.resetRound();
+
+                    InputTranslator.currentStep = 1;
+
                     cueCounter = 0;
                     break;
             }

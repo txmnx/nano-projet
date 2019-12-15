@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Nano_Project_Unity\branches\integrationSon\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\Nano_Project\Nano_Project_Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="845961116" Language="SFX">
@@ -229,7 +229,7 @@
 				</File>
 				<File Id="159675984" Language="SFX">
 					<ShortName>UI_Menu_Clic_Option.wav</ShortName>
-					<Path>SFX\UI_Menu_Clic_Option_5A8B001A.wem</Path>
+					<Path>SFX\UI_Menu_Clic_Option_1091852D.wem</Path>
 				</File>
 				<File Id="175973606" Language="SFX">
 					<ShortName>R1_LeadJ2_01_Top.wav</ShortName>
@@ -290,7 +290,7 @@
 				</File>
 				<File Id="229496985" Language="SFX">
 					<ShortName>UI_Menu_Clic_Start.wav</ShortName>
-					<Path>SFX\UI_Menu_Clic_Start_CD1803BB.wem</Path>
+					<Path>SFX\UI_Menu_Clic_Start_FE146E75.wem</Path>
 				</File>
 				<File Id="229955774" Language="SFX">
 					<ShortName>MUI POP UP Metallic Power Surge.wav</ShortName>
@@ -412,7 +412,7 @@
 				</File>
 				<File Id="423734698" Language="SFX">
 					<ShortName>UI_Menu_Clic_Option.wav</ShortName>
-					<Path>SFX\UI_Menu_Clic_Option_F200E956.wem</Path>
+					<Path>SFX\UI_Menu_Clic_Option_7940053A.wem</Path>
 				</File>
 				<File Id="425021210" Language="SFX">
 					<ShortName>Round 4.wav</ShortName>
@@ -630,7 +630,7 @@
 				</File>
 				<File Id="729317737" Language="SFX">
 					<ShortName>PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C.wav</ShortName>
-					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_2454D6E0.wem</Path>
+					<Path>SFX\PM_LFT_88 UI, HUD, Short, Terminal, Beep, Lofi, Reto, Scifi, Menu, Action, C_A6CAEC02.wem</Path>
 				</File>
 				<File Id="736632805" Language="SFX">
 					<ShortName>R2_Common_03_Base.wav</ShortName>
