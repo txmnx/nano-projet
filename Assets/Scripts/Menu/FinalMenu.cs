@@ -8,10 +8,9 @@ public class FinalMenu : MonoBehaviour
 {
     enum Choice
     {
-        REPLAY,
         RETURN
     }
-    int choicesLength = 2;
+    int choicesLength = 1;
 
     private float distanceBetweenChoices = 60f;
 
@@ -22,9 +21,10 @@ public class FinalMenu : MonoBehaviour
     public Animator validateAnimator;
     public TextMeshProUGUI[] choicesTexts;
 
-    private Choice selection = Choice.REPLAY;
+    private Choice selection = Choice.RETURN;
     private bool isMoving = false;
     private bool isPausing = true;
+    public bool isAI = false;
 
     public void Display()
     {
@@ -102,10 +102,6 @@ public class FinalMenu : MonoBehaviour
         if (Input.GetButtonDown("Validate")) {
             validateAnimator.Play("Press", 0, 0);
             switch (selection) {
-                case Choice.REPLAY:
-                    SceneManager.LoadScene("SampleScene");
-                    AkSoundEngine.PostEvent("UI_Menu_Clic_Start", gameObject);
-                    break;
                 case Choice.RETURN:
                     SceneManager.LoadScene("MainMenuScene");
                     AkSoundEngine.PostEvent("UI_Menu_Clic_Option", gameObject);
@@ -119,32 +115,32 @@ public class FinalMenu : MonoBehaviour
     public void Reset()
     {
         rectTransformChoices.anchoredPosition = new Vector2(rectTransformChoices.anchoredPosition.x, 0f);
-        selection = Choice.REPLAY;
+        selection = Choice.RETURN;
         HighlightText(selection);
     }
 
     private void MoveUp()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.15f, -distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.15f, 0));
     }
 
     private void MoveDown()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.15f, distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.15f, 0));
     }
 
     private void MoveTop()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.2f, -distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.2f, 0));
     }
 
     private void MoveBottom()
     {
         isMoving = true;
-        StartCoroutine(MoveAnimation(0.2f, distanceBetweenChoices));
+        StartCoroutine(MoveAnimation(0.2f, 0));
     }
 
     private IEnumerator MoveAnimation(float duration, float offset)

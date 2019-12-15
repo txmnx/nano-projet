@@ -12,7 +12,6 @@ public class PlayerAI : Player
     private float lastDecision = 0.0f;
     private float decisionTimer = 0.0f;
 
-    //TODO : this variable should be global and linked to the real speed music
     private float inputSequenceLength = 3f;
     private float inputSequenceTimer = 0.0f;
     private float inputSequenceProgression {
@@ -130,5 +129,11 @@ public class PlayerAI : Player
         currentStrategy = AIStrategyPicker.RandomStrategy(fightManager.random);
 
         decisionPeriod = Random.Range(decisionPeriodMin, decisionPeriodMax);
+    }
+
+    public void SetInputLength(float length)
+    {
+        inputSequenceLength = length;
+        Reset();
     }
 }

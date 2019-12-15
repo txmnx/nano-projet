@@ -12,6 +12,8 @@ public class PauseMenu : MonoBehaviour
     public Animator player2Animator;
     public Animator cameraAnimator;
 
+    public AnnounceText announceText;
+
     public AnimationCurve popCurve;
     public Animator exitKeyAnimator;
 
@@ -30,12 +32,12 @@ public class PauseMenu : MonoBehaviour
         if (isMoving) return;
 
         if (isPaused) {
-            if (Input.GetButtonDown("Exit")) {
+            if (Input.GetButtonDown("Validate")) {
                 exitKeyAnimator.Play("Press", 0, 0);
                 ReturnToMainMenu();
                 return;
             }
-            if (Input.GetButtonDown("Pause")) {
+            if (Input.GetButtonDown("Pause") || Input.GetButtonDown("Exit")) {
                 Hide();
                 isPaused = false;
             }
@@ -51,6 +53,7 @@ public class PauseMenu : MonoBehaviour
         player1Animator.enabled = true;
         player2Animator.enabled = true;
         cameraAnimator.enabled = true;
+        announceText.Pause(false);
         Pop(true);
 
         AkSoundEngine.PostEvent("UI_Menu_UnPauseGame", gameObject);
@@ -62,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         player1Animator.enabled = false;
         player2Animator.enabled = false;
         cameraAnimator.enabled = false;
+        announceText.Pause(true);
         Pop(false);
 
         AkSoundEngine.PostEvent("UI_Menu_PauseGame", gameObject);
