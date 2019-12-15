@@ -13,6 +13,62 @@ public class CueManager : MonoBehaviour
 
     public MatchManager matchManager;
 
+    //NEW FUNCTIONS
+    public void OnActionCue() //Début de phase d'action
+    {
+        Debug.Log("OnActionCue");
+    }
+
+    public void OnInputCue() //Début de phase d'Input
+    {
+        Debug.Log("OnInputCue");
+    }
+
+    public void OnIdleCue() //Début de phase d'Idle
+    {
+        Debug.Log("OnIdleCue");
+    }
+
+    public void OnIntroStartCue() //Début de la musique d'intro
+    {
+        Debug.Log("OnIntroStartCue");
+    }
+
+    public void OnIntroRoundCue() //Annonce du round
+    {
+        Debug.Log("OnIntroRoundCue");
+    }
+
+    public void OnIntroFightCue() //Annonce de début de fight
+    {
+        Debug.Log("OnIntroFightCue");
+    }
+
+    public void OnRoundOutroCue() //Début de la musique d'outro de round
+    {
+        Debug.Log("OnRoundOutroCue");
+    }
+
+    public void OnRoundResetCue() //Fin de la musique d'outro du round
+    {
+        Debug.Log("OnRoundResetCue");
+    }
+
+    public void OnMatchOutroCue() //Début de la musique d'outro du match
+    {
+        Debug.Log("OnMatchOutroCue");
+    }
+
+    public void OnMatchEndCue() //Affichage du menu de fin de match par-dessus la loop musicale du thème du vainqueur
+    {
+        Debug.Log("OnMatchEndCue");
+    }
+
+
+
+
+
+    //C'est vieux et c'est de la marde
     public void CueFunction()
     {
         if (isCounting)

@@ -7,7 +7,7 @@
   "RootPaths": {
    "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\",
    "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\integrationSon\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Nano_Project_Unity\\branches\\final-son\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
    "ExternalSourcesInputFile": "",
    "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\G - Nano Projet VS\\Repo Wwise\\trunk\\nano-projet_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
@@ -38,16 +38,16 @@
     "Path": "SFX\\UI_Start_Game_66C02B12.wem"
    },
    {
-    "Id": "469132256",
-    "Language": "SFX",
-    "ShortName": "R0_Init_04.wav",
-    "Path": "SFX\\R0_Init_04_C42B8C3C.wem"
-   },
-   {
     "Id": "519801725",
     "Language": "SFX",
     "ShortName": "Amb_Main_Start.wav",
     "Path": "SFX\\Amb_Main_Start_87303D88.wem"
+   },
+   {
+    "Id": "544635784",
+    "Language": "SFX",
+    "ShortName": "SFX_Common_Electric_Sparkles.wav",
+    "Path": "SFX\\SFX_Common_Electric_Sparkles_C42B8C3C.wem"
    },
    {
     "Id": "559559911",
@@ -66,6 +66,12 @@
     "Language": "SFX",
     "ShortName": "RoundEnd_WinUS_Part2.wav",
     "Path": "SFX\\RoundEnd_WinUS_Part2_C42B8C3C.wem"
+   },
+   {
+    "Id": "1031812766",
+    "Language": "SFX",
+    "ShortName": "SFX_Common_Oil.wav",
+    "Path": "SFX\\SFX_Common_Oil_C42B8C3C.wem"
    }
   ],
   "MediaFilesNotInAnyBank": [],
@@ -88,15 +94,6 @@
       "Name": "Amb_Menu_Start",
       "ObjectPath": "\\Events\\Ambience_Event\\Amb_Menu_Start",
       "DurationType": "Infinite"
-     },
-     {
-      "Id": "2279207821",
-      "Name": "CueManager_NewCue",
-      "ObjectPath": "\\Events\\Music_Event\\CueManager_NewCue",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
      },
      {
       "Id": "1606116385",
@@ -247,12 +244,6 @@
       "DurationType": "Infinite"
      },
      {
-      "Id": "1568189152",
-      "Name": "Play_CueManager",
-      "ObjectPath": "\\Events\\Music_Event\\Play_CueManager",
-      "DurationType": "Infinite"
-     },
-     {
       "Id": "414863633",
       "Name": "Play_Main_Music",
       "ObjectPath": "\\Events\\Music_Event\\Play_Main_Music",
@@ -271,6 +262,246 @@
       "DurationType": "Infinite"
      },
      {
+      "Id": "2153856366",
+      "Name": "PlayActionCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\ActionCue\\PlayActionCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "2578546882",
+      "Name": "PlayIdleCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\IdleCue\\PlayIdleCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "4260899194",
+      "Name": "PlayInputCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\InputCue\\PlayInputCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "980500664",
+      "Name": "PlayIntroFightCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\IntroFightCue\\PlayIntroFightCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "2915503442",
+      "Name": "PlayMatchEndCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchEndCue\\PlayMatchEndCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "1153050680",
+      "Name": "PlayMatchOutroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchOutroCue\\PlayMatchOutroCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "1021446294",
+      "Name": "PlayRoundIntroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundIntroCue\\PlayRoundIntroCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3418588931",
+      "Name": "PlayRoundOutroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundOutroCue\\PlayRoundOutroCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3637748999",
+      "Name": "PlayRoundResetCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundResetCue\\PlayRoundResetCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3933135626",
+      "Name": "PlayStartIntroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\StartIntroCue\\PlayStartIntroCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "2316884950",
+      "Name": "SetActionCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\ActionCue\\SetActionCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "913050544",
+      "Name": "SetActionSlience",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\ActionCue\\SetActionSlience",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3027721818",
+      "Name": "SetIdleCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\IdleCue\\SetIdleCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1721873390",
+      "Name": "SetIdleSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\IdleCue\\SetIdleSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1672356194",
+      "Name": "SetInputCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\InputCue\\SetInputCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1299824204",
+      "Name": "SetInputSlience",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\InputCue\\SetInputSlience",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1877049344",
+      "Name": "SetIntroFightCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\IntroFightCue\\SetIntroFightCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3991617220",
+      "Name": "SetIntroFightSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\IntroFightCue\\SetIntroFightSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2473752858",
+      "Name": "SetMatchEndCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchEndCue\\SetMatchEndCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "709162926",
+      "Name": "SetMatchEndSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchEndCue\\SetMatchEndSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1893972432",
+      "Name": "SetMatchOutroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchOutroCue\\SetMatchOutroCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1474554644",
+      "Name": "SetMatchOutroSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchOutroCue\\SetMatchOutroSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "699261182",
+      "Name": "SetRoundIntroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundIntroCue\\SetRoundIntroCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "4187047986",
+      "Name": "SetRoundIntroSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundIntroCue\\SetRoundIntroSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "18555899",
+      "Name": "SetRoundOutroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundOutroCue\\SetRoundOutroCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3189743371",
+      "Name": "SetRoundOutroSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundOutroCue\\SetRoundOutroSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "236608575",
+      "Name": "SetRoundResetCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundResetCue\\SetRoundResetCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2894093199",
+      "Name": "SetRoundResetSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\RoundResetCue\\SetRoundResetSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3411659282",
+      "Name": "SetStartIntroCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\StartIntroCue\\SetStartIntroCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2070579798",
+      "Name": "SetStartIntroSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\StartIntroCue\\SetStartIntroSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "3605011583",
       "Name": "SFX_Common_Charged",
       "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Charged",
@@ -279,9 +510,15 @@
       "DurationMax": "0.789456"
      },
      {
-      "Id": "2927774105",
-      "Name": "SFX_Common_Electric_Sparks",
-      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Electric_Sparks",
+      "Id": "2679173430",
+      "Name": "SFX_Common_Electric_Sparks_American",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Electric_Sparks_American",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3037153600",
+      "Name": "SFX_Common_Electric_Sparks_Japan",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Electric_Sparks_Japan",
       "DurationType": "Infinite"
      },
      {
@@ -309,9 +546,15 @@
       "DurationMax": "1.502903"
      },
      {
-      "Id": "2534836963",
-      "Name": "SFX_Common_Oil",
-      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Oil",
+      "Id": "460343140",
+      "Name": "SFX_Common_Oil_American",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Oil_American",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "1353233454",
+      "Name": "SFX_Common_Oil_Japan",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\SFX_Common_Oil_Japan",
       "DurationType": "Infinite"
      },
      {
@@ -459,6 +702,24 @@
       "DurationMax": "1.904898"
      },
      {
+      "Id": "745372469",
+      "Name": "Stop_Electric",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\Stop_Electric",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2335589549",
+      "Name": "UI_Back_Main_Menu",
+      "ObjectPath": "\\Events\\SFX_Event\\Common\\UI_Back_Main_Menu",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "773074497",
       "Name": "UI_Menu_Clic_Option",
       "ObjectPath": "\\Events\\UI_Event\\Menu\\UI_Menu_Clic_Option",
@@ -559,10 +820,10 @@
       "Id": "297461524"
      },
      {
-      "Id": "469132256"
+      "Id": "519801725"
      },
      {
-      "Id": "519801725"
+      "Id": "544635784"
      },
      {
       "Id": "559559911"
@@ -572,6 +833,9 @@
      },
      {
       "Id": "1005534466"
+     },
+     {
+      "Id": "1031812766"
      }
     ],
     "IncludedMemoryFiles": [
@@ -1054,13 +1318,6 @@
       "Path": "SFX\\R2_LeadJ2_01_Base_C42B8C3C.wem"
      },
      {
-      "Id": "469132256",
-      "Language": "SFX",
-      "ShortName": "R0_Init_04.wav",
-      "Path": "SFX\\R0_Init_04_C42B8C3C.wem",
-      "PrefetchSize": "8237"
-     },
-     {
       "Id": "474779492",
       "Language": "SFX",
       "ShortName": "Foley_Robot_Death_Metal_Creaking_01.wav",
@@ -1143,12 +1400,6 @@
       "Language": "SFX",
       "ShortName": "Foley_Robot_Laser_Shoot_Door_Open_03.wav",
       "Path": "SFX\\Foley_Robot_Laser_Shoot_Door_Open_03_66C02B12.wem"
-     },
-     {
-      "Id": "544635784",
-      "Language": "SFX",
-      "ShortName": "SFX_Common_Electric_Sparkles.wav",
-      "Path": "SFX\\SFX_Common_Electric_Sparkles_C42B8C3C.wem"
      },
      {
       "Id": "553069373",
@@ -1679,12 +1930,6 @@
       "Language": "SFX",
       "ShortName": "SFX_Robot_Particles_01.wav",
       "Path": "SFX\\SFX_Robot_Particles_01_66C02B12.wem"
-     },
-     {
-      "Id": "1031812766",
-      "Language": "SFX",
-      "ShortName": "SFX_Common_Oil.wav",
-      "Path": "SFX\\SFX_Common_Oil_C42B8C3C.wem"
      },
      {
       "Id": "1037255977",

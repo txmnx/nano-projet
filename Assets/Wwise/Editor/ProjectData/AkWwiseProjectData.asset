@@ -17,14 +17,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6f59ae2603fd524c83e0e880814a4d92
     GuidInternal: 
-    m_lastTime: -8586277868655958563
+    m_lastTime: -8586277873411011597
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 10dcd05810f9c0468e2282cbc4a19aea
     GuidInternal: 
-    m_lastTime: -8586252824789290440
+    m_lastTime: -8586252715630332219
     List:
     - name: Reverb_Decheterie
       guid: c1c2f16fd0c0894a85cf05c9d62cba71
@@ -66,13 +66,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ecf03042b7b91a439d21c630e3e238d4
     GuidInternal: 
-    m_lastTime: -8586277749165085305
+    m_lastTime: -8586271789597811388
     List: []
   - PhysicalPath: SoundBanks\SNB_Main.wwu
     ParentPhysicalPath: 
     guid: b6386809e450f84a89d7618320656b7b
     GuidInternal: 
-    m_lastTime: -8586260583277184612
+    m_lastTime: -8586260530870195610
     List:
     - name: SNB_Main
       guid: 5a38715bda597948abec28b707c2d621
@@ -88,7 +88,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86770a334b68ee4aace1537791113e2f
     GuidInternal: 
-    m_lastTime: -8586256068043256206
+    m_lastTime: -8586255888242972653
     List:
     - name: Amb_Main_Start
       guid: b26f12f46b949d4bab2aa71a3d9e6586
@@ -118,13 +118,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 86922fae59db6f4c8494842b7abdce54
     GuidInternal: 
-    m_lastTime: -8586252784774699658
+    m_lastTime: -8586262238816350761
     List: []
   - PhysicalPath: Events\Foley_Event.wwu
     ParentPhysicalPath: 
     guid: 2819fee626dec34fad76f39d0b5e8fee
     GuidInternal: 
-    m_lastTime: -8586253529448049560
+    m_lastTime: -8586253490874141383
     List:
     - name: Foley_Robot_Damage
       guid: 5c4b80f78d52fe4bb57372af5699d6d4
@@ -334,20 +334,8 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 3f9039c29cb98940a6441c571d186c66
     GuidInternal: 
-    m_lastTime: -8586252811330323971
+    m_lastTime: -8586251762935753753
     List:
-    - name: CueManager_NewCue
-      guid: d5915c242ff48647b0ea9a8a8a03be3e
-      id: 2279207821
-      PathAndIcons:
-      - ElementName: Music_Event
-        ObjectType: 12
-      - ElementName: CueManager_NewCue
-        ObjectType: 3
-      Path: Music_Event\CueManager_NewCue
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Music_R0_Init
       guid: 8c59682d33566943b084a0642d65d713
       id: 2178242372
@@ -369,18 +357,6 @@ MonoBehaviour:
       - ElementName: Music_RoundEndPart2
         ObjectType: 3
       Path: Music_Event\Music_RoundEndPart2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_CueManager
-      guid: b88143f51f169548a0fb752bc270cf26
-      id: 1568189152
-      PathAndIcons:
-      - ElementName: Music_Event
-        ObjectType: 12
-      - ElementName: Play_CueManager
-        ObjectType: 3
-      Path: Music_Event\Play_CueManager
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -420,11 +396,491 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PlayActionCue
+      guid: 031063c4a4c2a142a5b1b4f194500178
+      id: 2153856366
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: ActionCue
+        ObjectType: 4
+      - ElementName: PlayActionCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\ActionCue\PlayActionCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayIdleCue
+      guid: 3b182f245c81c645b718df25900851b2
+      id: 2578546882
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: IdleCue
+        ObjectType: 4
+      - ElementName: PlayIdleCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\IdleCue\PlayIdleCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayInputCue
+      guid: 5f2aa83c125e7644ab382ad75557a417
+      id: 4260899194
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: InputCue
+        ObjectType: 4
+      - ElementName: PlayInputCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\InputCue\PlayInputCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayIntroFightCue
+      guid: e45cf772086e7a44a269e5864079e189
+      id: 980500664
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: IntroFightCue
+        ObjectType: 4
+      - ElementName: PlayIntroFightCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\IntroFightCue\PlayIntroFightCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayMatchEndCue
+      guid: 704dbacab8415c4b8f731b44fd5310ec
+      id: 2915503442
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchEndCue
+        ObjectType: 4
+      - ElementName: PlayMatchEndCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\MatchEndCue\PlayMatchEndCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayMatchOutroCue
+      guid: ac0327a23cc43b45aa078213d63ab3b1
+      id: 1153050680
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchOutroCue
+        ObjectType: 4
+      - ElementName: PlayMatchOutroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\MatchOutroCue\PlayMatchOutroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayRoundIntroCue
+      guid: 185806a40fc7f041ba0225a039202ae1
+      id: 1021446294
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundIntroCue
+        ObjectType: 4
+      - ElementName: PlayRoundIntroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundIntroCue\PlayRoundIntroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayRoundOutroCue
+      guid: 9ad60e8eda1be045a1ac79ac14fe5581
+      id: 3418588931
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundOutroCue
+        ObjectType: 4
+      - ElementName: PlayRoundOutroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundOutroCue\PlayRoundOutroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayRoundResetCue
+      guid: d6d98f7bce80d74d94d06fc634823c63
+      id: 3637748999
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundResetCue
+        ObjectType: 4
+      - ElementName: PlayRoundResetCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundResetCue\PlayRoundResetCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayStartIntroCue
+      guid: 0ee8aad5c1d9834886a540c4137c634c
+      id: 3933135626
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: StartIntroCue
+        ObjectType: 4
+      - ElementName: PlayStartIntroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\StartIntroCue\PlayStartIntroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetActionCue
+      guid: fff6348356b80e40a98840a090b7db8b
+      id: 2316884950
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: ActionCue
+        ObjectType: 4
+      - ElementName: SetActionCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\ActionCue\SetActionCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetActionSlience
+      guid: 9f72be21bf7a8647a16d05ccc82563d1
+      id: 913050544
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: ActionCue
+        ObjectType: 4
+      - ElementName: SetActionSlience
+        ObjectType: 3
+      Path: Music_Event\CueManager\ActionCue\SetActionSlience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetIdleCue
+      guid: 8c31f6ff7476d0449f8d0e41bd39b2e7
+      id: 3027721818
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: IdleCue
+        ObjectType: 4
+      - ElementName: SetIdleCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\IdleCue\SetIdleCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetIdleSilence
+      guid: b533789f3771b346ac86406767208a4a
+      id: 1721873390
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: IdleCue
+        ObjectType: 4
+      - ElementName: SetIdleSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\IdleCue\SetIdleSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetInputCue
+      guid: de0fa0aee426574bbcd3f4753a299afb
+      id: 1672356194
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: InputCue
+        ObjectType: 4
+      - ElementName: SetInputCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\InputCue\SetInputCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetInputSlience
+      guid: 2e293ebef5e45c4097e0db60981c953a
+      id: 1299824204
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: InputCue
+        ObjectType: 4
+      - ElementName: SetInputSlience
+        ObjectType: 3
+      Path: Music_Event\CueManager\InputCue\SetInputSlience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetIntroFightCue
+      guid: bb043f80bfb06b45bf1e9d84d4601918
+      id: 1877049344
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: IntroFightCue
+        ObjectType: 4
+      - ElementName: SetIntroFightCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\IntroFightCue\SetIntroFightCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetIntroFightSilence
+      guid: d0fa814320611542a2e276d592b8f093
+      id: 3991617220
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: IntroFightCue
+        ObjectType: 4
+      - ElementName: SetIntroFightSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\IntroFightCue\SetIntroFightSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetMatchEndCue
+      guid: ee409d8a7355c742bd91d9ff2f30fbe2
+      id: 2473752858
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchEndCue
+        ObjectType: 4
+      - ElementName: SetMatchEndCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\MatchEndCue\SetMatchEndCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetMatchEndSilence
+      guid: 8d6e8ba4befe77439dbe02dfb8c39a80
+      id: 709162926
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchEndCue
+        ObjectType: 4
+      - ElementName: SetMatchEndSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\MatchEndCue\SetMatchEndSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetMatchOutroCue
+      guid: d2934fffdb0631498509dc7c86249d62
+      id: 1893972432
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchOutroCue
+        ObjectType: 4
+      - ElementName: SetMatchOutroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\MatchOutroCue\SetMatchOutroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetMatchOutroSilence
+      guid: 468b44906d90204dabffd6b009c938cb
+      id: 1474554644
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchOutroCue
+        ObjectType: 4
+      - ElementName: SetMatchOutroSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\MatchOutroCue\SetMatchOutroSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetRoundIntroCue
+      guid: 6894129bb6386c499d534b14971a98e8
+      id: 699261182
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundIntroCue
+        ObjectType: 4
+      - ElementName: SetRoundIntroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundIntroCue\SetRoundIntroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetRoundIntroSilence
+      guid: 01cd52c4c5bde54ca208f0a0ed8ca90d
+      id: 4187047986
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundIntroCue
+        ObjectType: 4
+      - ElementName: SetRoundIntroSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundIntroCue\SetRoundIntroSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetRoundOutroCue
+      guid: 1affd49f8d80e149ba30eda0cd79e8f6
+      id: 18555899
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundOutroCue
+        ObjectType: 4
+      - ElementName: SetRoundOutroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundOutroCue\SetRoundOutroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetRoundOutroSilence
+      guid: 9bffba451901154482eab7c02dde4d4c
+      id: 3189743371
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundOutroCue
+        ObjectType: 4
+      - ElementName: SetRoundOutroSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundOutroCue\SetRoundOutroSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetRoundResetCue
+      guid: 4f9d4dc1b1f3c94e8377bbc489582735
+      id: 236608575
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundResetCue
+        ObjectType: 4
+      - ElementName: SetRoundResetCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundResetCue\SetRoundResetCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetRoundResetSilence
+      guid: db39b8aa84d9aa4d98c23b1ab6ab6a42
+      id: 2894093199
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundResetCue
+        ObjectType: 4
+      - ElementName: SetRoundResetSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\RoundResetCue\SetRoundResetSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetStartIntroCue
+      guid: a35594fd74e29e4f8bccb75cffcd41ae
+      id: 3411659282
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: StartIntroCue
+        ObjectType: 4
+      - ElementName: SetStartIntroCue
+        ObjectType: 3
+      Path: Music_Event\CueManager\StartIntroCue\SetStartIntroCue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SetStartIntroSilence
+      guid: 7ac54e322f68eb42850202b5358f1031
+      id: 2070579798
+      PathAndIcons:
+      - ElementName: Music_Event
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: StartIntroCue
+        ObjectType: 4
+      - ElementName: SetStartIntroSilence
+        ObjectType: 3
+      Path: Music_Event\CueManager\StartIntroCue\SetStartIntroSilence
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\SFX_Event.wwu
     ParentPhysicalPath: 
     guid: 5cebe567ef60f14e9759ffa10f3c2c5f
     GuidInternal: 
-    m_lastTime: -8586252866603985672
+    m_lastTime: -8586252438677446756
     List:
     - name: SFX_Common_Charged
       guid: 179a08e096b51b49b6b516034637cf40
@@ -440,17 +896,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Common_Electric_Sparks
+    - name: SFX_Common_Electric_Sparks_American
       guid: 5f73930f1958f841a06b5e8fea70caba
-      id: 2927774105
+      id: 2679173430
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
       - ElementName: Common
         ObjectType: 4
-      - ElementName: SFX_Common_Electric_Sparks
+      - ElementName: SFX_Common_Electric_Sparks_American
         ObjectType: 3
-      Path: SFX_Event\Common\SFX_Common_Electric_Sparks
+      Path: SFX_Event\Common\SFX_Common_Electric_Sparks_American
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Electric_Sparks_Japan
+      guid: 8385ee7a8008bf4d999616939c4154ed
+      id: 3037153600
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Electric_Sparks_Japan
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Electric_Sparks_Japan
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -496,17 +966,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: SFX_Common_Oil
+    - name: SFX_Common_Oil_American
       guid: a29aa1e3fc161e48872b1b56a5afc916
-      id: 2534836963
+      id: 460343140
       PathAndIcons:
       - ElementName: SFX_Event
         ObjectType: 12
       - ElementName: Common
         ObjectType: 4
-      - ElementName: SFX_Common_Oil
+      - ElementName: SFX_Common_Oil_American
         ObjectType: 3
-      Path: SFX_Event\Common\SFX_Common_Oil
+      Path: SFX_Event\Common\SFX_Common_Oil_American
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Common_Oil_Japan
+      guid: 2681b400ad90e949ad5592633c310435
+      id: 1353233454
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: SFX_Common_Oil_Japan
+        ObjectType: 3
+      Path: SFX_Event\Common\SFX_Common_Oil_Japan
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -762,11 +1246,39 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Electric
+      guid: ee23b1f3925ef84a81e230ed65c0e0dd
+      id: 745372469
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: Stop_Electric
+        ObjectType: 3
+      Path: SFX_Event\Common\Stop_Electric
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Back_Main_Menu
+      guid: 5f4d72c35db8e9409ededc2b20c33004
+      id: 2335589549
+      PathAndIcons:
+      - ElementName: SFX_Event
+        ObjectType: 12
+      - ElementName: Common
+        ObjectType: 4
+      - ElementName: UI_Back_Main_Menu
+        ObjectType: 3
+      Path: SFX_Event\Common\UI_Back_Main_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\UI_Event.wwu
     ParentPhysicalPath: 
     guid: fc06b71d5a783f42a84198eef90d64a3
     GuidInternal: 
-    m_lastTime: -8586252777668877148
+    m_lastTime: -8586252768578746582
     List:
     - name: UI_Menu_Clic_Option
       guid: 5b1bf01fd15897478c9429d3bf418913
@@ -870,7 +1382,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1150215756f2b94c933b581d375a472e
     GuidInternal: 
-    m_lastTime: -8586255196527576862
+    m_lastTime: -8586255192026731878
     List:
     - name: V0_Victory_Fight
       guid: 8af026f934d53947a5a9f985734c5409
@@ -925,13 +1437,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 99bf92aa40e6ff40899e4dba44f66b8a
     GuidInternal: 
-    m_lastTime: -8586259693435031733
+    m_lastTime: -8586277873578083488
     List: []
   - PhysicalPath: Game Parameters\GameParameters.wwu
     ParentPhysicalPath: 
     guid: 9c12ca43141ceb4fa0904c48c50fc66f
     GuidInternal: 
-    m_lastTime: -8586255111058233288
+    m_lastTime: -8586254537555793802
     List:
     - name: RTPC_American_Health
       guid: 0c2d74fb3f61c843b49f0bb7f210bd57
@@ -955,7 +1467,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 00f8bec34e6cc147a114597dd7e19d49
     GuidInternal: 
-    m_lastTime: -8586254388616926591
+    m_lastTime: -8586254426241124490
     List:
     - name: RTPC_Lowest_Health
       guid: 8d6584ac40b3c840ba5a1af5614c618e
@@ -970,14 +1482,23 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 27c794134e2fbb49b93a32208e411fd2
     GuidInternal: 
-    m_lastTime: -8586274199511690565
+    m_lastTime: -8586271789598706902
     List: []
   - PhysicalPath: Game Parameters\Sidechain.wwu
     ParentPhysicalPath: 
     guid: a70defde949534459cacfeb3308c2fb7
     GuidInternal: 
-    m_lastTime: -8586252825262087941
+    m_lastTime: -8586252744087899304
     List:
+    - name: Sidechain_All_by_SFX
+      guid: eea6ae0ee04597408b55496a183608c0
+      id: 2092023757
+      PathAndIcons:
+      - ElementName: Sidechain
+        ObjectType: 12
+      - ElementName: Sidechain_All_by_SFX
+        ObjectType: 13
+      Path: Sidechain\Sidechain_All_by_SFX
     - name: Sidechain_All_By_VO
       guid: 838ec22530227d45a9e0df36c90b4bd5
       id: 81210309
@@ -1001,13 +1522,13 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 2998adf915598c4782afc7f2fa59a7d9
     GuidInternal: 
-    m_lastTime: -8586277868656257215
+    m_lastTime: -8586262358495186373
     List: []
   - PhysicalPath: States\Music_States.wwu
     ParentPhysicalPath: 
     guid: 5bd7f45acdf4224bb51914ac15a62692
     GuidInternal: 
-    m_lastTime: -8586254247022148236
+    m_lastTime: -8586253586122479429
     List:
     - name: CueManager
       guid: ae3093224713db45ace8d61f3d6706dc
@@ -1160,7 +1681,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9435b629aaebad42beff3cac1971c2b1
     GuidInternal: 
-    m_lastTime: -8586253552146445179
+    m_lastTime: -8586254537616596345
     List:
     - name: Damage
       guid: 5b56fd62f818c748bc54d156b1e85337
@@ -1216,14 +1737,176 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bcefb86a0c078f4eb53a0dc795b4a9c1
     GuidInternal: 
-    m_lastTime: -8586266552085238916
+    m_lastTime: -8586254473774490046
     List: []
   - PhysicalPath: Switches\Music_Switch.wwu
     ParentPhysicalPath: 
     guid: 443a80c3c9f6c94fbd0facfa8f0143ab
     GuidInternal: 
-    m_lastTime: -8586255197251447333
+    m_lastTime: -8586251797999177398
     List:
+    - name: Action
+      guid: 14254f38bc8bb64b910bca4e919b97db
+      id: 209137191
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: Action
+        ObjectType: 11
+      Path: Music_Switch\CueManager\Action
+      values:
+      - name: ActionCue
+        guid: d2bfbb97cbc586468ccebf4e1cc9f216
+        id: 1598928224
+        PathAndIcons:
+        - ElementName: ActionCue
+          ObjectType: 10
+      - name: ActionSilence
+        guid: da90a6df7f2f4848b211214e9942405a
+        id: 703332644
+        PathAndIcons:
+        - ElementName: ActionSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: FightIntro
+      guid: 6a3b182ba0d16e4db5ab8cb62ba4f576
+      id: 1024145737
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: FightIntro
+        ObjectType: 11
+      Path: Music_Switch\CueManager\FightIntro
+      values:
+      - name: FightIntroCue
+        guid: 23380b5427c7ca4296ee15de3cab27d7
+        id: 2197357298
+        PathAndIcons:
+        - ElementName: FightIntroCue
+          ObjectType: 10
+      - name: FightIntroSilence
+        guid: 7661f518d376b64ebe5d381113c5d29a
+        id: 1420413750
+        PathAndIcons:
+        - ElementName: FightIntroSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Idle
+      guid: d2f8ceeca76bca459581b4351b1dfff2
+      id: 1874288895
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: Idle
+        ObjectType: 11
+      Path: Music_Switch\CueManager\Idle
+      values:
+      - name: IdleCue
+        guid: 3ba1bfdde1ce9443b0af6a6b274ef3f8
+        id: 884671112
+        PathAndIcons:
+        - ElementName: IdleCue
+          ObjectType: 10
+      - name: IdleSilence
+        guid: 180590083ddc3440a64d59057dffc101
+        id: 3905243164
+        PathAndIcons:
+        - ElementName: IdleSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Input
+      guid: 3f6634b45344bc48969fc8c4e9c5418f
+      id: 1444863999
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: Input
+        ObjectType: 11
+      Path: Music_Switch\CueManager\Input
+      values:
+      - name: InputCue
+        guid: 0e6e92e66ca2664d811835f5cd7490ea
+        id: 752498568
+        PathAndIcons:
+        - ElementName: InputCue
+          ObjectType: 10
+      - name: InputSilence
+        guid: 3dded6f9f21cfe4e9d51e85872ec8695
+        id: 753061148
+        PathAndIcons:
+        - ElementName: InputSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MatchEnd
+      guid: 4a847d9ee4ec6448af08168684fc592f
+      id: 4131982911
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchEnd
+        ObjectType: 11
+      Path: Music_Switch\CueManager\MatchEnd
+      values:
+      - name: MatchEndCue
+        guid: 7edf93fa1ee0dc47b213bc4b1f681918
+        id: 642314184
+        PathAndIcons:
+        - ElementName: MatchEndCue
+          ObjectType: 10
+      - name: MatchEndSilence
+        guid: add769895b86f3419ba5e0a3e9e075fe
+        id: 2260604252
+        PathAndIcons:
+        - ElementName: MatchEndSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MatchOutro
+      guid: 05f2e778ebdb4d4fb888d57da159914c
+      id: 2670776597
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: MatchOutro
+        ObjectType: 11
+      Path: Music_Switch\CueManager\MatchOutro
+      values:
+      - name: MatchOutroCue
+        guid: 5a34a5e5a879894a81232222651812dd
+        id: 4030993286
+        PathAndIcons:
+        - ElementName: MatchOutroCue
+          ObjectType: 10
+      - name: MatchOutroSilence
+        guid: 71d89c4b56ff4441a7ee05cb47a57453
+        id: 65913002
+        PathAndIcons:
+        - ElementName: MatchOutroSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Round
       guid: f03f18ad88d0f6478361085adc540329
       id: 1413238543
@@ -1273,11 +1956,119 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: RoundIntro
+      guid: 2810cd7e6f9da2478b122742fd8e8395
+      id: 3859864659
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundIntro
+        ObjectType: 11
+      Path: Music_Switch\CueManager\RoundIntro
+      values:
+      - name: RoundIntroCue
+        guid: 3283c84d2655f34094df4eef185742bb
+        id: 2967578548
+        PathAndIcons:
+        - ElementName: RoundIntroCue
+          ObjectType: 10
+      - name: RoundIntroSilence
+        guid: f256e17a0fe2464899240366703acb5d
+        id: 2779827416
+        PathAndIcons:
+        - ElementName: RoundIntroSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: RoundOutro
+      guid: 498c8f1b13a5dc4589856be7a466d968
+      id: 4091964912
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundOutro
+        ObjectType: 11
+      Path: Music_Switch\CueManager\RoundOutro
+      values:
+      - name: RoundOutroCue
+        guid: 37d45d61476324498b1413b7420f62bd
+        id: 498668177
+        PathAndIcons:
+        - ElementName: RoundOutroCue
+          ObjectType: 10
+      - name: RoundOutroSilence
+        guid: b971925f8511094e98b2edc9ec0ee3c1
+        id: 3707361081
+        PathAndIcons:
+        - ElementName: RoundOutroSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: RoundReset
+      guid: 6d2bbe8f0674214f9e3afed3fa2f360a
+      id: 390378104
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: RoundReset
+        ObjectType: 11
+      Path: Music_Switch\CueManager\RoundReset
+      values:
+      - name: RoundResetCue
+        guid: 4f7e9e01d345d043b28d818add1cf24d
+        id: 1171485257
+        PathAndIcons:
+        - ElementName: RoundResetCue
+          ObjectType: 10
+      - name: RoundResetSilence
+        guid: 5d62fd6f66f395449cba1af713469565
+        id: 144757057
+        PathAndIcons:
+        - ElementName: RoundResetSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: StartIntro
+      guid: 23222303c97d454fa9c68d101ecd7a92
+      id: 4042048507
+      PathAndIcons:
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: CueManager
+        ObjectType: 4
+      - ElementName: StartIntro
+        ObjectType: 11
+      Path: Music_Switch\CueManager\StartIntro
+      values:
+      - name: StartIntroCue
+        guid: 05724f4cb51e4449a1808e39a85ee322
+        id: 2469998604
+        PathAndIcons:
+        - ElementName: StartIntroCue
+          ObjectType: 10
+      - name: StartIntroSilence
+        guid: 05c5d64d7d847741b46b0ecd9c8679c2
+        id: 3276818560
+        PathAndIcons:
+        - ElementName: StartIntroSilence
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\SFX_Switch.wwu
     ParentPhysicalPath: 
     guid: ceccf3f5cfadcd4389f0188ef4ead3fd
     GuidInternal: 
-    m_lastTime: -8586254253132956973
+    m_lastTime: -8586253586153502684
     List:
     - name: Charged
       guid: 04110e11b284ef439ec10b1c081b23b3
@@ -1309,26 +2100,30 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 650da5fbe5676d4284afdd0cf3823b06
     GuidInternal: 
-    m_lastTime: -8586277868656057904
+    m_lastTime: -8586277873411167824
     List: []
   - PhysicalPath: Triggers\Music_Triggers.wwu
     ParentPhysicalPath: 
     guid: 8fef727bf33bd045888b876f6c901765
     GuidInternal: 
-    m_lastTime: -8586255210893445824
-    List:
-    - name: NewCue
-      guid: 17660fc613facd4aac6558ff9685f4ed
-      id: 2473054966
-      PathAndIcons:
-      - ElementName: Music_Triggers
-        ObjectType: 12
-      - ElementName: NewCue
-        ObjectType: 14
-      Path: Music_Triggers\NewCue
+    m_lastTime: -8586251860222672795
+    List: []
   ExpandedItems:
   - /nano-projet_WwiseProject
   - /nano-projet_WwiseProject/Events
+  - /nano-projet_WwiseProject/Events/Ambience_Event
+  - /nano-projet_WwiseProject/Events/Music_Event
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/ActionCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/IdleCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/InputCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/IntroFightCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/MatchEndCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/MatchOutroCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/RoundIntroCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/RoundOutroCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/RoundResetCue
+  - /nano-projet_WwiseProject/Events/Music_Event/CueManager/StartIntroCue
   - /nano-projet_WwiseProject/Events/UI_Event
   - /nano-projet_WwiseProject/Events/UI_Event/Menu
   autoPopulateEnabled: 1
