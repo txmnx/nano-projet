@@ -18,7 +18,7 @@ public class MusicManager : MonoBehaviour
     {
         player1 = fightManager.player1;
         player2 = fightManager.player2;
-        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncAll, MusicCallbackFunction, (uint)AkCallbackType.AK_MusicSyncUserCue);
+        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, MusicCallbackFunction, (uint)AkCallbackType.AK_MusicSyncUserCue);
     }
 
     public void StartIntro()
@@ -109,6 +109,9 @@ public class MusicManager : MonoBehaviour
     {
         AkMusicSyncCallbackInfo musicInfo = in_info as AkMusicSyncCallbackInfo;
         musicCueName = musicInfo.userCueName;
-        Debug.Log(musicCueName);
+        if (musicCueName == "Michel" || musicCueName == "Patrick")
+        {
+            Debug.Log(musicCueName);
+        }
     }
 }

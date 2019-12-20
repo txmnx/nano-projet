@@ -1585,7 +1585,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505597233}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 258c4a78143fef3499a5b8a5b226a27a, type: 3}
   m_Name: 
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505597233}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea073f1036a3c3941962a3d25b659a96, type: 3}
   m_Name: 
@@ -2651,7 +2651,8 @@ MonoBehaviour:
   MusicEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 24a4f3fad143a5346882a892eb459430,
+      type: 2}
   Start_Music: {fileID: 184791162}
   matchManager: {fileID: 1226417292}
   fightManager: {fileID: 1226417291}

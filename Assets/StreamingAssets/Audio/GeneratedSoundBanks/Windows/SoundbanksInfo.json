@@ -244,6 +244,15 @@
       "DurationType": "Infinite"
      },
      {
+      "Id": "1063895858",
+      "Name": "PatrickCueTrigger",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\PatrickCueTrigger",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "414863633",
       "Name": "Play_Main_Music",
       "ObjectPath": "\\Events\\Music_Event\\Play_Main_Music",

@@ -22,6 +22,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	980500664	PlayIntroFightCue			\Music_Event\CueManager\IntroFightCue\PlayIntroFightCue	
 	1021446294	PlayRoundIntroCue			\Music_Event\CueManager\RoundIntroCue\PlayRoundIntroCue	
 	1047748741	UI_Option_Back			\UI_Event\Menu\UI_Option_Back	
+	1063895858	PatrickCueTrigger			\Music_Event\CueManager\PatrickCueTrigger	
 	1105393344	Foley_Robot_Win			\Foley_Event\Foley_Robot_Win	
 	1108056908	SetMiddleBeatOutputCue			\Music_Event\CueManager\MiddleBeatOutputCue\SetMiddleBeatOutputCue	
 	1122264096	Play_Music_Pause			\Music_Event\Play_Music_Pause	
@@ -195,6 +196,9 @@ Modulator Time	ID	Name			Wwise Object Path	Notes
 	678217957	Modulator Time (Custom)				
 	1032724889	Modulator Time (Custom)				
 
+Trigger	ID	Name			Wwise Object Path	Notes
+	3188639482	PatrickCue			\Music_Triggers\PatrickCue	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	741982	Foley_Robot_Impact_Reflect_Small_03	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Robot_Impact_Reflect_Small_03_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Robot\Foley_Robot_Damage\Fente\Fente\Foley_Robot_Impact_Reflect_Small_03		35492
 	5142327	Intro_39BPM	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Intro_39BPM_C42B8C3C.wem		\Interactive Music Hierarchy\Music\Intros\Intro_39BPM\Intro_39BPM\Intro_39BPM		477
@@ -209,7 +213,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	53559621	Foley_Robot_Metal_Creaking_07	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Robot_Damage_01-07_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Robot\Foley_Robot_Metal_Creaking\Foley_Robot_Metal_Creaking_07		49388
 	55459180	R1_LeadJ2_01_Base	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\R1_LeadJ2_01_Base_C42B8C3C.wem		\Interactive Music Hierarchy\Music\Main Music Switch\R1_LeadJP\Variation 1\R1_LeadJ2_01_Base		1033275
 	74552780	Foley_Robot_Iddle_07	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Robot_Iddle_07_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Robot\Foley_Robot_Iddle\Foley_Robot_Iddle_07		10779
-	74623473	John Cena	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\John Cena_C42B8C3C.wem		\Interactive Music Hierarchy\Voice\VO_Victory_Round\John Cena\John Cena		226330
+	74623473	John Cena	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\John Cena_C42B8C3C.wem		\Interactive Music Hierarchy\Music\CueManager\MatchOutro\MatchOutroCue\Cue\John Cena		226330
 	79838510	SFX_Japan_SpecialAttack	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\SFX_Japan_SpecialAttack_66C02B12.wem		\Actor-Mixer Hierarchy\SFX\SFXold\Robot\Robot_Folder\Robot\SFX_Robot_SpecialAttack\SFX_Japan_SpecialAttack		182753
 	84102774	Foley_Robot_Laser_Shoot_Door_Close_03	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Robot_Laser_Shoot_Door_Close_03_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Robot\Foley_Robot_Laser_Door_Close\Foley_Robot_Laser_Shoot_Door_Close_03		126386
 	84791863	Foley_Robot_Laser_Shoot_Door_Close_02	D:\Documents\- ENJMIN\- PROJETS\G - Nano Projet VS\Repo Wwise\trunk\nano-projet_WwiseProject\.cache\Mac\SFX\Foley_Robot_Laser_Shoot_Door_Close_02_66C02B12.wem		\Actor-Mixer Hierarchy\Foley\Robot\Foley_Robot_Laser_Door_Close\Foley_Robot_Laser_Shoot_Door_Close_02		103471

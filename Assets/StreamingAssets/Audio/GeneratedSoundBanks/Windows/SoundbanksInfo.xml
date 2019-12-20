@@ -78,6 +78,7 @@
 				<Event Id="1105393344" Name="Foley_Robot_Win" ObjectPath="\Events\Foley_Event\Foley_Robot_Win" DurationType="OneShot" DurationMin="0.410726" DurationMax="0.410726"/>
 				<Event Id="2178242372" Name="Music_R0_Init" ObjectPath="\Events\Music_Event\Music_R0_Init" DurationType="Infinite"/>
 				<Event Id="2927058889" Name="Music_RoundEndPart2" ObjectPath="\Events\Music_Event\Music_RoundEndPart2" DurationType="Infinite"/>
+				<Event Id="1063895858" Name="PatrickCueTrigger" ObjectPath="\Events\Music_Event\CueManager\PatrickCueTrigger" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="414863633" Name="Play_Main_Music" ObjectPath="\Events\Music_Event\Play_Main_Music" DurationType="Infinite"/>
 				<Event Id="2228153899" Name="Play_Menu_Music" ObjectPath="\Events\Music_Event\Play_Menu_Music" DurationType="Infinite"/>
 				<Event Id="3033370822" Name="Play_Michel" ObjectPath="\Events\Music_Event\Play_Michel" DurationType="Infinite"/>

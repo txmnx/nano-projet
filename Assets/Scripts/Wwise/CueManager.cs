@@ -89,12 +89,12 @@ public class CueManager : MonoBehaviour
         Debug.Log("OnMatchEndCue");
     }
 
-    public void OnMiddleBeatInput() //Deuxième temps en phase d'Input
+    public void OnMiddleBeatInputCue() //Deuxième temps en phase d'Input
     {
 
     }
 
-    public void OnMiddleBeatAction() //Deuxième temps en phase d'Action
+    public void OnMiddleBeatActionCue() //Deuxième temps en phase d'Action
     {
 
     }
