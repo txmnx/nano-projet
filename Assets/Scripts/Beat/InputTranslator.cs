@@ -80,7 +80,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnActionBeat();
                     
                 }
-                AkSoundEngine.PostEvent("SFX_InputPhase_Out", gameObject);
+                
             } 
             else if(sequence == Sequence.IDLE)
             {
@@ -98,9 +98,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
                     element.OnEnterInputBeat();
                     element.OnInputBeat();
                 }
-                AkSoundEngine.PostEvent("SFX_InputPhase_In", gameObject);
-                AkSoundEngine.SetSwitch("Charged", "No", Player1Body);
-                AkSoundEngine.SetSwitch("Charged", "No", Player2Body);
+                
 
             }
         }
@@ -130,7 +128,7 @@ public class InputTranslator : MonoBehaviour, OnBeatElement
             }
             currentStep++;
         }
-        Debug.Log(sequence);
+        
     }
 
     /**

@@ -10,6 +10,8 @@ public class CueManager : MonoBehaviour
     public static bool isCounting = false;
     public bool isBeatDetected = false;
 
+    public GameObject Player1Body;
+    public GameObject Player2Body;
 
     public MatchManager matchManager;
 
@@ -21,12 +23,21 @@ public class CueManager : MonoBehaviour
         InputTranslator.sequence = Sequence.ACTION;
         Debug.Log("OnActionCue");
         InputTranslator.currentStep = 1;
+        AkSoundEngine.PostEvent("SFX_InputPhase_Out", gameObject);
+    }
+
+    public void OnBeat()
+    {
+        Debug.Log(InputTranslator.sequence);
     }
 
     public void OnInputCue() //Début de phase d'Input
     {
         InputTranslator.sequence = Sequence.INPUT;
         Debug.Log("OnInputCue");
+        AkSoundEngine.PostEvent("SFX_InputPhase_In", gameObject);
+        AkSoundEngine.SetSwitch("Charged", "No", Player1Body);
+        AkSoundEngine.SetSwitch("Charged", "No", Player2Body);
         InputTranslator.currentStep = 1;
     }
 
