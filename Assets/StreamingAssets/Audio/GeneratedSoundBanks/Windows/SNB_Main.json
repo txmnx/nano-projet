@@ -192,6 +192,12 @@
       "DurationType": "Infinite"
      },
      {
+      "Id": "3033370822",
+      "Name": "Play_Michel",
+      "ObjectPath": "\\Events\\Music_Event\\Play_Michel",
+      "DurationType": "Infinite"
+     },
+     {
       "Id": "1122264096",
       "Name": "Play_Music_Pause",
       "ObjectPath": "\\Events\\Music_Event\\Play_Music_Pause",
@@ -231,6 +237,18 @@
       "Id": "1153050680",
       "Name": "PlayMatchOutroCue",
       "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchOutroCue\\PlayMatchOutroCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "4192042921",
+      "Name": "PlayMiddleBeatInputCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MiddleBeatInputCue\\PlayMiddleBeatInputCue",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "4071872788",
+      "Name": "PlayMiddleBeatOutputCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MiddleBeatOutputCue\\PlayMiddleBeatOutputCue",
       "DurationType": "Infinite"
      },
      {
@@ -360,6 +378,42 @@
       "Id": "1474554644",
       "Name": "SetMatchOutroSilence",
       "ObjectPath": "\\Events\\Music_Event\\CueManager\\MatchOutroCue\\SetMatchOutroSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3296045089",
+      "Name": "SetMiddleBeatInputCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MiddleBeatInputCue\\SetMiddleBeatInputCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1611701257",
+      "Name": "SetMiddleBeatInputSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MiddleBeatInputCue\\SetMiddleBeatInputSilence",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1108056908",
+      "Name": "SetMiddleBeatOutputCue",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MiddleBeatOutputCue\\SetMiddleBeatOutputCue",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "4249533888",
+      "Name": "SetMiddleBeatOutputSilence",
+      "ObjectPath": "\\Events\\Music_Event\\CueManager\\MiddleBeatOutputCue\\SetMiddleBeatOutputSilence",
       "MaxAttenuation": "0.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",

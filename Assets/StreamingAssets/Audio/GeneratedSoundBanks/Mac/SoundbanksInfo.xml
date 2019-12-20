@@ -80,6 +80,7 @@
 				<Event Id="2927058889" Name="Music_RoundEndPart2" ObjectPath="\Events\Music_Event\Music_RoundEndPart2" DurationType="Infinite"/>
 				<Event Id="414863633" Name="Play_Main_Music" ObjectPath="\Events\Music_Event\Play_Main_Music" DurationType="Infinite"/>
 				<Event Id="2228153899" Name="Play_Menu_Music" ObjectPath="\Events\Music_Event\Play_Menu_Music" DurationType="Infinite"/>
+				<Event Id="3033370822" Name="Play_Michel" ObjectPath="\Events\Music_Event\Play_Michel" DurationType="Infinite"/>
 				<Event Id="1122264096" Name="Play_Music_Pause" ObjectPath="\Events\Music_Event\Play_Music_Pause" DurationType="Infinite"/>
 				<Event Id="2153856366" Name="PlayActionCue" ObjectPath="\Events\Music_Event\CueManager\ActionCue\PlayActionCue" DurationType="Infinite"/>
 				<Event Id="2578546882" Name="PlayIdleCue" ObjectPath="\Events\Music_Event\CueManager\IdleCue\PlayIdleCue" DurationType="Infinite"/>
@@ -87,6 +88,8 @@
 				<Event Id="980500664" Name="PlayIntroFightCue" ObjectPath="\Events\Music_Event\CueManager\IntroFightCue\PlayIntroFightCue" DurationType="Infinite"/>
 				<Event Id="2915503442" Name="PlayMatchEndCue" ObjectPath="\Events\Music_Event\CueManager\MatchEndCue\PlayMatchEndCue" DurationType="Infinite"/>
 				<Event Id="1153050680" Name="PlayMatchOutroCue" ObjectPath="\Events\Music_Event\CueManager\MatchOutroCue\PlayMatchOutroCue" DurationType="Infinite"/>
+				<Event Id="4192042921" Name="PlayMiddleBeatInputCue" ObjectPath="\Events\Music_Event\CueManager\MiddleBeatInputCue\PlayMiddleBeatInputCue" DurationType="Infinite"/>
+				<Event Id="4071872788" Name="PlayMiddleBeatOutputCue" ObjectPath="\Events\Music_Event\CueManager\MiddleBeatOutputCue\PlayMiddleBeatOutputCue" DurationType="Infinite"/>
 				<Event Id="1021446294" Name="PlayRoundIntroCue" ObjectPath="\Events\Music_Event\CueManager\RoundIntroCue\PlayRoundIntroCue" DurationType="Infinite"/>
 				<Event Id="3418588931" Name="PlayRoundOutroCue" ObjectPath="\Events\Music_Event\CueManager\RoundOutroCue\PlayRoundOutroCue" DurationType="Infinite"/>
 				<Event Id="3637748999" Name="PlayRoundResetCue" ObjectPath="\Events\Music_Event\CueManager\RoundResetCue\PlayRoundResetCue" DurationType="Infinite"/>
@@ -103,6 +106,10 @@
 				<Event Id="709162926" Name="SetMatchEndSilence" ObjectPath="\Events\Music_Event\CueManager\MatchEndCue\SetMatchEndSilence" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1893972432" Name="SetMatchOutroCue" ObjectPath="\Events\Music_Event\CueManager\MatchOutroCue\SetMatchOutroCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1474554644" Name="SetMatchOutroSilence" ObjectPath="\Events\Music_Event\CueManager\MatchOutroCue\SetMatchOutroSilence" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3296045089" Name="SetMiddleBeatInputCue" ObjectPath="\Events\Music_Event\CueManager\MiddleBeatInputCue\SetMiddleBeatInputCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1611701257" Name="SetMiddleBeatInputSilence" ObjectPath="\Events\Music_Event\CueManager\MiddleBeatInputCue\SetMiddleBeatInputSilence" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1108056908" Name="SetMiddleBeatOutputCue" ObjectPath="\Events\Music_Event\CueManager\MiddleBeatOutputCue\SetMiddleBeatOutputCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4249533888" Name="SetMiddleBeatOutputSilence" ObjectPath="\Events\Music_Event\CueManager\MiddleBeatOutputCue\SetMiddleBeatOutputSilence" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="699261182" Name="SetRoundIntroCue" ObjectPath="\Events\Music_Event\CueManager\RoundIntroCue\SetRoundIntroCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4187047986" Name="SetRoundIntroSilence" ObjectPath="\Events\Music_Event\CueManager\RoundIntroCue\SetRoundIntroSilence" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="18555899" Name="SetRoundOutroCue" ObjectPath="\Events\Music_Event\CueManager\RoundOutroCue\SetRoundOutroCue" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

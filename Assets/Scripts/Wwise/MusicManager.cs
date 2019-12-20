@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    public AK.Wwise.Event MusicEvent;
     public GameObject Start_Music;
     public MatchManager matchManager;
     public FightManager fightManager;
@@ -11,11 +12,13 @@ public class MusicManager : MonoBehaviour
     private Player player2;
     private int highScore;
     private int roundNbr;
+    private string musicCueName;
 
     private void Start()
     {
         player1 = fightManager.player1;
         player2 = fightManager.player2;
+        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncAll, MusicCallbackFunction, (uint)AkCallbackType.AK_MusicSyncUserCue);
     }
 
     public void StartIntro()
@@ -100,5 +103,12 @@ public class MusicManager : MonoBehaviour
     {
         CueManager.isCounting = true;
         AkSoundEngine.SetState("MusicToPlay", "ST_WinJP");
+    }
+
+    public void MusicCallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        AkMusicSyncCallbackInfo musicInfo = in_info as AkMusicSyncCallbackInfo;
+        musicCueName = musicInfo.userCueName;
+        Debug.Log(musicCueName);
     }
 }

@@ -50,17 +50,17 @@ public class CueManager : MonoBehaviour
 
     public void OnIntroStartCue() //Début de la musique d'intro
     {
-        Debug.Log("OnIntroStartCue");
+        
     }
 
     public void OnIntroRoundCue() //Annonce du round
     {
-        Debug.Log("OnIntroRoundCue");
+        
     }
 
     public void OnIntroFightCue() //Annonce de début de fight
     {
-        Debug.Log("OnIntroFightCue");
+        
     }
 
     public void OnRoundOutroCue() //Début de la musique d'outro de round
@@ -73,8 +73,6 @@ public class CueManager : MonoBehaviour
     public void OnRoundResetCue() //Fin de la musique d'outro du round
     {
         matchManager.resetRound();
-
-
         Debug.Log("OnRoundResetCue");
     }
 
@@ -89,6 +87,16 @@ public class CueManager : MonoBehaviour
         if (matchManager.matchIsEnd)
             finalMenu.Display();
         Debug.Log("OnMatchEndCue");
+    }
+
+    public void OnMiddleBeatInput() //Deuxième temps en phase d'Input
+    {
+
+    }
+
+    public void OnMiddleBeatAction() //Deuxième temps en phase d'Action
+    {
+
     }
 
 

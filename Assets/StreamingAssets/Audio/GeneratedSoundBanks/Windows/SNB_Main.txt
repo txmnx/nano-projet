@@ -23,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1021446294	PlayRoundIntroCue			\Music_Event\CueManager\RoundIntroCue\PlayRoundIntroCue	
 	1047748741	UI_Option_Back			\UI_Event\Menu\UI_Option_Back	
 	1105393344	Foley_Robot_Win			\Foley_Event\Foley_Robot_Win	
+	1108056908	SetMiddleBeatOutputCue			\Music_Event\CueManager\MiddleBeatOutputCue\SetMiddleBeatOutputCue	
 	1122264096	Play_Music_Pause			\Music_Event\Play_Music_Pause	
 	1142057693	SFX_InputPhase_Out			\SFX_Event\Common\SFX_InputPhase_Out	
 	1153050680	PlayMatchOutroCue			\Music_Event\CueManager\MatchOutroCue\PlayMatchOutroCue	
@@ -36,6 +37,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1531385158	Foley_Robot_Iddle			\Foley_Event\Foley_Robot_Iddle	
 	1580043918	SFX_Robot_Projectile_Woosh			\SFX_Event\Robot\SFX_Robot_Projectile_Woosh	
 	1606116385	Foley_Robot_Damage			\Foley_Event\Foley_Robot_Damage	
+	1611701257	SetMiddleBeatInputSilence			\Music_Event\CueManager\MiddleBeatInputCue\SetMiddleBeatInputSilence	
 	1672356194	SetInputCue			\Music_Event\CueManager\InputCue\SetInputCue	
 	1708613752	SFX_Robot_Fente			\SFX_Event\Robot\SFX_Robot_Fente	
 	1721873390	SetIdleSilence			\Music_Event\CueManager\IdleCue\SetIdleSilence	
@@ -72,9 +74,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	2924546668	Foley_Robot_Reflect_OpenDoor			\Foley_Event\Foley_Robot_Reflect_OpenDoor	
 	2927058889	Music_RoundEndPart2			\Music_Event\Music_RoundEndPart2	
 	3027721818	SetIdleCue			\Music_Event\CueManager\IdleCue\SetIdleCue	
+	3033370822	Play_Michel			\Music_Event\Play_Michel	
 	3037153600	SFX_Common_Electric_Sparks_Japan			\SFX_Event\Common\SFX_Common_Electric_Sparks_Japan	
 	3189743371	SetRoundOutroSilence			\Music_Event\CueManager\RoundOutroCue\SetRoundOutroSilence	
 	3290104963	SFX_Title_Timer			\SFX_Event\Title\SFX_Title_Timer	
+	3296045089	SetMiddleBeatInputCue			\Music_Event\CueManager\MiddleBeatInputCue\SetMiddleBeatInputCue	
 	3411659282	SetStartIntroCue			\Music_Event\CueManager\StartIntroCue\SetStartIntroCue	
 	3418588931	PlayRoundOutroCue			\Music_Event\CueManager\RoundOutroCue\PlayRoundOutroCue	
 	3535674012	VO_Speaker_Round_Win			\VO_Event\VO_Speaker_Round_Win	
@@ -89,19 +93,24 @@ Event	ID	Name			Wwise Object Path	Notes
 	3951945397	Foley_Robot_Guard			\Foley_Event\Foley_Robot_Guard	
 	3958906054	Amb_Menu_Start			\Ambience_Event\Amb_Menu_Start	
 	3991617220	SetIntroFightSilence			\Music_Event\CueManager\IntroFightCue\SetIntroFightSilence	
+	4071872788	PlayMiddleBeatOutputCue			\Music_Event\CueManager\MiddleBeatOutputCue\PlayMiddleBeatOutputCue	
 	4187047986	SetRoundIntroSilence			\Music_Event\CueManager\RoundIntroCue\SetRoundIntroSilence	
+	4192042921	PlayMiddleBeatInputCue			\Music_Event\CueManager\MiddleBeatInputCue\PlayMiddleBeatInputCue	
 	4210766769	SFX_Robot_Laser_Reload			\SFX_Event\Robot\SFX_Robot_Laser_Reload	
+	4249533888	SetMiddleBeatOutputSilence			\Music_Event\CueManager\MiddleBeatOutputCue\SetMiddleBeatOutputSilence	
 	4260899194	PlayInputCue			\Music_Event\CueManager\InputCue\PlayInputCue	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	209137191	Action			\Music_Switch\CueManager\Action	
 	390378104	RoundReset			\Music_Switch\CueManager\RoundReset	
+	611873224	MiddleBeatAction			\Music_Switch\CueManager\MiddleBeatAction	
 	1024145737	FightIntro			\Music_Switch\CueManager\FightIntro	
 	1413238543	Round			\Music_Switch\Round	
 	1444863999	Input			\Music_Switch\CueManager\Input	
 	1874288895	Idle			\Music_Switch\CueManager\Idle	
 	2670776597	MatchOutro			\Music_Switch\CueManager\MatchOutro	
 	3146088667	Charged			\SFX_Switch\Charged	
+	3332923642	MiddleBeatInput			\Music_Switch\CueManager\MiddleBeatInput	
 	3859864659	RoundIntro			\Music_Switch\CueManager\RoundIntro	
 	4042048507	StartIntro			\Music_Switch\CueManager\StartIntro	
 	4091964912	RoundOutro			\Music_Switch\CueManager\RoundOutro	
@@ -112,6 +121,8 @@ Switch	ID	Name	Switch Group			Notes
 	1598928224	ActionCue	Action			
 	144757057	RoundResetSilence	RoundReset			
 	1171485257	RoundResetCue	RoundReset			
+	2427657297	MiddleBeatActionSilence	MiddleBeatAction			
+	4114601497	MiddleBeatActionCue	MiddleBeatAction			
 	1420413750	FightIntroSilence	FightIntro			
 	2197357298	FightIntroCue	FightIntro			
 	1608193273	FinalRound	Round			
@@ -128,6 +139,8 @@ Switch	ID	Name	Switch Group			Notes
 	4030993286	MatchOutroCue	MatchOutro			
 	979470758	Yes	Charged			
 	1668749452	No	Charged			
+	27990563	MiddleBeatInputCue	MiddleBeatInput			
+	2683768035	MiddleBeatInputSilence	MiddleBeatInput			
 	2779827416	RoundIntroSilence	RoundIntro			
 	2967578548	RoundIntroCue	RoundIntro			
 	2469998604	StartIntroCue	StartIntro			

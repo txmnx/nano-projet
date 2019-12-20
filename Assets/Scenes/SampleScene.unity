@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -390,6 +390,8 @@ GameObject:
   - component: {fileID: 184791169}
   - component: {fileID: 184791168}
   - component: {fileID: 184791167}
+  - component: {fileID: 184791178}
+  - component: {fileID: 184791177}
   m_Layer: 0
   m_Name: Start_Music
   m_TagString: Untagged
@@ -834,6 +836,74 @@ MonoBehaviour:
   - Flags:
       value: 8192
     FunctionName: OnActionCue
+    GameObject: {fileID: 894088823}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &184791177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184791162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac14ea3b17d092047a4a9709c0ce4a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b69dcd15fa11b3541852ec11efbcef5c,
+      type: 2}
+  useCallbacks: 1
+  Callbacks:
+  - Flags:
+      value: 8192
+    FunctionName: OnMiddleBeatActionCue
+    GameObject: {fileID: 894088823}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &184791178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184791162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac14ea3b17d092047a4a9709c0ce4a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aba9d78f5d321624780a6feec778b45f,
+      type: 2}
+  useCallbacks: 1
+  Callbacks:
+  - Flags:
+      value: 8192
+    FunctionName: OnMiddleBeatInputCue
     GameObject: {fileID: 894088823}
   playingId: 0
   soundEmitterObject: {fileID: 0}
@@ -1436,16 +1506,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2393149756136718319, guid: 17cb255bdcdf67a4ca831c954e591124,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 2189146259985196695, guid: 17cb255bdcdf67a4ca831c954e591124,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.47
-      objectReference: {fileID: 0}
     - target: {fileID: 803069715568584869, guid: 17cb255bdcdf67a4ca831c954e591124,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1476,6 +1536,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 57043b97da65d254fac80de0bf8fe5f8, type: 2}
+    - target: {fileID: 2393149756136718319, guid: 17cb255bdcdf67a4ca831c954e591124,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189146259985196695, guid: 17cb255bdcdf67a4ca831c954e591124,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.47
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17cb255bdcdf67a4ca831c954e591124, type: 3}
 --- !u!1 &501163903 stripped
@@ -2578,6 +2648,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5672dac8346524fac2832ae3501524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   Start_Music: {fileID: 184791162}
   matchManager: {fileID: 1226417292}
   fightManager: {fileID: 1226417291}
@@ -32675,16 +32749,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2393149756136718319, guid: 17cb255bdcdf67a4ca831c954e591124,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 2189146259985196695, guid: 17cb255bdcdf67a4ca831c954e591124,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.47
-      objectReference: {fileID: 0}
     - target: {fileID: 803069715568584869, guid: 17cb255bdcdf67a4ca831c954e591124,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -32715,6 +32779,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 57043b97da65d254fac80de0bf8fe5f8, type: 2}
+    - target: {fileID: 2393149756136718319, guid: 17cb255bdcdf67a4ca831c954e591124,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189146259985196695, guid: 17cb255bdcdf67a4ca831c954e591124,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.47
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17cb255bdcdf67a4ca831c954e591124, type: 3}
 --- !u!1001 &6981050489767315707
